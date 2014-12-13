@@ -9,7 +9,7 @@
 		<!-- <img src="{{ site.url }}/images/{{ author.avatar }}" alt="{{ author.name }} photo">  -->
 		{% if page.author %}
 		{% assign author = site.authors[page.author] %}
-		<img src="{{ site.url }}assets/images/team/{{ author.avatar }}" alt="{{ author.name }} photo">{{ page.author | prepend: "by " }}{{ page.date | date: ", %B %d, %Y" }}
+		<img src="{{ site.url }}/assets/images/team/{{ author.avatar }}" alt="{{ author.name }} photo">{{ page.author | prepend: "by " }}{{ page.date | date: ", %B %d, %Y" }}
 		{% endif %}
 	</p>
 	{% else %}
