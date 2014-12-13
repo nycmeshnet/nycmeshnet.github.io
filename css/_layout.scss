@@ -157,7 +157,9 @@ nav,
 #disqus_thread, 
 footer.footer, 
 #newnode, 
-.content .post-list {
+.content .post-list, 
+.blog ul, 
+.blog ol {
   width: 600px;
   @media only screen and (max-width : 600px) {
    width: 538px;
