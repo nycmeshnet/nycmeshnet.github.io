@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">NYC Mesh</title>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://nycmeshnet.github.io/website//feed.xml" />
+<link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website/" />
+<updated>2014-12-12T23:38:58-05:00</updated>
+<id>http://nycmeshnet.github.io/website//</id>
+<author>
+  <name>#nycmeshnet</name>
+  <uri>http://nycmeshnet.github.io/website//</uri>
+  <email>peter@nycmesh.net</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[Sunday, November 23rd, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/thirty-third-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/thirty-third-meeting</id>
+  <published>2014-11-23T00:00:00-05:00</published>
+  <updated>2014-11-23T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Join us &lt;strong&gt;downstairs&lt;/strong&gt; at the café this Sunday as we plan the next steps in our journey to setup an experimental mesh network. After last week’s successful installations we need to plan how to connect more nodes and make public access points (APs). What should our AP welcome screen say? What captive portal software to use? Community web page? Solar powered rooftop server? etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please check the lower section of the cafe! There are stairs that go down behind the counter where you order your coffee.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Please join &lt;a href=&quot;http://www.meetup.com/nycmesh/&quot;&gt;our meetup group&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/Irving+Farm+Coffee+Roasters/@40.7179886,-73.9902479,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259873f0067c1:0x5aede67045aa029f&quot;&gt;Irving Farm Coffee Roasters&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+88 Orchard St&lt;br /&gt;
+New York, NY 10002&lt;br /&gt;
+Sunday, November 23rd, 2014 at 3pm&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/thirty-third-meeting/&quot;&gt;Sunday, November 23rd, 2014&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on November 23, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[New nodes]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//blog/new-nodes/"/>
+  <id>http://nycmeshnet.github.io/website//blog/new-nodes</id>
+  <published>2014-11-18T00:00:00-05:00</published>
+  <updated>2014-11-18T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Much has happened in the past few months. We now have our first public node at d.b.a bar in the East Village (SSID: nycmesh.net dba). Very recently we installed three more nodes bringing the active node count to six: Brian, dba, Sam, Winston, Jaclyn and Oliver. All of these are in the East Village or Lower East Side. A group from Parsons (The New School for Design) will soon be adding another eight nodes near Union Square.&lt;/p&gt;
+
+&lt;p&gt;Our meetings have returned to our regular Sunday schedule. Also we’ve been having meetings with other mesh related local projects during the week, such as &lt;a href=&quot;http://rhicenter.org/redhookwifi/&quot;&gt;Red Hook WiFi&lt;/a&gt; and &lt;a href=&quot;http://goles.org/&quot;&gt;GOLES&lt;/a&gt; (who work with &lt;a href=&quot;https://wifiny.net/&quot;&gt;WiFi-NY&lt;/a&gt;). Please join our &lt;a href=&quot;http://www.meetup.com/nycmesh/&quot;&gt;meetup group&lt;/a&gt; to find out about all of our meetings.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//blog/new-nodes/&quot;&gt;New nodes&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on November 18, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sunday, November 16th, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/thirty-second-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/thirty-second-meeting</id>
+  <published>2014-11-16T00:00:00-05:00</published>
+  <updated>2014-11-16T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;We now have enough potential nodes in the east village and lower east side to form some kind of backbone for a mesh. We’re going to meet at &lt;strong&gt;1pm&lt;/strong&gt; at a member’s apartment with our routers, check that we are properly configured, and then visit other member’s rooftops and see if we can connect.&lt;/p&gt;
+
+&lt;p&gt;91 E 3rd St. #35&lt;br /&gt;
+New York, NY 10003&lt;br /&gt;
+&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/91+E+3rd+St,+New+York,+NY+10003/@40.7248228,-73.9877012,17z/&quot;&gt;Location on Google Maps&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+Sunday, November 16th, 2014 at &lt;strong&gt;1pm&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Please rsvp at &lt;a href=&quot;http://www.meetup.com/nycmesh/&quot;&gt;our meetup group&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/thirty-second-meeting/&quot;&gt;Sunday, November 16th, 2014&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on November 16, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sunday, November 9th, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/thirty-first-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/thirty-first-meeting</id>
+  <published>2014-11-09T00:00:00-05:00</published>
+  <updated>2014-11-09T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Join us &lt;strong&gt;downstairs&lt;/strong&gt; at the café this Sunday as we plan the next steps in our journey to setup an experimental mesh network.This week we’ll be looking at mesh software used by Guifi, Freifunk (qMp) and Red Hook (Commotion) and seeing how it compares to cjdns. We’ll also be reviewing some changes and additions to this web site and adding more potential nodes to the updated map.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please check the lower section of the cafe! There are stairs that go down behind the counter where you order your coffee.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Please join &lt;a href=&quot;http://www.meetup.com/nycmesh/&quot;&gt;our meetup group&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/Irving+Farm+Coffee+Roasters/@40.7179886,-73.9902479,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259873f0067c1:0x5aede67045aa029f&quot;&gt;Irving Farm Coffee Roasters&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+88 Orchard St&lt;br /&gt;
+New York, NY 10002&lt;br /&gt;
+Sunday, November 9th, 2014 at 3pm&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/thirty-first-meeting/&quot;&gt;Sunday, November 9th, 2014&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on November 09, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sunday, November 2nd, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/thirtieth-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/thirtieth-meeting</id>
+  <published>2014-11-02T00:00:00-04:00</published>
+  <updated>2014-11-02T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Join us this Sunday as we plan the next steps in our journey to setup an experimental mesh network.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please check the lower section of the cafe! There are stairs that go down behind the counter where you order your coffee.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/Irving+Farm+Coffee+Roasters/@40.7179886,-73.9902479,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259873f0067c1:0x5aede67045aa029f&quot;&gt;Irving Farm Coffee Roasters&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+88 Orchard St&lt;br /&gt;
+New York, NY 10002&lt;br /&gt;
+Sunday, November 2nd, 2014 at 3pm&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/thirtieth-meeting/&quot;&gt;Sunday, November 2nd, 2014&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on November 02, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Saturday, October 25th, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/twenty-ninth-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/twenty-ninth-meeting</id>
+  <published>2014-10-25T00:00:00-04:00</published>
+  <updated>2014-10-25T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.meetup.com/nycmesh/events/213631142/&quot;&gt;The Utopia School Practical Mesh Workshop&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://utopiaschool.org/node/125&quot;&gt;The practical mesh workshop&lt;/a&gt; is the third and last of Utopia School’s mesh classes. #nycmeshnet will be going to this.&lt;/p&gt;
+
+&lt;p&gt;One of the widely accepted goals of mesh networks is for everyone to be able to participate equally with commodity hardware and software, however things are not so simple yet. This workshop will guide participants through the process of setting up the hardware and software necessary to operate a node in a cjdns wireless mesh network. By the end we will hopefully have a functioning experimental network and a bunch of ideas about how to make the process simpler!&lt;/p&gt;
+
+&lt;p&gt;flux factory&lt;br /&gt;
+39-31 29th St Long Island City, New York&lt;br /&gt;
+&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/39-31+29th+St,+Long+Island+City,+NY+11101/@40.7525907,-73.9349629,17z&quot;&gt;Location on Google Maps&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+Saturday, October 25, 2014&lt;br /&gt;
+12:00pm to 5:00pm&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.meetup.com/nycmesh/&quot;&gt;Please visit our new meetup group for future meetings- meetup.com/nycmesh&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/twenty-ninth-meeting/&quot;&gt;Saturday, October 25th, 2014&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on October 25, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Saturday, October 18th, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/twenty-eighth-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/twenty-eighth-meeting</id>
+  <published>2014-10-18T00:00:00-04:00</published>
+  <updated>2014-10-18T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.meetup.com/nycmesh/events/213619402/&quot;&gt;The Utopia School Mesh Summit&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This Saturday, 2014-10-18, #nycmeshnet will be going to Utopia School’s &lt;a href=&quot;http://utopiaschool.org/node/124&quot;&gt;Mesh Summit&lt;/a&gt;: Join current and future mesh network administrators to discuss current projects, challenges and best practices. We will aim to create a system for collaborating and supporting each other, and recruiting new members to our work.&lt;/p&gt;
+
+&lt;p&gt;flux factory&lt;br /&gt;
+39-31 29th St Long Island City, New York&lt;br /&gt;
+&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/39-31+29th+St,+Long+Island+City,+NY+11101/@40.7525907,-73.9349629,17z&quot;&gt;Location on Google Maps&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+Saturday, October 18, 2014&lt;br /&gt;
+5:00pm to 10:00pm&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.meetup.com/nycmesh/&quot;&gt;Please visit our new meetup group for future meetings- meetup.com/nycmesh&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/twenty-eighth-meeting/&quot;&gt;Saturday, October 18th, 2014&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on October 18, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Saturday, October 11th, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/twenty-seventh-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/twenty-seventh-meeting</id>
+  <published>2014-10-11T00:00:00-04:00</published>
+  <updated>2014-10-11T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;&lt;a href=&quot;http://utopiaschool.org/node/123&quot;&gt;Introduction to Mesh Networks&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This Saturday, #nycmeshnet will be going to Utopia School’s Introduction to Mesh Networks: Access to the Internet for the majority of the public, is controlled by a select few organizations. Mesh networks are an alternative to the current centralized topology. We will explain the basic concepts behind mesh networks and how they are different from traditional computer networks as well as the specific technical requirements.&lt;/p&gt;
+
+&lt;p&gt;flux factory&lt;br /&gt;
+39-31 29th St Long Island City, New York&lt;br /&gt;
+&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/39-31+29th+St,+Long+Island+City,+NY+11101/@40.7525907,-73.9349629,17z&quot;&gt;Location on Google Maps&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+Saturday, October 11, 2014&lt;br /&gt;
+4:00pm to 6:00pm&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.meetup.com/nycmesh/&quot;&gt;Please visit our new meetup group for future meetings- meetup.com/nycmesh&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/twenty-seventh-meeting/&quot;&gt;Saturday, October 11th, 2014&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on October 11, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sunday, October 5th, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/twenty-sixth-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/twenty-sixth-meeting</id>
+  <published>2014-10-05T00:00:00-04:00</published>
+  <updated>2014-10-05T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;We’ll be meeting at a member’s home in an effort to get the nodes in the East Village connected.
+Anyone who is interested in the actual setup of a node, feel free to stop by.&lt;/p&gt;
+
+&lt;p&gt;If you’re unable to locate the place, send an email to peter@nycmesh.net and we’ll find you.&lt;/p&gt;
+
+&lt;p&gt;91 E 3rd St. #35&lt;br /&gt;
+New York, NY 10003&lt;br /&gt;
+&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/91+E+3rd+St,+New+York,+NY+10003/@40.7248228,-73.9877012,17z/&quot;&gt;Location on Google Maps&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+Sunday, October 5th, 2014 at 3pm&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/twenty-sixth-meeting/&quot;&gt;Sunday, October 5th, 2014&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on October 05, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sunday, September 28th, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/twenty-fifth-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/twenty-fifth-meeting</id>
+  <published>2014-09-24T00:00:00-04:00</published>
+  <updated>2014-09-24T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;After a short break, our meetings will continue!&lt;/p&gt;
+
+&lt;p&gt;Join us this Sunday as we plan the next steps in our journey to setup an experimental mesh network.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please check the lower section of the cafe! There are stairs that go down behind the counter where you order your coffee.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/Irving+Farm+Coffee+Roasters/@40.7179886,-73.9902479,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259873f0067c1:0x5aede67045aa029f&quot;&gt;Irving Farm Coffee Roasters&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+88 Orchard St&lt;br /&gt;
+New York, NY 10002&lt;br /&gt;
+Sunday, September 28th, 2014 at 3pm&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/twenty-fifth-meeting/&quot;&gt;Sunday, September 28th, 2014&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on September 24, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sunday, August 17th, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/twenty-fourth-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/twenty-fourth-meeting</id>
+  <published>2014-08-14T00:00:00-04:00</published>
+  <updated>2014-08-14T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;This week’s meeting will be held at Hack Manhattan (thank you to our gracious hosts)!
+This is a good week to bring out what hardware you have. We’ll get a mini meshnet up
+and running.&lt;/p&gt;
+
+&lt;p&gt;We’ll also continue our planning of how to approach getting real, physical nodes up.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://hackmanhattan.com/&quot;&gt;Hack Manhattan&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;a href=&quot;https://www.google.com/maps/place/Hack+Manhattan/@40.738271,-73.998402,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xd75f51086ead2d98&quot;&gt;Link to Google Maps&lt;/a&gt;&lt;br /&gt;
+137 W 14th St&lt;br /&gt;
+New York, NY 10011&lt;br /&gt;
+Sunday, August 17th, 2014 at 3pm&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/twenty-fourth-meeting/&quot;&gt;Sunday, August 17th, 2014&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on August 14, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sunday, August 10th, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/twenty-third-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/twenty-third-meeting</id>
+  <published>2014-08-08T00:00:00-04:00</published>
+  <updated>2014-08-08T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Another week, another meeting. Join us and find out how to get involved.&lt;/p&gt;
+
+&lt;p&gt;Please let us know if you plan to come by RSVPing &lt;a href=&quot;http://polljunkie.com/poll/ocqcmk/rsvp-for-nyc-meshnet-meeting-on-august-10th-2014&quot;&gt;here on PollJunkie&lt;/a&gt;, thanks!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please check the lower section of the cafe! There are stairs that go down behind the counter where you order your coffee.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/Irving+Farm+Coffee+Roasters/@40.7179886,-73.9902479,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259873f0067c1:0x5aede67045aa029f&quot;&gt;Irving Farm Coffee Roasters&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+88 Orchard St&lt;br /&gt;
+New York, NY 10002&lt;br /&gt;
+Sunday, August 10th, 2014 at 3pm&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/twenty-third-meeting/&quot;&gt;Sunday, August 10th, 2014&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on August 08, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sunday, August 3rd, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/twenty-second-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/twenty-second-meeting</id>
+  <published>2014-07-29T00:00:00-04:00</published>
+  <updated>2014-07-29T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Come join us as we prepare to get a neighborhood connected to the mesh. All are welcome.&lt;/p&gt;
+
+&lt;p&gt;Please let us know if you plan to come by RSVPing &lt;a href=&quot;http://polljunkie.com/poll/yorfbo/rsvp-for-nyc-meshnet-meeting-on-august-3rd-2014&quot;&gt;here on PollJunkie&lt;/a&gt;, thanks!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please check the lower section of the cafe! There are stairs that go down behind the counter where you order your coffee.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/Irving+Farm+Coffee+Roasters/@40.7179886,-73.9902479,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259873f0067c1:0x5aede67045aa029f&quot;&gt;Irving Farm Coffee Roasters&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+88 Orchard St&lt;br /&gt;
+New York, NY 10002&lt;br /&gt;
+Sunday, August 3rd, 2014 at 3pm&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/twenty-second-meeting/&quot;&gt;Sunday, August 3rd, 2014&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on July 29, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sunday, July 27th, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/twenty-first-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/twenty-first-meeting</id>
+  <published>2014-07-23T00:00:00-04:00</published>
+  <updated>2014-07-23T00:00:00-04:00</updated>
+  
+  <author>
+    <name></name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email></email>
+  </author>
+  <content type="html">&lt;p&gt;Same time and place for our weekly meeting. We are planning to discuss focusing our efforts on a single neighborhood and working on getting more people involved.&lt;/p&gt;
+
+&lt;p&gt;Please let us know if you plan to come by RSVPing &lt;a href=&quot;http://www.polljunkie.com/poll/zqijrb/rsvp-for-nyc-meshnet-meeting-on-july-27th-2014&quot;&gt;here on PollJunkie&lt;/a&gt;, thanks!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please check the lower section of the cafe! There are stairs that go down behind the counter where you order your coffee.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/Irving+Farm+Coffee+Roasters/@40.7179886,-73.9902479,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259873f0067c1:0x5aede67045aa029f&quot;&gt;Irving Farm Coffee Roasters&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+88 Orchard St&lt;br /&gt;
+New York, NY 10002&lt;br /&gt;
+Sunday, July 27th, 2014 at 3pm&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/twenty-first-meeting/&quot;&gt;Sunday, July 27th, 2014&lt;/a&gt; was originally published by  at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on July 23, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sunday, July 20th, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/twentieth-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/twentieth-meeting</id>
+  <published>2014-07-18T00:00:00-04:00</published>
+  <updated>2014-07-18T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Same time and place for our weekly meeting. In light of the panel on meshnets at HOPE, we’ll be discussing real ways
+to get people interested and connected to the meshnet.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please check the lower section of the cafe! There are stairs that go down behind the counter where you order your coffee.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/Irving+Farm+Coffee+Roasters/@40.7179886,-73.9902479,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259873f0067c1:0x5aede67045aa029f&quot;&gt;Irving Farm Coffee Roasters&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+88 Orchard St&lt;br /&gt;
+New York, NY 10002&lt;br /&gt;
+Sunday, July 20th, 2014 at 3pm&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/twentieth-meeting/&quot;&gt;Sunday, July 20th, 2014&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on July 18, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sunday, July 13th, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/nineteenth-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/nineteenth-meeting</id>
+  <published>2014-07-10T00:00:00-04:00</published>
+  <updated>2014-07-10T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;After taking a break July 4th weekend, we’re back in gear. All who are interested in meshnets and getting one started
+here in NYC are welcome to stop by.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please check the lower section of the cafe! There are stairs that go down behind the counter where you order your coffee.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/Irving+Farm+Coffee+Roasters/@40.7179886,-73.9902479,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259873f0067c1:0x5aede67045aa029f&quot;&gt;Irving Farm Coffee Roasters&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+88 Orchard St&lt;br /&gt;
+New York, NY 10002&lt;br /&gt;
+Sunday, July 13th, 2014 at 3pm&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/nineteenth-meeting/&quot;&gt;Sunday, July 13th, 2014&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on July 10, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sunday, June 29th, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/eighteenth-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/eighteenth-meeting</id>
+  <published>2014-06-26T00:00:00-04:00</published>
+  <updated>2014-06-26T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Our weekly meeting is happening at the usual time and place. We’ll be playing around with what hardware we have while planning ahead for the summer, including the panel on meshnets at HOPE X!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please check the lower section of the cafe! There are stairs that go down behind the counter where you order your coffee.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/Irving+Farm+Coffee+Roasters/@40.7179886,-73.9902479,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259873f0067c1:0x5aede67045aa029f&quot;&gt;Irving Farm Coffee Roasters&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+88 Orchard St&lt;br /&gt;
+New York, NY 10002&lt;br /&gt;
+Sunday, June 29th, 2014 at 3pm&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/eighteenth-meeting/&quot;&gt;Sunday, June 29th, 2014&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on June 26, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sunday, June 22nd, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/seventeenth-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/seventeenth-meeting</id>
+  <published>2014-06-20T00:00:00-04:00</published>
+  <updated>2014-06-20T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Another week, another meeting. Whether you’re looking to be part of the meshnet or just curious about what this whole thing is about, stop by! All are welcome.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please check the lower section of the cafe! There are stairs that go down behind the counter where you order your coffee.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/Irving+Farm+Coffee+Roasters/@40.7179886,-73.9902479,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259873f0067c1:0x5aede67045aa029f&quot;&gt;Irving Farm Coffee Roasters&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+88 Orchard St&lt;br /&gt;
+New York, NY 10002&lt;br /&gt;
+Sunday, June 22nd, 2014 at 3pm&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/seventeenth-meeting/&quot;&gt;Sunday, June 22nd, 2014&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on June 20, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sunday, June 15th, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/sixteenth-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/sixteenth-meeting</id>
+  <published>2014-06-12T00:00:00-04:00</published>
+  <updated>2014-06-12T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Come to our weekly meeting and find out what’s going on with us. We’ll be working with our hardware while discussing what the summer has in store.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please check the lower section of the cafe! There are stairs that go down behind the counter where you order your coffee.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/Irving+Farm+Coffee+Roasters/@40.7179886,-73.9902479,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259873f0067c1:0x5aede67045aa029f&quot;&gt;Irving Farm Coffee Roasters&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+88 Orchard St&lt;br /&gt;
+New York, NY 10002&lt;br /&gt;
+Sunday, June 15th, 2014 at 3pm&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/sixteenth-meeting/&quot;&gt;Sunday, June 15th, 2014&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on June 12, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Sunday, June 8th, 2014]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/website//meetings/fifteenth-meeting/"/>
+  <id>http://nycmeshnet.github.io/website//meetings/fifteenth-meeting</id>
+  <published>2014-06-03T00:00:00-04:00</published>
+  <updated>2014-06-03T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io/website/</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Same day, same time, same place. Come learn about meshnets and what we’re doing to get one started here in NYC!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please check the lower section of the cafe! There are stairs that go down behind the counter where you order your coffee.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/Irving+Farm+Coffee+Roasters/@40.7179886,-73.9902479,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259873f0067c1:0x5aede67045aa029f&quot;&gt;Irving Farm Coffee Roasters&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+88 Orchard St&lt;br /&gt;
+New York, NY 10002&lt;br /&gt;
+Sunday, June 8th, 2014 at 3pm&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/website//meetings/fifteenth-meeting/&quot;&gt;Sunday, June 8th, 2014&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io/website/&quot;&gt;NYC Mesh&lt;/a&gt; on June 03, 2014.&lt;/p&gt;</content>
+</entry>
+
+</feed>

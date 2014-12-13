@@ -1,0 +1,85 @@
+$alert_height: 25px;
+$alert_width: 100px;
+$alert_margin: 1px;
+.help_alert {
+	background-color: red;
+	box-sizing: border-box;
+	color: white;
+	display: block;
+	font-size: 12px;
+	margin-top: 0px;
+	height: $alert_height;
+	opacity: 1;
+	padding: 3px 7px;
+	position: fixed;
+	text-align: right;
+	right: $alert_margin;
+	z-index: 1042;
+	@include animate(faderight);
+}
+
+/* environment helper */
+html.development {
+	body:after {
+		content: "development";
+	}
+}
+html.staging {
+	body:after {
+		content: "staging";
+	}
+}
+html.prototype {
+	body:after {
+		content: "prototype";
+	}
+}
+
+/* screen size helper */
+html.development, html.staging, html.prototype {
+		body:after {
+		@extend .help_alert;
+		top: ($alert_height + ($alert_margin * 2));
+		@include delay(2);
+	}
+	body:before {
+		@extend .help_alert;
+		top: $alert_margin;
+		@include delay(1);
+	}
+	@media screen and (min-width: $screen-lg) { 
+		body:before {
+			content: "large screen";
+		}
+	}
+	@media screen and (max-width: $screen-lg) { 
+		body:before {
+			content: "medium screen";
+		}
+	}
+	@media screen and (max-width: $ipad-all) {
+		body:before {
+			content: "ipad landscape";
+		}
+	}
+	@media screen and (max-width: $ipad-portrait) {
+		body:before {
+			content: "ipad portrait";
+		}
+	}
+	@media screen and (max-width: $iphone-5) {
+		body:before {
+			content: "iphone 5 landscape";
+		}
+	}
+	@media screen and (max-width: $iphone-all) {
+		body:before {
+			content: "iphone landscape";
+		}
+	}
+	@media screen and (max-width: $iphone-portrait) {
+		body:before {
+			content: "iphone portrait";
+		}
+	}
+}

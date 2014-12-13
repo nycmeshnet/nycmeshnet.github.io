@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body {% if page.title %}class="blog"{% else %}{% endif %}>
+  {% include header.html %}
+  {% include forms/newnode.html %}
+  <div class="content">
+  {{ content }}
+   {% if site.disqus_shortname and page.comments %}
+   <div id="disqus_thread"></div>
+  {% endif %}
+  {% include footer.html %}
+</div>
+  {% include javascript.html %}
+</body>
+</html>

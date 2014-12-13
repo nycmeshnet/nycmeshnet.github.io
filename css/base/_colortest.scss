@@ -1,0 +1,293 @@
+.colortest {
+  background-color: #820705 !important;
+  h1, h2, h3, h4 { 
+    color: $black;
+  }
+  ul {
+    @extend %navlist;
+  }
+  li { 
+    width: ($g10 * 2);
+    height: ($g10 * 2);
+  }
+      .c0l li {
+    &:first-of-type {
+      background-color: $c0;
+    }
+    &:nth-of-type(2) {
+      background-color: $c0l1;
+    }
+    &:nth-of-type(3) {
+      background-color: $c0l2;
+    }
+    &:nth-of-type(4) {
+      background-color: $c0l3;
+    }
+    &:nth-of-type(5) {
+      background-color: $c0l4;
+    }
+    &:nth-of-type(6) {
+      background-color: $c0l5;
+    }
+    &:nth-of-type(7) {
+      background-color: $c0l6;
+    }
+  }
+  .c1l li {
+    &:first-of-type {
+      background-color: $c1;
+    }
+    &:nth-of-type(2) {
+      background-color: $c1l1;
+    }
+    &:nth-of-type(3) {
+      background-color: $c1l2;
+    }
+    &:nth-of-type(4) {
+      background-color: $c1l3;
+    }
+    &:nth-of-type(5) {
+      background-color: $c1l4;
+    }
+    &:nth-of-type(6) {
+      background-color: $c1l5;
+    }
+    &:nth-of-type(7) {
+      background-color: $c1l6;
+    }
+        &:nth-of-type(8) {
+      background-color: $c1l7;
+    }
+  }
+  .c2l li {
+    &:first-of-type {
+      background-color: $c2;
+    }
+    &:nth-of-type(2) {
+      background-color: $c2l1;
+    }
+    &:nth-of-type(3) {
+      background-color: $c2l2;
+    }
+    &:nth-of-type(4) {
+      background-color: $c2l3;
+    }
+    &:nth-of-type(5) {
+      background-color: $c2l4;
+    }
+    &:nth-of-type(6) {
+      background-color: $c2l5;
+    }
+    &:nth-of-type(7) {
+      background-color: $c2l6;
+    }
+  }
+  .c3l li {
+    &:first-of-type {
+      background-color: $c3;
+    }
+    &:nth-of-type(2) {
+      background-color: $c3l1;
+    }
+    &:nth-of-type(3) {
+      background-color: $c3l2;
+    }
+    &:nth-of-type(4) {
+      background-color: $c3l3;
+    }
+    &:nth-of-type(5) {
+      background-color: $c3l4;
+    }
+    &:nth-of-type(6) {
+      background-color: $c3l5;
+    }
+    &:nth-of-type(7) {
+      background-color: $c3l6;
+    }
+  }
+  .c4l li {
+    &:first-of-type {
+      background-color: $c4;
+    }
+    &:nth-of-type(2) {
+      background-color: $c4l1;
+    }
+    &:nth-of-type(3) {
+      background-color: $c4l2;
+    }
+    &:nth-of-type(4) {
+      background-color: $c4l3;
+    }
+    &:nth-of-type(5) {
+      background-color: $c4l4;
+    }
+    &:nth-of-type(6) {
+      background-color: $c4l5;
+    }
+    &:nth-of-type(7) {
+      background-color: $c4l6;
+    }
+  }
+  .c5l li {
+    &:first-of-type {
+      background-color: $c5;
+    }
+    &:nth-of-type(2) {
+      background-color: $c5l1;
+    }
+    &:nth-of-type(3) {
+      background-color: $c5l2;
+    }
+    &:nth-of-type(4) {
+      background-color: $c5l3;
+    }
+    &:nth-of-type(5) {
+      background-color: $c5l4;
+    }
+    &:nth-of-type(6) {
+      background-color: $c5l5;
+    }
+    &:nth-of-type(7) {
+      background-color: $c5l6;
+    }
+  }
+    .c0d li {
+    &:first-of-type {
+      background-color: $c0;
+    }
+    &:nth-of-type(2) {
+      background-color: $c0d1;
+    }
+    &:nth-of-type(3) {
+      background-color: $c0d2;
+    }
+    &:nth-of-type(4) {
+      background-color: $c0d3;
+    }
+    &:nth-of-type(5) {
+      background-color: $c0d4;
+    }
+    &:nth-of-type(6) {
+      background-color: $c0d5;
+    }
+    &:nth-of-type(7) {
+      background-color: $c0d6;
+    }
+  }
+  .c1d li {
+    &:first-of-type {
+      background-color: $c1;
+    }
+    &:nth-of-type(2) {
+      background-color: $c1d1;
+    }
+    &:nth-of-type(3) {
+      background-color: $c1d2;
+    }
+    &:nth-of-type(4) {
+      background-color: $c1d3;
+    }
+    &:nth-of-type(5) {
+      background-color: $c1d4;
+    }
+    &:nth-of-type(6) {
+      background-color: $c1d5;
+    }
+    &:nth-of-type(7) {
+      background-color: $c1d6;
+    }
+  }
+  .c2d li {
+    &:first-of-type {
+      background-color: $c2;
+    }
+    &:nth-of-type(2) {
+      background-color: $c2d1;
+    }
+    &:nth-of-type(3) {
+      background-color: $c2d2;
+    }
+    &:nth-of-type(4) {
+      background-color: $c2d3;
+    }
+    &:nth-of-type(5) {
+      background-color: $c2d4;
+    }
+    &:nth-of-type(6) {
+      background-color: $c2d5;
+    }
+    &:nth-of-type(7) {
+      background-color: $c2d6;
+    }
+  }
+  .c3d li {
+    &:first-of-type {
+      background-color: $c3;
+    }
+    &:nth-of-type(2) {
+      background-color: $c3d1;
+    }
+    &:nth-of-type(3) {
+      background-color: $c3d2;
+    }
+    &:nth-of-type(4) {
+      background-color: $c3d3;
+    }
+    &:nth-of-type(5) {
+      background-color: $c3d4;
+    }
+    &:nth-of-type(6) {
+      background-color: $c3d5;
+    }
+    &:nth-of-type(7) {
+      background-color: $c3d6;
+    }
+  }
+  .c4d li {
+    &:first-of-type {
+      background-color: $c4;
+    }
+    &:nth-of-type(2) {
+      background-color: $c4d1;
+    }
+    &:nth-of-type(3) {
+      background-color: $c4d2;
+    }
+    &:nth-of-type(4) {
+      background-color: $c4d3;
+    }
+    &:nth-of-type(5) {
+      background-color: $c4d4;
+    }
+    &:nth-of-type(6) {
+      background-color: $c4d5;
+    }
+    &:nth-of-type(7) {
+      background-color: $c4d6;
+    }
+  }
+  .c5d li {
+    &:first-of-type {
+      background-color: $c5;
+    }
+    &:nth-of-type(2) {
+      background-color: $c5d1;
+    }
+    &:nth-of-type(3) {
+      background-color: $c5d2;
+    }
+    &:nth-of-type(4) {
+      background-color: $c5d3;
+    }
+    &:nth-of-type(5) {
+      background-color: $c5d4;
+    }
+    &:nth-of-type(6) {
+      background-color: $c5d5;
+    }
+    &:nth-of-type(7) {
+      background-color: $c5d6;
+    }
+  }
+
+}

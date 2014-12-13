@@ -1,0 +1,90 @@
+title:            "NYC Mesh"
+description:      "a better network"
+logo:
+disqus_shortname:
+search:           false
+url:              http://nycmeshnet.github.io/website/
+
+# Owner/author information
+owner:
+  name:           "#nycmeshnet"
+  avatar:         bio-photo.jpg
+  email:          peter@nycmesh.net
+  # Social networking links used in footer. Update and remove as you like.
+  reddit:         nycmeshnet
+  twitter:        nycmeshnet
+  facebook:       nycmeshnet
+  github:         nycmeshnet
+  stackexchange:
+  linkedin:
+  instagram:
+  flickr:
+  tumblr:
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:
+
+# To be used in posts to determine the author info
+authors:
+  Kurt:
+    name:   Kurt
+    avatar: ksnieck.jpg
+    email:  kurt@nycmesh.net
+  Peter:
+    name:   Peter
+    avatar: azlyth.jpg
+    email:  peter@nycmesh.net
+  Brian:
+    name:   Brian
+    avatar: bhny.png
+    email:  brian@nycmesh.net
+  Nicholas:
+    name:   Nicholas
+    avatar: nonlinear.jpg
+    email:  info@nicholasfrota.com
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Blog
+    url: /blog/
+  - title: Meetings
+    url: /meetings/
+  - title: Resources
+    url: /resources/
+  - title: Map
+    url: https://map.nycmesh.net/
+    external: true
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+future:      true
+pygments:    true
+markdown:    kramdown
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers:
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
