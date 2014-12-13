@@ -7,7 +7,6 @@
 - pointers
 	- remap site.url
 	- index.html :36
-	- layout.scss background-image: url(/website/assets/images/rss.png);
 
 ###Sharing
 - newsletter
