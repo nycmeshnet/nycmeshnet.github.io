@@ -2,6 +2,11 @@
  height: 35px;
  display: inline-block;
  font-size: 32px;
+ text-shadow: 
+ -1px -1px 0 #000,
+  1px -1px 0 #000,
+ -1px 1px 0 #000,
+  1px 1px 0 #000;
  img {
   @include square(40px);
 }
@@ -241,6 +246,11 @@ right: 0;
   margin-top: (320px - 165);
 }
 color: white;
+  text-shadow: 
+ -1px -1px 0 #000,
+  1px -1px 0 #000,
+ -1px 1px 0 #000,
+  1px 1px 0 #000;
 border-top: solid 1px white;
 margin-bottom: 0;
 h1 {
