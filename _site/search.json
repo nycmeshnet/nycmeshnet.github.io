@@ -17,6 +17,14 @@
 		} ,
 	
 		{
+		  "title"      : "New nodes",
+		  "category"   : "",
+		  "url"        : "http://nycmeshnet.github.io/map/new-nodes/",
+		  "date"       : "2014-11-18 00:00:00 -0500",
+		  "shortdate"  : "November 18, 2014"
+		} ,
+	
+		{
 		  "title"      : "Sunday, November 16th, 2014",
 		  "category"   : "",
 		  "url"        : "http://nycmeshnet.github.io/meetings/thirty-second-meeting/",
@@ -257,6 +265,14 @@
 		} ,
 	
 		{
+		  "title"      : "Starting with the basics",
+		  "category"   : "",
+		  "url"        : "http://nycmeshnet.github.io/map/starting-with-the-basics/",
+		  "date"       : "2014-02-23 00:00:00 -0500",
+		  "shortdate"  : "February 23, 2014"
+		} ,
+	
+		{
 		  "title"      : "Sunday, February 23rd, 2014",
 		  "category"   : "",
 		  "url"        : "http://nycmeshnet.github.io/meetings/third-meeting/",
@@ -281,11 +297,27 @@
 		} ,
 	
 		{
+		  "title"      : "A review of our first weekly meeting",
+		  "category"   : "",
+		  "url"        : "http://nycmeshnet.github.io/map/review-of-the-first-weekly-meeting/",
+		  "date"       : "2014-02-11 00:00:00 -0500",
+		  "shortdate"  : "February 11, 2014"
+		} ,
+	
+		{
 		  "title"      : "Sunday, February 9th, 2014",
 		  "category"   : "",
 		  "url"        : "http://nycmeshnet.github.io/meetings/first-meeting-of-2014/",
 		  "date"       : "2014-02-05 00:00:00 -0500",
 		  "shortdate"  : "February 05, 2014"
+		} ,
+	
+		{
+		  "title"      : "And so it begins!",
+		  "category"   : "",
+		  "url"        : "http://nycmeshnet.github.io/map/and-so-it-begins/",
+		  "date"       : "2014-01-28 00:00:00 -0500",
+		  "shortdate"  : "January 28, 2014"
 		} ,
 	
 		{

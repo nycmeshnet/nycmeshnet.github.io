@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://nycmeshnet.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io" />
-<updated>2015-02-12T06:04:11-05:00</updated>
+<updated>2015-02-20T21:08:40-05:00</updated>
 <id>http://nycmeshnet.github.io/</id>
 <author>
   <name>#nycmeshnet</name>
@@ -57,6 +57,26 @@ Sunday, November 23rd, 2014 at 3pm&lt;/p&gt;
 &lt;p&gt;Our meetings have returned to our regular Sunday schedule. Also we’ve been having meetings with other mesh related local projects during the week, such as &lt;a href=&quot;http://rhicenter.org/redhookwifi/&quot;&gt;Red Hook WiFi&lt;/a&gt; and &lt;a href=&quot;http://goles.org/&quot;&gt;GOLES&lt;/a&gt; (who work with &lt;a href=&quot;https://wifiny.net/&quot;&gt;WiFi-NY&lt;/a&gt;). Please join our &lt;a href=&quot;http://www.meetup.com/nycmesh/&quot;&gt;meetup group&lt;/a&gt; to find out about all of our meetings.&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/blog/new-nodes/&quot;&gt;New nodes&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on November 18, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[New nodes]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/map/new-nodes/"/>
+  <id>http://nycmeshnet.github.io/map/new-nodes</id>
+  <published>2014-11-18T00:00:00-05:00</published>
+  <updated>2014-11-18T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Much has happened in the past few months. We now have our first public node at d.b.a bar in the East Village (SSID: nycmesh.net dba). Very recently we installed three more nodes bringing the active node count to six: Brian, dba, Sam, Winston, Jaclyn and Oliver. All of these are in the East Village or Lower East Side. A group from Parsons (The New School for Design) will soon be adding another eight nodes near Union Square.&lt;/p&gt;
+
+&lt;p&gt;Our meetings have returned to our regular Sunday schedule. Also we’ve been having meetings with other mesh related local projects during the week, such as &lt;a href=&quot;http://rhicenter.org/redhookwifi/&quot;&gt;Red Hook WiFi&lt;/a&gt; and &lt;a href=&quot;http://goles.org/&quot;&gt;GOLES&lt;/a&gt; (who work with &lt;a href=&quot;https://wifiny.net/&quot;&gt;WiFi-NY&lt;/a&gt;). Please join our &lt;a href=&quot;http://www.meetup.com/nycmesh/&quot;&gt;meetup group&lt;/a&gt; to find out about all of our meetings.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/map/new-nodes/&quot;&gt;New nodes&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on November 18, 2014.&lt;/p&gt;</content>
 </entry>
 
 
@@ -509,31 +529,6 @@ New York, NY 10002&lt;br /&gt;
 Sunday, June 15th, 2014 at 3pm&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/meetings/sixteenth-meeting/&quot;&gt;Sunday, June 15th, 2014&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on June 12, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Sunday, June 8th, 2014]]></title>
-  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/meetings/fifteenth-meeting/"/>
-  <id>http://nycmeshnet.github.io/meetings/fifteenth-meeting</id>
-  <published>2014-06-03T00:00:00-04:00</published>
-  <updated>2014-06-03T00:00:00-04:00</updated>
-  
-  <author>
-    <name>Peter</name>
-    <uri>http://nycmeshnet.github.io</uri>
-    <email>peter@nycmesh.net</email>
-  </author>
-  <content type="html">&lt;p&gt;Same day, same time, same place. Come learn about meshnets and what we’re doing to get one started here in NYC!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Please check the lower section of the cafe! There are stairs that go down behind the counter where you order your coffee.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/Irving+Farm+Coffee+Roasters/@40.7179886,-73.9902479,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259873f0067c1:0x5aede67045aa029f&quot;&gt;Irving Farm Coffee Roasters&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
-88 Orchard St&lt;br /&gt;
-New York, NY 10002&lt;br /&gt;
-Sunday, June 8th, 2014 at 3pm&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/meetings/fifteenth-meeting/&quot;&gt;Sunday, June 8th, 2014&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on June 03, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>

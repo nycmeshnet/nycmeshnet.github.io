@@ -6474,7 +6474,6 @@ footer.footer,
         clear: both; }
 
 .leaflet-control {
-  background: none !important;
   padding: 10px !important; }
   .leaflet-control a {
     color: rgba(255, 255, 255, 0.7) !important; }

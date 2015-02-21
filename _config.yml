@@ -53,6 +53,9 @@ bing_verify:
 links:
   - title: Home
     url: /
+  - title: Map
+    url: /map/
+    url: /
   - title: Blog
     url: /blog/
   - title: Meetings

@@ -30,6 +30,15 @@ var processBegan = false;
 var addedMarker = false;
 var marker;
 
+function makeActive() {
+  map.scrollWheelZoom.enable();
+  map.doubleClickZoom.enable();
+  map.touchZoom.enable();
+  map.dragging.enable();
+  map.addLayer(L.mapbox.tileLayer('oo.kbip7077'));
+  new L.Control.Zoom({position:'bottomright'}).addTo(map);
+}
+
 function addNode() {
   if (!processBegan) {
     processBegan = true;
@@ -37,7 +46,7 @@ function addNode() {
   map.doubleClickZoom.enable();
   map.touchZoom.enable();
   map.dragging.enable();
-  new L.Control.Zoom().addTo(map);
+  new L.Control.Zoom({position:'topright'}).addTo(map);
 
 
   // document.getElementById("map").style.zIndex = 0;

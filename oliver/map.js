@@ -5,9 +5,10 @@ if (document.getElementById("map-header"))
 
 var map = L.mapbox.map(map_element, 'oo.k9efp640', {
   zoomControl: false,
-  showMarkers: false
+  showMarkers: true
 }),
 heat = L.heatLayer([], { maxZoom: 15.5 }).addTo(map);
+map.dragging.enable();
 
 // Add each marker point to the heatmap.
 var layer = L.mapbox.featureLayer('oo.k9efp640').on('ready', function() {
@@ -29,6 +30,20 @@ map.dragging.disable();
 var processBegan = false;
 var addedMarker = false;
 var marker;
+
+function makeActive() {
+  map.scrollWheelZoom.enable();
+  map.doubleClickZoom.enable();
+  map.touchZoom.enable();
+  map.dragging.enable();
+  new L.Control.Zoom().addTo(map);
+  map.addLayer(L.mapbox.tileLayer('oo.kbip7077'));
+
+  document.getElementById("main_text").style.display = "none";
+  document.getElementById("location").style.display = "inherit";
+  document.getElementById("logo").href = "index.html";
+
+}
 
 function addNode() {
   if (!processBegan) {
