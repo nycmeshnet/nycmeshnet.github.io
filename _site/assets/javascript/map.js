@@ -33,7 +33,6 @@ var addedMarker = false;
 var marker;
 
 function makeActive() {
-  map.scrollWheelZoom.enable();
   map.doubleClickZoom.enable();
   map.touchZoom.enable();
   map.dragging.enable();
