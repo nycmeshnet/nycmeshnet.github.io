@@ -5,7 +5,9 @@ if (document.getElementById("map-header"))
 
 var map = L.mapbox.map(map_element, 'oo.k9efp640', {
   zoomControl: false,
-  showMarkers: false
+  showMarkers: false,
+  maxZoom: 19,
+  minZoom: 10
 }),
 heat = L.heatLayer([], { maxZoom: 15.5 }).addTo(map);
 
