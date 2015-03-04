@@ -4,13 +4,47 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://nycmeshnet.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io" />
-<updated>2015-02-23T14:35:44-05:00</updated>
+<updated>2015-03-04T15:25:05-05:00</updated>
 <id>http://nycmeshnet.github.io/</id>
 <author>
   <name>#nycmeshnet</name>
   <uri>http://nycmeshnet.github.io/</uri>
   <email>peter@nycmesh.net</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[12 reasons]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/blog/12-reasons-for-mesh/"/>
+  <id>http://nycmeshnet.github.io/blog/12-reasons-for-mesh</id>
+  <published>2015-03-04T00:00:00-05:00</published>
+  <updated>2015-03-04T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Here’s a list of our reasons for building a mesh network:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Self configuring (simple!)&lt;/li&gt;
+  &lt;li&gt;Emergency community networking (for next hurricane)&lt;/li&gt;
+  &lt;li&gt;Freedom from the telecom oligopoly of Time Warner, Verizon, Comcast&lt;/li&gt;
+  &lt;li&gt;Net neutrality&lt;/li&gt;
+  &lt;li&gt;Encryption to stop spying and censorship&lt;/li&gt;
+  &lt;li&gt;Free wifi!&lt;/li&gt;
+  &lt;li&gt;Decentralized, no single point of failure&lt;/li&gt;
+  &lt;li&gt;Community building with highly localized websites&lt;/li&gt;
+  &lt;li&gt;Close the digital divide&lt;/li&gt;
+  &lt;li&gt;Potentially higher symmetrical bandwidth than provided by the oligopoly&lt;/li&gt;
+  &lt;li&gt;Creating an infrastructure commons. The community owns the network.&lt;/li&gt;
+  &lt;li&gt;Eventual self-sufficient network as alternative to internet&lt;/li&gt;
+&lt;/ul&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/blog/12-reasons-for-mesh/&quot;&gt;12 reasons&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on March 04, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -504,31 +538,6 @@ New York, NY 10002&lt;br /&gt;
 Sunday, June 22nd, 2014 at 3pm&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/meetings/seventeenth-meeting/&quot;&gt;Sunday, June 22nd, 2014&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on June 20, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[Sunday, June 15th, 2014]]></title>
-  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/meetings/sixteenth-meeting/"/>
-  <id>http://nycmeshnet.github.io/meetings/sixteenth-meeting</id>
-  <published>2014-06-12T00:00:00-04:00</published>
-  <updated>2014-06-12T00:00:00-04:00</updated>
-  
-  <author>
-    <name>Peter</name>
-    <uri>http://nycmeshnet.github.io</uri>
-    <email>peter@nycmesh.net</email>
-  </author>
-  <content type="html">&lt;p&gt;Come to our weekly meeting and find out what’s going on with us. We’ll be working with our hardware while discussing what the summer has in store.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Please check the lower section of the cafe! There are stairs that go down behind the counter where you order your coffee.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.google.com/maps/place/Irving+Farm+Coffee+Roasters/@40.7179886,-73.9902479,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259873f0067c1:0x5aede67045aa029f&quot;&gt;Irving Farm Coffee Roasters&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
-88 Orchard St&lt;br /&gt;
-New York, NY 10002&lt;br /&gt;
-Sunday, June 15th, 2014 at 3pm&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/meetings/sixteenth-meeting/&quot;&gt;Sunday, June 15th, 2014&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on June 12, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>
