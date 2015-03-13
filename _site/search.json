@@ -1,9 +1,17 @@
 [
 	
 		{
+		  "title"      : "We support net neutrality",
+		  "category"   : "",
+		  "url"        : "http://nycmeshnet.github.io/blog/12-net%20neutrality/",
+		  "date"       : "2015-03-09 00:00:00 -0400",
+		  "shortdate"  : "March 09, 2015"
+		} ,
+	
+		{
 		  "title"      : "12 reasons",
 		  "category"   : "",
-		  "url"        : "http://nycmeshnet.github.io/blog/12-reasons-for-mesh/",
+		  "url"        : "http://nycmeshnet.github.io/blog/12-reasons-for-mesh%20copy/",
 		  "date"       : "2015-03-04 00:00:00 -0500",
 		  "shortdate"  : "March 04, 2015"
 		} ,
@@ -267,7 +275,7 @@
 		{
 		  "title"      : "Starting with the basics",
 		  "category"   : "",
-		  "url"        : "http://nycmeshnet.github.io/blog/starting-with-the-basics/",
+		  "url"        : "http://nycmeshnet.github.io/map/starting-with-the-basics/",
 		  "date"       : "2014-02-23 00:00:00 -0500",
 		  "shortdate"  : "February 23, 2014"
 		} ,
@@ -275,7 +283,7 @@
 		{
 		  "title"      : "Starting with the basics",
 		  "category"   : "",
-		  "url"        : "http://nycmeshnet.github.io/map/starting-with-the-basics/",
+		  "url"        : "http://nycmeshnet.github.io/blog/starting-with-the-basics/",
 		  "date"       : "2014-02-23 00:00:00 -0500",
 		  "shortdate"  : "February 23, 2014"
 		} ,
@@ -299,7 +307,7 @@
 		{
 		  "title"      : "A review of our first weekly meeting",
 		  "category"   : "",
-		  "url"        : "http://nycmeshnet.github.io/map/review-of-the-first-weekly-meeting/",
+		  "url"        : "http://nycmeshnet.github.io/blog/review-of-the-first-weekly-meeting/",
 		  "date"       : "2014-02-11 00:00:00 -0500",
 		  "shortdate"  : "February 11, 2014"
 		} ,
@@ -307,7 +315,7 @@
 		{
 		  "title"      : "A review of our first weekly meeting",
 		  "category"   : "",
-		  "url"        : "http://nycmeshnet.github.io/blog/review-of-the-first-weekly-meeting/",
+		  "url"        : "http://nycmeshnet.github.io/map/review-of-the-first-weekly-meeting/",
 		  "date"       : "2014-02-11 00:00:00 -0500",
 		  "shortdate"  : "February 11, 2014"
 		} ,
