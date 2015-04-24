@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://nycmeshnet.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io" />
-<updated>2015-04-24T13:24:33-04:00</updated>
+<updated>2015-04-24T17:04:01-04:00</updated>
 <id>http://nycmeshnet.github.io/</id>
 <author>
   <name>#nycmeshnet</name>
@@ -15,8 +15,8 @@
 
 <entry>
   <title type="html"><![CDATA[Does it scale?]]></title>
-  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/blog/does%20it%20scale/"/>
-  <id>http://nycmeshnet.github.io/blog/does it scale</id>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/blog/does-it-scale/"/>
+  <id>http://nycmeshnet.github.io/blog/does-it-scale</id>
   <published>2015-04-24T00:00:00-04:00</published>
   <updated>2015-04-24T00:00:00-04:00</updated>
   
@@ -25,15 +25,15 @@
     <uri>http://nycmeshnet.github.io</uri>
     <email>brian@nycmesh.net</email>
   </author>
-  <content type="html">&lt;p&gt;A  common question with mesh networks is “do they scale?” The answer is “yes”! The Guifi mesh network in Spain has over 28,000 nodes and is adding more every day. NYC Mesh has 18 nodes and is currently growing at about two nodes per week. The $22 dollar mesh routers are becoming popular. One apartment building has four installed which gives the whole building mesh access. &lt;/p&gt;
+  <content type="html">&lt;p&gt;A common question with mesh networks is “do they scale?”. The answer is “yes”! The Guifi mesh network in Spain has over 28,000 nodes and is adding more every day. NYC Mesh has 18 nodes and is currently growing at about one or two nodes per week. Our $22 dollar mesh routers are becoming popular. One apartment building has four installed which gives the whole building mesh access. &lt;/p&gt;
 
-&lt;p&gt;There are a few articles about NYC Mesh about to be published so we are expecting a huge increase in demand for nodes in the coming months. If you would like to install a router please fill in this form: &lt;a href=&quot;#newnode1&quot; class=&quot;btn&quot; id=&quot;trigger1&quot; data-toggle=&quot;tab&quot;&gt;Request New Node&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There are a few articles about NYC Mesh about to be published, so we are expecting a huge increase in demand for nodes in the coming months. If you would like to install a router please fill in this form: &lt;a href=&quot;#newnode1&quot; class=&quot;btn&quot; id=&quot;trigger1&quot; data-toggle=&quot;tab&quot;&gt;Request New Node&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;We are currently working on a new feature called tunneling. This enables an isolated router to connect to the mesh over the internet. If you are in an area that is out of range of the mesh backbone your router will still be able to mesh through the tunnel. This enables your router to see the local content on our mesh servers. Tunneling is a temporary solution until the mesh inevitably reaches your neighborhood.&lt;/p&gt;
 
-&lt;p&gt;The next step with our software is to create our own router images for download. This will enable people to join the mesh without our help, reducing our workload and speeding up the growth.&lt;/p&gt;
+&lt;p&gt;The next step with our software is to create our own router images for download. This will enable people to join the mesh independently, reducing our workload and speeding up the growth.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/blog/does%20it%20scale/&quot;&gt;Does it scale?&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on April 24, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/blog/does-it-scale/&quot;&gt;Does it scale?&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on April 24, 2015.&lt;/p&gt;</content>
 </entry>
 
 
