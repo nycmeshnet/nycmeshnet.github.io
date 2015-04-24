@@ -43,4 +43,10 @@ layout: post
 </li>
 </ul>
 <h2>Meet the team</h2>
-{% include team.html %}
+
+{% assign random = site.time | modulo:2 %}
+{% if random == 0 %}
+   {% include team.html %}
+{% else %}
+   {% include team2.html %}
+{% endif %}
