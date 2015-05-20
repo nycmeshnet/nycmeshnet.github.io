@@ -3,13 +3,15 @@
 {% include head.html %}
 <body>
   {% include header.html %}
+  {% include forms/newnode.html %}
   <div class="content">
   {{ content }}
   {% include footer.html %}
 </div>
-  {% include javascript.html %}
+  {% include javascriptmap.html %}
 </body>
 <script>
-  makeActive()
+  makeActive();
+  document.getElementById('newnode0').style.display = 'none';
 </script>
 </html>

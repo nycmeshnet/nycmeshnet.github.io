@@ -9,7 +9,7 @@ var map = L.mapbox.map(map_element, 'oo.k9efp640', {
   maxZoom: 19,
   minZoom: 10
 }),
-heat = L.heatLayer([], { maxZoom: 15.5 }).addTo(map);
+heat = L.heatLayer([], { maxZoom: 15.0 }).addTo(map);
 
 // Add each marker point to the heatmap.
 var layer = L.mapbox.featureLayer('oo.k9efp640').on('ready', function() {
@@ -32,14 +32,14 @@ var processBegan = false;
 var addedMarker = false;
 var marker;
 
-function makeActive() {
-  map.setZoom(12);
-  map.doubleClickZoom.enable();
-  map.touchZoom.enable();
-  map.dragging.enable();
-  map.addLayer(L.mapbox.tileLayer('oo.kbip7077'));
-  new L.Control.Zoom({position:'bottomright'}).addTo(map);
-}
+//function makeActive() {
+  //map.setZoom(12);
+  //map.doubleClickZoom.enable();
+  //map.touchZoom.enable();
+  //map.dragging.enable();
+  //map.addLayer(L.mapbox.tileLayer('oo.kbip7077'));
+  //new L.Control.Zoom({position:'bottomright'}).addTo(map);
+//}
 
 function addNode() {
   if (!processBegan) {
