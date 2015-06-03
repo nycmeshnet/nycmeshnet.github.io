@@ -11,7 +11,7 @@ Here's a list of our reasons for building a mesh network:
 * Freedom from the telecom oligopoly of Time Warner, Verizon, Comcast
 * A neutral network that does not block or discriminate content
 * Encryption to stop spying and censorship
-* Free wifi!
+* Public wifi access points
 * Decentralized, no single point of failure
 * Community building with highly localized websites
 * Close the digital divide

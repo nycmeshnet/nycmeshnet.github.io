@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://nycmeshnet.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io" />
-<updated>2015-05-21T09:16:16-04:00</updated>
+<updated>2015-06-03T19:06:03-04:00</updated>
 <id>http://nycmeshnet.github.io/</id>
 <author>
   <name>#nycmeshnet</name>
@@ -14,9 +14,54 @@
 
 
 <entry>
+  <title type="html"><![CDATA[Frequently asked questions]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/blog/faq/"/>
+  <id>http://nycmeshnet.github.io/blog/faq</id>
+  <published>2015-06-01T00:00:00-04:00</published>
+  <updated>2015-06-01T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;&lt;strong&gt;Is this a replacement for my current internet connection?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;No, not at the moment. The mesh is best used as a backup internet connection. If you are within range of the mesh, your router will automatically use the fastest internet connection. This means you will have a backup internet connection if your own internet connection fails.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What can I do on the mesh that I can’t do on the internet?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The mesh has small web servers connected that show local information and allow you to post messages. We are also looking into streaming services. So far we have servers in three locations the East Village, Morningside Heights and Bay Ridge. It is also possible to connect directly to other people on the mesh without using the internet. If for some reason the internet is down, the mesh will still work.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Why should I join the mesh now?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;By joining the mesh now you help us grow and increase our reach across the city. This is a community project and you will be helping to create a decentralized infrastructure, free from traditional business interests.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Is it possible for the mesh to cover a whole country?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Yes, there is a mesh network called “Guifi” in Spain that covers a large part of the country. In order to do this, they have a backbone of many long distance WiFi connections and community owned fiber.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Are you an Internet Service Provider (ISP)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;No, not at the moment. As we grow, we are relying on our members to share their internet connections. Eventually we hope to peer with other providers so we can provide independent internet service.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What software/firmware do you use&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We are using an OpenWrt package made by qMp. This uses the BMX6 mesh protocol. We have added tinc tunneling so a router can mesh over the internet when out of range. We also have some members experimenting with and contributing to cjdns/hyperboria software. Let us know if you are interested in this.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Can I use my own router?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;At the moment the easiest solution it to buy a pre-configured router off us. We sell these at cost- $28 for a small home router and $90 for a directional router that can be mounted outside. If you want to “flash” your own router with our software, it must have OpenWrt support and you will have to follow some very technical instructions on our github site. We are working hard to make the software simpler to flash. The routers we currently support and recommend are the Ubiquiti NanoStation M5 for outdoors and the TP-Link TL-WR842ND for indoors.&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/blog/faq/&quot;&gt;Frequently asked questions&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on June 01, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
   <title type="html"><![CDATA[Does it scale?]]></title>
-  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/blog/does-it-scale/"/>
-  <id>http://nycmeshnet.github.io/blog/does-it-scale</id>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/blog/does-it-scale%20copy/"/>
+  <id>http://nycmeshnet.github.io/blog/does-it-scale copy</id>
   <published>2015-04-24T00:00:00-04:00</published>
   <updated>2015-04-24T00:00:00-04:00</updated>
   
@@ -33,7 +78,7 @@
 
 &lt;p&gt;The next step with our software is to create our own router images for download. This will enable people to join the mesh independently, reducing our workload and speeding up the growth.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/blog/does-it-scale/&quot;&gt;Does it scale?&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on April 24, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/blog/does-it-scale%20copy/&quot;&gt;Does it scale?&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on April 24, 2015.&lt;/p&gt;</content>
 </entry>
 
 
@@ -75,7 +120,7 @@
   &lt;li&gt;Freedom from the telecom oligopoly of Time Warner, Verizon, Comcast&lt;/li&gt;
   &lt;li&gt;A neutral network that does not block or discriminate content&lt;/li&gt;
   &lt;li&gt;Encryption to stop spying and censorship&lt;/li&gt;
-  &lt;li&gt;Free wifi!&lt;/li&gt;
+  &lt;li&gt;Public wifi access points&lt;/li&gt;
   &lt;li&gt;Decentralized, no single point of failure&lt;/li&gt;
   &lt;li&gt;Community building with highly localized websites&lt;/li&gt;
   &lt;li&gt;Close the digital divide&lt;/li&gt;
@@ -237,44 +282,6 @@
 
 <entry>
   <title type="html"><![CDATA[A review of our first weekly meeting]]></title>
-  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/map/review-of-the-first-weekly-meeting/"/>
-  <id>http://nycmeshnet.github.io/map/review-of-the-first-weekly-meeting</id>
-  <published>2014-02-11T00:00:00-05:00</published>
-  <updated>2014-02-11T00:00:00-05:00</updated>
-  
-  <author>
-    <name>Peter</name>
-    <uri>http://nycmeshnet.github.io</uri>
-    <email>peter@nycmesh.net</email>
-  </author>
-  <content type="html">&lt;p&gt;The meeting this past Sunday was short and concise. Sitting over some coffee, we went over some topics that we considered to be our priorities.&lt;/p&gt;
-
-&lt;h2 id=&quot;building-interest&quot;&gt;Building interest&lt;/h2&gt;
-
-&lt;p&gt;Meshnets by definition require a community of people to work. For that reason, we all seemed to agree that most of our focus should be on reaching out to our fellow people here in NYC. Mere explanation and talk isn’t gonna get people excited, though; we need to show them that what we’re working towards is significant improvement over the current state of affairs. We thought of two main approaches to do this: providing internet access and getting various web services working.&lt;/p&gt;
-
-&lt;h2 id=&quot;internet-access&quot;&gt;Internet access&lt;/h2&gt;
-
-&lt;p&gt;The clearest way to show that the meshnet is useful is to provide access to the Internet through the meshnet. This is a legally complex area, though, so research has to get done. Additionally, some complexities arise in terms of how this Internet access will be provided.&lt;/p&gt;
-
-&lt;h2 id=&quot;web-service-alternatives&quot;&gt;Web service alternatives&lt;/h2&gt;
-
-&lt;p&gt;Another approach would be to provide working (and hopefully more useful) alternatives to services that exist on Internet. The main benefit of this would be that the services would not require any access to the Internet. This means it is completely free to use as long as you’re connected to the meshnet.&lt;/p&gt;
-
-&lt;p&gt;Several such services already exist on the network, including &lt;strong&gt;Gitboria&lt;/strong&gt; (a Git repository), &lt;strong&gt;uppit.us&lt;/strong&gt; (a reddit clone), and &lt;strong&gt;socialno.de&lt;/strong&gt; (a Twitter clone).&lt;/p&gt;
-
-&lt;p&gt;It’s important to note that having services sit on the meshnet (as opposed to somewhere on the Internet) is the eventual goal of this project anyway. However, keep in mind that establishing useful and reliable services is a non-trivial task.&lt;/p&gt;
-
-&lt;h2 id=&quot;future-meetings&quot;&gt;Future meetings&lt;/h2&gt;
-
-&lt;p&gt;In order to keep ourselves productive, we’ve decided to have weekly meetings. We plan to have these meetings on Sunday afternoons. A post will be put up for each meeting with details, so keep an eye out!&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/map/review-of-the-first-weekly-meeting/&quot;&gt;A review of our first weekly meeting&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on February 11, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[A review of our first weekly meeting]]></title>
   <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/blog/review-of-the-first-weekly-meeting/"/>
   <id>http://nycmeshnet.github.io/blog/review-of-the-first-weekly-meeting</id>
   <published>2014-02-11T00:00:00-05:00</published>
@@ -308,6 +315,44 @@
 &lt;p&gt;In order to keep ourselves productive, we’ve decided to have weekly meetings. We plan to have these meetings on Sunday afternoons. A post will be put up for each meeting with details, so keep an eye out!&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/blog/review-of-the-first-weekly-meeting/&quot;&gt;A review of our first weekly meeting&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on February 11, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[A review of our first weekly meeting]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/map/review-of-the-first-weekly-meeting/"/>
+  <id>http://nycmeshnet.github.io/map/review-of-the-first-weekly-meeting</id>
+  <published>2014-02-11T00:00:00-05:00</published>
+  <updated>2014-02-11T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;The meeting this past Sunday was short and concise. Sitting over some coffee, we went over some topics that we considered to be our priorities.&lt;/p&gt;
+
+&lt;h2 id=&quot;building-interest&quot;&gt;Building interest&lt;/h2&gt;
+
+&lt;p&gt;Meshnets by definition require a community of people to work. For that reason, we all seemed to agree that most of our focus should be on reaching out to our fellow people here in NYC. Mere explanation and talk isn’t gonna get people excited, though; we need to show them that what we’re working towards is significant improvement over the current state of affairs. We thought of two main approaches to do this: providing internet access and getting various web services working.&lt;/p&gt;
+
+&lt;h2 id=&quot;internet-access&quot;&gt;Internet access&lt;/h2&gt;
+
+&lt;p&gt;The clearest way to show that the meshnet is useful is to provide access to the Internet through the meshnet. This is a legally complex area, though, so research has to get done. Additionally, some complexities arise in terms of how this Internet access will be provided.&lt;/p&gt;
+
+&lt;h2 id=&quot;web-service-alternatives&quot;&gt;Web service alternatives&lt;/h2&gt;
+
+&lt;p&gt;Another approach would be to provide working (and hopefully more useful) alternatives to services that exist on Internet. The main benefit of this would be that the services would not require any access to the Internet. This means it is completely free to use as long as you’re connected to the meshnet.&lt;/p&gt;
+
+&lt;p&gt;Several such services already exist on the network, including &lt;strong&gt;Gitboria&lt;/strong&gt; (a Git repository), &lt;strong&gt;uppit.us&lt;/strong&gt; (a reddit clone), and &lt;strong&gt;socialno.de&lt;/strong&gt; (a Twitter clone).&lt;/p&gt;
+
+&lt;p&gt;It’s important to note that having services sit on the meshnet (as opposed to somewhere on the Internet) is the eventual goal of this project anyway. However, keep in mind that establishing useful and reliable services is a non-trivial task.&lt;/p&gt;
+
+&lt;h2 id=&quot;future-meetings&quot;&gt;Future meetings&lt;/h2&gt;
+
+&lt;p&gt;In order to keep ourselves productive, we’ve decided to have weekly meetings. We plan to have these meetings on Sunday afternoons. A post will be put up for each meeting with details, so keep an eye out!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/map/review-of-the-first-weekly-meeting/&quot;&gt;A review of our first weekly meeting&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on February 11, 2014.&lt;/p&gt;</content>
 </entry>
 
 

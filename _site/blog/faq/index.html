@@ -4,11 +4,11 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width initial-scale=1">
-	<title>Blog</title>
-	<meta name="description" content="a better network">
+	<title>Frequently asked questions</title>
+	<meta name="description" content="Is this a replacement for my current internet connection?">
 	<link href="/mesh.ico" rel="shortcut icon" type="image/x-icon">
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="canonical" href="http://nycmeshnet.github.io/blog/">
+	<link rel="canonical" href="http://nycmeshnet.github.io/blog/faq/">
 	<link rel="alternate" type="application/atom+xml" title="NYC Mesh" href="http://nycmeshnet.github.io/feed.xml" />
 	  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
   <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-heat/v0.1.0/leaflet-heat.js'></script>
@@ -16,7 +16,7 @@
   
 </head>
 
-<body>
+<body class="blog">
   <div id="map"></div>
 <nav>
   <a href="/" class="logo">
@@ -42,9 +42,12 @@
 		
 	</div>
 	
-	<h1>Blog</h1>
+	<h1>Frequently asked questions</h1>
 	<p class="sig">
 		<!-- <img src="http://nycmeshnet.github.io/images/" alt=" photo">  -->
+		
+		
+		<img src="http://nycmeshnet.github.io/assets/images/team/bhny.jpg" alt="Brian photo">by Brian, June 01, 2015
 		
 	</p>
 	
@@ -73,74 +76,36 @@
 	
 </div>
   <div class="content">
-  <ul class="post-list">
+  <p><strong>Is this a replacement for my current internet connection?</strong></p>
 
-  <li>
-  	<a href="/blog/faq/">Frequently asked questions
-  		<span class="entry-date">
-  			<time datetime="2015-06-01T00:00:00-04:00">June 01, 2015</time>
-  		</span>
-  	</a>
-  </li>
+<p>No, not at the moment. The mesh is best used as a backup internet connection. If you are within range of the mesh, your router will automatically use the fastest internet connection. This means you will have a backup internet connection if your own internet connection fails.</p>
 
-  <li>
-  	<a href="/blog/does-it-scale%20copy/">Does it scale?
-  		<span class="entry-date">
-  			<time datetime="2015-04-24T00:00:00-04:00">April 24, 2015</time>
-  		</span>
-  	</a>
-  </li>
+<p><strong>What can I do on the mesh that I can’t do on the internet?</strong></p>
 
-  <li>
-  	<a href="/blog/spring/">Spring
-  		<span class="entry-date">
-  			<time datetime="2015-03-12T00:00:00-04:00">March 12, 2015</time>
-  		</span>
-  	</a>
-  </li>
+<p>The mesh has small web servers connected that show local information and allow you to post messages. We are also looking into streaming services. So far we have servers in three locations the East Village, Morningside Heights and Bay Ridge. It is also possible to connect directly to other people on the mesh without using the internet. If for some reason the internet is down, the mesh will still work.</p>
 
-  <li>
-  	<a href="/blog/twelve-reasons-for-mesh/">12 reasons
-  		<span class="entry-date">
-  			<time datetime="2015-03-04T00:00:00-05:00">March 04, 2015</time>
-  		</span>
-  	</a>
-  </li>
+<p><strong>Why should I join the mesh now?</strong></p>
 
-  <li>
-  	<a href="/blog/new-nodes/">New nodes
-  		<span class="entry-date">
-  			<time datetime="2014-11-18T00:00:00-05:00">November 18, 2014</time>
-  		</span>
-  	</a>
-  </li>
+<p>By joining the mesh now you help us grow and increase our reach across the city. This is a community project and you will be helping to create a decentralized infrastructure, free from traditional business interests.</p>
 
-  <li>
-  	<a href="/blog/starting-with-the-basics/">Starting with the basics
-  		<span class="entry-date">
-  			<time datetime="2014-02-23T00:00:00-05:00">February 23, 2014</time>
-  		</span>
-  	</a>
-  </li>
+<p><strong>Is it possible for the mesh to cover a whole country?</strong></p>
 
-  <li>
-  	<a href="/blog/review-of-the-first-weekly-meeting/">A review of our first weekly meeting
-  		<span class="entry-date">
-  			<time datetime="2014-02-11T00:00:00-05:00">February 11, 2014</time>
-  		</span>
-  	</a>
-  </li>
+<p>Yes, there is a mesh network called “Guifi” in Spain that covers a large part of the country. In order to do this, they have a backbone of many long distance WiFi connections and community owned fiber.</p>
 
-  <li>
-  	<a href="/blog/and-so-it-begins/">And so it begins!
-  		<span class="entry-date">
-  			<time datetime="2014-01-28T00:00:00-05:00">January 28, 2014</time>
-  		</span>
-  	</a>
-  </li>
+<p><strong>Are you an Internet Service Provider (ISP)</strong></p>
 
-</ul>
+<p>No, not at the moment. As we grow, we are relying on our members to share their internet connections. Eventually we hope to peer with other providers so we can provide independent internet service.</p>
 
+<p><strong>What software/firmware do you use</strong></p>
+
+<p>We are using an OpenWrt package made by qMp. This uses the BMX6 mesh protocol. We have added tinc tunneling so a router can mesh over the internet when out of range. We also have some members experimenting with and contributing to cjdns/hyperboria software. Let us know if you are interested in this.</p>
+
+<p><strong>Can I use my own router?</strong></p>
+
+<p>At the moment the easiest solution it to buy a pre-configured router off us. We sell these at cost- $28 for a small home router and $90 for a directional router that can be mounted outside. If you want to “flash” your own router with our software, it must have OpenWrt support and you will have to follow some very technical instructions on our github site. We are working hard to make the software simpler to flash. The routers we currently support and recommend are the Ubiquiti NanoStation M5 for outdoors and the TP-Link TL-WR842ND for indoors.</p>
+
+
+   
   <footer class="footer">
 	<p>Site built with <a target="_blank" href="http://jekyllrb.com">Jekyll</a>, <a target="_blank" href="Bootstrap">Bootstrap</a> and <a target="_blank" href="https://www.mapbox.com">Mapbox</a>.</p>
   <div class="mainnav">

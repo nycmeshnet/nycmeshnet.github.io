@@ -3,25 +3,17 @@ var map_element = 'map';
 if (document.getElementById("map-header"))
   map_element = 'map-header';
 
-var map = L.mapbox.map(map_element, 'oo.k9efp640', {
+var map = L.mapbox.map(map_element, 'oo.kbip7077', {
   zoomControl: false,
-  showMarkers: false,
+  showMarkers: true,
   maxZoom: 19,
   minZoom: 10
-}),
-heat = L.heatLayer([], { maxZoom: 1.5, radius:12, blur:0 }).addTo(map);
-
-// Add each marker point to the heatmap.
-var layer = L.mapbox.featureLayer('oo.k9efp640').on('ready', function() {
-  layer.eachLayer(function(l) {
-    heat.addLatLng(l.getLatLng());
-  });
 });
 
 // hide all markers
-map.featureLayer
-.setFilter(function() { return false; })
-.addTo(map);
+//map.featureLayer
+//.setFilter(function() { return false; })
+//.addTo(map);
 
 map.scrollWheelZoom.disable();
 map.doubleClickZoom.disable();
