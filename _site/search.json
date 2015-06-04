@@ -1,17 +1,9 @@
 [
 	
 		{
-		  "title"      : "Frequently asked questions",
-		  "category"   : "",
-		  "url"        : "http://nycmeshnet.github.io/blog/faq/",
-		  "date"       : "2015-06-01 00:00:00 -0400",
-		  "shortdate"  : "June 01, 2015"
-		} ,
-	
-		{
 		  "title"      : "Does it scale?",
 		  "category"   : "",
-		  "url"        : "http://nycmeshnet.github.io/blog/does-it-scale%20copy/",
+		  "url"        : "http://nycmeshnet.github.io/blog/does-it-scale/",
 		  "date"       : "2015-04-24 00:00:00 -0400",
 		  "shortdate"  : "April 24, 2015"
 		} ,
@@ -67,7 +59,7 @@
 		{
 		  "title"      : "A review of our first weekly meeting",
 		  "category"   : "",
-		  "url"        : "http://nycmeshnet.github.io/blog/review-of-the-first-weekly-meeting/",
+		  "url"        : "http://nycmeshnet.github.io/map/review-of-the-first-weekly-meeting/",
 		  "date"       : "2014-02-11 00:00:00 -0500",
 		  "shortdate"  : "February 11, 2014"
 		} ,
@@ -75,7 +67,7 @@
 		{
 		  "title"      : "A review of our first weekly meeting",
 		  "category"   : "",
-		  "url"        : "http://nycmeshnet.github.io/map/review-of-the-first-weekly-meeting/",
+		  "url"        : "http://nycmeshnet.github.io/blog/review-of-the-first-weekly-meeting/",
 		  "date"       : "2014-02-11 00:00:00 -0500",
 		  "shortdate"  : "February 11, 2014"
 		} ,

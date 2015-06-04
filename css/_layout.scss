@@ -73,6 +73,7 @@ a {
 }
 .mainnav {
   float: right;
+
   @media only screen and (max-width : 320px) {
     float: none;
     margin-left: 50px;  
@@ -96,6 +97,11 @@ nav {
   }
   font-weight: bold;
   a {
+   text-shadow: 
+ -1px -1px 0 #000,
+  1px -1px 0 #000,
+ -1px 1px 0 #000,
+  1px 1px 0 #000;
     color: white;
     border: none;
     &:hover {
@@ -182,6 +188,7 @@ margin-left: auto;
 margin-right: auto;
 left: 0;
 right: 0;
+
 }
 
 .leaflet-overlay-pane, .content {
