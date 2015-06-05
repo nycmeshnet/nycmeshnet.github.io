@@ -51,6 +51,7 @@ For rooftops, we configure the NanoStations with mesh software and can help you 
 If you don't have rooftop access it is still possible to use a directional NanoStation in your window. This works best with line-of-sight to another router. It will work from behind glass if you are unable to place it outside the window.
 
 **Why don't we mesh mobile phones instead of routers?**
+
 There is software for mobile phones such as Serval and FireChat. This is mainly used for chat messages. It stores the messages until a phone is within range and then transfers the data. Mobile "mesh" networks are very low bandwidth, not real-time and require many phones in a small area. They are great for events or some emergency situations.
 
 **Is the mesh secure?**
