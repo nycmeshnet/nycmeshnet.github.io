@@ -1,6 +1,14 @@
 [
 	
 		{
+		  "title"      : "Press",
+		  "category"   : "",
+		  "url"        : "http://nycmeshnet.github.io/blog/press/",
+		  "date"       : "2015-06-04 00:00:00 -0400",
+		  "shortdate"  : "June 04, 2015"
+		} ,
+	
+		{
 		  "title"      : "Does it scale?",
 		  "category"   : "",
 		  "url"        : "http://nycmeshnet.github.io/blog/does-it-scale/",
@@ -27,7 +35,7 @@
 		{
 		  "title"      : "New nodes",
 		  "category"   : "",
-		  "url"        : "http://nycmeshnet.github.io/map/new-nodes/",
+		  "url"        : "http://nycmeshnet.github.io/blog/new-nodes/",
 		  "date"       : "2014-11-18 00:00:00 -0500",
 		  "shortdate"  : "November 18, 2014"
 		} ,
@@ -35,7 +43,7 @@
 		{
 		  "title"      : "New nodes",
 		  "category"   : "",
-		  "url"        : "http://nycmeshnet.github.io/blog/new-nodes/",
+		  "url"        : "http://nycmeshnet.github.io/map/new-nodes/",
 		  "date"       : "2014-11-18 00:00:00 -0500",
 		  "shortdate"  : "November 18, 2014"
 		} ,
@@ -59,7 +67,7 @@
 		{
 		  "title"      : "A review of our first weekly meeting",
 		  "category"   : "",
-		  "url"        : "http://nycmeshnet.github.io/map/review-of-the-first-weekly-meeting/",
+		  "url"        : "http://nycmeshnet.github.io/blog/review-of-the-first-weekly-meeting/",
 		  "date"       : "2014-02-11 00:00:00 -0500",
 		  "shortdate"  : "February 11, 2014"
 		} ,
@@ -67,7 +75,7 @@
 		{
 		  "title"      : "A review of our first weekly meeting",
 		  "category"   : "",
-		  "url"        : "http://nycmeshnet.github.io/blog/review-of-the-first-weekly-meeting/",
+		  "url"        : "http://nycmeshnet.github.io/map/review-of-the-first-weekly-meeting/",
 		  "date"       : "2014-02-11 00:00:00 -0500",
 		  "shortdate"  : "February 11, 2014"
 		} ,
