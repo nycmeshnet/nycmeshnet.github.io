@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">NYC Mesh</title>
+<generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="http://nycmeshnet.github.io/feed.xml" />
+<link rel="alternate" type="text/html" href="http://nycmeshnet.github.io" />
+<updated>2015-06-04T13:23:32-04:00</updated>
+<id>http://nycmeshnet.github.io/</id>
+<author>
+  <name>#nycmeshnet</name>
+  <uri>http://nycmeshnet.github.io/</uri>
+  <email>peter@nycmesh.net</email>
+</author>
+
+
+<entry>
+  <title type="html"><![CDATA[Does it scale?]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/blog/does-it-scale/"/>
+  <id>http://nycmeshnet.github.io/blog/does-it-scale</id>
+  <published>2015-04-24T00:00:00-04:00</published>
+  <updated>2015-04-24T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;A common question with mesh networks is “do they scale?”. The answer is “yes”! The Guifi mesh network in Spain has over 28,000 nodes and is adding more every day. NYC Mesh has 18 nodes and is currently growing at about one or two nodes per week. Our $22 dollar mesh routers are becoming popular. One apartment building has four installed which gives the whole building mesh access. &lt;/p&gt;
+
+&lt;p&gt;There are a few articles about NYC Mesh about to be published, so we are expecting a huge increase in demand for nodes in the coming months. If you would like to install a router please fill in this form: &lt;a href=&quot;#newnode1&quot; class=&quot;btn&quot; id=&quot;trigger1&quot; data-toggle=&quot;tab&quot;&gt;Request New Node&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We are currently working on a new feature called tunneling. This enables an isolated router to connect to the mesh over the internet. If you are in an area that is out of range of the mesh backbone your router will still be able to mesh through the tunnel. This enables your router to see the local content on our mesh servers. Tunneling is a temporary solution until the mesh inevitably reaches your neighborhood.&lt;/p&gt;
+
+&lt;p&gt;The next step with our software is to create our own router images for download. This will enable people to join the mesh independently, reducing our workload and speeding up the growth.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/blog/does-it-scale/&quot;&gt;Does it scale?&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on April 24, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Spring]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/blog/spring/"/>
+  <id>http://nycmeshnet.github.io/blog/spring</id>
+  <published>2015-03-12T00:00:00-04:00</published>
+  <updated>2015-03-12T00:00:00-04:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;We’re resuming our meetings after a winter break! Please check our meetup group for the time and location.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/blog/spring/&quot;&gt;Spring&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on March 12, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[12 reasons]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/blog/twelve-reasons-for-mesh/"/>
+  <id>http://nycmeshnet.github.io/blog/twelve-reasons-for-mesh</id>
+  <published>2015-03-04T00:00:00-05:00</published>
+  <updated>2015-03-04T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Here’s a list of our reasons for building a mesh network:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Self configuring (simple!)&lt;/li&gt;
+  &lt;li&gt;Emergency community networking (for next hurricane)&lt;/li&gt;
+  &lt;li&gt;Freedom from the telecom oligopoly of Time Warner, Verizon, Comcast&lt;/li&gt;
+  &lt;li&gt;A neutral network that does not block or discriminate content&lt;/li&gt;
+  &lt;li&gt;Encryption to stop spying and censorship&lt;/li&gt;
+  &lt;li&gt;Public wifi access points&lt;/li&gt;
+  &lt;li&gt;Decentralized, no single point of failure&lt;/li&gt;
+  &lt;li&gt;Community building with highly localized websites&lt;/li&gt;
+  &lt;li&gt;Close the digital divide&lt;/li&gt;
+  &lt;li&gt;Potentially higher symmetrical bandwidth than provided by the oligopoly&lt;/li&gt;
+  &lt;li&gt;Creating an infrastructure commons. The community owns the network.&lt;/li&gt;
+  &lt;li&gt;Eventual self-sufficient network as alternative to internet&lt;/li&gt;
+&lt;/ul&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/blog/twelve-reasons-for-mesh/&quot;&gt;12 reasons&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on March 04, 2015.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[New nodes]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/map/new-nodes/"/>
+  <id>http://nycmeshnet.github.io/map/new-nodes</id>
+  <published>2014-11-18T00:00:00-05:00</published>
+  <updated>2014-11-18T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Much has happened in the past few months. We now have our first public node at d.b.a bar in the East Village (SSID: nycmesh.net dba). Very recently we installed three more nodes bringing the active node count to six: Brian, dba, Sam, Winston, Jaclyn and Oliver. All of these are in the East Village or Lower East Side. A group from Parsons (The New School for Design) will soon be adding another eight nodes near Union Square.&lt;/p&gt;
+
+&lt;p&gt;Our meetings have returned to our regular Sunday schedule. Also we’ve been having meetings with other mesh related local projects during the week, such as &lt;a href=&quot;http://rhicenter.org/redhookwifi/&quot;&gt;Red Hook WiFi&lt;/a&gt; and &lt;a href=&quot;http://goles.org/&quot;&gt;GOLES&lt;/a&gt; (who work with &lt;a href=&quot;https://wifiny.net/&quot;&gt;WiFi-NY&lt;/a&gt;). Please join our &lt;a href=&quot;http://www.meetup.com/nycmesh/&quot;&gt;meetup group&lt;/a&gt; to find out about all of our meetings.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/map/new-nodes/&quot;&gt;New nodes&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on November 18, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[New nodes]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/blog/new-nodes/"/>
+  <id>http://nycmeshnet.github.io/blog/new-nodes</id>
+  <published>2014-11-18T00:00:00-05:00</published>
+  <updated>2014-11-18T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Much has happened in the past few months. We now have our first public node at d.b.a bar in the East Village (SSID: nycmesh.net dba). Very recently we installed three more nodes bringing the active node count to six: Brian, dba, Sam, Winston, Jaclyn and Oliver. All of these are in the East Village or Lower East Side. A group from Parsons (The New School for Design) will soon be adding another eight nodes near Union Square.&lt;/p&gt;
+
+&lt;p&gt;Our meetings have returned to our regular Sunday schedule. Also we’ve been having meetings with other mesh related local projects during the week, such as &lt;a href=&quot;http://rhicenter.org/redhookwifi/&quot;&gt;Red Hook WiFi&lt;/a&gt; and &lt;a href=&quot;http://goles.org/&quot;&gt;GOLES&lt;/a&gt; (who work with &lt;a href=&quot;https://wifiny.net/&quot;&gt;WiFi-NY&lt;/a&gt;). Please join our &lt;a href=&quot;http://www.meetup.com/nycmesh/&quot;&gt;meetup group&lt;/a&gt; to find out about all of our meetings.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/blog/new-nodes/&quot;&gt;New nodes&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on November 18, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Starting with the basics]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/map/starting-with-the-basics/"/>
+  <id>http://nycmeshnet.github.io/map/starting-with-the-basics</id>
+  <published>2014-02-23T00:00:00-05:00</published>
+  <updated>2014-02-23T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;The third weekly meeting was today and things are looking good. Now that it’s clear that interest exists, we spent the meeting discussing how to move forward, both immediately and in the weeks to come.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-map&quot;&gt;The map&lt;/h2&gt;
+
+&lt;p&gt;We recently got a map up where anyone can place a pin wherever they are in NYC. This is key when it comes to organizing and finding peers near you. If you’re at all interested in joining, go over to &lt;a href=&quot;http://map.nycmesh.net&quot;&gt;map.nycmesh.net&lt;/a&gt; and make yourself known!&lt;/p&gt;
+
+&lt;h2 id=&quot;the-starter-kit&quot;&gt;The starter kit&lt;/h2&gt;
+
+&lt;p&gt;Setting up cjdns and communication over long distances can be accomplished in many different ways, but what we really want is a clear and simple way to get people who are interested on the network as soon as possible. Though the components we use may change over time, the following is what we plan to use to get our initial nodes setup:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.amazon.com/Ubiquiti-NSM5-NanoStation-M5/dp/B0049AVWAO&quot;&gt;Ubiquiti Nanostation M5&lt;/a&gt;&lt;/strong&gt; to communicate with the peers in your area (~$90)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.amazon.com/RASPBERRY-MODEL-756-8308-Raspberry-Pi/dp/B009SQQF9C/&quot;&gt;Raspberry Pi Model B&lt;/a&gt;&lt;/strong&gt; to run cjdns (~$40)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.amazon.com/Kingston-Class-Memory-SD4-4GB/dp/B000MX48VM/&quot;&gt;4GB SD Card&lt;/a&gt;&lt;/strong&gt; for the Raspberry Pi to use as storage (~$5)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.amazon.com/Kootek-Raspberry-Supply-Charger-Adapter/dp/B00FIFYQMA/&quot;&gt;5V Micro USB Power Supply&lt;/a&gt;&lt;/strong&gt; to power the Raspberry Pi (~$10)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.amazon.com/Cable-Matters-Ethernet-Adapter-Black/dp/B00ET4KHJ2/&quot;&gt;USB to Ethernet adapter&lt;/a&gt;&lt;/strong&gt; to connect a second Ethernet cable from your Raspberry Pi to your wireless router (~$10)&lt;/li&gt;
+  &lt;li&gt;Two &lt;strong&gt;Ethernet cables&lt;/strong&gt;*, one to connect your Nanostation to your Raspberry Pi, and the other to connect your Raspberry Pi to your home router (~$10/cable)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;* The length of the Ethernet cables you need depends completely on your intended setup.&lt;/p&gt;
+
+&lt;p&gt;This means that once we have some conveniently packaged software, getting connected to the network has a one-time cost of around $175. So if you’re looking to get started right away, order away!&lt;/p&gt;
+
+&lt;p&gt;(Note: Most modern Android phone chargers are 5V Micro USB power supplies, so you may not need to purchase one if you have a spare lying around.)&lt;/p&gt;
+
+&lt;h2 id=&quot;the-software&quot;&gt;The software&lt;/h2&gt;
+
+&lt;p&gt;A few of us will be working on setting up an image for the Raspberry Pi that will have cjdns (and possibly a few other tools) ready to go. The less configuration needed, the better. If you’d like to get involved in this, come join us on IRC (#nycmeshnet on EFnet).&lt;/p&gt;
+
+&lt;h2 id=&quot;the-near-future&quot;&gt;The (near) future&lt;/h2&gt;
+
+&lt;p&gt;The legality of sharing/providing of Internet has become a bit less complex after today’s meeting. In the meetings to come, we’ll continue to look into the viability of providing access to the Internet through the meshnet.&lt;/p&gt;
+
+&lt;p&gt;We’ll also be looking into how to effectively reach out to people here in New York City. Because after all, the key to a successful meshnet is an active community.&lt;/p&gt;
+
+&lt;p&gt;The weekly meetings will continue, so look for a post with the details on the next one. See you all next week!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/map/starting-with-the-basics/&quot;&gt;Starting with the basics&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on February 23, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Starting with the basics]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/blog/starting-with-the-basics/"/>
+  <id>http://nycmeshnet.github.io/blog/starting-with-the-basics</id>
+  <published>2014-02-23T00:00:00-05:00</published>
+  <updated>2014-02-23T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;The third weekly meeting was today and things are looking good. Now that it’s clear that interest exists, we spent the meeting discussing how to move forward, both immediately and in the weeks to come.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-map&quot;&gt;The map&lt;/h2&gt;
+
+&lt;p&gt;We recently got a map up where anyone can place a pin wherever they are in NYC. This is key when it comes to organizing and finding peers near you. If you’re at all interested in joining, go over to &lt;a href=&quot;http://map.nycmesh.net&quot;&gt;map.nycmesh.net&lt;/a&gt; and make yourself known!&lt;/p&gt;
+
+&lt;h2 id=&quot;the-starter-kit&quot;&gt;The starter kit&lt;/h2&gt;
+
+&lt;p&gt;Setting up cjdns and communication over long distances can be accomplished in many different ways, but what we really want is a clear and simple way to get people who are interested on the network as soon as possible. Though the components we use may change over time, the following is what we plan to use to get our initial nodes setup:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.amazon.com/Ubiquiti-NSM5-NanoStation-M5/dp/B0049AVWAO&quot;&gt;Ubiquiti Nanostation M5&lt;/a&gt;&lt;/strong&gt; to communicate with the peers in your area (~$90)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.amazon.com/RASPBERRY-MODEL-756-8308-Raspberry-Pi/dp/B009SQQF9C/&quot;&gt;Raspberry Pi Model B&lt;/a&gt;&lt;/strong&gt; to run cjdns (~$40)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.amazon.com/Kingston-Class-Memory-SD4-4GB/dp/B000MX48VM/&quot;&gt;4GB SD Card&lt;/a&gt;&lt;/strong&gt; for the Raspberry Pi to use as storage (~$5)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.amazon.com/Kootek-Raspberry-Supply-Charger-Adapter/dp/B00FIFYQMA/&quot;&gt;5V Micro USB Power Supply&lt;/a&gt;&lt;/strong&gt; to power the Raspberry Pi (~$10)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;http://www.amazon.com/Cable-Matters-Ethernet-Adapter-Black/dp/B00ET4KHJ2/&quot;&gt;USB to Ethernet adapter&lt;/a&gt;&lt;/strong&gt; to connect a second Ethernet cable from your Raspberry Pi to your wireless router (~$10)&lt;/li&gt;
+  &lt;li&gt;Two &lt;strong&gt;Ethernet cables&lt;/strong&gt;*, one to connect your Nanostation to your Raspberry Pi, and the other to connect your Raspberry Pi to your home router (~$10/cable)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;* The length of the Ethernet cables you need depends completely on your intended setup.&lt;/p&gt;
+
+&lt;p&gt;This means that once we have some conveniently packaged software, getting connected to the network has a one-time cost of around $175. So if you’re looking to get started right away, order away!&lt;/p&gt;
+
+&lt;p&gt;(Note: Most modern Android phone chargers are 5V Micro USB power supplies, so you may not need to purchase one if you have a spare lying around.)&lt;/p&gt;
+
+&lt;h2 id=&quot;the-software&quot;&gt;The software&lt;/h2&gt;
+
+&lt;p&gt;A few of us will be working on setting up an image for the Raspberry Pi that will have cjdns (and possibly a few other tools) ready to go. The less configuration needed, the better. If you’d like to get involved in this, come join us on IRC (#nycmeshnet on EFnet).&lt;/p&gt;
+
+&lt;h2 id=&quot;the-near-future&quot;&gt;The (near) future&lt;/h2&gt;
+
+&lt;p&gt;The legality of sharing/providing of Internet has become a bit less complex after today’s meeting. In the meetings to come, we’ll continue to look into the viability of providing access to the Internet through the meshnet.&lt;/p&gt;
+
+&lt;p&gt;We’ll also be looking into how to effectively reach out to people here in New York City. Because after all, the key to a successful meshnet is an active community.&lt;/p&gt;
+
+&lt;p&gt;The weekly meetings will continue, so look for a post with the details on the next one. See you all next week!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/blog/starting-with-the-basics/&quot;&gt;Starting with the basics&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on February 23, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[A review of our first weekly meeting]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/map/review-of-the-first-weekly-meeting/"/>
+  <id>http://nycmeshnet.github.io/map/review-of-the-first-weekly-meeting</id>
+  <published>2014-02-11T00:00:00-05:00</published>
+  <updated>2014-02-11T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;The meeting this past Sunday was short and concise. Sitting over some coffee, we went over some topics that we considered to be our priorities.&lt;/p&gt;
+
+&lt;h2 id=&quot;building-interest&quot;&gt;Building interest&lt;/h2&gt;
+
+&lt;p&gt;Meshnets by definition require a community of people to work. For that reason, we all seemed to agree that most of our focus should be on reaching out to our fellow people here in NYC. Mere explanation and talk isn’t gonna get people excited, though; we need to show them that what we’re working towards is significant improvement over the current state of affairs. We thought of two main approaches to do this: providing internet access and getting various web services working.&lt;/p&gt;
+
+&lt;h2 id=&quot;internet-access&quot;&gt;Internet access&lt;/h2&gt;
+
+&lt;p&gt;The clearest way to show that the meshnet is useful is to provide access to the Internet through the meshnet. This is a legally complex area, though, so research has to get done. Additionally, some complexities arise in terms of how this Internet access will be provided.&lt;/p&gt;
+
+&lt;h2 id=&quot;web-service-alternatives&quot;&gt;Web service alternatives&lt;/h2&gt;
+
+&lt;p&gt;Another approach would be to provide working (and hopefully more useful) alternatives to services that exist on Internet. The main benefit of this would be that the services would not require any access to the Internet. This means it is completely free to use as long as you’re connected to the meshnet.&lt;/p&gt;
+
+&lt;p&gt;Several such services already exist on the network, including &lt;strong&gt;Gitboria&lt;/strong&gt; (a Git repository), &lt;strong&gt;uppit.us&lt;/strong&gt; (a reddit clone), and &lt;strong&gt;socialno.de&lt;/strong&gt; (a Twitter clone).&lt;/p&gt;
+
+&lt;p&gt;It’s important to note that having services sit on the meshnet (as opposed to somewhere on the Internet) is the eventual goal of this project anyway. However, keep in mind that establishing useful and reliable services is a non-trivial task.&lt;/p&gt;
+
+&lt;h2 id=&quot;future-meetings&quot;&gt;Future meetings&lt;/h2&gt;
+
+&lt;p&gt;In order to keep ourselves productive, we’ve decided to have weekly meetings. We plan to have these meetings on Sunday afternoons. A post will be put up for each meeting with details, so keep an eye out!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/map/review-of-the-first-weekly-meeting/&quot;&gt;A review of our first weekly meeting&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on February 11, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[A review of our first weekly meeting]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/blog/review-of-the-first-weekly-meeting/"/>
+  <id>http://nycmeshnet.github.io/blog/review-of-the-first-weekly-meeting</id>
+  <published>2014-02-11T00:00:00-05:00</published>
+  <updated>2014-02-11T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;The meeting this past Sunday was short and concise. Sitting over some coffee, we went over some topics that we considered to be our priorities.&lt;/p&gt;
+
+&lt;h2 id=&quot;building-interest&quot;&gt;Building interest&lt;/h2&gt;
+
+&lt;p&gt;Meshnets by definition require a community of people to work. For that reason, we all seemed to agree that most of our focus should be on reaching out to our fellow people here in NYC. Mere explanation and talk isn’t gonna get people excited, though; we need to show them that what we’re working towards is significant improvement over the current state of affairs. We thought of two main approaches to do this: providing internet access and getting various web services working.&lt;/p&gt;
+
+&lt;h2 id=&quot;internet-access&quot;&gt;Internet access&lt;/h2&gt;
+
+&lt;p&gt;The clearest way to show that the meshnet is useful is to provide access to the Internet through the meshnet. This is a legally complex area, though, so research has to get done. Additionally, some complexities arise in terms of how this Internet access will be provided.&lt;/p&gt;
+
+&lt;h2 id=&quot;web-service-alternatives&quot;&gt;Web service alternatives&lt;/h2&gt;
+
+&lt;p&gt;Another approach would be to provide working (and hopefully more useful) alternatives to services that exist on Internet. The main benefit of this would be that the services would not require any access to the Internet. This means it is completely free to use as long as you’re connected to the meshnet.&lt;/p&gt;
+
+&lt;p&gt;Several such services already exist on the network, including &lt;strong&gt;Gitboria&lt;/strong&gt; (a Git repository), &lt;strong&gt;uppit.us&lt;/strong&gt; (a reddit clone), and &lt;strong&gt;socialno.de&lt;/strong&gt; (a Twitter clone).&lt;/p&gt;
+
+&lt;p&gt;It’s important to note that having services sit on the meshnet (as opposed to somewhere on the Internet) is the eventual goal of this project anyway. However, keep in mind that establishing useful and reliable services is a non-trivial task.&lt;/p&gt;
+
+&lt;h2 id=&quot;future-meetings&quot;&gt;Future meetings&lt;/h2&gt;
+
+&lt;p&gt;In order to keep ourselves productive, we’ve decided to have weekly meetings. We plan to have these meetings on Sunday afternoons. A post will be put up for each meeting with details, so keep an eye out!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/blog/review-of-the-first-weekly-meeting/&quot;&gt;A review of our first weekly meeting&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on February 11, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[And so it begins!]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/map/and-so-it-begins/"/>
+  <id>http://nycmeshnet.github.io/map/and-so-it-begins</id>
+  <published>2014-01-28T00:00:00-05:00</published>
+  <updated>2014-01-28T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Allow us to welcome you to our very own corner of the Internet! This website will be where any official news and information will be posted.&lt;/p&gt;
+
+&lt;p&gt;With several people having purchased nanostations and others showing interest, it seems to be time to organize another meetup. Details will be posted here once they’re finalized.&lt;/p&gt;
+
+&lt;p&gt;In the meantime, if you have any questions or just want to say hello, join us on IRC on &lt;strong&gt;#nycmeshnet on EFnet&lt;/strong&gt; (&lt;a href=&quot;http://chat.efnet.org:9090/?channels=#nycmeshnet&quot;&gt;web client&lt;/a&gt;). Don’t feel bad if no one responds right away; someone will eventually respond!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/map/and-so-it-begins/&quot;&gt;And so it begins!&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on January 28, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[And so it begins!]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/blog/and-so-it-begins/"/>
+  <id>http://nycmeshnet.github.io/blog/and-so-it-begins</id>
+  <published>2014-01-28T00:00:00-05:00</published>
+  <updated>2014-01-28T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Peter</name>
+    <uri>http://nycmeshnet.github.io</uri>
+    <email>peter@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Allow us to welcome you to our very own corner of the Internet! This website will be where any official news and information will be posted.&lt;/p&gt;
+
+&lt;p&gt;With several people having purchased nanostations and others showing interest, it seems to be time to organize another meetup. Details will be posted here once they’re finalized.&lt;/p&gt;
+
+&lt;p&gt;In the meantime, if you have any questions or just want to say hello, join us on IRC on &lt;strong&gt;#nycmeshnet on EFnet&lt;/strong&gt; (&lt;a href=&quot;http://chat.efnet.org:9090/?channels=#nycmeshnet&quot;&gt;web client&lt;/a&gt;). Don’t feel bad if no one responds right away; someone will eventually respond!&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/blog/and-so-it-begins/&quot;&gt;And so it begins!&lt;/a&gt; was originally published by Peter at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on January 28, 2014.&lt;/p&gt;</content>
+</entry>
+
+</feed>

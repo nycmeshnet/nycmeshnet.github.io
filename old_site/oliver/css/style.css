@@ -1,0 +1,278 @@
+/*
+* Globals
+*/
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+  border-radius: 6px;
+}
+
+
+/*
+* Base structure
+*/
+
+html,
+body {
+  height: 100%;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 6px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 80%; /* For at least Firefox */
+  min-height: 80%;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#map {
+  position: absolute; top:0; bottom:0; width:100%; height: 80%; z-index: -1;
+  background-color: #141414;
+}
+
+#map-header {
+  position: absolute; top:0; bottom:0; width:100%; height: 25%; z-index: -1;
+  background-color: #141414;
+}
+
+.leaflet-control-attribution.leaflet-control {
+  background: none !important;
+}
+
+.leaflet-control-attribution.leaflet-control {
+  background: none !important;
+}
+
+.leaflet-control-attribution.leaflet-control a {
+  color: rgba(255,255,255,.7) !important;
+}
+
+.mapbox-improve-map {
+  display: none !important;
+}
+
+#what {
+  color: #1E1E1E;
+  text-shadow: none;
+}
+
+#what .lead {
+  color: #1E1E1E;
+  text-shadow: none;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+#what a {
+  text-decoration: underline;
+  color: #1E1E1E;
+}
+
+#join {
+  display: none;
+}
+
+#submit {
+  display: none;
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-control {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer ul {
+  color: #1E1E1E;
+  text-shadow: none;
+  padding-left: 0px;
+  padding-bottom: 30px;
+}
+
+.footer li {
+  margin-left: 0px;
+  max-width: 700px;
+  list-style: none;
+  display: inline;
+}
+
+.footer a {
+  color: #1E1E1E;
+}
+
+
+/*.footer .copyright {
+  margin-left: 20px;
+}*/
+
+.lead_bottom  {
+  color: black;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+.lead_bottom .btn-default,
+.lead_bottom .btn-default:hover,
+.lead_bottom .btn-default:focus {
+  color: #323232;
+  text-shadow: none;
+  border: 2px solid #323232;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+
+
+/*
+* Header
+*/
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  color: #fff;
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+#next {
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  color: #fff;
+}
+
+#location, #thanks {
+  display: none;
+}
+
+#location checkbox {
+  font-size: 30px;
+}
+
+#logo_img {
+  width: 50px;
+  margin-top: -3px;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+* Cover
+*/
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  font-weight: bold;
+}
+
+
+/*
+* Footer
+*/
+
+.mastfoot {
+  position: fixed;
+}
+
+/*
+* Affix and center
+*/
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: absolute;
+    top: 0;
+  }
+  .mastfoot {
+    padding-bottom: 20px;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container{
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container{
+    width: 800px;
+  }
+}
