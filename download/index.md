@@ -3,9 +3,9 @@ layout: post
 title: "Download"
 ---
 
-We currently support two different types of routers. A long distance directional router, the [Ubiquiti NanoStation NSM5.](http://www.amazon.com/s/url=search-alias%3Daps&field-keywords=Ubiquiti+NSM5) and a small indoor [TP-Link router TL-WR842ND.](http://www.amazon.com/s/url=search-alias%3Daps&field-keywords=WR842ND).
+We currently support two different types of routers. A long distance directional router, the [Ubiquiti NanoStation NSM5](http://www.amazon.com/s/url=search-alias%3Daps&field-keywords=Ubiquiti+NSM5) and a small indoor [TP-Link router TL-WR842ND.](http://www.amazon.com/s/url=search-alias%3Daps&field-keywords=WR842ND). 
 
-**TL-WR842N instructions**
+**TL-WR842ND instructions**
 
 The WR842ND we have used were all Ver:2.1 or Ver:2.3, other 2.x versions should work. Let us know which one you have.
 
@@ -17,17 +17,17 @@ The WR842ND we have used were all Ver:2.1 or Ver:2.3, other 2.x versions should 
 * Click System Tools>Firmware upgrade
 * Click "choose file" and select the image you downloaded and click "upgrade"
 
-Wait five minutes or more and connect to the router via Wi-Fi. It now has the SSID name like "nycmesh 1a2b" and has a random IP of the form 10.x.x.x
+Wait five minutes or more and connect to the router via Wi-Fi. It now has a SSID name like "nycmesh 1a2b" and a random IP of the form 10.x.x.x
 
 **NSM5 instructions**
 
 There are two types of NSM5s. If you buy a new one it will be an XW. If you buy a second-hand one on eBay it will likely be the older XM. Both are good, they just need different images. It is not possible to put the wrong image on as you will just get an alert.
 
-* Download the correct NSM5 "factory" binary image to your computer. If you have a new NSM5 you will want the XW image. If you have one from 2014 or earlier you will need the XM image (if unsure download and try both).
-* Plug ethernet from POE on adapter to "main" on NSM5
-* Plug LAN on adapter to computer
-* Turn off Wi-Fi
-* Open Network Prefs
+* Download the NSM5 "factory" binary image to your computer. If you have a new NSM5 you will want the XW image. If you have one from 2014 or earlier you will need the XM image (if unsure download and try both).
+* Plug an ethernet cable from POE on the power adapter to "main" on the NSM5
+* Plug LAN on the adapter to your computer
+* Turn off Wi-Fi on your computer
+* Open Network Prefs (or equivalant)
 * Connect by ethernet using DHCP with manual address e.g. 192.168.1.11
 * go to 192.168.1.20 in your browser
 * You will get https warning "your connection is not private" or some such
@@ -38,7 +38,7 @@ There are two types of NSM5s. If you buy a new one it will be an XW. If you buy 
 * Select the M5-XW factory image you downloaded- you will get a "third-party" warning.
 * Click <update>
 	
-Wait five minutes or more and connect to the router via Wi-Fi. It now has the SSID name like "nycmesh 1a2b" and has a random IP of the form 10.x.x.x
+Wait five minutes or more and connect to the router via Wi-Fi. It now has a SSID name like "nycmesh 1a2b" and a random IP of the form 10.x.x.x
 
 **Upgrades**
 
