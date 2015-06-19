@@ -7,7 +7,7 @@ We currently support two different types of routers. A long distance directional
 
 **TP-Link TL-WR842ND instructions**
 
-* Download the WR842N binary image to your computer. If you have a newly purchased router then you need the "factory" binary- [TL-WR842N-v2 factory download](TP-Link-TL-WR842N-v2-nycmesh-factory-20150612_1711.bin). (For upgrades see below)
+* Download the WR842N binary image to your computer. If you have a newly purchased router then you need the "factory" binary- [TL-WR842N-v2 factory download](http://nycmeshnet.github.io/download/WR842N.html). (For upgrades see below)
 * Connect to the router via Wi-Fi. It has a name like "TP-LINK_ABC123"
 * Enter the "wireless password/pin" that is printed on the bottom of the router e.g. "12341234"
 * In your browser, go to 192.168.0.1
