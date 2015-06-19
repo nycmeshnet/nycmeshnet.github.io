@@ -3,9 +3,9 @@ layout: post
 title: "Download Firmware"
 ---
 
-We currently support two different types of routers. A long distance directional router, the [Ubiquiti NanoStation NSM5](http://www.amazon.com/s/url=search-alias%3Daps&field-keywords=Ubiquiti+NSM5) and a small indoor [TP-Link router TL-WR842ND.](http://www.amazon.com/s/url=search-alias%3Daps&field-keywords=WR842ND). If you buy a router and flash it with the instructions below you will be ready to join NYC Mesh. 
+We currently support two different types of routers. A long distance directional router, the [Ubiquiti NanoStation NSM5](http://www.amazon.com/s/url=search-alias%3Daps&field-keywords=Ubiquiti+NSM5) and a small indoor [TP-Link router TL-WR842ND](http://www.amazon.com/s/url=search-alias%3Daps&field-keywords=WR842ND). 
 
-We will need to add your router to our list of nodes, so first enter a <a href="#newnode1" id="trigger1" data-toggle="tab">new node request</a> for each location and <a href="mailto:contact@nycmesh.net">email us</a> immediately after you flash a router.
+If you buy a router and flash it with the instructions below you will be ready to join NYC Mesh. We will need to add your router to our list of nodes, so first enter a <a href="#newnode1" id="trigger1" data-toggle="tab">new node request</a> for each location and <a href="mailto:contact@nycmesh.net">email us</a> immediately after you flash a router.
 
 
 
