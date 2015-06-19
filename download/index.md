@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "Download"
+title: "Download Firmware"
 ---
 
-We currently support two different types of routers. A long distance directional router, the [Ubiquiti NanoStation NSM5](http://www.amazon.com/s/url=search-alias%3Daps&field-keywords=Ubiquiti+NSM5) and a small indoor [TP-Link router TL-WR842ND.](http://www.amazon.com/s/url=search-alias%3Daps&field-keywords=WR842ND). 
+We currently support two different types of routers. A long distance directional router, the [Ubiquiti NanoStation NSM5](http://www.amazon.com/s/url=search-alias%3Daps&field-keywords=Ubiquiti+NSM5) and a small indoor [TP-Link router TL-WR842ND.](http://www.amazon.com/s/url=search-alias%3Daps&field-keywords=WR842ND). If you buy a router and flash it with the instructions below you will be ready to join NYC Mesh. 
+
+We will need to add your router to our list of nodes, so first enter a <a href="#newnode1" id="trigger1" data-toggle="tab">new node request</a> for each location and <a href="mailto:contact@nycmesh.net">email us</a> immediately after each router you flash.
+
+
 
 **TP-Link TL-WR842ND instructions**
 
@@ -43,6 +47,7 @@ Upgrades are when your router is already running nycmesh/qMp or another version 
 
 [WR842N upgrade download](http://nycmeshnet.github.io/download/WR842N-upgrade.html)
 
+Our firmware is based on [qMp](http://qmp.cat/), which is an [OpenWrt](https://openwrt.org/) package using [BMX6](http://bmx6.net/projects/bmx6) meshing protocol. Thanks to Roger at qMp for all his help.
 
 
 
