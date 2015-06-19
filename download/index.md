@@ -41,7 +41,7 @@ Wait five minutes or more and connect to the router via Wi-Fi. It now has a SSID
 The "factory" binaries are for new routers or routers still running their original software.
 Upgrades are when your router is already running nycmesh/qMp or another version of OpenWrt.
 
-[WR842N upgrade download](TP-Link-TL-WR842N-v2-nycmesh-sysupgrade-20150612_1711.bin)
+[WR842N upgrade download](http://nycmeshnet.github.io/download/WR842N-upgrade.html)
 
 
 
