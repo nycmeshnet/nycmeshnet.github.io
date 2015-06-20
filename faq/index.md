@@ -33,7 +33,7 @@ We are using an OpenWrt package made by qMp. This uses the BMX6 mesh protocol. W
 
 **Can I use my own router?**
 
-At the moment the easiest solution is to buy a pre-configured router off us. We have these available at cost- $28 for a small home router and $90 for a directional router that can be mounted outside. If you want to "flash" your own router with our software, it must have OpenWrt support and you will have to follow some very technical instructions on our github site. We are working hard to make the software simpler to flash. The routers we currently support and recommend are the Ubiquiti NanoStation M5 for outdoors and the TP-Link TL-WR842ND for indoors.
+The routers we currently support and recommend are the Ubiquiti NanoStation M5 for outdoors and the TP-Link TL-WR842ND for indoors. Our [download page](../download) has our firmware for these routers. We usually have pre-configured routers at the meetups, available at cost- $28 for the TP-Link and $90 for the NanoStation. If you want to "flash" a different router with our software, it must have OpenWrt support and you will have to follow some very technical instructions on our github site.
 
 **Can I install a router if I have no view or no rooftop access?**
 

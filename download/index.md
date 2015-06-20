@@ -2,12 +2,11 @@
 layout: post
 title: "Download Firmware"
 ---
+Please read our [FAQ](../faq) before downloading our software.
 
-We currently support two different types of routers. A long distance directional router, the [Ubiquiti NanoStation NSM5](http://www.amazon.com/s/url=search-alias%3Daps&field-keywords=Ubiquiti+NSM5) and a small indoor [TP-Link router TL-WR842ND](http://www.amazon.com/s/url=search-alias%3Daps&field-keywords=WR842ND). 
+We currently support two different types of routers. A long distance directional router, the [Ubiquiti NanoStation NSM5](http://www.amazon.com/s/url=search-alias%3Daps&field-keywords=Ubiquiti+NSM5) and a small indoor [TP-Link router TL-WR842ND](http://www.amazon.com/s/url=search-alias%3Daps&field-keywords=WR842ND). If you buy a router and flash it with the instructions below you will be ready to join NYC Mesh. 
 
-If you buy a router and flash it with the instructions below you will be ready to join NYC Mesh. We will need to add your router to our list of nodes, so first enter a <a href="#newnode1" id="trigger1" data-toggle="tab">new node request</a> for each location and <a href="mailto:contact@nycmesh.net">email us</a> immediately after you flash a router.
-
-
+We will need to add your router to our list of nodes, so first enter a <a href="#newnode1" id="trigger1" data-toggle="tab">new node request</a> for each location and <a href="mailto:contact@nycmesh.net">email us</a> immediately after you flash a router. Once you have emailed us, we can enable VPN tunneling. This will allow the router to join our mesh over the internet. This is very useful when out of range of another NYC Mesh router.
 
 **TP-Link TL-WR842ND instructions**
 
@@ -20,6 +19,8 @@ If you buy a router and flash it with the instructions below you will be ready t
 * Click "choose file" and select the image you downloaded and click "upgrade"
 
 Wait five minutes or more and connect to the router via Wi-Fi. It now has a SSID name like "nycmesh 1a2b" and a random IP of the form 10.x.x.x
+
+* <a href="mailto:contact@nycmesh.net">Email us</a> so we can enable VPN tunneling.
 
 **NanoStation NSM5 instructions**
 
@@ -40,6 +41,8 @@ Wait five minutes or more and connect to the router via Wi-Fi. It now has a SSID
 	
 Wait five minutes or more and connect to the router via Wi-Fi. It now has a SSID name like "nycmesh 1a2b" and a random IP of the form 10.x.x.x
 
+* <a href="mailto:contact@nycmesh.net">Email us</a> so we can enable VPN tunneling.
+
 **Upgrades**
 
 The "factory" binaries are for new routers or routers still running their original software.
@@ -51,7 +54,7 @@ Upgrades are for when your router is already running nycmesh/qMp or another vers
 
 **Firmware**
 
-Our firmware is based on [qMp](http://qmp.cat/), which is an [OpenWrt](https://openwrt.org/) package using [BMX6](http://bmx6.net/projects/bmx6) meshing protocol. Thanks to Roger at qMp for all his help.
+Our firmware is based on [qMp](http://qmp.cat/), which is an [OpenWrt](https://openwrt.org/) package using [BMX6](http://bmx6.net/projects/bmx6) meshing protocol. Thanks to Roger at qMp for all of his help.
 
 
 
