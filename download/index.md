@@ -23,15 +23,15 @@ Wait five minutes or more and connect to the router via Wi-Fi. It now has a SSID
 
 **NanoStation NSM5 instructions**
 
-* Download the NSM5 "factory" binary image to your computer. If you have a new NSM5 you will want the XW image. If you have one from 2014 or earlier you will need the XM image (if unsure download and try both).
+* Download the NSM5 "factory" binary image to your computer. If you have a new NSM5 you will want the XW image. If you have one from 2014 or earlier you will need the XM image (if unsure download and try both, for upgrades see below).
 * Plug an ethernet cable from POE on the power adapter to "main" on the NSM5
 * Plug LAN on the adapter to your computer
 * Turn off Wi-Fi on your computer
-* Open Network Prefs (or equivalant)
+* Open Network Prefs (or equivalent)
 * Connect by ethernet using DHCP with manual address e.g. 192.168.1.11
 * go to 192.168.1.20 in your browser
 * You will get https warning "your connection is not private" or some such
-* click "advanced" and "proceed to 192.168.1.20"
+* Click "advanced" and "proceed to 192.168.1.20"
 * Enter ubnt, ubnt, USA, [x] agree to terms, login
 * On the tabbed panel select "System"
 * Click "Upload Firmware" <choose file>
@@ -43,9 +43,13 @@ Wait five minutes or more and connect to the router via Wi-Fi. It now has a SSID
 **Upgrades**
 
 The "factory" binaries are for new routers or routers still running their original software.
-Upgrades are when your router is already running nycmesh/qMp or another version of OpenWrt.
+Upgrades are for when your router is already running nycmesh/qMp or another version of OpenWrt.
 
-[WR842N upgrade download](http://nycmeshnet.github.io/download/WR842N-upgrade.html)
+[WR842N upgrade download](http://nycmeshnet.github.io/download/WR842N-upgrade.html)  
+[NSM5-XM upgrade download](http://nycmeshnet.github.io/download/NSM5-XM-upgrade.html)  
+[NSM5-XW upgrade download](http://nycmeshnet.github.io/download/NSM5-XW-upgrade.html)
+
+**Firmware**
 
 Our firmware is based on [qMp](http://qmp.cat/), which is an [OpenWrt](https://openwrt.org/) package using [BMX6](http://bmx6.net/projects/bmx6) meshing protocol. Thanks to Roger at qMp for all his help.
 
