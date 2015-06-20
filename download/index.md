@@ -23,7 +23,7 @@ Wait five minutes or more and connect to the router via Wi-Fi. It now has a SSID
 
 **NanoStation NSM5 instructions**
 
-* Download the NSM5 "factory" binary image to your computer. If you have a new NSM5 you will want the XW image. If you have one from 2014 or earlier you will need the XM image (if unsure download and try both, for upgrades see below).
+* Download the NSM5 "factory" binary image to your computer. If you have a new NSM5 you will want the new [XW binary download](http://nycmeshnet.github.io/download/NSM5-XW.html). If you have one from 2014 or earlier you will need the older [XM binary download](http://nycmeshnet.github.io/download/NSM5.html) (if unsure download and try both, for upgrades see below).
 * Plug an ethernet cable from POE on the power adapter to "main" on the NSM5
 * Plug LAN on the adapter to your computer
 * Turn off Wi-Fi on your computer
