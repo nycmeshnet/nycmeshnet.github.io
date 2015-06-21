@@ -35,9 +35,10 @@ Wait five minutes or more and connect to the router via Wi-Fi. It now has a SSID
 * Click "advanced" and "proceed to 192.168.1.20"
 * Enter ubnt, ubnt, USA, [x] agree to terms, login
 * On the tabbed panel select "System"
-* Click "Upload Firmware" <choose file>
-* Select the M5-XW factory image you downloaded- you will get a "third-party" warning.
-* Click "Update"
+* Click "Upload Firmware: Choose File"
+* Select the M5-XW factory image you downloaded
+* Click "Upload"
+* You will get a "third-party" warning. Ignore this and click "Update"
 	
 Wait five minutes or more and connect to the router via Wi-Fi. It now has a SSID name like "nycmesh 1a2b" and a random IP of the form 10.x.x.x
 
