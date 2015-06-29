@@ -4,7 +4,7 @@
 <generator uri="https://github.com/mojombo/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://nycmeshnet.github.io/feed.xml" />
 <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io" />
-<updated>2015-06-21T15:48:04-04:00</updated>
+<updated>2015-06-29T13:52:18-04:00</updated>
 <id>http://nycmeshnet.github.io/</id>
 <author>
   <name>#nycmeshnet</name>
@@ -130,26 +130,6 @@ May 5, 2015, by Steven Melendez&lt;/p&gt;
 
 <entry>
   <title type="html"><![CDATA[New nodes]]></title>
-  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/map/new-nodes/"/>
-  <id>http://nycmeshnet.github.io/map/new-nodes</id>
-  <published>2014-11-18T00:00:00-05:00</published>
-  <updated>2014-11-18T00:00:00-05:00</updated>
-  
-  <author>
-    <name>Brian</name>
-    <uri>http://nycmeshnet.github.io</uri>
-    <email>brian@nycmesh.net</email>
-  </author>
-  <content type="html">&lt;p&gt;Much has happened in the past few months. We now have our first public node at d.b.a bar in the East Village (SSID: nycmesh.net dba). Very recently we installed three more nodes bringing the active node count to six: Brian, dba, Sam, Winston, Jaclyn and Oliver. All of these are in the East Village or Lower East Side. A group from Parsons (The New School for Design) will soon be adding another eight nodes near Union Square.&lt;/p&gt;
-
-&lt;p&gt;Our meetings have returned to our regular Sunday schedule. Also we’ve been having meetings with other mesh related local projects during the week, such as &lt;a href=&quot;http://rhicenter.org/redhookwifi/&quot;&gt;Red Hook WiFi&lt;/a&gt; and &lt;a href=&quot;http://goles.org/&quot;&gt;GOLES&lt;/a&gt; (who work with &lt;a href=&quot;https://wifiny.net/&quot;&gt;WiFi-NY&lt;/a&gt;). Please join our &lt;a href=&quot;http://www.meetup.com/nycmesh/&quot;&gt;meetup group&lt;/a&gt; to find out about all of our meetings.&lt;/p&gt;
-
-  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/map/new-nodes/&quot;&gt;New nodes&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on November 18, 2014.&lt;/p&gt;</content>
-</entry>
-
-
-<entry>
-  <title type="html"><![CDATA[New nodes]]></title>
   <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/blog/new-nodes/"/>
   <id>http://nycmeshnet.github.io/blog/new-nodes</id>
   <published>2014-11-18T00:00:00-05:00</published>
@@ -165,6 +145,26 @@ May 5, 2015, by Steven Melendez&lt;/p&gt;
 &lt;p&gt;Our meetings have returned to our regular Sunday schedule. Also we’ve been having meetings with other mesh related local projects during the week, such as &lt;a href=&quot;http://rhicenter.org/redhookwifi/&quot;&gt;Red Hook WiFi&lt;/a&gt; and &lt;a href=&quot;http://goles.org/&quot;&gt;GOLES&lt;/a&gt; (who work with &lt;a href=&quot;https://wifiny.net/&quot;&gt;WiFi-NY&lt;/a&gt;). Please join our &lt;a href=&quot;http://www.meetup.com/nycmesh/&quot;&gt;meetup group&lt;/a&gt; to find out about all of our meetings.&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/blog/new-nodes/&quot;&gt;New nodes&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on November 18, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[New nodes]]></title>
+  <link rel="alternate" type="text/html" href="http://nycmeshnet.github.io/map/new-nodes/"/>
+  <id>http://nycmeshnet.github.io/map/new-nodes</id>
+  <published>2014-11-18T00:00:00-05:00</published>
+  <updated>2014-11-18T00:00:00-05:00</updated>
+  
+  <author>
+    <name>Brian</name>
+    <uri>http://nycmeshnet.github.io</uri>
+    <email>brian@nycmesh.net</email>
+  </author>
+  <content type="html">&lt;p&gt;Much has happened in the past few months. We now have our first public node at d.b.a bar in the East Village (SSID: nycmesh.net dba). Very recently we installed three more nodes bringing the active node count to six: Brian, dba, Sam, Winston, Jaclyn and Oliver. All of these are in the East Village or Lower East Side. A group from Parsons (The New School for Design) will soon be adding another eight nodes near Union Square.&lt;/p&gt;
+
+&lt;p&gt;Our meetings have returned to our regular Sunday schedule. Also we’ve been having meetings with other mesh related local projects during the week, such as &lt;a href=&quot;http://rhicenter.org/redhookwifi/&quot;&gt;Red Hook WiFi&lt;/a&gt; and &lt;a href=&quot;http://goles.org/&quot;&gt;GOLES&lt;/a&gt; (who work with &lt;a href=&quot;https://wifiny.net/&quot;&gt;WiFi-NY&lt;/a&gt;). Please join our &lt;a href=&quot;http://www.meetup.com/nycmesh/&quot;&gt;meetup group&lt;/a&gt; to find out about all of our meetings.&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://nycmeshnet.github.io/map/new-nodes/&quot;&gt;New nodes&lt;/a&gt; was originally published by Brian at &lt;a href=&quot;http://nycmeshnet.github.io&quot;&gt;NYC Mesh&lt;/a&gt; on November 18, 2014.&lt;/p&gt;</content>
 </entry>
 
 
