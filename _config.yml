@@ -67,6 +67,8 @@ links:
   - title: Map
     url: https://map.nycmesh.net/
     external: true
+  - title: Join
+    url: /join/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
