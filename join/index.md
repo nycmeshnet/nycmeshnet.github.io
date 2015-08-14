@@ -1,7 +1,9 @@
 ---
 layout: page
-title: "A community-owned internet you can join for free"
+title: "Join the Mesh"
 ---
+
+## !!! This is not ready for production. copy needed!!!
 
 ## Etc Etc
 
