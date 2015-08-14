@@ -6383,6 +6383,10 @@ footer.footer,
     .content h2:first-of-type {
       margin-top: 0; }
 
+.title-container {
+  padding: 20px 0;
+}
+
 .title {
   padding: 20px 0;
   -webkit-animation: blur 500ms ease-in;
