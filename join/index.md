@@ -3,6 +3,10 @@ layout: newnode
 title: "Join the Mesh"
 ---
 
+**Why should I join the mesh now?**
+
+By joining the mesh now you help us grow and increase our reach across the city. This is a community project and you will be helping to create a decentralized infrastructure, free from traditional business interests.
+
 **How to buy routers**-
 
 We currently have two options for routers- an inexpensive indoor router and a $90 outdoor router. You can buy the routers online and configure them yourself using our simple download instructions. Otherwise, you can come to our meetups where we often sell preconfigured routers that you can simply plug in.
@@ -44,4 +48,4 @@ For TP-Link: Plug an ethernet cable from LAN on your current router to the blue 
 For NanoStation: Plug an ethernet cable from LAN on your current router to LAN on the power supply and POE to the secondary input on the NanoStation. For POE, you must use a standard ethernet cable with all 8 wires. Some cheap cables don't support POE (power over ethernet) and the NanoStation won't get power.
 
 A quick test to see if you are on the mesh is to go here-
-http://10.30.0.189/
+[http://10.30.0.189/](http://10.30.0.189/)
