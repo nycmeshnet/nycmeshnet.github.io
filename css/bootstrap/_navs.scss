@@ -220,9 +220,10 @@
 // -------------------------
 
 // Hide tabbable panes to start, show them when `.active`
+// not hiding new node form for now: 2015-8-21
 .tab-content {
   > .tab-pane {
-    display: none;
+    display: block;
   }
   > .active {
     display: block;
