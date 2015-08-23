@@ -1,18 +1,18 @@
 <div class="title">
-	{% if page.title %}
-	<div class="tags">
-		{% for tag in page.tags %}<a href="{{ site.url }}/tags/#{{ tag | cgi_encode }}" title="Pages tagged {{ tag }}">{{ tag }}</a>{% endfor %}
-	</div>
-	
-	<h1>{{ page.title }}</h1>
-	<p class="sig">
-		<!-- <img src="{{ site.url }}/images/{{ author.avatar }}" alt="{{ author.name }} photo">  -->
-		{% if page.author %}
-		{% assign author = site.authors[page.author] %}
-		<img src="{{ site.url }}/assets/images/team/{{ author.avatar }}" alt="{{ author.name }} photo">{{ page.author | prepend: "by " }}{{ page.date | date: ", %B %d, %Y" }}
-		{% endif %}
-	</p>
-	{% else %}
-		<h1>A community-owned<br>resilient network.</h1>
-	{% endif %}
+  {% if page.title %}
+    <div class="tags">
+      {% for tag in page.tags %}<a href="{{ site.url }}/tags/#{{ tag | cgi_encode }}" title="Pages tagged {{ tag }}">{{ tag }}</a>{% endfor %}
+    </div>
+
+    <h1>{{ page.title }}</h1>
+    <p class="sig">
+    <!-- <img src="{{ site.url }}/images/{{ author.avatar }}" alt="{{ author.name }} photo">  -->
+    {% if page.author %}
+      {% assign author = site.authors[page.author] %}
+      <img src="{{ site.url }}/assets/images/team/{{ author.avatar }}" alt="{{ author.name }} photo">{{ page.author | prepend: "by " }}{{ page.date | date: ", %B %d, %Y" }}
+    {% endif %}
+    </p>
+  {% else %}
+    <h1>A community-owned<br>resilient network.</h1>
+  {% endif %}
 </div>

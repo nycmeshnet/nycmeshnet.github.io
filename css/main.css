@@ -3238,7 +3238,7 @@ input[type="button"].btn-block {
       border-bottom-color: #fff; } }
 
 .tab-content > .tab-pane {
-  display: none; }
+  display: block; }
 .tab-content > .active {
   display: block; }
 

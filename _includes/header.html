@@ -1,7 +1,11 @@
 <div id="map"></div>
 <nav>
   <a href="/" class="logo">
-  	<img src="/assets/images/logo.png">
-  	{{ site.title }}</a>
+    <img src="/assets/images/logo.png">
+    {{ site.title }}
+  </a>
   {% include mainnav.html %}
+  <div class="title-container">
+    {% include title.html %}
+  </div>
 </nav>
