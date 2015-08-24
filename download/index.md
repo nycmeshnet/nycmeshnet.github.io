@@ -18,19 +18,21 @@ We will need to add your router to our list of nodes, so first enter a <a href="
 * Click System Tools>Firmware upgrade
 * Click "choose file" and select the image you downloaded and click "upgrade"
 
-Wait five minutes or more and connect to the router via Wi-Fi. It now has a SSID name like "nycmesh 1a2b" and a random IP of the form 10.x.x.x
+Wait ten minutes or so and connect to the router via Wi-Fi. It now has a SSID name like "nycmesh 1a2b" and a random IP of the form 10.x.x.x
+
+* Plug an ethernet cable from LAN on your current router to the blue WAN on the TP-Link.
 
 * <a href="mailto:contact@nycmesh.net">Email us</a> so we can enable VPN tunneling.
 
 **NanoStation NSM5 instructions**
 
 * Download the NSM5 "factory" binary image to your computer. If you have a new NSM5 you will want the new [XW binary download](http://nycmeshnet.github.io/download/NSM5-XW.html). If you have one from 2014 or earlier you will need the older [XM binary download](http://nycmeshnet.github.io/download/NSM5-XM.html) (if unsure download and try both, for upgrades see below).
-* Plug an ethernet cable from POE on the power adapter to "main" on the NSM5
+* Plug an ethernet cable from POE on the power adapter to "main" on the NSM5 (we will switch to "secondary" later)
 * Plug LAN on the adapter to your computer
 * Turn off Wi-Fi on your computer
 * Open Network Prefs (or equivalent)
 * Connect by ethernet using DHCP with manual address e.g. 192.168.1.11
-* go to 192.168.1.20 in your browser
+* Go to 192.168.1.20 in your browser
 * You will get https warning "your connection is not private" or some such
 * Click "advanced" and "proceed to 192.168.1.20"
 * Enter ubnt, ubnt, USA, [x] agree to terms, login
@@ -40,7 +42,9 @@ Wait five minutes or more and connect to the router via Wi-Fi. It now has a SSID
 * Click "Upload"
 * You will get a "third-party" warning. Ignore this and click "Update"
 	
-Wait five minutes or more and connect to the router via Wi-Fi. It now has a SSID name like "nycmesh 1a2b" and a random IP of the form 10.x.x.x
+Wait ten minutes or so and connect to the router via Wi-Fi. It now has a SSID name like "nycmesh 1a2b" and a random IP of the form 10.x.x.x
+
+* Plug an ethernet cable from LAN on your current router to LAN on the power supply, and from POE to the **secondary** input on the NanoStation. 
 
 * <a href="mailto:contact@nycmesh.net">Email us</a> so we can enable VPN tunneling.
 
