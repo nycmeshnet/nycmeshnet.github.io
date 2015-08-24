@@ -33,15 +33,15 @@ We are using an OpenWrt package made by qMp. This uses the BMX6 mesh protocol. W
 
 **Can I use my own router?**
 
-The routers we currently support and recommend are the Ubiquiti NanoStation M5 for outdoors and the TP-Link TL-WR842ND for indoors. Our [download page](../download) has our firmware for these routers. We usually have pre-configured routers at the meetups, available at cost- $28 for the TP-Link and $90 for the NanoStation. If you want to "flash" a different router with our software, it must have OpenWrt support and you will have to follow some very technical instructions on our github site.
+The routers we currently support and recommend are the Ubiquiti NanoStation M5 for outdoors and the TP-Link TL-WR842ND for indoors. Our [download page](../download) has our firmware for these routers. We usually have pre-configured routers at the meetups, available at cost- $30 for the TP-Link and $90 for the NanoStation. If you want to "flash" a different router with our software, it must have OpenWrt support and you will have to follow some very technical instructions on our github site.
 
 **Can I install a router if I have no view or no rooftop access?**
 
-Yes you can. Because you may be out of range of other mesh nodes, your router will use secure VPN tunneling to connect to the mesh over the Internet. You will still see the exclusive mesh web content. Neighbors could also install our $28 routers creating a mesh for your building and reliable Internet backup. 
+Yes you can. Because you may be out of range of other mesh nodes, your router will use secure VPN tunneling to connect to the mesh over the Internet. You will still see the exclusive mesh web content. Neighbors could also install our $30 routers creating a mesh for your building and reliable Internet backup. 
 
 **What is involved in a rooftop install?**
 
-We currently support two different types of routers. A long distance directional router, the Ubiquiti Nanostation NSM5. ($90) and a small indoor TP-Link router for $28. These pre-configured routers are available from us.
+We currently support two different types of routers. A long distance directional router, the Ubiquiti Nanostation NSM5. ($90) and a small indoor TP-Link router for $30. These pre-configured routers are available from us.
 
 For rooftops, we configure the NanoStations with mesh software and can help you with the installation. Typically one or two routers are attached to a pole on the roof and an ethernet cable is run to the apartment, and connected to an Internet gateway and a TP-Link mesh router. The cable cost is $20. The ethernet cable also supplies the power to the router using "power over ethernet". 
 
@@ -59,6 +59,10 @@ There is "mesh" software for mobile phones such as Serval and FireChat. This is 
 A mesh router is firewalled from your local network. It is not possible to reach beyond the mesh router to your LAN. Mesh tunneling over the Internet is by VPN and is secure. Network traffic within the mesh is not encrypted by default.
 
 If you use the internet while on the mesh, you should use standard precautions such as using https (lock icon) web sites for secure connections.
+
+**Why aren't you doing this obvious thing?**
+
+We have a lot on our to-do list and everyone is a volunteer. Please [email us](mailto:contact@nycmesh.net) with suggestions, or better still volunteer to help us. We can send you an invite our slack.com group where we do our planning. We need help with everything such as publicity, emailing, printing leaflets, writing FAQs, and installing routers on rooftops.
 
 
 

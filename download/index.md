@@ -42,7 +42,7 @@ Wait ten minutes or so and connect to the router via Wi-Fi. It now has a SSID na
 * Click "Upload"
 * You will get a "third-party" warning. Ignore this and click "Update"
 	
-Wait ten minutes or so and connect to the router via Wi-Fi. It now has a SSID name like "nycmesh 1a2b" and a random IP of the form 10.x.x.x
+Wait ten minutes or so. It now has a SSID name like "nycmesh 1a2b" and a random IP of the form 10.x.x.x
 
 * Plug an ethernet cable from LAN on your current router to LAN on the power supply, and from POE to the **secondary** input on the NanoStation. 
 
