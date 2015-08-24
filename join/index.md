@@ -37,7 +37,7 @@ __________________________________________________________________________
 
 It is easy to set up your own server and connect it to the TP-Link router. The mesh has it's own zeroconf mDNS system- ".mesh" and your server will be available to anyone on the mesh.
 
-If you are familiar with the command line and OpenWrt, it is possible to use other routers, but you must use qMp images, and follow instructions on our github site for installing tinc.
+If you are familiar with the command line and OpenWrt, it is possible to use other routers, but you must use [qMp images](http://fw.qmp.cat/stable/), and follow instructions on our [github](https://github.com/nycmeshnet) site for [installing tinc](https://github.com/nycmeshnet/docs/blob/master/tinc%20install.md).
 
 __________________________________________________________________________
 
