@@ -5,13 +5,11 @@ title: "Join the Mesh"
 
 **Why should I join the mesh now?**
 
-By joining the mesh now you help us grow and increase our reach across the city. This is a community project and you will be helping to create a decentralized infrastructure, free from traditional business interests.
+By joining the mesh now you help us grow and increase our reach across the city. This is a community project and you will be helping to create a decentralized infrastructure, free from traditional business interests. If you haven't already, it is a good idea to read our [FAQ](../faq).
 
 **How to buy routers**-
 
-We currently have two options for routers- an inexpensive indoor router and a $90 outdoor router. You can buy the routers online and configure them yourself using our simple download instructions. Otherwise, you can come to our meetups where we often sell preconfigured routers that you can simply plug in.
-
-If you haven't already, it is a good idea to read our [FAQ](../faq).
+We currently have two options for routers- an inexpensive indoor router and a $90 outdoor router. You can buy the routers online and configure them yourself using our simple [download](../download) instructions. Otherwise, you can come to our [meetups](http://www.meetup.com/nycmesh/) where we often sell preconfigured routers that you can simply plug in.
 
 Here are the two router choices:
 
