@@ -31,7 +31,9 @@ The Ubiquiti NanoStation we use is directional with a 45' beam. It needs a line-
 
 Alternatively the NanoStation can be set up as a public access point by pointing it at a park or other public area. This obviously means you are the community-minded kind of person with a good internet connection.
 
-For the more technically adventurous-
+__________________________________________________________________________
+
+**For the more technologically adventurous**-
 
 It is easy to set up your own server and connect it to the TP-Link router. The mesh has it's own zeroconf mDNS system- ".mesh" and your server will be available to anyone on the mesh.
 
