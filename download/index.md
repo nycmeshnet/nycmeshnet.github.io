@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Download Firmware"
+title: "Buy and Download"
 ---
 Please read our [FAQ](../faq) before downloading our firmware.
 
+**Buy a router**
 We currently support two different types of routers. A long distance directional router, the [Ubiquiti NanoStation NSM5](http://www.amazon.com/dp/B0049AVWAO/?tag=nsm5-nycmesh-20) and a small indoor [TP-Link router TL-WR842ND](http://www.amazon.com/dp/B006E04T9I/?tag=tl-wr842nd-nycmesh-20). If you buy a router and flash it with the instructions below you will be ready to join NYC Mesh. 
 
 We will need to add your router to our list of nodes, so first enter a <a href="#newnode1" id="trigger1" data-toggle="tab">new node request</a> for each location and <a href="mailto:contact@nycmesh.net">email us</a> immediately after you flash a router. Once you have emailed us, we can enable VPN tunneling. This will allow the router to join our mesh over the internet. This is very useful when out of range of another NYC Mesh router.

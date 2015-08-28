@@ -60,7 +60,7 @@ A mesh router is firewalled from your local network. It is not possible to reach
 
 If you use the internet while on the mesh, you should use standard precautions such as using https (lock icon) web sites for secure connections.
 
-**Why aren't you doing this obvious thing?**
+**Why aren't you doing this obvious thing I just thought of?**
 
 We have a lot on our to-do list and everyone is a volunteer. Please [email us](mailto:contact@nycmesh.net) with suggestions, or better still volunteer to help us. We can send you an invite to our slack.com group where we do our planning. We need help with everything such as publicity, emailing, printing leaflets, writing FAQs, and installing routers on rooftops.
 
