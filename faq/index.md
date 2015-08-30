@@ -41,13 +41,13 @@ Yes you can. Because you may be out of range of other mesh nodes, your router wi
 
 **What is involved in a rooftop install?**
 
-We currently support two different types of routers. A long distance directional router, the Ubiquiti Nanostation NSM5. ($90) and a small indoor TP-Link router for $30. These pre-configured routers are available from us.
-
-For rooftops, we configure the NanoStations with mesh software and can help you with the installation. Typically one or two routers are attached to a pole on the roof and an ethernet cable is run to the apartment, and connected to an Internet gateway and a TP-Link mesh router. The cable cost is $20. The ethernet cable also supplies the power to the router using "power over ethernet". 
-
-Rooftop installs are mostly done in pairs. You should try to find line-of-sight to another node location less than two miles away. To do this you will probably have to talk to people in the neighborhood and convince them to also install a node. We can help with the install. We also have a collection of rooftop panoramas where you can check for possible line-of-sight connections. 
+Rooftop installs are mostly done in pairs. You should try to find line-of-sight to another node location less than two miles away. To do this you will probably have to talk to people in the neighborhood and convince them to also install a node. We also have a collection of rooftop panoramas where you can check for possible line-of-sight connections. 
 
 The other type of rooftop install is where you are close to a public space (park, cafe, bar etc.). The router can be aimed at the public space as a public Wi-Fi access point.
+
+We currently support one outdoor router, the Ubiquiti Nanostation NSM5 ($90). We have links for this on the [download page](../download)
+
+For rooftops, we can help you with the installation. Typically one or two routers are attached to a pole on the roof and an ethernet cable is run to the apartment, and connected to an Internet gateway and a TP-Link mesh router. The cable cost is $20. The ethernet cable also supplies the power to the router using "power over ethernet".
 
 **I have a great view from my window. Can I put a router there?**
 
