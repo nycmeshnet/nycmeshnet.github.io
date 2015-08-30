@@ -47,11 +47,15 @@ The other type of rooftop install is where you are close to a public space (park
 
 We currently support one outdoor router, the Ubiquiti Nanostation NSM5 ($90). We have links for this on the [download page](../download)
 
-For rooftops, we can help you with the installation. Typically one or two routers are attached to a pole on the roof and an ethernet cable is run to the apartment, and connected to an Internet gateway and a TP-Link mesh router. The cable cost is $20. The ethernet cable also supplies the power to the router using "power over ethernet".
+We can help you with the rooftop installation. Typically one or two routers are attached to a pole on the roof and an ethernet cable is run to the apartment, and connected to the TP-Link mesh router and an Internet gateway. The cable cost is $20. The ethernet cable also supplies the power to the router using "power over ethernet". If the roof (or balcony or window) is close to your apartment you might not need an additional mesh router.
+
+**I want a NanoStation but I'm not quite ready for a rooftop install**
+
+It is easy to use the NanoStation indoors. It is 5Ghz router, and all modern phones and laptops support that. It just looks a little strange and has a very good signal. If you have a long apartment a NanoStation is ideal.
 
 **I have a great view from my window. Can I put a router there?**
 
-If you don't have rooftop access it is still possible to use a directional NanoStation in your window. This works best with line-of-sight to another router. It will work from behind glass if you are unable to place it outside the window.
+If you don't have rooftop access it is still possible to use a directional NanoStation in your window. This works best with line-of-sight to another router. It will work from behind glass if you are unable to place it outside the window. The simplest solution is to velcro the flat surface of the NanoStation NSM5 to the window.
 
 **Why don't we mesh mobile phones instead of routers?**
 
