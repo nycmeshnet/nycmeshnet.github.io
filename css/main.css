@@ -6,6 +6,9 @@ html {
   -webkit-text-size-adjust: 100%; }
 
 body {
+	/* need max-width and overflow-x due to use of static map bh 2015*/
+	max-width: 100%;
+	overflow-x: hidden;
   margin: 0; }
 
 article,
