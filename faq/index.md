@@ -13,7 +13,7 @@ No, not at the moment. The mesh is best used as a backup Internet connection. If
 
 **What can I do on the mesh that I can't do on the Internet?**
 
-The mesh has small web servers connected that show local information and allow you to post messages. We are also looking into streaming services. So far we have servers in three locations- the East Village, Harlem and Bay Ridge. It is also possible to connect directly to other people on the mesh without using the Internet. If for some reason the Internet is down, the mesh will still work.
+It is possible to connect directly to other people on the mesh without using the Internet. If for some reason the Internet is down, the mesh will still work. The mesh has small web servers that show local information and allow you to chat and post messages. So far we have servers in five locations- Harlem, Bay Ridge, 3rd St. and 7th St. in the East Village, and our main directory "wiki.mesh" in Williamsburg. (We need volunteers to help add content to our servers.)
 
 **Why should I join the mesh now?**
 
