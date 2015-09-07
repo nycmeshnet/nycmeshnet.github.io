@@ -2,7 +2,7 @@
 layout: post
 title: "Join, Order, Download and Flash"
 ---
-Please read our [FAQ](../faq) before downloading our firmware.
+Please read our [FAQ](../faq) before joining the mesh.
 
 **Join the mesh**  
 We will need to add your router to our list of nodes, so first enter a [new node request](../join) for each location.
