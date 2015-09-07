@@ -31,9 +31,9 @@ No, not at the moment. While we grow, we are relying on our members to share the
 
 We are using an OpenWrt package made by qMp. This uses the BMX6 mesh protocol. We have added tinc tunneling so a router can mesh over the Internet when out of range using a secure virtual private network (VPN). We also have some members experimenting with and contributing to cjdns/hyperboria software. Let us know if you are interested in this.
 
-**Can I use my own router?**
+**Can I use my own different router?**
 
-The routers we currently support and recommend are the Ubiquiti NanoStation M5 for outdoors and the TP-Link TL-WR842ND for indoors. Our [download page](../download) has our firmware for these routers. We usually have pre-configured routers at the meetups, available at cost- $30 for the TP-Link and $90 for the NanoStation. If you want to "flash" a different router with our software, it must have OpenWrt support and you will have to follow some very technical instructions on our github site.
+No, the routers we currently support and recommend are the Ubiquiti NanoStation M5 for outdoors and the TP-Link TL-WR842ND for indoors. Our [download page](../download) has our firmware for these routers. We usually have pre-configured routers at the [meetups](http://www.meetup.com/nycmesh), available at cost- $33 for the TP-Link and $95 for the NanoStation. We do not support other routers, though we will be supporting the TP-LINK TL-WDR3600 soon.
 
 **Can I install a router if I have no view or no rooftop access?**
 
