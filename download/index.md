@@ -1,30 +1,33 @@
 ---
 layout: post
-title: "Join, Order, Download and Flash"
+title: "Order, Download and Flash"
 ---
 Please read our [FAQ](../faq) before joining the mesh.
 
-**Join the mesh**  
-We will need to add your router to our list of nodes, so first enter a [new node request](../join) for each location.
+**Join the mesh**
+First you need to enter a [new node request](../join). This will add your router to our list of node requests and put your location on our map. If you have multiple locations enter them separately.
 
 **Order a router**    
-We currently support two different models of routers. A long distance directional Ubiquiti NSM5 5GHz router (~$95), and a small indoor TP-Link TL-WR842ND 2.4GHz router(~$33).
+We currently support three different models of routers. A long distance directional Ubiquiti NSM5 5GHz router (~$95 including tax), a dual-band TP-Link dual-band router TL-WDR3600(~$55), and small TP-Link TL-WR842ND 2.4GHz router(~$33).
 
 Buy on Amazon:   
 [Ubiquiti NanoStation NSM5](http://www.amazon.com/dp/B0049AVWAO/?tag=nsm5-nycmesh-20)  
 [TP-Link router TL-WR842ND](http://www.amazon.com/dp/B006E04T9I/?tag=tl-wr842nd-nycmesh-20)  
+[TP-Link dual-band router TL-WDR3600](http://www.amazon.com/dp/B008RV51EE/-nycmesh-20)
 
 Buy at B&H: (free delivery)   
 [Ubiquiti NanoStation NSM5](http://www.bhphotovideo.com/c/product/1049768-REG/)  
 [TP-Link router TL-WR842ND](http://www.bhphotovideo.com/c/product/855244-REG/)  
+[TP-Link dual-band router TL-WDR3600](http://www.bhphotovideo.com/c/search?N=10884838)
 
 
-**Download and flash your router**
+**Download the firmware and flash your router**
 
-**TP-Link TL-WR842ND instructions**
+**TP-Link instructions**
 
-* For a new WR842N, download this to your computer-  
-  [TL-WR842N-v2  download](http://nycmeshnet.github.io/download/WR842N.html)  
+* Click your model to download this to your computer-  
+  [TL-WR842N  download](http://nycmeshnet.github.io/download/WR842N.html)
+  [TL-WDR3600  download](http://nycmeshnet.github.io/download/WDR3600.html)  
   (For upgrades see below)
 * Connect to the router via Wi-Fi. It has a name like "TP-LINK_ABC123"
 * Enter the "wireless password/pin" that is printed on the bottom of the router e.g. "12341234"
@@ -68,7 +71,8 @@ Wait ten minutes or so. It now has a SSID name like "nycmesh 1a2b" and a random 
 **Upgrades**  
 Upgrades are for when your router is already running nycmesh/qMp or another version of OpenWrt.
 
-[WR842N upgrade download](http://nycmeshnet.github.io/download/WR842N-upgrade.html)  
+[WR842N upgrade download](http://nycmeshnet.github.io/download/WR842N-upgrade.html)
+[WDR3600 upgrade download](http://nycmeshnet.github.io/download/WDR3600-upgrade.html)
 [NSM5-XW upgrade download](http://nycmeshnet.github.io/download/NSM5-XW-upgrade.html)
 
 **Older (2014 or earlier) XM NSM5s**  
