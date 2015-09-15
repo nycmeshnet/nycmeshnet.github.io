@@ -25,9 +25,9 @@ Buy at B&H: (free delivery)
 
 **TP-Link instructions**
 
-* Click your model to download this to your computer-  
-  [TL-WR842N  download](http://nycmeshnet.github.io/download/WR842N.html)
-  [TL-WDR3600  download](http://nycmeshnet.github.io/download/WDR3600.html)  
+* Click your model to download the firmware to your computer-  
+  [TL-WR842N  download](http://nycmeshnet.github.io/download/WR842N.html)  
+  [TL-WDR3600 dual-band download](http://nycmeshnet.github.io/download/WDR3600.html)  
   (For upgrades see below)
 * Connect to the router via Wi-Fi. It has a name like "TP-LINK_ABC123"
 * Enter the "wireless password/pin" that is printed on the bottom of the router e.g. "12341234"
@@ -71,9 +71,9 @@ Wait ten minutes or so. It now has a SSID name like "nycmesh 1a2b" and a random 
 **Upgrades**  
 Upgrades are for when your router is already running nycmesh/qMp or another version of OpenWrt.
 
-[WR842N upgrade download](http://nycmeshnet.github.io/download/WR842N-upgrade.html)
-[WDR3600 upgrade download](http://nycmeshnet.github.io/download/WDR3600-upgrade.html)
-[NSM5-XW upgrade download](http://nycmeshnet.github.io/download/NSM5-XW-upgrade.html)
+[WR842N upgrade download](http://nycmeshnet.github.io/download/WR842N-upgrade.html)  
+[WDR3600 upgrade download](http://nycmeshnet.github.io/download/WDR3600-upgrade.html)  
+[NSM5-XW upgrade download](http://nycmeshnet.github.io/download/NSM5-XW-upgrade.html)  
 
 **Older (2014 or earlier) XM NSM5s**  
 [NSM5-XM binary download](http://nycmeshnet.github.io/download/NSM5-XM.html)  
