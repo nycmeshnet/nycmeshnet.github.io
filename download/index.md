@@ -2,13 +2,24 @@
 layout: post
 title: "Order, Download and Flash"
 ---
-Please read our [FAQ](../faq) before joining the mesh.
+Please read our [FAQ](../faq) if you haven't already.
 
-**Join the mesh**
+**Join the mesh**  
 First you need to enter a [new node request](../join). This will add your router to our list of node requests and put your location on our map. If you have multiple locations enter them separately.
 
 **Order a router**    
-We currently support three different models of routers. A long distance directional Ubiquiti NSM5 5GHz router (~$95 including tax), a dual-band TP-Link dual-band router TL-WDR3600(~$55), and small TP-Link TL-WR842ND 2.4GHz router(~$33).
+We currently support three different models of routers- 
+
+For outdoors and long distance-  
+
+* Ubiquiti NSM5 directional 5GHz (~$95 including tax)
+
+For indoors-  
+
+* TP-Link dual-band TL-WDR3600(~$55)
+* TP-Link TL-WR842ND 2.4GHz (~$33)
+
+A dual-band router can mesh over-the-air (or by ethernet) with both the Ubiquiti and other TP-Links. The single band router can  mesh over-the-air with other TP-Links, and it can connect to the Ubiquiti via ethernet cable.
 
 Buy on Amazon:   
 [Ubiquiti NanoStation NSM5](http://www.amazon.com/dp/B0049AVWAO/?tag=nsm5-nycmesh-20)  
@@ -76,7 +87,7 @@ Upgrades are for when your router is already running nycmesh/qMp or another vers
 [NSM5-XW upgrade download](http://nycmeshnet.github.io/download/NSM5-XW-upgrade.html)  
 
 **Older (2014 or earlier) XM NSM5s**  
-[NSM5-XM binary download](http://nycmeshnet.github.io/download/NSM5-XM.html)  
+[NSM5-XM download](http://nycmeshnet.github.io/download/NSM5-XM.html)  
 [NSM5-XM upgrade download](http://nycmeshnet.github.io/download/NSM5-XM-upgrade.html)  
 
 **Firmware**  
