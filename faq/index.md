@@ -41,11 +41,11 @@ Yes you can. Because you may be out of range of other mesh nodes, your router wi
 
 **What is involved in a rooftop or window install?**
 
-Rooftop installs are mostly done in pairs. Try to find line-of-sight to another node location less than two miles away. You can talk to people in the neighborhood and convince them to also install a node. Also check for nearby nodes on our [map](../map) We also have a collection of rooftop panoramas where you can check for possible line-of-sight connections. 
+Rooftop installs are mostly done in pairs. Look at our [map](../map) to find line-of-sight to another node location less than two miles away. You can also talk to people in the neighborhood and convince them to also install a node. We also have a collection of rooftop panoramas where you can check for possible line-of-sight connections. 
 
-The other type of install is where directional Ubiquiti router is aimed at a nearby public space (park, cafe, bar etc.) as a public Wi-Fi access point. We currently have five public spaces with this type of install. 
+The other type of install is where a directional Ubiquiti router is aimed at a nearby public space (park, cafe, bar etc.) as a public Wi-Fi access point. We currently have five public spaces with this type of install. 
 
-We currently support one outdoor router, the Ubiquiti Nanostation NSM5 ($90). We have links for this on the [download page](../download)
+We support one outdoor router, the Ubiquiti Nanostation NSM5 (~$95). We have links for this on the [download page](../download)
 
 We can help you with the rooftop installation. Typically one or two routers are attached to a pole on the roof and an ethernet cable is run to the apartment, and connected to the TP-Link mesh router and an Internet gateway. The cable cost is $20. The ethernet cable also supplies the power to the router using "power over ethernet". If the roof (or balcony or window) is close to your apartment you might not need an additional mesh router.
 
@@ -55,7 +55,7 @@ It is easy to use the NanoStation indoors. It is 5GHz router, and all modern pho
 
 **I can see another node from my window. Can I put a router there?**
 
-If you don't have rooftop access it is still possible to use a directional NanoStation in your window. It will work from behind glass if you are unable to place it outside the window. The simplest solution is to velcro the flat surface of the NanoStation NSM5 to the window.
+If you don't have rooftop access it is still possible to use a directional NanoStation in your window. It will work from behind glass if you are unable to place it outside the window. The simplest install is to velcro the flat surface of the NanoStation NSM5 to the window.
 
 **Why don't we mesh mobile phones instead of routers?**
 
