@@ -39,11 +39,11 @@ No, the routers we currently support and recommend are the Ubiquiti NanoStation 
 
 Yes you can. Because you may be out of range of other mesh nodes, your router will use secure VPN tunneling to connect to the mesh over the Internet. You will still see the exclusive mesh web content. Neighbors could also install our $30 routers creating a mesh for your building and reliable Internet backup. 
 
-**What is involved in a rooftop install?**
+**What is involved in a rooftop or window install?**
 
-Rooftop installs are mostly done in pairs. You must try to find line-of-sight to another node location less than two miles away. To do this you will probably have to talk to people in the neighborhood and convince them to also install a node. Also check for nearby nodes on our [[map]](../map) We also have a collection of rooftop panoramas where you can check for possible line-of-sight connections. 
+Rooftop installs are mostly done in pairs. Try to find line-of-sight to another node location less than two miles away. You can talk to people in the neighborhood and convince them to also install a node. Also check for nearby nodes on our [map](../map) We also have a collection of rooftop panoramas where you can check for possible line-of-sight connections. 
 
-The other type of rooftop install is where you are close to a public space (park, cafe, bar etc.). The router can be aimed at the public space as a public Wi-Fi access point.
+The other type of install is where directional Ubiquiti router is aimed at a nearby public space (park, cafe, bar etc.) as a public Wi-Fi access point. We currently have five public spaces with this type of install. 
 
 We currently support one outdoor router, the Ubiquiti Nanostation NSM5 ($90). We have links for this on the [download page](../download)
 
