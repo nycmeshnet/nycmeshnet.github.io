@@ -33,7 +33,7 @@ We are using an OpenWrt package made by qMp. This uses the BMX6 mesh protocol. W
 
 **Can I use my own different router?**
 
-No, the routers we currently support and recommend are the Ubiquiti NanoStation M5 for outdoors and the TP-Link TL-WR842ND for indoors. Our [download page](../download) has our firmware for these routers. We usually have pre-configured routers at the [meetups](http://www.meetup.com/nycmesh), available at cost- $33 for the TP-Link and $95 for the NanoStation. We do not support other routers, though we will be supporting the TP-LINK TL-WDR3600 soon.
+No, the routers we currently support and recommend are the Ubiquiti NanoStation M5 for outdoors and the TP-Link TL-WR842ND for indoors. Our [download page](../download) has our firmware for these routers and links to buy. We sometimes have pre-configured routers at the [meetups](http://www.meetup.com/nycmesh), available at cost- $33 for the TP-Link 841ND, $55 for the TP-LINK TL-WDR3600, and $95 for the NanoStation. We do not support other routers.
 
 **Can I install a router if I have no view or no rooftop access?**
 
