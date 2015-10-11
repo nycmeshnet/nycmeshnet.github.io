@@ -6304,7 +6304,7 @@ footer.footer,
     .content .post-list,
     .blog ul,
     .blog ol {
-      width: 538px; } }
+      width: 480px; } }
   @media only screen and (max-width: 480px) {
     nav,
     .content > h1,
@@ -6318,7 +6318,7 @@ footer.footer,
     .content .post-list,
     .blog ul,
     .blog ol {
-      width: 440px; } }
+      width: 370px; } }
   @media only screen and (max-width: 360px) {
     nav,
     .content > h1,
@@ -6374,7 +6374,15 @@ footer.footer,
   -o-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
   position: absolute;
-  width: 100%; }
+  width: 100%;
+
+}
+
+  @media only screen and (max-width: 568px) {
+    .content {
+      margin-top: 170px;
+  }
+ }
   .content > p {
     margin-top: 30px; }
   .content h2 {
@@ -6385,6 +6393,8 @@ footer.footer,
       border-top: solid 1px #333; }
     .content h2:first-of-type {
       margin-top: 0; }
+
+
 
 .title {
   padding: 20px 0;
