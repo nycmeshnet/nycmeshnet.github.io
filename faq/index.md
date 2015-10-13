@@ -9,7 +9,11 @@ No. Once you buy a router and install it you are part of NYC Mesh. There are no 
 
 **Is this a replacement for my current Internet connection?**
 
-No, not at the moment. The mesh is best used as a backup Internet connection. If you are within range of the mesh, your router will automatically use the fastest Internet connection. This means you will have a backup Internet connection if your own Internet connection fails.
+Probably not at the moment. Most members are sharing their internet. If you have line-of-sight to another member or they are very close by you can ask if it is OK to share internet. We encourage people to share or make deals with their neighbors. 
+
+Currently, you can use the mesh as a backup Internet connection. If you are within range of the mesh, your router will automatically use the fastest Internet connection. This means you will have a backup Internet connection if your own Internet connection fails.
+
+We are talking to people about providing independent service either through an ISP or peering, but this is a while off.
 
 **What can I do on the mesh that I can't do on the Internet?**
 
