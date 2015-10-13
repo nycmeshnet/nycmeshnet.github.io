@@ -6140,18 +6140,9 @@ a {
 #map {
   width: 100%;
   height: 500px; }
-  @media only screen and (max-width: 568px) and (min-width: 320px) {
-    #map {
-      height: 320px; } }
-  @media only screen and (max-height: 568px) {
-    #map {
-      height: 568px; } }
   @media only screen and (max-height: 480px) {
     #map {
       height: 480px; } }
-  @media only screen and (max-height: 559px) {
-    #map {
-      height: 559px; } }
   @media only screen and (max-height: 320px) {
     #map {
       height: 320px; } }
@@ -6379,9 +6370,10 @@ footer.footer,
 }
 
   @media only screen and (max-width: 568px) {
-    .content {
+ /*   .content {
       margin-top: 170px;
-  }
+   } 
+*/ 
  }
   .content > p {
     margin-top: 30px; }
@@ -6434,11 +6426,12 @@ footer.footer,
       border-radius: 50%;
       margin-right: 10px;
       border: solid 2px white; }
-  @media only screen and (max-height: 568px) {
+/* 
+    @media only screen and (max-height: 568px) {
     .title {
       margin-top: 340px; } }
   @media only screen and (max-height: 559px) {
-    .title {
+   .title {
       margin-top: 394px; } }
   @media only screen and (max-height: 480px) {
     .title {
@@ -6446,6 +6439,7 @@ footer.footer,
   @media only screen and (max-height: 320px) {
     .title {
       margin-top: 155px; } }
+*/
   .title h1 {
     font-size: 34px; }
 
@@ -6732,9 +6726,11 @@ footer.footer .icon-rss:hover div {
   top: 60px;
   padding: 20px 0;
   color: white; }
+/* leave room for menu wrap- so not setting top: 25px!
   @media only screen and (max-width: 568px) and (min-width: 321px) {
     #newnode {
       top: 25px; } }
+*/
   #newnode .tab-pane ul.progress li:first-of-type, #newnode .tab-pane:nth-of-type(3) ul.progress li:nth-of-type(2), #newnode .tab-pane:nth-of-type(4) ul.progress li:nth-of-type(2), #newnode .tab-pane:nth-of-type(4) ul.progress li:nth-of-type(3) {
     background-color: white; }
   #newnode h2 {
