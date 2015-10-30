@@ -97,8 +97,6 @@ Upgrades are for when your router is already running nycmesh/qMp or another vers
 A quick test to see if you are on the mesh is to go here-
 [http://10.30.0.189/](http://10.30.0.189/)
 
-You may have to clear your DNS server settings for this to work.
-
 
 
  
