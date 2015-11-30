@@ -12,8 +12,7 @@ Our network can run independently from the Internet and the mesh software can au
 
 So far we have 42 locations spread across the city. To take our network to the next stage we're planning to lease rooftop space at an Internet exchange point and install a "supernode".  With this supernode we will have an antenna that can reach lower Manhattan and a large part of Brooklyn.  This will help provide Internet to many people and allow us to reach under-served areas at a very low cost per person.
 
-We are launching a fundraiser to help pay for the supernode installation and maintenance -
-http://igg.me/at/6AbowdAhM-E
+[We are launching an Indiegogo fundraiser on December 1st to help pay for the supernode installation and maintenance!](http://igg.me/at/6AbowdAhM-E)
 
 Here is a coverage map for the supernode-
 ![supernode coverage](/assets/images/NYsupernode5km.png)
