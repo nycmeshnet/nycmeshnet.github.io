@@ -55,9 +55,10 @@ Wait ten minutes or so and connect to the router via Wi-Fi. It now has a SSID na
 
 **NanoStation NSM5 instructions**  
   (for old NSM5s or if you are upgrading see below)  
+   
   FOLLOW ALL THE STEPS OR YOU MAY PERMANENTLY BRICK THE ROUTER!  
 
-* For a new NSM5, download this file to your computer- [AirOS5.5 download](http://dl.ubnt.com/firmwares/XW-fw/v5.5.10/XW.v5.5.10-u2.28005.150723.1358.bin) (**you MUST downgrade from AirOS 5.6 to 5.5**)
+* For a new NSM5, download this file to your computer- [AirOS5.5 download](http://dl.ubnt.com/firmwares/XW-fw/v5.5.10/XW.v5.5.10-u2.28005.150723.1358.bin) **You MUST downgrade from AirOS 5.6 to 5.5**
 * Plug an ethernet cable from POE on the power adapter to "main" on the NSM5 (we will switch to "secondary" later)
 * Plug from LAN on the adapter to your computer (You may need a USB ethernet adapter)
 * Turn off Wi-Fi on your computer
@@ -74,7 +75,7 @@ Wait ten minutes or so and connect to the router via Wi-Fi. It now has a SSID na
 * Wait until it reboots
 * Download our firmware- [NSM5 XW download](http://nycmeshnet.github.io/download/NSM5-XW.html) 
 * Go to [192.168.1.20](http://192.168.1.20), login and select "System" again
-* Make sure you are now running 5.5 and NOT 5.6
+* Make sure you are now running 5.5.10 and NOT 5.6.x
 * Click "Upload Firmware: Choose File"
 * Select the M5-XW factory image you downloaded
 * Click "Upload"
