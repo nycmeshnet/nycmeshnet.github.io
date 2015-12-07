@@ -53,28 +53,21 @@ Wait ten minutes or so and connect to the router via Wi-Fi. It now has a SSID na
 
 * <a href="mailto:contact@nycmesh.net">Email us</a> and we will check that everything is working.
 
-**NanoStation NSM5 instructions**  
-  (for old NSM5s or if you are upgrading see below)  
-  FOLLOW ALL THE STEPS OR YOU MAY PERMANENTLY BRICK THE ROUTER!  
+**NanoStation NSM5 instructions**
 
-* For a new NSM5, download this file to your computer- [AirOS5.5 download](http://dl.ubnt.com/firmwares/XW-fw/v5.5.10/XW.v5.5.10-u2.28005.150723.1358.bin) (**you MUST downgrade from AirOS 5.6 to 5.5**)
+* For a new NSM5, download this to your computer-  
+  [NSM5 XW download](http://nycmeshnet.github.io/download/NSM5-XW.html)  
+  (for old NSM5s or if you are upgrading see below)
 * Plug an ethernet cable from POE on the power adapter to "main" on the NSM5 (we will switch to "secondary" later)
 * Plug from LAN on the adapter to your computer (You may need a USB ethernet adapter)
 * Turn off Wi-Fi on your computer
 * Open Network Prefs (or equivalent)
 * Connect by ethernet using DHCP with manual address e.g. 192.168.1.11
-* Go to [192.168.1.20](http://192.168.1.20) in your browser
+* Go to 192.168.1.20 in your browser
 * You will get https warning "your connection is not private" or some such
 * Click "advanced" and "proceed to 192.168.1.20"
 * Enter ubnt, ubnt, USA, [x] agree to terms, login
 * On the tabbed panel select "System"
-* Click "Upload Firmware: Choose File"
-* Select the AirOS file
-* Click "Upload"
-* Wait until it reboots
-* Download our firmware- [NSM5 XW download](http://nycmeshnet.github.io/download/NSM5-XW.html) 
-* Go to [192.168.1.20](http://192.168.1.20), login and select "System" again
-* Make sure you are now running 5.5 and NOT 5.6
 * Click "Upload Firmware: Choose File"
 * Select the M5-XW factory image you downloaded
 * Click "Upload"
