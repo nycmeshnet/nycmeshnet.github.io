@@ -1,3 +1,10 @@
 <footer class="footer">
+	<script>
+	(function() {
+	  'use strict';
+	  if (location.protocol === 'https:') {
+	    location.replace(('' + location).replace(/^https:/, 'http:'));
+	  }}
+	</script>
   {% include mainnav.html %}
 </footer>
