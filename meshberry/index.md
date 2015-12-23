@@ -8,7 +8,7 @@ In an effort to make joining the mesh as simple as possible, a Raspberry Pi imag
 the necessary software has been created. The steps on this [wiki page](http://wiki.projectmeshnet.org/Install_on_Raspberry_Pi)
 were followed to create the image.
 
-Download the image [here](https://www.dropbox.com/s/evnm7mszbtw5uqs/meshberry-v0.2.img) from Dropbox.
+Download the image from nfkmesh [here](http://nfkmesh.net/data/meshberry-v0.2.img)
 
 
 ## What's included
