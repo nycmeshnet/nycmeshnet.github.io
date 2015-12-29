@@ -10,7 +10,7 @@ By joining the mesh now you help us grow and increase our reach across the city.
 
 **How to buy routers**-
 
-We currently have thre options for routers- two indoor routers and a $90 outdoor router. You can buy the routers online and configure them yourself using our simple [download](../download) instructions. Otherwise, you can come to our [meetups](http://www.meetup.com/nycmesh/) where we often sell preconfigured routers that you can simply plug in.
+We currently have three options for routers- two indoor routers and a $90 outdoor router. You can buy the routers online and configure them yourself using our simple [download](../download) instructions. Otherwise, you can come to our [meetups](http://www.meetup.com/nycmesh/) where we often sell preconfigured routers that you can simply plug in.
 
 Here are the three router choices:
 
