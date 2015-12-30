@@ -1,0 +1,115 @@
+/*
+gap variations
+*/
+$g2: ($g1 * 2);
+$g3: ($g1 * 3);
+$g4: ($g1 * 4);
+$g5: ($g1 * 5);
+$g6: ($g1 * 6);
+$g7: ($g1 * 7);
+$g8: ($g1 * 8);
+$g9: ($g1 * 9);
+$g10: ($g1 * 10);
+$g11: ($g1 * 11);
+$g12: ($g1 * 12);
+/* 
+type sizes, generify
+*/
+$mini: 0.7rem;
+$tiny: 0.8125rem;
+$small: 0.975rem;
+$medium: 1rem;
+$large: 1.125rem;
+$big: 1.25rem;
+$huge: 1.375rem;
+$massive: 1.5rem;
+$enormo: 1.8rem;
+$xl: 2rem;
+$xxl: 3rem;
+$xxxl: 4rem;
+$xxxxl: 5rem;
+/* 
+base colors 
+*/
+$darkgray: #a9a9a9;
+$white: #fff;
+$black: #000;
+/*
+color variations
+to lighten, use color#l#
+to darken, use color#dark# 
+*/
+$c0l1: lighten($c0, 10%);
+$c0l2: lighten($c0, 20%);
+$c0l3: lighten($c0, 30%);
+$c0l4: lighten($c0, 40%);
+$c0l5: lighten($c0, 50%);
+$c0l6: lighten($c0, 60%);
+$c0d1: darken($c0, 10%);
+$c0d2: darken($c0, 20%);
+$c0d3: darken($c0, 30%);
+$c0d4: darken($c0, 40%);
+$c0d5: darken($c0, 50%);
+$c0d6: darken($c0, 60%);
+$c1l1: lighten($c1, 10%);
+$c1l2: lighten($c1, 20%);
+$c1l3: lighten($c1, 30%);
+$c1l4: lighten($c1, 40%);
+$c1l5: lighten($c1, 50%);
+$c1l6: lighten($c1, 60%);
+$c1l7: lighten($c1, 70%);
+$c1l8: lighten($c1, 80%);
+$c1d1: darken($c1, 10%);
+$c1d2: darken($c1, 20%);
+$c1d3: darken($c1, 30%);
+$c1d4: darken($c1, 40%);
+$c1d5: darken($c1, 50%);
+$c1d6: darken($c1, 60%);
+$c2l1: lighten($c2, 10%);
+$c2l2: lighten($c2, 20%);
+$c2l3: lighten($c2, 30%);
+$c2l4: lighten($c2, 40%);
+$c2l5: lighten($c2, 50%);
+$c2l6: lighten($c2, 60%);
+$c2d1: darken($c2, 10%);
+$c2d2: darken($c2, 20%);
+$c2d3: darken($c2, 30%);
+$c2d4: darken($c2, 40%);
+$c2d5: darken($c2, 50%);
+$c2d6: darken($c2, 60%);
+$c3l1: lighten($c3, 10%);
+$c3l2: lighten($c3, 20%);
+$c3l3: lighten($c3, 30%);
+$c3l4: lighten($c3, 40%);
+$c3l5: lighten($c3, 50%);
+$c3l6: lighten($c3, 60%);
+$c3d1: darken($c3, 10%);
+$c3d2: darken($c3, 20%);
+$c3d3: darken($c3, 30%);
+$c3d4: darken($c3, 40%);
+$c3d5: darken($c3, 50%);
+$c3d6: darken($c3, 60%);
+$c4l1: lighten($c4, 10%);
+$c4l2: lighten($c4, 20%);
+$c4l3: lighten($c4, 30%);
+$c4l4: lighten($c4, 40%);
+$c4l5: lighten($c4, 50%);
+$c4l6: lighten($c4, 60%);
+$c4d1: darken($c4, 10%);
+$c4d2: darken($c4, 20%);
+$c4d3: darken($c4, 30%);
+$c4d4: darken($c4, 40%);
+$c4d5: darken($c4, 50%);
+$c4d6: darken($c4, 60%);
+$c5l1: lighten($c5, 10%);
+$c5l2: lighten($c5, 20%);
+$c5l3: lighten($c5, 30%);
+$c5l4: lighten($c5, 40%);
+$c5l5: lighten($c5, 50%);
+$c5l6: lighten($c5, 60%);
+$c5d1: darken($c5, 10%);
+$c5d2: darken($c5, 20%);
+$c5d3: darken($c5, 30%);
+$c5d4: darken($c5, 40%);
+$c5d5: darken($c5, 50%);
+$c5d6: darken($c5, 60%);
