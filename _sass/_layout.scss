@@ -55,21 +55,12 @@ a {
 #map {
   width:100%; 
   height: 500px;
-  @media only screen and (max-width : 568px) and (min-width : 320px) {
-   height: 320px;
- }
+  overflow: hidden;
+  text-align: center;
  @media only screen and (max-height : 568px) {
-   height: 568px;
+   height: 100%;
  }
- @media only screen and (max-height : 480px) {
-   height: 480px;
- }
- @media only screen and (max-height : 559px) {
-   height: 559px;
- }
- @media only screen and (max-height : 320px) {
-   height: 320px;
- }
+
 }
 .mainnav {
   float: right;
@@ -91,6 +82,8 @@ a {
 nav {
   position:absolute;
   top: 0px;
+  height: 500px;
+  z-index: 4;
   margin-top: $g2;
   @media only screen and (max-width : 568px) and (min-width : 321px) {
     margin-top: $g1;
@@ -108,6 +101,13 @@ nav {
       text-decoration: none;
       color: white;
     }
+  }
+  .title-container {
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
   }
   .mainnav input {
     border-color: white;
@@ -172,18 +172,9 @@ footer.footer,
 .blog ol {
   width: 600px;
   @media only screen and (max-width : 600px) {
-   width: 538px;
+   width: 95%;
  }
 
- @media only screen and (max-width : 480px) {
-   width: 440px;
- }
- @media only screen and (max-width : 360px) {
-  width: 320px;
-}
-@media only screen and (max-width : 320px) {
- width: 280px;
-}
 margin-left: auto;
 margin-right: auto;
 left: 0;
@@ -221,7 +212,6 @@ right: 0;
  padding: $g2 0;
  @include animate(blur);
  @include delay(6);
- margin-top: 300px;
  .sig {
   margin-top: 10px;
   margin-left: -30px;
@@ -240,18 +230,7 @@ right: 0;
     border: solid 2px white;
   }
  }
- @media only screen and (max-height : 568px) {
-   margin-top: (568px - 228);
- }
- @media only screen and (max-height : 559px) {
-   margin-top: (559px - 165);
- }
-  @media only screen and (max-height : 480px) {
-   margin-top: (480px - 228);
- }
- @media only screen and (max-height : 320px) {
-  margin-top: (320px - 165);
-}
+
 color: white;
   text-shadow: 
  -1px -1px 0 #000,
@@ -266,19 +245,7 @@ h1 {
 }
 
 .blog .title {
- margin-top: 320px;
- @media only screen and (max-height : 568px) {
-   margin-top: (568px - 220);
- }
- @media only screen and (max-height : 559px) {
-   margin-top: (559px - 220);
- }
-  @media only screen and (max-height : 480px) {
-   margin-top: (480px - 220);
- }
- @media only screen and (max-height : 320px) {
-  margin-top: (320px - 180);
-}
+
 h1 {
   margin-bottom: 5px;
 @include ellipsis;
@@ -325,21 +292,10 @@ h1 {
   left: 0;
   right: 0;
   width: 1000px;
-  @media only screen and (max-width : 768px) {
-    width: 600px;
+  @media only screen and (max-width : 1015px) {
+    width: 95%;
   }
-  @media only screen and (max-width : 600px) {
-   width: 538px;
- }
- @media only screen and (max-width : 480px) {
-   width: 440px;
- }
- @media only screen and (max-width : 360px) {
-  width: 320px;
-}
-@media only screen and (max-width : 320px) {
- width: 280px;
-}
+  
 @include reset(padding);
 @include reset(list);
 & > li {
@@ -350,7 +306,7 @@ h1 {
  & > .btn {
    display: block;
  }
- @media only screen and (max-width : 768px) and (min-width : 321px) {
+ @media only screen and (max-width : 875px) and (min-width : 321px) {
   width: 50%;
   padding: $g3;
   &:first-of-type {
