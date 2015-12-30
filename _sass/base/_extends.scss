@@ -1,0 +1,46 @@
+%reset-link {
+  color: $c1;
+  border-bottom: dotted 1px $c1l4;
+  &:hover {
+    text-decoration: none;
+    border-bottom-style: solid;
+  }
+}
+%border-box {
+  box-sizing:         border-box;
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+}
+%hide-text {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+%clearfix {
+  zoom: 1;
+  &:before, 
+  &:after {
+    display:  table;
+    content:  "";
+  }
+  &:after {
+    clear:  both;
+  }
+}
+%centerblock {
+ display: block;
+ margin:  0 auto;
+}
+%navlist {
+  list-style-type:  none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  > li{
+    display: block;
+    float: left;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}

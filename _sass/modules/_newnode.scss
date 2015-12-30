@@ -1,0 +1,152 @@
+#newnode { 
+  text-shadow: 
+ -1px -1px 0 #000,
+  1px -1px 0 #000,
+ -1px 1px 0 #000,
+  1px 1px 0 #000;
+  position: absolute;
+  top: 60px;
+  @media only screen and (max-width : 568px) and (min-width : 321px) {
+    top: 50px;
+  }
+  padding: $g2 0;
+  .tab-pane {
+    ul.progress li:first-of-type,
+    &:nth-of-type(3) ul.progress li:nth-of-type(2),
+    &:nth-of-type(4) ul.progress li:nth-of-type(2),
+    &:nth-of-type(4) ul.progress li:nth-of-type(3)
+    {
+      background-color: white;
+    }
+  }
+  color: white;
+  h2 {
+    display: inline-block;
+    @media only screen and (max-height : 320px) {
+      font-size: 20px;
+    }
+  }
+  .pending {
+    color: white;
+    background-color: rgba(255, 255, 0, .3);
+  }
+  a:not(.btn) {
+    color: white;
+    text-decoration: underline;
+    &:hover {
+      color: $g2;
+    }
+  }
+  .btn { 
+    color: white !important;
+    border-color: white;
+    background-color: rgba(50,210,50,.83) !important;
+    float: right !important;
+    display: inline-block !important;
+    padding: 15px 20px !important;
+    width: 150px;
+        @media only screen and (max-width : 320px) {
+    width: 100%;
+  }
+    @media only screen and (max-width : 568px) {
+      padding: 10px 20px !important;
+    }
+    &:hover {
+     background-color: rgba(0,256,0,1) !important;
+   }
+ }
+ label input[type=checkbox] {
+   display: inline-block;
+   @include square(18px);
+   margin-right: 5px;
+
+ }
+ input, textarea {
+  color: black;
+  border-color: black;
+  background-color: rgba(255, 255, 255, .85);
+  @include placeholder { 
+    color: black; 
+  }
+
+  &:active, &:hover, &:focus, &:not(:empty) {
+    color: black;
+    background-color: white;
+    @include placeholder { 
+      color: #666; 
+    }
+    &:active, &:hover, &:focus {
+      background-color: white;
+      @include placeholder { 
+        color: #666; 
+      }
+    }
+  }
+}
+}
+ul.progress {
+  background: none;
+  @include reset;
+  @include radius(0);
+  @include shadow(none);
+  float: right;
+  li {
+    @include square(10px);
+    @include radius(50%);
+    background-color: rgba(255, 255, 255, .3);
+    display: inline-block;
+  }
+}
+
+/*.site-wrapper {
+  height: 500px;
+  @include clear;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#map {
+  position: absolute; top:0; bottom:0; width:100%; height: 80%; z-index: -1;
+  background-color: #141414;
+}
+
+#map-header {
+  position: absolute; top:0; bottom:0; width:100%; height: 25%; z-index: -1;
+  background-color: #141414;
+}
+.mapbox-improve-map {
+  display: none !important;
+}
+#what {
+  color: #1E1E1E;
+  text-shadow: none;
+}
+#what .lead {
+  color: #1E1E1E;
+  text-shadow: none;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ccc;
+}
+#what a {
+  text-decoration: underline;
+  color: #1E1E1E;
+}
+#join {
+  display: none;
+}
+#submit {
+  display: none;
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-control {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}*/

@@ -1,0 +1,535 @@
+.logo {
+ height: 35px;
+ display: inline-block;
+ font-size: 32px;
+ text-shadow: 
+ -1px -1px 0 #000,
+  1px -1px 0 #000,
+ -1px 1px 0 #000,
+  1px 1px 0 #000;
+ img {
+  @include square(40px);
+}
+@media only screen and (max-width : 568px) and (min-width : 321px) {
+ font-size: 25px;
+ img {
+  @include square(30px);
+}
+}
+}
+.post-list {
+  @include reset(list);
+  padding-left: 0;
+  li:not(:first-of-type) {
+    border-top: solid 1px lighten($c1, 30%);
+  }
+  a {
+    padding: $g1 0;
+    display: block;
+    .entry-date {
+      floaT: right;
+      font-size: 12px;
+    }
+  }
+  
+}
+.tag-box.inline {
+  display: none;
+}
+body {
+  font-size: 16px;
+  line-height: 22px;
+}
+a {
+  color: lighten($c1, 40%);
+  text-decoration: none;
+  &:hover {
+    color: $c2;
+  }
+}
+.pending {
+  background-color: lighten(yellow, 30%);
+  color: darken(yellow, 30%);
+}
+
+#map {
+  width:100%; 
+  height: 500px;
+  overflow: hidden;
+  text-align: center;
+ @media only screen and (max-height : 568px) {
+   height: 100%;
+ }
+
+}
+.mainnav {
+  float: right;
+
+  @media only screen and (max-width : 320px) {
+    float: none;
+    margin-left: 50px;  
+  }
+  a { 
+    &:not(:first-of-type):before {
+      content: "/ ";
+    }
+  }
+  input {
+    text-align: center;
+    width: 120px;
+  }
+}
+nav {
+  position:absolute;
+  top: 0px;
+  height: 500px;
+  z-index: 4;
+  margin-top: $g2;
+  @media only screen and (max-width : 568px) and (min-width : 321px) {
+    margin-top: $g1;
+  }
+  font-weight: bold;
+  a {
+   text-shadow: 
+ -1px -1px 0 #000,
+  1px -1px 0 #000,
+ -1px 1px 0 #000,
+  1px 1px 0 #000;
+    color: white;
+    border: none;
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  .title-container {
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+  }
+  .mainnav input {
+    border-color: white;
+    @include placeholder { 
+      color: white; 
+    }
+    &:active, &:hover, &:focus {
+      background-color: white;
+      @include placeholder { 
+        color: #666; 
+      }
+      &:active, &:hover, &:focus {
+        background-color: white;
+        @include placeholder { 
+          color: #666; 
+        }
+      }
+    }
+  }
+}
+footer {
+ p {
+  margin-bottom: 5px;
+  width: 70%; 
+  display: inline-block;
+}
+.mainnav {
+  font-weight: bold;
+  a {
+   &:hover {
+    text-decoration: none;
+    color: $c2;
+  }
+}
+input, select, textarea {
+  border-color: #ccc;
+  @include placeholder { 
+    font-weight: bold !important;
+    color: #666; 
+  }
+  &:active, &:hover, &:focus {
+    border-color: $c2;
+    @include placeholder { 
+      color: $c2; 
+    }
+  }
+}
+}
+}
+
+nav, 
+.content > h1, 
+.content > h2, 
+.content > h3, 
+.content > p, 
+.team, 
+#disqus_thread, 
+footer.footer, 
+#newnode, 
+.content .post-list, 
+.blog ul, 
+.blog ol {
+  width: 600px;
+  @media only screen and (max-width : 600px) {
+   width: 95%;
+ }
+
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+
+}
+
+.leaflet-overlay-pane, .content {
+  @include animate(blur);
+}
+.leaflet-overlay-pane {
+  @include delay(2); 
+}
+.content {
+  @include delay(6);
+  position: absolute;
+  width: 100%;
+  & > p {
+    margin-top: $g3;
+  }
+  h2 {
+    margin-top: $g3;
+    padding-top: $g3;
+    margin-bottom: $g1;
+    &:not(:first-of-type) {
+      border-top: solid 1px $c1;
+
+    }
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+}
+.title {
+ padding: $g2 0;
+ @include animate(blur);
+ @include delay(6);
+ .sig {
+  margin-top: 10px;
+  margin-left: -30px;
+   @media only screen and (max-width : 600px) {
+      margin-left: -20px;
+   }
+    @media only screen and (max-height : 568px) {
+  margin-left: 0px;
+ }
+  img {
+      vertical-align: top;
+      margin-top: -10px;
+    @include square(70px);
+    @include radius(50%);
+    margin-right: 10px;
+    border: solid 2px white;
+  }
+ }
+
+color: white;
+  text-shadow: 
+ -1px -1px 0 #000,
+  1px -1px 0 #000,
+ -1px 1px 0 #000,
+  1px 1px 0 #000;
+border-top: solid 1px white;
+margin-bottom: 0;
+h1 {
+  font-size: 34px;
+}
+}
+
+.blog .title {
+
+h1 {
+  margin-bottom: 5px;
+@include ellipsis;
+}
+.tags, .sig {
+  font-size: 12px;
+  line-height: 15px;
+}
+.tags {
+  float: right;
+
+  border-left: solid 1px white;
+  padding-left: $g1;
+  width: 70px;
+
+  a {
+    @include clear;
+    @include ellipsis;
+  }
+}
+}
+
+
+// update mapbox signature
+.leaflet-control {
+
+  padding: $g1 !important;
+  a {
+    color: rgba(255,255,255,.7) !important;
+    &:hover {
+      color: rgba(255,255,255,1) !important;
+    }
+  }
+  .mapbox-improve-map {
+    display: none !important;
+  }
+  @media only screen and (max-width : 568px) {
+    display: none !important;
+  }
+}
+
+.actionables {
+  margin: $g2 auto;
+  left: 0;
+  right: 0;
+  width: 1000px;
+  @media only screen and (max-width : 1015px) {
+    width: 95%;
+  }
+  
+@include reset(padding);
+@include reset(list);
+& > li {
+ width: 25%;
+ display: inline-block;
+ vertical-align: top;
+ padding: 0 $g3;
+ & > .btn {
+   display: block;
+ }
+ @media only screen and (max-width : 875px) and (min-width : 321px) {
+  width: 50%;
+  padding: $g3;
+  &:first-of-type {
+
+    border-right: solid 1px $c1;
+    padding-top: 0;
+    padding-left: 0;
+  }
+  &:nth-of-type(2) {
+    padding-top: 0;
+    padding-right: 0;
+  }
+  &:nth-of-type(3) {
+    border-top: solid 1px $c1;
+    border-right: solid 1px $c1;
+    padding-bottom: 0;
+    padding-left: 0;
+
+  }
+  &:nth-of-type(4) {
+    border-top: solid 1px $c1;
+    padding-bottom: 0;
+    padding-right: 0;
+
+  } 
+}
+@media only screen and (max-width : 480px) {
+ width: 100%;
+ padding-left: 0 !important;
+ padding-right: 0 !important;
+ border: none !important;
+ padding-bottom: $g2;
+ &:not(:first-of-type) {
+   border-top: solid 1px $c1 !important;
+   padding: $g2;
+ }
+}
+h1, h2, h3 {
+ &:not(:first-of-type) {
+   margin-top: $g1;
+   padding-top: $g1;
+   border-top: solid 1px $c1;
+ }
+}
+}
+.aaa {
+ padding: $g1 0 !important;
+}
+}
+.center {
+  text-align: center;
+}
+.btn {
+  border: solid 2px $c1;
+  @include radius(0);
+  color: $c1;
+  font-weight: bold;
+  padding-top: 6px !important;
+  
+  &.secondary {
+    border-color: lighten($c1, 70%);
+    color: lighten($c1, 60%);
+  }
+  & + .btn {
+    margin-top: 5px;
+  }
+  &:hover {
+    border-color: $c2;
+    color: $c2;
+  }
+  &:active {
+    padding-top: 7px !important;
+    padding-bottom: 5px;
+  }
+}
+.team {
+  @include reset(list);
+  @include reset(padding);
+  li {
+    vertical-align: top;
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    padding: 15px;
+    border-left: solid 1px $c1;
+    border-top: solid 1px $c1;
+    &:first-of-type, &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
+      border-top: none;
+    }
+    &:first-of-type, &:nth-of-type(4n+1) {
+      border-left: none;
+    }
+    @media only screen and (max-width : 480px) {
+      width: 50%;
+      &:nth-of-type(3), &:nth-of-type(4) {
+        border-top: solid 1px $c1;
+      }
+      &:first-of-type, &:nth-of-type(4n+1) {
+        border-left: solid 1px $c1;
+      }
+      &:first-of-type, &:nth-of-type(2n+1) {
+        border-left: none;
+        padding-left: 0;
+      }
+      &:nth-of-type(2n) {
+        padding-right: 0;
+      }
+    }
+    
+  }
+  h4 {
+    height: 23px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  img {
+    margin: 0 auto;
+    @include square(100px);
+    @include radius(50%);
+    margin-bottom: 5px;
+    display: block;
+    background-color: #ccc;
+  }
+  .avatar {
+    margin: 0 auto;
+    @include square(100px);
+    @include radius(50%);
+    margin-bottom: $g1;
+    background-position: center center;
+    display: block;
+    background-color: #ccc;
+  }
+  .btn {
+    display: block;
+    &:not(:last-of-type) {
+      border-bottom: none;
+    }
+    &:hover + .btn {
+      border-top-color: $c2;
+
+    }
+    &:not(:first-of-type) {
+      margin-top: 0;
+    }
+  }
+}
+
+footer.footer {
+  color: #666;
+  margin-top: $g2;
+  padding: $g1 0 $g2 0;
+  border-top: solid 1px #ccc;
+  a {
+    color: #333;
+
+  }
+  .left {
+    display: inline-block;
+    width: 50%;
+  }
+}
+.list {
+  @include reset;
+  @include reset(list);
+  li {
+    &:not(:first-of-type) {
+      padding-top: 5px;
+      margin-top: 5px;
+      border-top: solid 1px $c1;
+    }
+  }
+}
+.date {
+  font-size: 80%;
+  color: lighten($c1, 20%);
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.qr {
+  @include square(170px);
+  margin: 0 auto; 
+  display: block;
+}
+input, select, textarea {
+  padding: 5px 10px;
+  border: solid 2px #ccc;
+  @include radius(20px);
+  background: none;
+  @include transition;
+  margin-bottom: $g1;
+  width: 100%;
+}
+textarea {
+  height: 100px;
+
+  @media only screen and (max-height : 320px) {
+    height: 37px;
+
+  }
+
+}
+a.icon-rss {
+  div {
+    @include transition;
+ displaY: inline-block;
+ @include square(15px);
+ background-position: 0 0px;
+ background-repeat: no-repeat;
+ background-image: url(/assets/images/rss.png);
+ -webkit-background-size: 15px 45px;
+ background-size: 15px 45px;
+}
+ &:hover div {
+  background-position: 0 -15px;
+}
+}
+footer.footer {
+  .icon-rss {
+    div {
+    background-position: 0 -30px;
+  }
+   &:hover div {
+  background-position: 0 -15px;
+}
+  }
+}
