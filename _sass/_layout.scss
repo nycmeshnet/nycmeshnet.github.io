@@ -57,10 +57,13 @@ a {
   height: 500px;
   overflow: hidden;
   text-align: center;
- @media only screen and (max-height : 568px) {
-   height: 100%;
- }
 
+  @media only screen and (max-height: 480px) {
+    height: 480px;
+  }
+  @media only screen and (max-height: 320px) {
+    height: 320px;
+  }
 }
 .mainnav {
   float: right;
@@ -80,10 +83,8 @@ a {
   }
 }
 nav {
-  position:absolute;
+  position: absolute;
   top: 0px;
-  height: 500px;
-  z-index: 4;
   margin-top: $g2;
   @media only screen and (max-width : 568px) and (min-width : 321px) {
     margin-top: $g1;
@@ -101,13 +102,6 @@ nav {
       text-decoration: none;
       color: white;
     }
-  }
-  .title-container {
-    position: absolute;
-    display: block;
-    bottom: 20px;
-    left: 0;
-    width: 100%;
   }
   .mainnav input {
     border-color: white;
@@ -209,63 +203,83 @@ right: 0;
   }
 }
 .title {
- padding: $g2 0;
- @include animate(blur);
- @include delay(6);
- .sig {
-  margin-top: 10px;
-  margin-left: -30px;
-   @media only screen and (max-width : 600px) {
+  padding: $g2 0;
+  margin-top: 55%;
+  @include animate(blur);
+  @include delay(6);
+
+  @media only screen and (max-width : 575px) {
+    margin-top: 65%;
+  }
+
+  @media only screen and (max-width : 500px) {
+    margin-top: 70%;
+  }
+
+  @media only screen and (max-width : 440px) {
+    margin-top: 80%;
+  }
+
+  @media only screen and (max-height : 480px) {
+    margin-top: 45%;
+  }
+
+  @media only screen and (max-height : 320px) {
+    margin-top: 20%;
+  }
+
+  .sig {
+    margin-top: 10px;
+    margin-left: -30px;
+    @media only screen and (max-width : 600px) {
       margin-left: -20px;
-   }
+    }
     @media only screen and (max-height : 568px) {
-  margin-left: 0px;
- }
-  img {
+      margin-left: 0px;
+    }
+    img {
       vertical-align: top;
       margin-top: -10px;
-    @include square(70px);
-    @include radius(50%);
-    margin-right: 10px;
-    border: solid 2px white;
+      @include square(70px);
+      @include radius(50%);
+      margin-right: 10px;
+      border: solid 2px white;
+    }
   }
- }
 
-color: white;
-  text-shadow: 
- -1px -1px 0 #000,
-  1px -1px 0 #000,
- -1px 1px 0 #000,
-  1px 1px 0 #000;
-border-top: solid 1px white;
-margin-bottom: 0;
-h1 {
-  font-size: 34px;
-}
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  border-top: solid 1px white;
+  margin-bottom: 0;
+
+  h1 {
+    font-size: 34px;
+  }
 }
 
 .blog .title {
-
-h1 {
-  margin-bottom: 5px;
-@include ellipsis;
-}
-.tags, .sig {
-  font-size: 12px;
-  line-height: 15px;
-}
-.tags {
-  float: right;
-
-  border-left: solid 1px white;
-  padding-left: $g1;
-  width: 70px;
-
-  a {
-    @include clear;
+  h1 {
+    margin-bottom: 5px;
     @include ellipsis;
   }
-}
+
+  .tags, .sig {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .tags {
+    float: right;
+
+    border-left: solid 1px white;
+    padding-left: $g1;
+    width: 70px;
+
+    a {
+      @include clear;
+      @include ellipsis;
+    }
+  }
 }
 
 
@@ -280,9 +294,6 @@ h1 {
     }
   }
   .mapbox-improve-map {
-    display: none !important;
-  }
-  @media only screen and (max-width : 568px) {
     display: none !important;
   }
 }
