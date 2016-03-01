@@ -8,7 +8,7 @@ Please read our [FAQ](../faq) if you haven't already.
 First you need to enter a [new node request](../join). This will add your router to our list of node requests and put your location on our map. If you have multiple locations enter them separately.
 
 **Order a router**    
-We currently support two different models of routers- 
+We currently support three different models of routers- 
 
 For outdoors and long distance-  
 
@@ -16,25 +16,29 @@ For outdoors and long distance-
 
 For indoors-  
 
+* TP-Link dual-band TL-WDR3600(~$55)
 * TP-Link TL-WR842ND 2.4GHz (~$33)
 
-The single band router can  mesh over-the-air with other TP-Links, and it can connect to the Ubiquiti via ethernet cable.
+A dual-band router can mesh over-the-air (or by ethernet) with both the Ubiquiti and other TP-Links. The single band router can  mesh over-the-air with other TP-Links, and it can connect to the Ubiquiti via ethernet cable.
 
 Buy on Amazon:   
 [Ubiquiti NanoStation NSM5](http://www.amazon.com/dp/B0049AVWAO/?tag=nsm5-nycmesh-20)  
-[TP-Link router TL-WR842ND](http://www.amazon.com/dp/B006E04T9I/?tag=tl-wr842nd-nycmesh-20)
+[TP-Link router TL-WR842ND](http://www.amazon.com/dp/B006E04T9I/?tag=tl-wr842nd-nycmesh-20)  
+[TP-Link dual-band router TL-WDR3600](http://www.amazon.com/dp/B008RV51EE/-nycmesh-20)
 
 Buy at B&H: (free delivery)   
 [Ubiquiti NanoStation NSM5](http://www.bhphotovideo.com/c/product/1049768-REG/)  
 [TP-Link router TL-WR842ND](http://www.bhphotovideo.com/c/product/855244-REG/)  
+[TP-Link dual-band router TL-WDR3600](http://www.bhphotovideo.com/c/search?N=10884838)
 
 
 **Download the firmware and flash your router**
 
 **TP-Link instructions**
 
-* Click to download the firmware to your computer-  
-  [TL-WR842N  download](http://nycmeshnet.github.io/download/WR842N.html)
+* Click your model to download the firmware to your computer-  
+  [TL-WR842N  download](http://nycmeshnet.github.io/download/WR842N.html)  
+  [TL-WDR3600 dual-band download](http://nycmeshnet.github.io/download/WDR3600.html)  
   (For upgrades see below)
 * Connect to the router via Wi-Fi. It has a name like "TP-LINK_ABC123"
 * Enter the "wireless password/pin" that is printed on the bottom of the router e.g. "12341234"
