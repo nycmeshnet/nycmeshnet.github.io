@@ -22,7 +22,7 @@ Alphabet City -[Winston](<mailto:winston@nycmesh.net>)
 
 **Brooklyn**
 
-BedStuy -[Charlie](<mailto:charlie@nycmesh.net>)  
+Bed-Stuy/Crown Heights/Flatbush -[Charlie](<mailto:charlie@nycmesh.net>)  
 Fort Greene/Clinton Hill -[Dylan](<mailto:dylan@nycmesh.net>)    
 East Williamsburg/Bushwick -[Joel](<mailto:joel@nycmesh.net>)    
 
