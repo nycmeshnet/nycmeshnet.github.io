@@ -12,11 +12,9 @@ By joining the mesh now you help us grow and increase our reach across the city.
 
 We currently have three options for routers- two indoor routers and a $90 outdoor router. You can buy the routers online and configure them yourself using our simple [download](../download) instructions. Otherwise, you can come to our [meetups](http://www.meetup.com/nycmesh/) where we often sell preconfigured routers that you can simply plug in.
 
-Here are the three router choices:
+Here are the two router choices:
 
 1) [An indoor TP-Link 842ND router](http://www.amazon.com/dp/B006E04T9I/?tag=tl-wr842nd-nycmesh-20) (~$33)
-
-2) [TP-Link dual-band router TL-WDR3600](http://www.amazon.com/dp/B008RV51EE/-nycmesh-20) (~$55)
 
 2) [An outdoor NSM5 Ubiquiti 5GHz router](http://www.amazon.com/dp/B0049AVWAO/?tag=nsm5-nycmesh-20) (~$95)
 
@@ -24,7 +22,7 @@ __________________________________________________________________________
 
 **What you can do with your router**-
 
-The TP-Link is a normal home router with a range of one or two buildings, or across a street. If you are close enough to another active node it will mesh over the air. With the TP-Link router you would usually connect it to your own internet so it can "tunnel" and connect with the mesh. It is also possible to use multiple routers with your neighbors to split your ISP bill, or for friendly internet sharing. The dual-band version can also connect over the air to the 5GHz Ubiquiti. If you are near a rooftop install, or you want a slightly faster router you should get the dual-band.
+The TP-Link is a normal home router with a range of one or two buildings, or across a street. If you are close enough to another active node it will mesh over the air. With the TP-Link router you would usually connect it to your own internet so it can "tunnel" and connect with the mesh. It is also possible to use multiple routers with your neighbors to split your ISP bill, or for friendly internet sharing.
 
 It is easy to flash this TP-Link router with our download instructions. Otherwise, you can come to our meetups and buy one that is already configured.
 
