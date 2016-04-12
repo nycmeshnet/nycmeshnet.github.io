@@ -27,7 +27,7 @@ The [Ubiquiti universal antenna mount](http://www.amazon.com/gp/product/B006J1WS
 ![universal antenna mount](/assets/images/nsm5/ubiquiti-universal-mount.jpg)
 
 
-**Windows**
+**Window**
 
 Outside:  
 On the outside of the window it is best to use a Ubiquiti wall/window mount.
@@ -47,7 +47,7 @@ A Ubiquiti suction cup mount can be used if you need to point the router at an a
 
 ![window/wall install](/assets/images/nsm5/window-cup-inside.jpg)
 
-**Rooftops**
+**Rooftop**
 
 Often rooftops have an existing unused pipe or abandoned antenna pole that can be used.
 
@@ -72,7 +72,7 @@ The Ubiquiti window/wall mount comes with both a suction cup for windows and a s
 
 **Tree**
 
-Sometimes a tree is the best place.
+Sometimes a tree is the best place for your NanoStation.
 
 ![tree](/assets/images/nsm5/tree.jpg)
 
