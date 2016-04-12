@@ -67,7 +67,8 @@ A simple wall mount can be made using a small, thin piece of wood and the two pl
 
 ![window/wall install](/assets/images/NSM5/wall-201.jpg)
 
+The Ubiquiti window/wall mount comes with both a suction cup for windows and a screw mount for walls. Use this screw mount on a wall so you can point the router in the best direction.
 
-
+![window/wall install](/assets/images/NSM5/windowwall2.jpg)![window/wall install](/assets/images/NSM5/windowwall.jpg)
 
 
