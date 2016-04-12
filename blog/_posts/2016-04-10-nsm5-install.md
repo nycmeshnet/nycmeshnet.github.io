@@ -24,7 +24,7 @@ The [Ubiquiti window/wall mount](http://www.amazon.com/Ubiquiti-Networks-NanoSta
 
 The [Ubiquiti universal antenna mount](http://www.amazon.com/gp/product/B006J1WSGI/) can be used on rooftops or walls, where a very strong mount is needed.
 
-![window/wall install](/assets/images/nsm5/ubiquiti-universal-mount.jpg)
+![universal antenna mount](/assets/images/nsm5/ubiquiti-universal-mount.jpg)
 
 
 **Windows**
@@ -32,17 +32,16 @@ The [Ubiquiti universal antenna mount](http://www.amazon.com/gp/product/B006J1WS
 Outside:  
 On the outside of the window it is best to use a Ubiquiti wall/window mount.
 
-![window/wall install](/assets/images/nsm5/window-cup-outside.jpg)
+![window outside](/assets/images/nsm5/window-cup-outside.jpg)
 
 Inside:  
 It is often more convenient to install inside the window. You will lose about 2db of signal but that is usually ok.
 
 Velcro is the easiest way to install a NanoStation if it will be facing the same direction as the window.
 
-![window/wall install](/assets/images/nsm5/velcro.jpg)![window/wall 
-install](/assets/images/nsm5/window-velcro-off.jpg)
+![velcro](/assets/images/nsm5/velcro.jpg)![velcro](/assets/images/nsm5/window-velcro-off.jpg)
 
-![window/wall install](/assets/images/nsm5/window-velcro-on.jpg)
+![window velcro](/assets/images/nsm5/window-velcro-on.jpg)
 
 A Ubiquiti suction cup mount can be used if you need to point the router at an angle.
 
@@ -52,11 +51,11 @@ A Ubiquiti suction cup mount can be used if you need to point the router at an a
 
 Often rooftops have an existing unused pipe or abandoned antenna pole that can be used.
 
-![window/wall install](/assets/images/nsm5/pipe.jpg)
+![pipe](/assets/images/nsm5/pipe.jpg)
 
 A Ubiquiti bracket is good if you have a drillable surface such as brick or cement.
 
-![window/wall install](/assets/images/nsm5/bracket-200.jpg)
+![bracket](/assets/images/nsm5/bracket-200.jpg)
 
 **Wall**
 
@@ -70,5 +69,11 @@ A simple wall mount can be made using a small, thin piece of wood and the two pl
 The Ubiquiti window/wall mount comes with both a suction cup for windows and a screw mount for walls. Use this screw mount on a wall so you can point the router in the best direction.
 
 ![window/wall install](/assets/images/nsm5/windowwall2.jpg)![window/wall install](/assets/images/nsm5/windowwall.jpg)
+
+**Tree**
+
+Sometimes a tree is the best place.
+
+![tree](/assets/images/nsm5/tree.jpg)
 
 
