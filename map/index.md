@@ -12,6 +12,8 @@ We have over 40 active nodes and we are adding about one or two per week.
 
 Neighborhoods have different organizers. You can email them directly below. If you would like to volunteer for your neighborhood please [email us](<mailto:nycmeshmail@gmail.com>).
 
+**General coordinator**- [Sasha](<mailto:sasha@nycmesh.net>)
+
 **Manhattan**
 
 UWS -[Oliver](<mailto:oliver@nycmesh.net>)   
