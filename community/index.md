@@ -2,8 +2,6 @@
 layout: page
 title: Community Portal
 ---
-
-
 Interested in sharing a connection with a neighbor? Print one these out
 ======
 [Generic Flier](https://nycmesh.net/leaflet/leaflet-bw.pdf)  
