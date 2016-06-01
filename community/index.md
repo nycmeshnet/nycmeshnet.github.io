@@ -3,7 +3,8 @@ layout: page
 title: Community
 ---
 
-#Community Organizer Portal  
+
+__#Community Organizer Portal__
 ###Interested in sharing a connection with a neighbor? Print one these out  
 [Generic Flier](https://nycmesh.net/leaflet/leaflet-bw.pdf)  
 [Trifold Brochure](https://nycmesh.net/leaflet/meshmail.pdf)  
