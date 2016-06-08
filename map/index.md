@@ -21,8 +21,8 @@ Downtown (Tribeca/SoHo/Financial/West Village) -[Bob](<mailto:bob@nycmesh.net>)
 Chinatown -[Arthur](<mailto:arthur@nycmesh.net>)    
 East Village/LES -[Brian](<mailto:brian@nycmesh.net>)  
 Alphabet City -[Winston](<mailto:winston@nycmesh.net>)   
-Lower East Side -[James](<mailto:james@nycmesh.net>)
-East Harlem -[Rob J](<mailto:robj@nycmesh.net>)
+Lower East Side -[James](<mailto:james@nycmesh.net>)  
+East Harlem -[Rob J](<mailto:robj@nycmesh.net>)  
 
 **Brooklyn**
 
