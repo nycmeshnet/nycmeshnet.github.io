@@ -123,7 +123,7 @@
     - Or make a one time donation -
   </p>
   <div class="mw6 mt2 mb3 tc f2 center">
-    <input id="custom" onfocus="setAmount('custom')" type"number" name="donation-amount" placeholder="$" value="$" class="tc bg-dark-gray white w4 h3 ph3 br2 bw0">
+    <input id="custom" onfocus="setAmount('custom')" type"number" name="donation-amount" placeholder="$" class="tc bg-dark-gray white w4 h3 ph3 br2 bw0">
 
     <div  class="pt4 mt4 mw5 f4 center">
       <input id="payButton" type="submit" value="Pay with card" class="input-reset bw0 w-100 fw5 br3 pa3 sans-serif white">
@@ -167,7 +167,8 @@
   ga('send', 'pageview');
 </script>
 
-<script>
+<!-- handle form input -->
+  <script>
     var donationAmount, donationType, customAmount;
     var customDonation = document.getElementById('custom');
     customDonation.onkeypress = function(e) {
@@ -177,22 +178,18 @@
     }
 
     customDonation.addEventListener('input', function(e) {
-      var dollars = e.target.value.substr(1)
+      var dollars = e.target.value;
       donationAmount = dollars*100;
       customAmount = dollars*100;
-      e.target.value = '$'+dollars;
     })
 
-    customDonation.onkeydown = function(e) {
-
-      // prevent delete $
-      if (e.which == 8 && customDonation.value.length == 1)
-          e.preventDefault()
-
-      //prevent back arrow
-      if (e.which == 37 && customDonation.value.length == 1)
-        e.preventDefault();
-    }
+    customDonation.addEventListener('focus', function(e) {
+      var tmpStr = e.target.value;
+      console.log(tmpStr)
+      e.target.value = '';
+      e.target.value = tmpStr;
+      donationAmount = customAmount;
+    })
 
     function setAmount(amount) {
       // deselect selected
@@ -207,10 +204,8 @@
       // highlight choice and set amount
       var button = document.getElementById(amount);
       if (amount == 'custom') {
+        console.log(button)
         button.className = 'tc bg-dark-gray white w4 h3 ph3 br2 bw0 selected'
-        var tmpStr = button.value;
-        button.value = '';
-        button.value = tmpStr;
         donationAmount = customAmount;
       }
       else {
