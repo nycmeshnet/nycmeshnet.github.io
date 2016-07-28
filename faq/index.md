@@ -7,7 +7,7 @@ title: "Frequently asked questions"
 
 No. Once you buy a router and install it you are part of NYC Mesh. There are no additional costs.
 
-If you are benefitting from the network, or you would like to help us extend the network you may be interested in a small [monthly donation](/donate)
+If you are benefitting from the network, or you would like to help us extend the network you may be interested in a small [monthly donation.](/donate)
 
 **Is this a replacement for my current Internet connection?**
 
@@ -61,7 +61,7 @@ It is easy to use the NanoStation indoors. It is 5GHz router, and all modern pho
 
 **I can see another node from my window. Can I put a router there?**
 
-If you don't have rooftop access it is still possible to use a directional NanoStation in your window. It will work from behind glass if you are unable to place it outside the window. The simplest install is to velcro the flat surface of the NanoStation NSM5 to the window.
+If you don't have rooftop access it is still possible to use a directional NanoStation in your window. It will work from behind glass if you are unable to place it outside the window. The simplest install is to velcro the flat surface of the NanoStation NSM5 to the window. We have a [blog post about NSM5 installs.](../blog/nsm5-install/)
 
 **Why don't we mesh mobile phones instead of routers?**
 
