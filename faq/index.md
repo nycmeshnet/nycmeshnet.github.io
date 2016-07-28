@@ -5,9 +5,7 @@ title: "Frequently asked questions"
 
 **Is there a monthly fee?**
 
-No. Once you buy a router and install it you are part of NYC Mesh. There are no additional costs.
-
-If you are benefitting from the network, or you would like to help us extend the network you may be interested in a small [monthly donation.](/donate)
+No. Once you buy a router and install it you are part of NYC Mesh. There are no additional costs for end-users. You do, however, have to share and extend the mesh in the same we that it was shared with you.
 
 **Is this a replacement for my current Internet connection?**
 
@@ -15,7 +13,7 @@ Probably not at the moment. Most members are sharing their internet. If you have
 
 Currently, you can use the mesh as a backup Internet connection. If you are within range of the mesh, your router will automatically use the fastest Internet connection. This means you will have a backup Internet connection if your own Internet connection fails.
 
-We will soon be providing independent service through peering at an internet exchange point. If you have line-of-sight to this "supernode" you will have a fast, reliable connection.
+We are talking to people about providing independent service either through an ISP or peering, but this is a while off.
 
 **What can I do on the mesh that I can't do on the Internet?**
 
@@ -31,7 +29,7 @@ Yes, there is a mesh network called "Guifi" in Spain that covers a large part of
 
 **Are you an Internet Service Provider (ISP)?**
 
-No, not at the moment. While we grow, we are relying on our members to share their Internet connections. Soon we will peer at an Internet exchange point so we can provide independent Internet service.
+No, not at the moment. While we grow, we are relying on our members to share their Internet connections. Eventually we hope to peer with other providers so we can provide independent Internet service.
 
 **What software/firmware do you use?**
 
@@ -39,7 +37,7 @@ We are using an OpenWrt package made by qMp. This uses the BMX6 mesh protocol. W
 
 **Can I use my own different router?**
 
-No, the routers we currently support and recommend are the Ubiquiti NanoStation M5 for outdoors and the TP-Link TL-WR842ND for indoors. Our [download page](../download) has our firmware for these routers and links to buy. We sometimes have pre-configured routers at the [meetups](http://www.meetup.com/nycmesh), available at cost- $30 for the TP-Link 841ND, and $90 for the NanoStation. We do not support other routers.
+No, the routers we currently support and recommend are the Ubiquiti NanoStation M5 for outdoors and the TP-Link TL-WR842ND for indoors. Our [download page](../download) has our firmware for these routers and links to buy. We sometimes have pre-configured routers at the [meetups](http://www.meetup.com/nycmesh), available at cost- $33 for the TP-Link 841ND, $55 for the TP-LINK TL-WDR3600, and $95 for the NanoStation. We do not support other routers.
 
 **Can I install a router if I have no view or no rooftop access?**
 
@@ -51,7 +49,7 @@ Rooftop installs are mostly done in pairs. Look at our [map](../map) to find lin
 
 The other type of install is where a directional Ubiquiti router is aimed at a nearby public space (park, cafe, bar etc.) as a public Wi-Fi access point. We currently have five public spaces with this type of install. 
 
-We support one outdoor router, the Ubiquiti Nanostation NSM5 (~$90). We have links for this on the [download page](../download)
+We support one outdoor router, the Ubiquiti Nanostation NSM5 (~$95). We have links for this on the [download page](../download)
 
 We can help you with the rooftop installation. Typically one or two routers are attached to a pole on the roof and an ethernet cable is run to the apartment, and connected to the TP-Link mesh router and an Internet gateway. The cable cost is $20. The ethernet cable also supplies the power to the router using "power over ethernet". If the roof (or balcony or window) is close to your apartment you might not need an additional mesh router.
 
@@ -61,7 +59,7 @@ It is easy to use the NanoStation indoors. It is 5GHz router, and all modern pho
 
 **I can see another node from my window. Can I put a router there?**
 
-If you don't have rooftop access it is still possible to use a directional NanoStation in your window. It will work from behind glass if you are unable to place it outside the window. The simplest install is to velcro the flat surface of the NanoStation NSM5 to the window. We have a [blog post about NSM5 installs.](../blog/nsm5-install/)
+If you don't have rooftop access it is still possible to use a directional NanoStation in your window. It will work from behind glass if you are unable to place it outside the window. The simplest install is to velcro the flat surface of the NanoStation NSM5 to the window.
 
 **Why don't we mesh mobile phones instead of routers?**
 
