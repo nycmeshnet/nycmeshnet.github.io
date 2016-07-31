@@ -5,9 +5,9 @@ title: "Frequently asked questions"
 
 **Is there a monthly fee?**
 
-No. Once you buy a router and install it you are part of NYC Mesh. There are no additional costs. However, you are obliged however to share and extend the mesh in the same way that it was shared with you.
+No. Once you buy a router and install it you are part of NYC Mesh. There are no additional costs. However, you are obliged to share and extend the mesh in the same way that it was shared with you.
 
-If you are benefitting from the network, or you would like to help us extend the network you may be interested in a small [monthly donation.](/donate)
+If you are benefitting from the network, or you would like to help us extend the network, you may be interested in a small [monthly donation.](/donate)
 
 **Is this a replacement for my current Internet connection?**
 
