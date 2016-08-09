@@ -1,0 +1,44 @@
+On either a Pi2 or 3, run these commands in order. You must have root access. Do not plug in your dongle until the guide says to. OTher
+Otherwise, you may break your drivers.
+
+sudo apt-get install update
+sudo apt-get install upgrade
+sudo apt-get install git
+sudo apt-get install libusb-1.0-0.dev
+sudo apt-get install cmake
+sudo apt-get build essential
+
+git clone git://osmocom.org/rtl-sdr.git
+cd rtl-sdr
+mkdir build
+cd build
+cmake ../ -DINSTALL_UDEV_RULES=ON -DDETACH_KERNEL_DRIVER=ON
+make 
+sudo make install
+sudo ldconfig
+sudo cp ../rtl-sdr.rules /etc/udev/rules.d/
+
+Everything should be installed by now. Go ahead and reboot with:
+
+sudo reboot
+
+Plug in your dongle. Make sure to use the same USB port each time. 
+
+to test sudo rtl_Test -t
+
+Should tell you what device you're using with a list of supported gain values. 
+
+To listen to fm radio over your dongle:
+
+sudo apt-get install sox 
+
+rtl_fm -M wbfm -f 96.5M | play -r 32k -t raw -e s -b 16 -c 1 -V1 -
+
+Will play 96.5 FM in your terminal at 32kbps sample rate.
+
+To decode Outernet data:
+
+????
+
+
+
