@@ -1,5 +1,5 @@
-On either a Pi2 or 3, run these commands in order. You must have root access. Do not plug in your dongle until the guide says to. OTher
-Otherwise, you may break your drivers.
+On either a Pi2 or 3, run these commands in order. You must have the ability to be root. Do not plug in your dongle until the guide says to. OTher
+Otherwise, you may break your drivers. 
 
 sudo apt-get install update
 sudo apt-get install upgrade
@@ -13,6 +13,9 @@ cd rtl-sdr
 mkdir build
 cd build
 cmake ../ -DINSTALL_UDEV_RULES=ON -DDETACH_KERNEL_DRIVER=ON
+
+//You will have to run the line above any time you remove the dongle and plug it back in. 
+
 make 
 sudo make install
 sudo ldconfig
@@ -37,8 +40,8 @@ rtl_fm -M wbfm -f 96.5M | play -r 32k -t raw -e s -b 16 -c 1 -V1 -
 Will play 96.5 FM in your terminal at 32kbps sample rate.
 
 To decode Outernet data:
+https://outernet-project.github.io/outernet-rpi-lband/index.html
 
-????
 
 
 
