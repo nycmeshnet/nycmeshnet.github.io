@@ -217,7 +217,6 @@
     }
   </script>
 
-
   <script src="https://checkout.stripe.com/checkout.js"></script>
 
   <script>
@@ -236,8 +235,9 @@
       key: 'pk_live_srTdi5OfErTSw5BGXqEkY9C1',
       image: 'https://nycmesh.net:/assets/images/logo.png',
       locale: 'auto',
-      zipCode: 'true',
-      token: token
+      zipCode: true,
+      token: token,
+			closed: function()  { window.location = '/donate/thanks' }
     }
 
     var handler = StripeCheckout.configure(stripeConfig);
