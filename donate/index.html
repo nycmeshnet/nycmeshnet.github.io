@@ -229,6 +229,7 @@
         stripeToken: token,
         donationAmount: donationAmount
       }));
+			setTimeout(function() { window.location = '/donate/thanks' }, 1000);
     }
 
     var stripeConfig = {
@@ -236,8 +237,7 @@
       image: 'https://nycmesh.net:/assets/images/logo.png',
       locale: 'auto',
       zipCode: true,
-      token: token,
-			closed: function()  { window.location = '/donate/thanks' }
+      token: token
     }
 
     var handler = StripeCheckout.configure(stripeConfig);
