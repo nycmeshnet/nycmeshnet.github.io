@@ -3,7 +3,7 @@ layout: post
 title: "Priorities"
 author: Brian
 ---
-Here is a list of my current priorities for the mesh in order of importance. I'll keep this updated. If you are wondering why obvious things are missing, it is because they are not a priority to me! Other mesh people have different priorities.
+Here is a list of my current priorities for the mesh in order of importance. I'll keep this updated. If you are wondering why obvious things are missing, it is because they are not a priority to me. Others have different priorities.
 
 **Tall structure installs**
 
@@ -41,5 +41,15 @@ The supernode has a monthly rental and we need to get monthly donations to cover
 **Meetup space**
 
 DBA bar has been good for social meetups but there are many people who cannot or don't want to meet in bars. We need a regular space for social meetups and also a regular space for hardware and software hack type meetups. 
+
+**Software services**
+
+The mesh network has around 5 small servers that can be accessed using our ".mesh" domain. This has been difficult to maintain. We do have IRC installed and running across three servers but it is rarely used. We need distributed software that will still work when servers are down or part of the network is not accessible. Guifi has a package called [Cloudy](http://cloudy.community/) that I would like to try.
+
+**Automating the website**
+
+The "join" form, map and monitoring software could all be integrated. We have worked on this but never implemented anything.
+
+
 
 
