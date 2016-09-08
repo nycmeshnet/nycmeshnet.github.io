@@ -17,6 +17,8 @@ The supernode at 375 Pearl St. will be our first install on a tall structure. He
 
 Edit and sign the contract  
 Pay for COI  
+Get tax-exemption status with suppliers
+Buy initial test sector
 Run the ethernet cables to the platform  
 Install and test P2P and sector P2M antennas   
 Install BGP servers in rack   
