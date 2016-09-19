@@ -1,0 +1,614 @@
+====== What is a mesh network?======
+
+Wifi hardware is mostly similar, an antenna connected to a very small computer running wireless receiver transmitter (WRT) software. WRT software is mostly based on Linux. By changing the software, the hardware can behave differently. There is open source software, OpenWRT, that is used to replace the WRT software.
+
+In a normal home wifi router, the software is set to “Access Point” and given a SSID name “my home router” etc.
+
+In a computer the wifi is set to “Client” mode, so it can see the access points.
+
+A computer can also be set to “ad-hoc” or computer-to-computer mode. The first computer will create the SSID “My Macbook” and other connecting computers will also use this SSID. Many computers can connect to each other this way.
+e.g.
+
+A<->B    B<->C   B<->D   D<->E
+
+The problem with this simple ad-hoc method is that each computer can only see the computers it is directly connected to. It cannot communicate with computers that are more than one “hop” away. 
+
+By running mesh routing software above ad-hoc mode, computers can see every other computer in the network. In the above example A can now see C, D and E even though the network traffic has to go through B.
+
+All wifi hardware runs Wireless Receiver/Transmitter software (WRT). The standard software usually doesn’t support mesh networking so we have to replace the software. There is open source software called OpenWRT we use for this. OpenWRT supports many different types of mesh software.Common mesh protocols are BATMAN with the related BMX6 and Batman-adv (used by Guifi, and Freifunk) and OLSR (used by commercial devices and also Red Hook).  NYC Mesh uses the qMp package of OpenWRT with BMX6 and we also experiment with the cjdns mesh protocol. Unfortunately one type of mesh software isn’t compatible with another.
+
+Often when we talk about mesh networks such as Red Hook or Guifi we are talking about the whole network, even though parts of it are using simple Wi-Fi point to point connections, parts are using mesh software, and parts are using fiber. For example, connecting a mesh to an ISP to get internet may be done with one large point to point connection. Also there may be a long distance connection that has no need for meshing, that will also be a simple point to point connection. In other words the wifi mode that best suits that device (or “node”) is chosen.	
+	
+===== Problems =====
+
+
+There have been many mesh network projects over the world. Some of these projects fade away and others remain at a small scale. The initial hope some have of a single mesh covering a whole city is tempered by the reality of bandwidth loss and latency problems. Pure wifi mesh networks seem to have a limit of about 30 nodes. More than this and the network becomes too slow. Typical bandwidth losses are 50% per "hop" from one node to the next, which obviously is a huge problem. The other problem is the delay or "latency" that adds up with each hop. 
+
+A way around these limitations is to have many meshes, each covering a small area and each mesh fed from a larger "backhaul" connection that may have it's own mesh. Also you can have “supernodes” feeding into a very large mesh to reduce the number of hops.
+
+A couple of projects such as Guifi and Freifunk have overcome many of these problems and managed to scale to thousands of nodes. The limitations of 30 nodes is overcome by using “supernodes” and many links to an internet backhaul.
+
+==== 12 Reasons ====
+
+
+There are different reasons for wanting a mesh net. Most people just want free wifi. More technical people want an internet independent of corporate or government interference. On the other hand government agencies like FEMA like that a meshnet is simple to use and deploy in emergencies and blackouts. Obviously a good plan is to satisfy all these different groups, and maybe even run it on solar power to make everyone happy.
+
+Another group we should aim to please is building co-op boards and management companies. If we can put together a good package they might even pay to have this on their roof.
+
+Funding, from either FEMA or the city, could come from making this something useful for emergencies. The mesh should be able to keep working with no internet and no AC power. 
+
+  * Self configuring- mesh software automatically connects
+  * Emergency community networking (for next hurricane)
+  * Freedom from the telecom oligopoly of Time Warner, Verizon, Comcast
+  * A neutral network that does not block or discriminate content
+  * Encryption to stop spying and censorship
+  * Free wifi!
+  * Decentralized, like bitcoin, so resistant to attack
+  * Community building with highly localized websites
+  * Close the digital divide
+  * Potentially higher symmetrical bandwidth than provided by the oligopoly
+  * Creating an infrastructure commons. The community owns the network.
+  * Eventual self-sufficient network as alternative to internet
+
+=== Types and setup ===
+
+
+==== Home ====
+
+
+Simple commercial devices like Open-Mesh can be used to create a mesh network in a building in less than an hour. At least one box is plugged into ethernet and configuration is done using a browser. The other devices are just plugged into power outlets in different rooms or apartments. The more that are plugged into ethernet the faster the general speed of connection will be, but all devices should work if only one box is getting internet, and they are close enough to wirelessly connect to at least one other device.
+Mobile
+For chat you can use a mesh mobile app like FireChat. This has no configuration time just download app and sign in. This was popular at Burning Man and the Hong Kong demonstrations. 
+
+Full mesh networking on a mobile device requires “root” access or jailbreaking your iPhone. Serval has mesh software for this.
+
+Mobile devices are not good for real-time high bandwidth connections. This is due to the low power of their Wi-Fi radios and also the inherent instability of network of moving devices.
+
+===== Community =====
+
+
+Community setups often use a combination of point to point backhaul, with high bandwidth connections feeding into the smaller mesh networks. The backhaul may be fiber as in Guifi.net or microwave links such as used in Freifunk or Redhook; or larger Ubiquiti routers.
+
+Some community projects such as Detroit use commercial mesh devices and so have minimal setup times.
+
+Many other community projects are using Ubiquiti devices which have their own software (AirOS). This software is optimized for point to point communication which is good for the backhaul part of a network. These units can be configured with an ethernet cable and a web browser. There are many ways to configure these AirOS devices depending on whether they are a simple client (like an antenna), normal wifi access point, or just behaving like a wireless ethernet connection. Also combinations of access point and client are possible too. Here’s a guide for configuring, but don’t expect it to be easy. AirOS doesn’t have a mesh configuration.
+
+To have a mesh network, first the software running these devices needs to be changed or “flashed”.  This is usually done with a variation of OpenWRT software (sometimes pronounced “OpenWert”). An OpentWrt software “image” with your favorite mesh protocol is downloaded and then your device is flashed to run the new software. OpenWrt supports many devices including Netlink and TP-LINK home or personal routers.
+
+==== Wireless Commons License ====
+
+
+Some communities have a license that describes the terms and conditions of free and open networks. This is a central part of the Guifi network. Here is their license. The license plays an important part in the growth of the network. 
+Community projects
+This list is just a selection. It contains few of the biggest (all the big ones are in Europe) and some interesting ones in the USA.
+
+====== Europe ======
+===== Guifi.net =====
+
+
+This is the largest project, covering a huge area of Spain, especially Catalonia with over 29,000 active nodes. They use a mix of fiber and wifi. It has a “Wireless Commons License”
+
+They use qMp (Quick Mesh Project) software based on OpenWrt and Batman BMX6, and also RouterOS, AirOS, AP-WDS and BGP
+
+How to connect in 3 steps (Spanish) (very short english version)
+
+===== Freifunk =====
+
+
+The large FreiFunk.Net project runs a wireless community network based in Berlin, Germany. Their protocols and algorithms (e.g. OLSR and BATMAN) differ strongly from the one used in Berlin RoofNet (BRN). They use the Gluon OpenWRT package with batman-adv.
+
+===== Berlin RoofNet (BRN) =====
+
+
+This project while influential seems to have lost interest or merged with Freifunk.
+  * Humboldt Wireless Lab (HWL)
+  * METRIK
+  * Berlin Roofnet
+  * SOSEWIN
+
+===== Funkfeuer =====
+
+
+A large network in Austria.
+
+===== Wlan Slovenija =====
+
+
+A very well documented network in Slovenia. 360+ nodes active. The use cheap TP-Link routers such as the WR-741ND and enclose them in boxes for mounting on poles.
+
+===== Ninux =====
+
+
+A large experimental network in Italy. Initially inspired by Seattle Wireless (not related to Seattle meshnet) but now very close to Freifunk. 
+
+There is a backronym- No Internet, Network Under eXperiment.
+
+===== Athens(AWMN) =====
+
+
+Their Athens Wireless Metropolitan Network has more than 1,000 members, from Athens proper to nearby islands. Anyone can join for free by installing some equipment. 
+
+====== USA ======
+
+
+===== Seattle meshnet =====
+
+
+The Seattle meshnet is the original cjdns mesh and is part of Hyperboria.
+software: cjdns and meshbox
+
+===== PeoplesOpen.net =====
+
+
+Free Wireless Internet and Local Network in Oakland, California
+(only 2 active nodes at the moment)
+
+===== Chattanooga =====
+
+
+Actually a fiber network, but it is very interesting in that they have 1Gb speed to the house and it is provided by a local utility.
+
+===== Detroit =====
+
+
+Detroit implemented a meshnet using cheap commercial mesh hardware. As there was no software to set up, all that was needed was to hand out the boxes.
+The hardware they used was the Fonera 2100 and Open-Mesh OM1P, which both run OLSR's mesh-networking standard. 
+
+===== Red Hook WiFi =====
+
+
+This is part of the Red Hook Initiative, a non-profit designed to help the young people of the area. Red Hook had no broadband internet and so, combined with Brooklyn Fiber backhaul, they introduced mesh networks in the area. The mesh network worked during Hurricane Sandy, and Fema worked with them after the hurricane adding their own mesh network technology.
+They work closely with the Open Technology Institute and use their OSLR package, "Commotion".
+
+===== Harlem WiFi network =====
+
+
+This is a large Meraki/Cisco network with state government funding. “13,000 public housing residents will benefit from having access to free WiFi”.
+
+===== Chicago (CMN) ======
+
+
+An alternative IP based network, separate from the internet itself. (or VPN) 
+Kansas City Freedom Network
+This has support from Kansas based Free Network Foundation which is trying to start Guifi type networks in the U.S. wiki link, Cook DIO Wireless report pdf. They also set up the small Austin Free Network.
+
+===== Pittmesh =====
+
+
+An expanding network in Pittsburgh. Local stores have access points and donate some of their bandwidth. Metamesh.org has further info and a blog.
+Uses Commotion software.
+
+===== St. Louis =====
+
+
+WasabiNet runs an OLSR wifi mesh that is free for low bandwidth, or $10 a month for higher bandwidth. They seem to have a very good understanding of how to do this, and what other communities are doing and they have a good general FAQ, blog and photos.
+
+===== Portland, Oregon =====
+
+
+PersonalTelco has around 100 active nodes using OLSR. Here’s the node map.
+
+Map of USA community ISPs
+This map seems to be small independant or local government ISPs, but it is an interesting map.
+South America
+Argentina 
+Argentina has many different mesh projects. BeunosAiresLibre has over 200 active nodes
+
+====== Community fiber ======
+
+
+Community Broadband Networks is a great resource for setting up community networks and dealing with local legal problems. It is updated almost daily with news items and has an RSS feed.
+
+Here’s an EFF general article on community fiber.
+
+Here’s a paper on community fiber. Abstract: This report provides detailed accounts of planning carried out in connection with community fiber networks in Washington, D.C., San Francisco, CA, and Seattle, WA. It includes information about existing fiber assets that the cities identified, funding mechanisms that were considered, and roadblocks that were encountered.
+
+====== Rest of the World ======
+
+A good link to various community projects
+http://wiki.reseaulibre.ca/similar/
+
+City WiFi
+
+LinkNYC 
+LinkNYC is a project (not yet approved) that will replace the public telephones with Gbps Wi-Fi. It will probably not start until at least the end of 2015. This could change things dramatically.
+
+Working together
+There is surprisingly little sharing of information between communities. Here are some projects trying to unite the mesh world-
+Open Networks Interoperability
+Community Network Markup Language
+Maps
+It is absurd how many different maps are used by mesh networks. Obviously it would be good to see every community on the one map. There is a least some talk of making a common API and a Community Network Markup Language, so the maps can share data.
+
+Here is a list of some of the maps and tools used:
+
+http://maps.google.com
+Guifi use google maps for their very impressive map
+Also used by BuenosAiresLibre
+
+https://github.com/ninuxorg/nodeshot
+Nodeshot is mainly used by Ninux in Italy and Hyperboria in the USA
+
+http://leafletjs.com/
+An Open-Source JavaScript Library for Mobile-Friendly Interactive Maps
+http://www.openstreetmap.org/
+The Free Wiki World Map – An openly licensed map of the world being created by volunteers using local knowledge
+
+https://www.mapbox.com/
+Tool for designing maps
+Freifunk use mapbox, leafletjs and openstreetmap for the main map on their website.
+
+http://openwifimap.net
+Mainly in Germany
+
+http://libremap.net
+Libremap is used mainly by Funkfeuer in Austria and Argentina. I added my node to this map making it the first node in North America.
+
+http://tidepools.co/
+Tidepools is used by Red Hook WiFi with a normal map and an illustrated community map that also uses leaflet and open street maps
+
+Adobe Flash (what?)
+Funkfeuer’s web site has a Flash map
+I have no idea what it looks like as it didn’t work on my laptop
+NY alternative ISPs
+Microwave dish
+Rainbow Broadband Mainly in Manhattan
+Brooklyn Fiber Brooklyn Fiber provides microwave links in Red Hook. This is how the Red Hook Initiative gets its internet connection. They also run fiber on telegraph poles.
+Fiber
+ConnectNYC Fiber Access program Sponsored by New York City Economic Development Corp. Qualifying businesses get free fiber. "ConnectNYC provides free construction and installation of a dedicated fiber optic cable directly to your office space." It uses various ISPs.
+Time Warner Cable Cablevision Optimum
+Lightower They have their own fiber network mainly on the East coast.
+Optical Communications Group
+Stealth Communications
+
+U.S. Tier 1 ISPs
+
+A Tier 1 ISP is an ISP that has access to the entire Internet Region (e.g. a country) solely via its free and reciprocal peering agreements. This is a list of the U.S. Tier 1 ISPs
+
+Cogent 
+AT&T
+Verizon
+Sprint (Softbank Broadband)
+Century Link (Qwest)
+Level 3 (with Global Crossing now)
+NTT/Verio
+
+Ethernet
+Big Apple Peering Exchange (Big APE) is a distributed IP-based Ethernet Exchange (IX) located at Telx 60 Hudson Street, 325 Hudson Street and 111 8th Avenue (Suite 734). It is run by Stealth with a lot of partners- 10 Gbps: $2,500 Annually. Installation $1,000; 100 Gbps: $2,500 Annually. Installation $45,000.
+Megapath Ethernet and T1 (1.5 Mbps)
+Wi-Fi
+WiFi-NY Lower East Side and West Brooklyn. It is run by Paul Garrin and has strong community ties.
+
+MST/NUVISIONS (uses ubiquiti)
+NetBlazr (Boston)
+
+Clear was a wimax “4G” provider (used for the FNF Freedom Tower at Occupy)  but it was bought by Sprint.
+LTE
+This is internet provided using the same protocol phones use.
+tw telecom (about to be bought by Level 3 communications)
+WiFi Hardware
+Many routers are compatible with OpenWrt and therefore can be configured for mesh.
+You can check here for compatibility.
+
+Popular brands include- Ubiquiti for outdoors and TP-LINK for indoors.
+Ubiquiti
+All Ubiquiti devices are 2.4 or 5GHz, unlicensed and mostly cheap.
+For rooftops and outdoor, it is a common hardware.
+In the Ubiquiti community knowledge base there are some good guides:
+
+Which products should I use?
+airMAX - Plan a outdoor wireless link
+RF Armor sheilding for Ubiquiti routers
+
+AirFiber5 $1000, "Wireless Backhaul". Huge size for rooftop installation. 1Gbps, 100km range(!) 26.5 kg,
+AirGrid $69 grid parabolic antenna- two sizes (~1 foot across and ~2 foot) 100 Mbps, 10 - 30 km
+NanoBeam $89 looks like headlight. 16 & 19 150Mbps, 10 - 15 km, 7.5" or 9" across
+NanoBridge $112 parabolic reflector, looks like satellite dish. 150 Mbps, 20 - 30 km
+NanoStation $65 15 km, 150 Mbps. NSM5 is popular
+PowerBeam $240 (not available on Amazon) parabolic 150 Mbps 20km
+PowerBridge $234 150 Mbps, 20km. Square looking thing, in case you don't like parabolas or have wind problems.
+All of these use Ubiquiti's own software and the default settings are not compatible with other hardware or wi-fi standards. Here is a good guide to different settings you may need- http://wiki.ubnt.com/Beanstalk
+RF-Elements
+Heavy duty stuff used by Guifi.net
+“the newest ones are currently built using sectorial antennas with an integrated Mikrotek router. These sectorial antennas have a 120º beamwidth, so in order to cover the whole plane, they are installed in groups of three.”
+Routerboard
+Also used by Guifi.net
+“A widely used antenna is the SXT series”
+TP-LINK
+TP-LINK is a popular choice for their brand of domestic and personal routers.
+The very small TP-LINK MR3040 has been used by #nycmeshnet as a Hyperboria mesh box.
+
+Ruckus
+Very expensive router that the telcos seem to like. Price starts at $400.
+
+Optical Hardware
+A lot of people are trying things out with optical connections. A big problem with this is rain and other objects like birds or leaves that will block the path.
+
+Koruza is being developed in Slovenia using infra red, with a range of 200 meters and a maximum 1Gbps
+
+Ronja is open hardware and the most well known older example of this.
+
+Ethernet cable
+Ethernet cable should be bought in a large roll and  RJ45 shielded connectors
+A RJ45 crimper tool
+
+Ethernet cables need to resist UV for outdoor use. Also they need a groundwire to prevent static discharge (ESD). Here’s Ubiquiti’s guide
+
+Belden 1300A, Shireen and Ubiquiti ToughCable Pro  or ToughCable Carrier are common brands. A common problem is water getting into the router through or along the cable. This is fixed by bending a loop under the router and a small cut in the plastic shielding for the water to escape.
+Power supply
+For emergency operation some form of independent power supply is needed.
+Solar
+http://wiki.ubnt.com/Planning_a_wisp_solar_powered_tower
+UPS
+For the Ubiquiti, a 24V DC UPS power supply is best
+Ubiquiti community discussion
+Some examples
+OpenWrt
+OpenWrt.org
+Sveasoft's Alchemy and Talisman
+
+OpenWrt packages
+qMp
+This is used by Guifi and Freifunk. For mesh it uses the BMX6 protocol with OLSR as a backup.
+
+QMP permits the configuration of two network modes. Roaming is made to be used in quick deployments. Community is made to be used in static deployments.
+
+QMp works on first boot. It starts in “roaming mode” and is simultaneously an access point and an ad-hoc node. It uses IPv6 and supports IPv4 and automatically extends any internet connection.
+
+In “roaming” mode all APs have the same SSID (“qMp-AP”) and IP (172.30.22.1), and users can roam without lost connection.
+
+In “community” mode APs can have different SSIDs and they will still see each other. There is no roaming between APS. 
+
+Here’s a qMp guide to starting a network using Ubiquiti.
+
+AlterMesh
+AlterMesh is part of the MiniMaxi network model developed by AlterMundi. It uses batman-adv as dynamic routing protocol and takes advantages of the L2 cloud (?) for easy public IPv6 provision.
+Commotion
+OLSR
+Byzantium
+FEMA actually uses Byzantium 
+OLSR
+Meraki 
+Meraki is based on MIT roofnet which was acquired by Cisco (for 1.2 billion!)
+Open Wireless
+OpenWRT optimized for WiFi sharing. This is not a mesh protocol package.
+Gluon
+This package is used by Freifunk and uses the batman-adv protocol.
+
+DD-WRT: 
+Offers many firmware versions to support many different routers. Along with adding new general features, open-source projects designed specifically for hotspots are intergrated.
+
+Sveasoft: 
+Also offers multiple firmware versions, including a free public release supporting the ubiquitous Linksys WRT54G/GS routers and more advanced editions supporting additional routers. It includes hotspot specific features, but requires a yearly $20 subscription fee.
+
+Captive Portal software
+http://wiki.openwrt.org/oldwiki/proxy.tinyproxy#tinyproxy.conf
+https://banu.com/tinyproxy/
+http://dev.wifidog.org/wiki/NoCatSplash
+Nodogsplash
+luci-app-splash
+RADIUS server
+ChilliSpot
+Wifidog
+NoCat
+Sputnik
+CoovaAP
+
+Linux software
+http://subnod.es/
+Interesting project for local software. It has chat rooms etc. It is written by Sarah Grant. She demonstrated it at Eyebeam in NY. It uses Raspian and the built-in batman-adv.
+
+“The Subnodes project is an open source initiative focused on streamlining the process of setting up a Raspberry Pi as a wireless access point for distributing content, media, and shared digital experiences. The device behaves as a web server, creating its own local area network, and does not connect with the internet. This is key for the sake of offering a space where people can communicate anonymously and freely, as well as maximizing the portability of the network (no dependibility on an internet connection means the device can be taken and remain active anywhere). The devices are also mesh enabled, implementing the BATMAN Advanced routing protocol.”
+
+
+The TCP/IP Model (and layers)
+(from WNDW.net)
+Network traffic is divided into a number of layers. Each layer is independent of the layers around it, and each builds on the services provided by the layer below while providing new services to the layer above. The abstraction between layers makes it easy to design elaborate and highly reliable protocol stacks,such as the ubiquitous TCP/IP stack. 
+
+5 Application	the layer that most network users are exposed to 
+4 Transport	TCP, UDP etc
+3 Internet	IP
+2 Data Link	ethernet, 802.11 (Wi-Fi standard)
+1 Physical	cable, fiber, air etc.
+
+In the ISO standard, layer 5 is further divided into- 5: session, 6: presentation, 7: application
+
+Mesh protocols usually work on layer 3 (internet) but some, notably Batman-adv work on layer 2 (ethernet).
+
+Wi-Fi standards
+ac
+n
+
+Beamforming
+Wi-Fi modes
+(adapted from here)
+Access Point (AP, Infrastructure mode, default router)
+Infrastructure or Access Point is almost always the default wireless AP mode. In this mode your wireless access point (WAP) acts as a connection point for all wireless devices connecting to the network. Your WAP may be responsible for authenticating any computers attempting to join the network as well as issuing IP numbers to the computers that successfully authenticate. You will not normally need to change this setting when setting up your wireless network.
+
+Ad-Hoc (Computer-to-computer network)
+In Ad-Hoc mode, computers participating in the network connect directly to each other. Your WAP does not attempt to manage those connections at all. In fact your WAP simply participates in the network as just another device on the network, with no network management, security or authentication responsibilities. Ad-hoc mode is therefore the direct opposite of infrastructure mode.
+Mesh 
+Mesh is not really a mode but an additional service usually on top of Ad-Hoc mode. In Ad-Hoc mode a computer can only communicate with directly connected computers. A mesh network is a type of ad-hoc network with the added ability that every device can communicate with every other device in the network. This ability is added through software protocols like cjdns, BATMAN and OLRS.
+Client mode
+In the client mode, your wireless access point, on the one hand, acts as a router, connecting your network to another access point or router. While on the other hand, it is also acting as an access point for the computers in your wireless network. Therefore your WAP is a client of the remote router and a server to the computers on your wireless network. Client mode is used when your WAP is serving as the access point for a subnet and is, in turn, connected to a larger network, such as the Internet, through another router or WAP.
+Client bridged mode
+In this mode the radio side of your WAP connects to a remote WAP as a client and allows any computer connected to your WAP's LAN ports to connect wirelessly to the remote WAP. All connected computers and WAPs remain in the same subnet. In this case, the WAP acts as a wireless network adapter for computers connected to it through its LAN ports. This mode is useful if you have a computer, say a desktop, that lacks a wireless network adapter but you want to connect it to a wireless network. You would configure your WAP in client bridge mode, connect it to the remote WAP and connect the desktop to it by cable.
+Repeater mode
+The repeater wireless AP mode simply receives a wireless signal and rebroadcasts it or "repeats" it. This allows the WAP to be used to extend the range of a wireless network. In this case the WAP acts as a relay "passing on" network data frames between a distant WAP and its client.
+Repeater bridge mode
+In this mode the WAP acts as a repeater or relay between two wired network segments. This enables the separate wired networks to be connected to each other as though there were a physical wired connection between them. In this case both networks are in the same subnets and all member computers can communicate just as if they were physically connected.
+
+Understanding your wireless access point's modes can be very helpful in getting the most out of it in different usage situations. This can be particularly useful if you want to extend your wireless network beyond the simplest cases.
+Mesh Protocols
+Border Gateway Protocol
+BGP exchanges routing and reachability information on the Internet. BGP plays a key role in the overall operation of the Internet and is involved in making core routing decisions. This is not something you probably want to run on your Ubiquiti router, but it is interesting to note that BGP is a non-dynamic mesh protocol, and community mesh networks are in a sense returning to what is a basic structure of the internet.
+802.11s
+Open standard that doesn't have much documented usage. 802.11s defines a default mandatory routing protocol (Hybrid Wireless Mesh Protocol, or HWMP), yet allows vendors to operate using alternate protocols.
+
+802.11s was used by The One Laptop per Child but not successfully, and they now use ad-hoc. (Though it is hard to find exact information about this)
+
+Here is a white paper about 802.11
+http://www.cwnp.com/uploads/802-11s_mesh_networking_v1-0.pdf
+OLSR
+Optimized Link State Routing Protocol
+Very popular standard used by commercial devices and also at Red Hook and Freifunk
+Batman
+An acronym for- Better Approach to Mobile Adhoc Networking
+http://www.open-mesh.org/
+BMX6 
+This is the standard protocol in qMp. This version of Batman has been winning mesh competitions. The BMX6 branch is used by Freifunk and Guifi in the qMp distro.
+
+Batman-adv 
+Batman advanced uses layer 2 (ethernet layer) instead of the usual layer 3. It creates a virtual local-link network. Because it is done at the ethernet level, level 3 protocols such IPv4, IPv6 can run over this protocol unaffected by changes to the network.
+Batman-adv is now part of the Linux kernel (since 2.6.38)
+AODV
+Ad hoc On-Demand Distance Vector () Routing
+AODV is the routing protocol used in ZigBee personal area networks
+Babel
+
+Broadband-Hamnet
+http://www.broadband-hamnet.org/
+Broadband-Hamnet™ (formerly called HSMM-Mesh™)  is a high speed, self discovering, self configuring, fault tolerant, wireless computer network that can run for days from a fully charged car battery, or indefinitely with the addition of a modest solar array or other supplemental power source. The focus is on emergency communications. OLSR
+Mesh nodes operate on channel 1. Channels 1-6 of the 802.11B/G wireless band are completely within the 2.4ghz ham band. As support for additional ham bands is developed, different channels will apply in that band. Mesh nodes on channels 1-6 use FCC part 97 rules instead of part 15. This allows big antennas, more power, other changes
+Hyperboria/cjdns
+https://projectmeshnet.org/
+Hyperboria uses cjdns routing that is based loosely on Kademlia for peering and for encryption it uses NaCl "Networking and Cryptography library" (pronounced "salt").  
+mesh over ethernet
+IEEE_802.1aq
+
+Opportunistic networks
+Opportunistic networks are used for file sharing and syncing only when in proximity, a kind of very slow mobile mesh. Some examples are PirateBox and Haggle
+Server software
+Mesh networks often have a server running software for community pages and also software for managing the networks. These servers can be a small Raspberry Pi or Beaglebone or any larger computer.
+
+Network management
+Opennms, AutoNoc These are open source network management software 
+
+CAPWAP
+The Control And Provisioning of Wireless Access Points (CAPWAP) protocol is a standard, interoperable networking protocol that enables a central wireless LAN Access Controller (AC) to manage a collection of Wireless Termination Points (WTPs), more commonly known as Wireless Access Points. The protocol specification is described in RFC 5415.
+Meetups/hacks
+NYC
+http://www.meetup.com/nycmesh/
+http://utopiaschool.org/
+http://www.nycresistor.com/
+http://www.hope.net/
+SF
+http://cozybit.com/category/ourwork/
+Europe
+http://battlemesh.org/
+https://c-base.org/
+Organizations
+NYCwireless
+NYCwireless promotes open wireless hotspots in public spaces throughout the New York region. These public spaces include parks, coffee shops, and building lobbies. NYCwireless intends to work with public and other nonprofit organizations to bring broadband wireless Internet to under-served communities.
+
+New America Foundation
+New America Foundation’s Open Technology Institute make the Commotion distro of OpenWRT. This is used by Red Hook and others.
+Free Network Foundation 
+The FNF began in New York but is now Kansas based. They have started mesh networks in Kansas and Austin Texas. It is modelling itself on Guifi and has a version of the Guifi software called Guifi.us. It was headed by Isaac Wilder who was involved with Occupy Wall Street. It is now headed by Charles and Patti Wyble. FNF is attempting to work with other communities- “There is an emergent international coalition of free network organizations, with strong participation from guifi.net (Catalonia), Altermundi (Argentina), FFDN (France), WLAN-Slovenjia (Slovenia), People's Open Network (Oakland), and KCFN (Kansas/Missouri).”
+
+Here’s a great video about Isaac Wilder and Occupy 
+Tunisia
+“A group of academics and computer enthusiasts who took part in the 2011 uprising in Tunisia that overthrew a government deeply invested in digital surveillance have helped their town become a test case for an alternative: a physically separate, local network made up of cleverly programmed antennas scattered about on rooftops.”
+fabfi
+An open-source, city-scale wireless mesh networking system with access control and monitoring used in Africa and testbeds in Massachusetts
+
+Internet.org 
+This is an ambitious and hugely funded Facebook project using satellites, cell towers and free-space optics (lasers) detailed pdf
+
+FEMA
+FEMA use Byzantium which runs OLSR (it used to use Babel). FEMA worked with Red Hook after hurricane sandy. Story here.
+Frank Sanborn,  an innovation fellow at FEMA, says "Feeding into pre-existing efforts in communities is key”.
+Apps
+Serval Android root mesh
+Open Garden (closed source!), FireChat and various wifi and tethering apps
+FireChat works on both iPhone and Android.
+It may be using WiFi direct on Android and iOS multipeer on iPhone
+Android home mesh- There is speculation that Android is working on mesh networks for the home as this has been hinted by Sundar Pichai.
+iOS Multipeer Connectivity Framework (sample code)
+Commercial Hardware
+Cisco Meraki is used in the large Harlem wifi mesh
+
+Fon Makes the Fonera 2100. Used internationally for people to share wifi. Can also be flashed with OpenWrt.
+Open-Mesh OM1P. Use a bunch of these to create a mesh in your McMansion.
+Both Open-Mesh and Fonera were used in the Detroit mesh. Using commercial mesh hardware meant zero time configuring.
+One Laptop per Child (OLPC). Originally they made a big deal of using wifi mesh networking. Rumor is this was a failure. They now uses ad-hoc wifi.
+Mesh Potato Cheap little box that can do mesh, client or AP mode wifi
+Veniam Mobile mesh in vehicles. 600 current installs in Portugal and the company is now a startup in Silicon Valley.
+Books and wikis
+Wireless Networking in the Developing World (WNDW) is a great free book about designing, implementing, and maintaining low-cost wireless networks. http://wndw.net/book.html
+
+THE COOK REPORT ON INTERNET PROTOCOL 
+http://www.cookreport.com/pdfs/march-april13diowireless.pdf
+This has a very good, long interview with the man that started Guifi.net; and also information about FreedomBox.
+
+WNDW and the Cook Report are must-reads!
+
+Do-It-Yourself Internet Service Providers 
+http://www.diyisp.org/dokuwiki/
+
+GUIFI.NET Neutral, Open and Free Network for everybody http://www.dtic.upf.edu/~jbarcelo/tmp/guifi.net.pdf
+
+Improvised Wireless Networking
+
+https://www.scribd.com/doc/92507117
+
+Commons for Europe Project (C4EU)
+
+Bottom up Broadband (BuB) is characterized by the fact that the beneficiaries of the networks actively participate in the planning, deployment and maintenance tasks. For the beneficiaries, this represent a paradigm shift from a consumer-only position to an active-participant position
+
+Forums
+
+http://www.reddit.com/r/darknetplan
+
+http://www.reddit.com/r/nycmeshnet
+
+Glossary
+
+AP: a wifi Access Point
+
+Backhaul: very high bandwidth connections, often point to point.
+
+BuB: “Bottom up Broadband” The beneficiaries of the networks actively participate in the planning, deployment and maintenance tasks.
+
+Captive portal: a web page that is shown before connecting to the Internet normally
+
+Cjdns: Caleb James DeLisle's Network Suite. Encrypted IPv6 mesh protocol.
+
+Clearnet: the regular internet as opposed to the hidden web (Tor, I2P, Freenet)
+
+Commons: The commons include public libraries, the Internet, parks and roads and some mesh networks. Guifi has a “Wireless Commons License”.
+
+Dark fiber: fiber cable that is not connected.
+
+FNF: Free Network Foundation
+
+FFTF: Fiber From The Farms Broadband Initiative -- Guifi term for BuB
+
+HNA: Host and Network Association information used by mesh protocols
+
+LIR: local Internet registry, an organization that has been allocated a block of IP addresses by a regional 
+Internet registry (RIR)
+
+LuCI: (pronounced Lucy) Lua Unified Configuration Interface, the web interface in OpenWRT
+
+MANET: Mobile Ad-hoc NETwork
+
+node: WiFi router or other routing devices in a particular location on a network 
+
+OLSR: Optimized Link State Routing Protocol (popular mesh protocol)
+
+OpenWRT: Open source Wireless Receiver/Transmitter (WRT) software
+
+POE: Power over ethernet (how Ubiquiti routers get 24 volt power)
+
+Radio: The wireless receiver/transmitter part of a router
+
+RIR: Regional Internet registry
+
+SSID: Service set identification- the Wi-Fi access point name
+
+WAP: Wireless Access Point
+
+WNDW: Wireless Networking in the Developing World -- essential book
+
+WRT: Wireless Receiver/Transmitter software (WRT)
