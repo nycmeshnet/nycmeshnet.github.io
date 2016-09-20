@@ -1,3 +1,0 @@
-Welcome to the NYC Mesh wiki homepage. Bare with us while we populate the wiki, move over old documentation, and get it all pretty looking for ya. If you want to contribute, please do! Y
-
-You can edit the wiki using MediaWiki's syntax, Github-flavored markdown, and some other things I've never heard of. So, have fun!
