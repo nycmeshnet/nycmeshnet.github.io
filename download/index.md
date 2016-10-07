@@ -68,10 +68,11 @@ Wait ten minutes or so and connect to the router via Wi-Fi. It now has a SSID na
 * Click "Upload Firmware: Choose File"
 * Select the AirOS file
 * Click "Upload"
+* There are two loading screens here, and if you don't go through both, you will irreparably break the router.
 * Wait until it reboots
+* Make sure you are now running 5.5.10 and NOT 5.6.x. Seriously. Read this. Double check. Triple check.
 * Download our firmware- [NSM5 XW download](http://nycmeshnet.github.io/download/NSM5-XW.html) 
 * Go to [192.168.1.20](http://192.168.1.20), login and select "System" again
-* Make sure you are now running 5.5.10 and NOT 5.6.x
 * Click "Upload Firmware: Choose File"
 * Select the M5-XW factory image you downloaded
 * Click "Upload"
