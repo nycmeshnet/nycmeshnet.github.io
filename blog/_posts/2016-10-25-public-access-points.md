@@ -22,6 +22,8 @@ To use this config file you need a new NanoStation NSM5 or one that is running A
 * On the tabbed panel select "System"  
 * At the bottom select "Upload Configuration:Choose file" and upload the file you downloaded above.  
 
+The config file changes the IP to https://192.168.10.20 instead of the usual 192.168.1.20, so adjust your laptop to the correct subnet, e.g. 192.168.10.11
+
 This should now automatically connect to the kiosk by seeing the kiosk SSID. Aim it in the general direction of the top of the kiosk. Connect the 'main' ethernet port to your laptop, or to the WAN of another (mesh!) router. The first time you connect you will have to enter an email address. This will keep you logged in for about a month.
 
 To connect to different SSIDs go to the "Wireless" tab and "Select..." You can use this while traveling to connect to various access points over long distances. A NanoStation will work from a 12V battery if you want to make this portable.
