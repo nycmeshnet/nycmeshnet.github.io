@@ -3,6 +3,13 @@ body {
   background-color: $c0;
   color: $c1;
 }
+
+.highlighter-rouge {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1, h2, h3, h4 {
   font-family: $f1;
   border: 0;
