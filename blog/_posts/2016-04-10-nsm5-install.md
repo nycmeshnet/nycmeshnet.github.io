@@ -76,4 +76,15 @@ Sometimes a tree is the best place for your NanoStation.
 
 ![tree](/assets/images/nsm5/tree.jpg)
 
+If you need to install two NanoStations you can simple run a cable from the spare ethernet port to the other NSM5. This is called POE passthrough. It is sometimes on by default. If not here are the (cryptic) commands-
+
+to switch POE passthrough on:
+
+`echo 8 1 1 > /proc/gpio/system_led`
+
+to switch POE passthrough off:
+
+`echo 8 1 0 > /proc/gpio/system_led`
+
+On the NSM5 the "main" port is LAN and the secondary is "WAN". This is the most confusing thing about the router and mixing this up is the cause of most problems. Always connect WAN on one router to LAN on another!
 
