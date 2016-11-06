@@ -96,15 +96,7 @@ You are sharing your existing internet with your neighbors. You plug the etherne
 
 **Powering two from one adapter**
 
-If you need to install two NanoStations you can simply run a cable from the spare ethernet port to the other NSM5. This is called POE passthrough, which is sometimes on by default. If not here are the (cryptic) commands to turn it on and off:
-
-to switch POE passthrough on:
-
-`echo 8 1 1 > /proc/gpio/system_led`
-
-to switch POE passthrough off:
-
-`echo 8 1 0 > /proc/gpio/system_led`
+If you need to install two NanoStations you can simply run a cable from the spare ethernet port to the other NSM5. If the POE is plugged into the secondary port (gateway setup) then the "main" will act as passthrough to the second NSM5.
 
 **LAN vs WAN confusion**
 
