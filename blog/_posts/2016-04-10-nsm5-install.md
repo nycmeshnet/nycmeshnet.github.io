@@ -76,7 +76,27 @@ Sometimes a tree is the best place for your NanoStation.
 
 ![tree](/assets/images/nsm5/tree.jpg)
 
-If you need to install two NanoStations you can simple run a cable from the spare ethernet port to the other NSM5. This is called POE passthrough. It is sometimes on by default. If not here are the (cryptic) commands-
+**Ethernet**
+
+The most important thing about the cable is that it is "outdoor" cable. Otherwise the plastic will decay in the weather. We use Cat 5e. A cable run must be less than 100m (300 feet), or the signal and voltage drop will be too much.
+
+There are two ethernet ports on the NanoStation and these are a source of confusion. Like most outdoor routers they get their power over the ethernet cable. They come with an adapter that adds 24V of power to the cable. Be careful plugging live cables into ports that are not expecting a voltage.
+
+Here are two ways to wire your NSM5:
+
+**Setup 1 (client)**
+
+You are connecting to a remote gateway that is providing your internet. You plug the ethernet cable into the "main" (LAN) port of the NSM5. The cable goes to the power adapter POE. "LAN" on the POE adapter goes to the WAN of an indoor router. 
+
+(Sometimes people are close enough to the NSM5 that they don't bother with the indoor router.)
+
+**Setup 2 (gateway)**
+
+You are sharing your existing internet with your neighbors. You plug the ethernet into the "secondary" (WAN) port of the NSM5. The cable goes to the power adapter POE. "LAN" on the POE adapter goes to the LAN of your existing indoor router.
+
+**Powering two from one adapter**
+
+If you need to install two NanoStations you can simply run a cable from the spare ethernet port to the other NSM5. This is called POE passthrough, which is sometimes on by default. If not here are the (cryptic) commands to turn it on and off:
 
 to switch POE passthrough on:
 
@@ -86,5 +106,9 @@ to switch POE passthrough off:
 
 `echo 8 1 0 > /proc/gpio/system_led`
 
-On the NSM5 the "main" port is LAN and the secondary is "WAN". This is the most confusing thing about the router and mixing this up is the cause of most problems. Always connect WAN on one router to LAN on another!
+**LAN vs WAN confusion**
+
+On the NSM5 the **"main" port is LAN** and the **secondary is "WAN"**. This is the most confusing thing about the router and mixing this up is the cause of most problems. **Always connect WAN on one router to LAN on another!**
+
+If you connect LAN to LAN it will be unstable as each LAN port usually has a DHCP server and both ports will be trying to assign an IP address to the other. Also don't connect WAN to WAN as this makes no sense. This is by far the biggest problem with people setting up routers and it is so simple to avoid.  
 
