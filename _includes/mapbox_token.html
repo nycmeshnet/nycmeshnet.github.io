@@ -32,7 +32,7 @@ heat = L.heatLayer([], { maxZoom: 15.5 }).addTo(map);
     document.getElementById("main_text").style.display = "none";
     document.getElementById("location").style.display = "inherit";
     document.getElementById("logo").href = "index.html";
-    setTimeout(function(){document.getElementById("map").style.zIndex = 0;}, 4000);
+    setTimeout(function(){document.getElementById("bigmap").style.zIndex = 0;}, 4000);
     map.addLayer(L.mapbox.tileLayer('oo.kbip7077'));
   }
   var addedMarker = false;

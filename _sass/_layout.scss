@@ -54,7 +54,7 @@ a {
 
 #map {
   width:100%; 
-  height: 500px;
+  height: 600px;
   overflow: hidden;
   text-align: center;
 
@@ -64,6 +64,12 @@ a {
   @media only screen and (max-height: 320px) {
     height: 320px;
   }
+}
+#smallmap {
+  width:100%; 
+  height: 350px;
+  overflow: hidden;
+  text-align: center;
 }
 .mainnav {
   float: right;
@@ -204,10 +210,10 @@ right: 0;
 }
 .title {
   padding: $g2 0;
-  margin-top: 55%;
+  margin-top: 30%;
   @include animate(blur);
   @include delay(6);
-
+ /*
   @media only screen and (max-width : 575px) {
     margin-top: 65%;
   }
@@ -227,7 +233,7 @@ right: 0;
   @media only screen and (max-height : 320px) {
     margin-top: 20%;
   }
-
+ */
   .sig {
     margin-top: 10px;
     margin-left: -30px;
