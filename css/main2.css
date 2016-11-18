@@ -2132,6 +2132,10 @@ a:hover { color: #990000; }
 @media only screen and (max-height: 480px) { #map { height: 480px; } }
 @media only screen and (max-height: 320px) { #map { height: 320px; } }
 
+#donatemap { width: 100%; height: 200px; overflow: hidden; text-align: center; }
+@media only screen and (max-height: 480px) { #map { height: 480px; } }
+@media only screen and (max-height: 320px) { #map { height: 320px; } }
+
 .mainnav { float: right; }
 @media only screen and (max-width: 320px) { .mainnav { float: none; margin-left: 50px; } }
 .mainnav a:not(:first-of-type):before { content: "/ "; }
@@ -2194,7 +2198,9 @@ nav, .content > h1, .content > h2, .content > h3, .content > p, .team, #disqus_t
 .content h2:not(:first-of-type) { border-top: solid 1px #333; }
 .content h2:first-of-type { margin-top: 0; }
 
-.title { padding: 20px 0; margin-top: 55%; -webkit-animation: blur 500ms ease-in; -moz-animation: blur 500ms ease-in; -o-animation: blur 500ms ease-in; animation: blur 500ms ease-in; -webkit-animation-delay: 450ms; -moz-animation-delay: 450ms; -o-animation-delay: 450ms; animation-delay: 450ms; -webkit-animation-fill-mode: backwards; -moz-animation-fill-mode: backwards; -o-animation-fill-mode: backwards; animation-fill-mode: backwards; color: white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; border-top: solid 1px white; margin-bottom: 0; }
+.donatetitle { padding: 20px 0; margin-top: 2%; -webkit-animation: blur 500ms ease-in; -moz-animation: blur 500ms ease-in; -o-animation: blur 500ms ease-in; animation: blur 500ms ease-in; -webkit-animation-delay: 450ms; -moz-animation-delay: 450ms; -o-animation-delay: 450ms; animation-delay: 450ms; -webkit-animation-fill-mode: backwards; -moz-animation-fill-mode: backwards; -o-animation-fill-mode: backwards; animation-fill-mode: backwards; color: white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; border-top: solid 1px white; margin-bottom: 0; }
+
+.title { padding: 20px 0; margin-top: 15%; -webkit-animation: blur 500ms ease-in; -moz-animation: blur 500ms ease-in; -o-animation: blur 500ms ease-in; animation: blur 500ms ease-in; -webkit-animation-delay: 450ms; -moz-animation-delay: 450ms; -o-animation-delay: 450ms; animation-delay: 450ms; -webkit-animation-fill-mode: backwards; -moz-animation-fill-mode: backwards; -o-animation-fill-mode: backwards; animation-fill-mode: backwards; color: white; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; border-top: solid 1px white; margin-bottom: 0; }
 @media only screen and (max-width: 575px) { .title { margin-top: 65%; } }
 @media only screen and (max-width: 500px) { .title { margin-top: 70%; } }
 @media only screen and (max-width: 440px) { .title { margin-top: 80%; } }
@@ -2205,6 +2211,10 @@ nav, .content > h1, .content > h2, .content > h3, .content > p, .team, #disqus_t
 @media only screen and (max-height: 568px) { .title .sig { margin-left: 0px; } }
 .title .sig img { vertical-align: top; margin-top: -10px; width: 70px; height: 70px; -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; margin-right: 10px; border: solid 2px white; }
 .title h1 { font-size: 34px; }
+
+.boxed {
+  border: 10px solid green ;
+}
 
 .blog .title h1 { margin-bottom: 5px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .blog .title .tags, .blog .title .sig { font-size: 12px; line-height: 15px; }

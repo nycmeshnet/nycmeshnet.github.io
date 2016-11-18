@@ -58,11 +58,20 @@ a {
   overflow: hidden;
   text-align: center;
 
-  @media only screen and (max-height: 480px) {
-    height: 480px;
+  @media only screen and (max-height: 650px) {
+    height: 500px;
   }
-  @media only screen and (max-height: 320px) {
-    height: 320px;
+  @media only screen and (max-height: 600px) {
+    height: 450px;
+  }
+  @media only screen and (max-height: 550px) {
+    height: 400px;
+  }
+  @media only screen and (max-height: 500px) {
+    height: 350px;
+  }
+  @media only screen and (max-height: 450px) {
+    height: 300px;
   }
 }
 #smallmap {
