@@ -7,7 +7,7 @@ Here is my list of priorities for the mesh in order of importance. I'll keep thi
 
 **VPN services**
 
-We are always asked about security. The only way to secure communications is end-to-end encryption such as a VPN. We will offer a VPN service to all mesh members for a small charge per month.
+We are always asked about security. The only way to secure communications is end-to-end encryption such as a VPN. We will offer a VPN service to all mesh members for a small charge per month.  
 
 **Tall structure installs**
 
