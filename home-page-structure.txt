@@ -1,0 +1,11 @@
+layout
+	post
+	{% include head.html %}
+	  {% include header.html %}
+		<div id="smallmap"></div>
+			<nav>
+	  		{% include mainnav.html %}
+	  		<div class="title-container">
+	    	{% include title.html %}
+	  <div class="content">
+	  {{ content }}

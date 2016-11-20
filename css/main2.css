@@ -2297,7 +2297,7 @@ footer.footer .icon-rss:hover div { background-position: 0 -15px; }
 #newnode .pending { color: white; background-color: rgba(255, 255, 0, 0.3); }
 #newnode a:not(.btn) { color: white; text-decoration: underline; }
 #newnode a:not(.btn):hover { color: 20px; }
-#newnode .btn { color: white !important; border-color: white; background-color: rgba(50, 210, 50, 0.83) !important; float: right !important; display: inline-block !important; padding: 15px 20px !important; width: 150px; }
+#newnode .btn { color: white !important; border-color: white; background-color: rgba(50, 210, 50, 0.83) !important; float: right !important; display: inline-block !important; padding: 10px 20px !important; width: 150px; }
 @media only screen and (max-width: 320px) { #newnode .btn { width: 100%; } }
 @media only screen and (max-width: 568px) { #newnode .btn { padding: 10px 20px !important; } }
 #newnode .btn:hover { background-color: lime !important; }

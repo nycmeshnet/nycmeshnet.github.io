@@ -78,7 +78,9 @@ Sometimes a tree is the best place for your NanoStation.
 
 **Ethernet**
 
-The most important thing about the cable is that it is "outdoor" cable. Otherwise the plastic will decay in the weather. We use Cat 5e. A cable run must be less than 100m (300 feet), or the signal and voltage drop will be too much.
+Outdoor routers use "power over ethernet" (POE). A small adapter is used to add power to the ethernet. This means you only need to run one ethernet cable to the device. 
+
+The most important thing about the cable and is that it is "outdoor" cable. Otherwise the plastic will decay in the weather. We use Cat 5e. A cable run must be less than 100m (300 feet), or the signal and voltage drop will be too much.
 
 There are two ethernet ports on the NanoStation and these are a source of confusion. Like most outdoor routers they get their power over the ethernet cable. They come with an adapter that adds 24V of power to the cable. Be careful plugging live cables into ports that are not expecting a voltage.
 
