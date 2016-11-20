@@ -43,14 +43,16 @@
     background-color: rgba(50,210,50,.83) !important;
     float: right !important;
     display: inline-block !important;
-    padding: 10px 15px !important;
+    padding: 7px 15px !important;
     width: 120px;
+/*
         @media only screen and (max-width : 320px) {
     width: 100%;
   }
     @media only screen and (max-width : 568px) {
-      padding: 10px 20px !important;
+      padding: 6px 12px !important;
     }
+*/
     &:hover {
      background-color: rgba(0,256,0,1) !important;
    }
