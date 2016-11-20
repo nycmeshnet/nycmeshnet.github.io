@@ -1,3 +1,5 @@
+Home page
+
 layout
 	post
 	{% include head.html %}
@@ -7,5 +9,15 @@ layout
 	  		{% include mainnav.html %}
 	  		<div class="title-container">
 	    	{% include title.html %}
+	  <div class="content">
+	  {{ content }}
+	
+Join
+
+layout
+	newnode
+	{% include head.html %}
+	  {% include header_join.html %}
+	  {% include forms/newnode.html %}
 	  <div class="content">
 	  {{ content }}
