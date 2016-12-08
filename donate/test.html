@@ -68,7 +68,43 @@
 </nav>
 
 <!-- Stripe Donation -->
+<div id="donation-amounts" class="dt w-100 f3 center bg-near-black white serif">
+  <p class="f5 tc pt4 i">
+    - Choose a monthly amount -
+  </p>
+  <div class="mw6 mt2 mb3 tc f2 center">
+    <div class="dt center">
+      <div class="w1">
+      </div>
+      <div id="twenty-monthly" onclick="setAmount('twenty-monthly')" class="button dtc mh2 w4 br2 bg-dark-gray">
+        <p class="pv0 mv3">$20</p>
+      </div>
+      <div class="w1">
+      </div>
+      <div id="fifty-monthly" onclick="setAmount('fifty-monthly')" class="button dtc mh2 w4 br2 bg-dark-gray">
+        <p class="pv0 mv3">$50</p>
+      </div>
+      <div class="w1">
+      </div>
+      <div id="hundred-monthly" onclick="setAmount('hundred-monthly')" class="button dtc mh2 w4 br2 bg-dark-gray">
+        <p class="pv0 mv3">$100</p>
+      </div>
+      <div class="w1">
+      </div>
+    </div>
+  </div>
 
+  <p class="f5 tc pt4 i">
+    - Or make a one time donation -
+  </p>
+  <div class="mw6 mt2 mb3 tc f2 center">
+    <input id="custom" onfocus="setAmount('custom')" type"number" maxlength="7" name="donation-amount" placeholder="$" class="tc bg-dark-gray white w4 h3 ph3 br2 bw0" style="width: 140px;">
+
+    <div  class="pt4 mt4 mw5 f4 center">
+      <input id="payButton" type="submit" value="Pay with card" class="input-reset bw0 w-100 fw5 br3 pa3 sans-serif white">
+      </input>
+    </div>
+  </div>
 
   <!-- Donation Details -->
   <div class="gray tc serif pb3 pt2 ph4 mw6 center">
@@ -82,7 +118,6 @@
 <!-- Letter -->
 <div class="bg-near-white black-80 tc serif mw6 ph4 pb3 center">
   <p class="f3 mt4 pt3 lh-title">
-	Call us at (646) 727-0866 to make your donation!<br><br>
     NYC Mesh has big plans for 2016!
   </p>
   <p class="f5 lh-copy">
