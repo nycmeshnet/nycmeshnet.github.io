@@ -1,8 +1,7 @@
 
 ---
 layout: post
-permalink: /organize/
-title: Organize
+title: "organize"
 ---
 description: "Copy, Add, Organize and Fork"
 ---
