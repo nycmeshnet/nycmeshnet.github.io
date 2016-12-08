@@ -5,27 +5,25 @@ author: Brian
 ---
 Here is my list of priorities for the mesh in order of importance. I'll keep this updated.
 
-**VPN services**
+**Supernode**
 
-We are always asked about security. The only way to secure communications is end-to-end encryption such as a VPN. We will offer a VPN service to all mesh members for a small charge per month.  
+The supernode at 375 Pearl St. is our first install on a tall structure. Here is our remaining todo list:
+
+Configure BGP
+Install VPN software
+lay more ethernet or dc cable
+Get tax-exemption status with suppliers  
+Pick up donated AirFiber pair  
+Decide best P2P points to extend backbone  
+Get P2M users (up to 2 miles) via mailout etc.  
+Install and test P2P and sector P2M antennas   
+Turn it on  
 
 **Tall structure installs**
 
 Tall structures are the only way we can expand the wireless mesh. This is by far our biggest priority. There are a few different types in the city and we need to try them all- NYCHA buildings, skyscrapers, churches, schools, libraries, existing antenna masts and building coops. We need specific presentations and handouts for each of these types of structures. We are currently approaching libraries and [churches](../../leaflet/church.pdf). We need to build presentations for coop boards and others.  
 
 Once we have a tall structure in a neighborhood we can link to apartment building rooftops.
-
-**Supernode**
-
-The supernode at 375 Pearl St. is our first install on a tall structure. Here is our remaining todo list:
-
-Get tax-exemption status with suppliers  
-Pick up donated AirFiber pair  
-Decide best P2P points to extend backbone  
-Get P2M users (up to 2 miles) via mailout etc.  
-Install and test P2P and sector P2M antennas   
-Install BGP servers in rack   
-Turn it on  
 
 **Public Access Points as gateways**
 
@@ -37,7 +35,7 @@ TP-Link locked down its 5GHz routers so we no longer have dual-band support. The
 
 **Collaborations**
 
-We are just starting some exciting collaborations with Zoetic Networks and Brooklyn Microgrid. This is essential to our growth and we should have more of this. 
+We are just starting some exciting collaborations with Zoetic Networks and Brooklyn Microgrid, and we are in talks with Chinatown B.I.D and NYCHA. This is essential to our growth and we should have more of this. 
 
 **Monitoring**
 
