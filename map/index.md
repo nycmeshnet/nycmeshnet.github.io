@@ -38,7 +38,6 @@ Bushwick -[Myf](<mailto:myf@nycmesh.net>)
 Sunnyside -[Shawn](<mailto:shawn@nycmesh.net>)  
 Jackson Heights -[Tom](<mailto:tom@nycmesh.net>)  
 Woodside – [Calvin](<mailto:calvin@nycmesh.net>)  
-Ridgewood – [Clark](<mailto:clark@nycmesh.net>)  
 
 **Bronx**
 
