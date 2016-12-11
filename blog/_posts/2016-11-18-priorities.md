@@ -29,25 +29,25 @@ Once we have a tall structure in a neighborhood we can link to apartment buildin
 
 Apart from the supernode, we need more internet gateways. Another kind of gateway is a public wifi access point. By using directional routers we can extend the range of public access points very easily. We have discussed this with some city infrastructure people and we think it is important to pursue this method. It will help us expand very quickly. Here are some instructions- [how to connect to a kiosk.](../public-access-points)
 
-**Cheap indoor router**
+**Monitoring team**
 
-TP-Link locked down its 5GHz routers so we no longer have dual-band support. The 842ND is discontinued and the 841 has poor OpenWrt support. LinkSys seems an obvious choice. We are currently compiling new firmware so we can start adding support for more routers. Suggestions of cheap, off the shelf hardware are welcome.
+We need a small team that is dedicated to monitoring and maintaining the network. Monitoring, alerts and maintenance are hugely important. We are using Nagios, Icinga2 and custom software. We need to keep every node active.
+
+**Cheap 2GHz and dualband routers**
+
+TP-Link locked down its 5GHz routers so we no longer have dual-band support. The 842ND is discontinued and the 841 has poor OpenWrt support. We are currently compiling new firmware so we can start adding support for more routers. Suggestions of cheap, off the shelf hardware are welcome. We are looking at the GL-AR150 and ZBT Ape522.
 
 **Collaborations**
 
 We are just starting some exciting collaborations with Zoetic Networks and Brooklyn Microgrid, and we are in talks with Chinatown B.I.D and NYCHA. This is essential to our growth and we should have more of this. 
 
-**Monitoring**
-
-We are currently switching from Nagios to Incinga2. Icinga2 is basically a new fork of Nagios and is compatible with it. Monitoring, alerts and maintainance are hugely important. If a single node goes down it can email us automatically in a way that we can get things running quickly again.
-
 **Donations**
 
 The supernode has a monthly rental and we need to get monthly donations to cover this. So far we have over $4000 donated, mostly from a few generous people, which will cover most of the install. You can donate via our [donate page.](../../donate)
 
-**Meetup space**
+**Work and storage space**
 
-DBA bar has been good for social meetups but there are many people who cannot or don't want to meet in bars. We need a regular space for social meetups and also a regular space for hardware and software hack type meetups. 
+We need a place to store our install gear and also work on routers etc.
 
 **Software services**
 
