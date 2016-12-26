@@ -1,0 +1,19 @@
+How to build a community owned network
+
+Focus on your only aim- building a community owned network. People will have different motivations but the result is the same.
+
+There are many ways to build a network. Use whatever works best for a particular link- fiber is the fastest, ethernet also fast and wifi where laying cables is difficult or expensive.
+
+Two different strategies-
+
+WISP tower that serves an entire neighborhood
+
+This is the fastest way to build your network. 
+
+Sharing from your own building-
+
+Stick a router in your window or on your rooftop. Share your current internet connection. Run ethernet through your building or use mesh routers to connect up as many apartments as you can. You are taking on the responsibility of a network admin, so you will have to be motivated.
+
+What not to do-
+
+Don't help with a rooftop install when a person is renting on a one-year lease. They will move and you've wasted a lot of time and broken any chain of connections you had. Don't help with rooftop installs unless 1) they pay for it or 2) they own the apartment or have a long-term lease.
