@@ -5,15 +5,16 @@ author: Brian
 ---
 Here is my list of priorities for the mesh in order of importance. I'll keep this updated.
 
-**1. Supernode**
+**1. Get users for the Supernode**
 
 The supernode at 375 Pearl St. is our first install on a tall structure. Here is our remaining todo list:
 
 **Get P2M users (up to 2 miles) via mailout etc. (currently one user)**  
 **Find rooftops for P2P points to extend backbone (currently zero)**
 
-Install VPN software
-lay more ethernet or dc cable
+other supernode tasks-  
+Install VPN software  
+lay more ethernet or dc cable  
 Get tax-exemption status with suppliers  
 
 **2.Tall structure installs**
@@ -28,7 +29,7 @@ Organize a team of people for installs. Skills needed include safely climbing, r
 
 Figure out reimbursement for install.
 
-**4.Public Access Points as gateways**
+**4. Public Access Points as gateways**
 
 Apart from the supernode, we need more internet gateways. Another kind of gateway is a public wifi access point. By using directional routers we can extend the range of public access points very easily. We have discussed this with some city infrastructure people and we think it is important to pursue this method. It will help us expand very quickly. Here are some instructions- [how to connect to a kiosk.](../public-access-points)
 
@@ -36,7 +37,7 @@ Apart from the supernode, we need more internet gateways. Another kind of gatewa
 
 We need a small team that is dedicated to monitoring and maintaining the network. Monitoring, alerts and maintenance are hugely important. We are using Nagios, Icinga2 and custom software. We need to keep every node active.
 
-**6.Cheap 2GHz and dualband routers**
+**6. Cheap 2GHz and dualband routers**
 
 TP-Link locked down its 5GHz routers so we no longer have dual-band support. The 842ND is discontinued and the 841 has poor OpenWrt support. We are currently compiling new firmware so we can start adding support for more routers. Suggestions of cheap, off the shelf hardware are welcome. We are looking at the GL-AR150 and ZBT Ape522.
 
@@ -46,7 +47,7 @@ We are just starting some exciting collaborations with Zoetic Networks and Brook
 
 **8. Donations**
 
-The supernode has a monthly rental and we need to get monthly donations to cover this. So far we have over $4000 donated, mostly from a few generous people, which will cover most of the install. You can donate via our [donate page.](../../donate)
+The supernode has a monthly cost and we need to get monthly donations to cover this. So far we have over $4000 donated, and mostly from a few generous people, which will cover most of the install. You can donate via our [donate page.](../../donate). We have also just received $30,000 in grant money which will cover our expenses for 2017.
 
 **9. Work and storage space**
 
