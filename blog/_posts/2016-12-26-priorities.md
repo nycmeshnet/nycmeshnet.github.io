@@ -5,12 +5,29 @@ author: Brian
 ---
 Here is my list of priorities for the mesh in order of importance. I'll keep this updated.
 
+**1. Get users for the Supernode**  
+**2. Tall structure installs**  
+**3. Install Team**  
+**4. Public Access Points as gateways**  
+**5. Monitoring team**  
+**6. Cheap 2GHz and dualband routers**  
+**7. Collaborations**  
+**8. Donations**  
+**9. Work and storage space**  
+**10. Software services**  
+**11. Update the map**
+
+---
 **1. Get users for the Supernode**
 
 The supernode at 375 Pearl St. is our first install on a tall structure. Here is our remaining todo list:
 
 **Get P2M users (up to 2 miles) via mailout etc. (currently one user)**  
 **Find rooftops for P2P points to extend backbone (currently zero)**
+
+"P2M" is point-to-multipoint, i.e. our sector antenna which can reach hundreds of locations.    
+"P2P" is a point-to-point connection that can require expensive antennas on both ends.  
+We currently have two unused P2P pairs waiting for locations.
 
 other supernode tasks-  
 Install VPN software  
