@@ -2,7 +2,11 @@ How to build a community owned network
 
 Focus on your only aim- building a community owned network. People will have different motivations but the result is the same.
 
-There are many ways to build a network. Use whatever works best for a particular link- fiber is the fastest, ethernet also fast and wifi where laying cables is difficult or expensive.
+There are many ways to build a network. Use whatever works best for a particular link- 
+
+* fiber is the fastest and most reliable, 
+* ethernet also fast and 
+* wifi where laying cables is difficult or expensive.
 
 Two different strategies-
 
