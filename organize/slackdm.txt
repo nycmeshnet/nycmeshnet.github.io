@@ -1,0 +1,1877 @@
+real path for ar71 or whatever
+
+charlie [6:38 PM] 
+I'm confused
+
+[6:39]  
+I'm in the same directory as opkg
+
+[6:39]  
+and still have errors running it
+
+[6:39]  
+can read its man pages though
+
+brian [6:39 PM] 
+what path are you using?
+
+charlie [6:39 PM] 
+to install it?
+
+[6:40]  
+"/etc"
+
+brian [6:41 PM] 
+what opkg paths do you have here-  https://admin.qmp/cgi-bin/luci/admin/system/packages/ipkg
+
+charlie [6:43 PM] 
+everything until /ipkg
+
+[6:44]  
+nvm
+
+[6:44]  
+same path
+
+brian [6:44 PM] 
+paste the path here so I can fix it
+
+[6:44]  
+path(s)
+
+charlie [6:48 PM] 
+http://admin.qmp/cgi-bin/luci/admin/system/packages/ipkg
+
+brian [6:50 PM] 
+are there any paths when you go there? like the snippet I posted above?
+
+charlie [6:51 PM] 
+dest root /
+dest ram /tmp
+lists_dir ext /var/opkg-lists
+option overlay_root /overlay
+option check_signature 1
+
+brian [6:53 PM] 
+you can find your path by digging here http://fw.qmp.cat/LEDE/packages/
+
+charlie [6:53 PM] 
+uploaded this file
+ar300 install screenshots
+1MB
+Zip
+ Click to download
+Add Comment
+
+charlie [6:54 PM] 
+http://fw.qmp.cat/LEDE/targets/ar71xx/generic/
+
+brian [6:56 PM] 
+this is for a generic LEDE install? not a qmp?
+
+charlie [6:56 PM] 
+it's qmp
+
+brian [6:56 PM] 
+what were those screenshots?
+
+charlie [6:56 PM] 
+for the 300m
+
+[6:56]  
+same process for 150
+
+charlie [7:24 PM] 
+anyway
+
+[7:24]  
+that opkg thing?
+
+charlie [7:34 PM] 
+ugh
+
+brian [7:34 PM] 
+this explains how it works- https://wiki.openwrt.org/doc/packages
+
+[7:35]  
+you can also just opkg <full path to tinc for my chipset>
+
+charlie [7:35 PM] 
+nice
+
+[7:35]  
+but why doesn't opkg update work?
+
+brian [7:35 PM] 
+look up syntax
+
+charlie [7:35 PM] 
+wanna just open another shell?
+
+brian [7:35 PM] 
+I think it is just
+
+[7:36]  
+okpg install <url>
+
+[7:36]  
+opkg
+
+charlie [7:36 PM] 
+qmp doesn't include TINC, though, right?
+
+brian [7:37 PM] 
+look for it on openwrt
+
+charlie [7:37 PM] 
+look where?
+
+[7:37]  
+"grep tinc"
+
+[7:37]  
+come back later
+
+brian [7:38 PM] 
+https://downloads.openwrt.org/chaos_calmer/15.05/    or what ever just use the googles
+
+charlie [7:38 PM] 
+why would I want that?
+
+[7:39]  
+are you saying I should flash openwrt then qmp again?
+
+[7:39]  
+or does tinc come on openwrt
+
+brian [7:39 PM] 
+there is probably only one binary of tinc per chipset, the same binary is going to be in lots of places
+
+charlie [7:41 PM] 
+there's not a openwrt .bin anyway
+
+[7:41]  
+#opkg update
+
+[7:41]  
+Signature failed
+
+[7:41]  
+the fuck?
+
+[7:43]  
+24.45.205.138
+
+[7:45]  
+password: flyingcircus
+
+brian [7:48 PM] 
+https://github.com/nycmeshnet/docs/blob/master/tinc%20install%20old.md
+
+[7:50]  
+at the bottom it says how to wget then install (edited)
+
+charlie [7:50 PM] 
+right
+
+[7:51]  
+but I still can't update the system
+
+brian [7:51 PM] 
+because you have no fucking paths!
+
+[7:51]  
+update looks at the paths of which you have none
+
+[7:51]  
+it is not magic
+
+charlie [7:53 PM] 
+oh ok
+
+[7:53]  
+so I have to add update paths (edited)
+
+brian [7:53 PM] 
+you either put the paths in by hand or do the wget <url> method
+
+charlie [7:53 PM] 
+gotcha!
+
+[7:53]  
+I never really understood what that did
+
+[7:53]  
+that's what I needed!
+
+charlie [8:04 PM] 
+sweet
+
+[8:04]  
+got that to work
+
+[8:06]  
+rebooted
+
+[8:11]  
+how do we do the tinc key exchange thing?
+
+brian [8:15 PM] 
+keys go in /etc/tinc/nycmesh/hosts/
+
+[8:15]  
+Dan has the main server with all the public keys
+
+[8:16]  
+our image generates keys on on install.
+
+[8:16]  
+I paste them by hand into Dan's server
+
+charlie [8:17 PM] 
+so, once I get this running, how do I make an upgrade file?
+
+brian [8:18 PM] 
+upgrade what to what?
+
+charlie [8:20 PM] 
+a .bin for flashing these
+
+brian [8:20 PM] 
+from factory to your image?
+
+charlie [8:20 PM] 
+factory is openwrt
+
+[8:20]  
+but yeah
+
+brian [8:23 PM] 
+I think you have it backwards? Do you want to extract the binary out of the router and use that as an update?
+
+charlie [8:23 PM] 
+yes
+
+brian [8:24 PM] 
+normal way is to build image then install and test. I don't think it works backwards
+
+charlie [8:25 PM] 
+build where?
+
+brian [8:26 PM] 
+https://wiki.openwrt.org/doc/howto/build
+
+charlie [8:36 PM] 
+https://github.com/nycmeshnet/docs/blob/master/tinc%20install%20old.md
+
+[8:36]  
+I got hung-up halfway down
+
+[8:37]  
+at the tincd
+
+brian [8:38 PM] 
+do you have a question?
+
+charlie [8:38 PM] 
+where am I supposed to be running that?
+
+brian [8:40 PM] 
+you get an error?
+
+charlie [8:40 PM] 
+cause tincd not found
+
+[8:40]  
+even thought tinc is there
+
+brian [8:40 PM] 
+you might have newer version, look up how to generate keys in your version
+
+charlie [8:41 PM] 
+any keys?
+
+brian [8:42 PM] 
+you have to generate a key pair for each tinc install
+
+charlie [8:44 PM] 
+what kind of key?
+
+[8:44]  
+4096 RSA?
+
+brian [8:45 PM] 
+I think we went with smaller key 2048? it takes a long time with long keys. but
+
+charlie [8:46 PM] 
+2048 isn't really thought of as secure anymore
+
+brian [8:46 PM] 
+you are just making a public / private key pair so it can do its vpn stuff
+
+charlie [8:46 PM] 
+oh
+
+brian [8:46 PM] 
+ok then 4096
+
+charlie [8:46 PM] 
+so, I cant just ssh-keygen?
+
+brian [8:46 PM] 
+maybe I dunno, but why not do it the way tinc says
+
+charlie [8:47 PM] 
+because I can't
+
+brian [8:47 PM] 
+since that has 100% chance of working
+
+charlie [8:48 PM] 
+same version of tinc, btw
+
+[8:52]  
+so lostd
+
+[8:52]  
+lost*
+
+[8:53]  
+'tinc not found'
+
+brian [8:55 PM] 
+docs seem pretty clear. key generation changed in 1.1 (which I think we use even thought it has been beta for years)
+
+[8:55]  
+https://www.tinc-vpn.org/docs/
+
+charlie [9:05 PM] 
+so confusing
+
+[9:05]  
+I installed tinc as per your instructions
+
+[9:05]  
+but it won't run/doesn't have man pages
+
+brian [9:06 PM] 
+opwrt doesn't have man pages
+
+charlie [9:06 PM] 
+oh!
+
+[9:06]  
+but it won't run tinc commands
+
+[9:07]  
+tinc: not found
+
+[9:10]  
+so, I give up
+
+
+----- November 26th, 2016 -----
+brian [2:53 PM] 
+should we do a press release about the grant? (edited)
+
+
+----- November 27th, 2016 -----
+charlie [9:58 AM] 
+I don't think so.
+
+[9:58]  
+It's simply not that exciting (edited)
+
+brian [10:25 AM] 
+?
+
+charlie [10:26 AM] 
+Read that newspaper article in your head. It's an expected default not "news"
+
+brian [12:49 PM] 
+did you change the google join form?
+
+[12:53]  
+It is completely broken. weird
+
+brian [1:31 PM] 
+it seems like you added a new field and made it required, obv breaking the live form (edited)
+
+brian [8:44 PM] 
+I renamed "i'm not a robot" field to "I agree to the NCL" and deleted the field you added.  "robot" field isn't needed as long as there is one required checkbox.   "I agree" doesn't need a spreadsheet entry, since it is required. Anyway the live form is working fine now.
+
+charlie [9:44 PM] 
+Sorry.
+
+[9:44]  
+It was @drew
+
+brian [9:47 PM] 
+Ok, I guess he didn't realize it was live.
+
+charlie [9:56 PM] 
+yeah
+
+[9:56]  
+I'll let him know
+
+[9:59]  
+that must have happened the 25th
+
+brian [10:11 PM] 
+i thought around 21st
+
+
+----- November 28th, 2016 -----
+charlie [9:16 AM] 
+where exactly is the form code?
+
+[9:16]  
+it's not in the folder labeled join...
+
+brian [10:01 AM] 
+_includes/forms/newnode.html
+
+charlie [10:08 AM] 
+Thanks
+
+[10:08]  
+Started on the wiki again
+
+
+----- November 30th, 2016 -----
+brian [9:14 PM] 
+found this compass overlay for google maps- http://googlecompass.com/
+googlecompass.com
+Google Compass | Plot and Record Google Map Routes
+Use a compass online to plot Google Map routes. Record compass bearings, distances and magnetic declination or variation for single or multiple map routes.
+
+
+----- December 1st, 2016 -----
+brian [10:30 AM] 
+what time will you be at Sabey?
+
+charlie [10:32 AM] 
+Just got here
+
+brian [10:32 AM] 
+I'm stepping out for 45 minutes back around 11:1
+
+brian [11:20 AM] 
+Back, how is it going?
+
+
+----- December 5th, 2016 -----
+charlie [5:22 PM] 
+seva
+
+5:21 PM
+
+i know you are eyeing the airfiber for NYCHA, but i would really like your support for installing it here -- it would enable me to continue working on the mesh, otherwise i just won't be able to put that much time into it, i am pretty close to covering east williasmburg to south bushwick in one continuos network
+
+5:21
+
+if the airfiber is here i will start focusing on the firmware
+
+charlie
+
+5:21 PM
+
+I can't justify that $3000 donation going to Williamsburg
+
+seva
+
+5:21 PM
+
+otherwise i am putting all that on the backburner as i don't have that much time and i don't have 3k to spent on the airfireb
+
+charlie
+
+5:22 PM
+
+then back burner
+
+seva
+
+5:22 PM
+
+alright
+
+[5:22]  
+END OF QUOTE.
+please talk to him (edited)
+
+[5:25]  
+Ridiculous
+
+[5:25]  
+anyway
+
+[5:25]  
+I'm out
+
+[5:25]  
+I have to present on the lidar data Friday for school
+
+charlie [6:00 PM] 
+anyway
+
+[6:00]  
+you there?
+
+brian [6:03 PM] 
+yea, I think I ate something bad. been in bed
+
+[6:06]  
+realistically how long will it be before we have a nycha location? from his point of view you have the ligo, i have the sector, so he is just like neighborhood 3. I think there is some negotiable position here.
+
+charlie [6:16 PM] 
+realistically, we need to use the 24Ghz as a back-haul to a supernode
+
+[6:16]  
+not a 3 story building in a well-to-do neighborhood
+
+[6:16]  
+sorry you aren't feeling well
+
+[6:19]  
+it would make more sense in my school than Seva's place if we're entertaining that idea
+
+[6:19]  
+but I'd rather just save it for NYCHA
+
+[6:20]  
+we can't 'lend' it to Simona
+
+[6:20]  
+because she'd have to spend $3k on one when we take it away
+
+[6:21]  
+so, we'd just be giving it to them, for  what, a few hard-fought volunteer hours?
+
+[6:21]  
+the 24s are how we work with the city
+
+[6:23]  
+Seva's site can connect back when Seva raises the money for it to connect back. Nobody in question is 'in need' though they all hate Time Warner.  Seva has fios on both his boat and at his house.
+
+[6:23]  
+let's not play that game, k?
+
+[6:24]  
+in fact
+
+[6:24]  
+that's the only area of Brooklyn that has ANY fiber
+
+[6:24]  
+https://www.verizon.com/local/new-york-fios/
+verizon.com
+New York and NYC Internet, TV & Phone Service Provider | Verizon Fios
+New York City's fastest internet service provider brings you amazing deals and packages for your home internet,cable, and phone. Learn more about getting Fios in NYC.
+
+brian [7:10 PM] 
+the game is that the whole project might fall apart if you piss everybody off
+
+charlie [7:30 PM] 
+I c/p'd the entirety of the message
+
+[7:30]  
+he asked for something you and I both agreed was a non-starter
+
+[7:31]  
+I said no
+
+[7:31]  
+and I, alone, got us funded
+
+[7:31]  
+I have gotten 2/3 of the subscribers
+
+[7:31]  
+and the only lead on someone renting a box
+
+[7:32]  
+if rich-boy is in this for selfish reasons, then good riddance
+
+brian [7:33 PM] 
+selfish as in connecting up a neighborhood
+
+charlie [7:33 PM] 
+selfish as in going to a gentrifying area, serving only white folks, and bring high-speed to a place that has fiber
+
+[7:34]  
+but by all means
+
+[7:34]  
+I can go get my ligo and be done with it
+
+[7:34]  
+NYCHA = 1000s of people in the first quarter of '17
+
+[7:34]  
+Seva < 12
+
+[7:34]  
+dunno where the math is breaking down
+
+[7:35]  
+Seva was 'an expert' at BGP-- a thing he'd never done previously, and we had to ring his arm to get him to do anything that wasn't a direct benefit to himself
+
+[7:36]  
+he's good with linux, but he 'doesn't have time' for menial tasks like organizing, managing, or installing
+
+[7:36]  
+it's why the boat costs him 40k a year and he's never come up with a salvageable plan for it
+
+charlie [7:42 PM] 
+He has thousands of dollars worth of toys. It's not in our mission to give him another, no matter who he promised it to. (edited)
+
+brian [7:48 PM] 
+why do you hate him?
+
+charlie [7:48 PM] 
+I don't hate seva
+
+[7:49]  
+I just think he's being incredibly petty and entitled
+
+brian [7:49 PM] 
+he was also the 3rd core member
+
+[7:49]  
+and you let him walk
+
+charlie [7:50 PM] 
+over $3 grand
+
+[7:50]  
+there will be one if you don't understand this
+
+charlie [9:09 PM] 
+Heh. Saw that
+
+
+----- December 6th, 2016 -----
+brian [12:43 PM] 
+when is the meeting with nycha? (edited)
+
+brian [1:02 PM] 
+we also should meet before Friday
+
+charlie [1:03 PM] 
+The meeting with NYCHA is when we're ready for the meeting NYCHA
+
+[1:03]  
+And I don't have time to meet before Friday
+
+brian [1:05 PM] 
+I need to prepare something for the meetup, it looks kind of big. I thought maybe a presentation.
+
+charlie [1:11 PM] 
+No
+
+[1:11]  
+Just prepare something
+
+[1:11]  
+We can go over that afternoon.
+
+brian [1:12 PM] 
+so we meet friday afternoon
+
+[1:14]  
+Seva did give us $4000 worth of servers btw
+
+charlie [1:14 PM] 
+Umm, $200 on ebay
+
+[1:15]  
+Sorry $60
+
+[1:15]  
+For the second gen poweredge 1950
+
+[1:16]  
+And if we start making decisions like that, we'll be in violation of the law. (edited)
+
+[1:16]  
+He can't donate shit and expect something in return. Even giving him something in return is unlawful
+
+[1:18]  
+We do things because they fulfill our mission. It's why I've been trying to find city locations for back-haul points. As the person who received the donation--i have to make sure it used publicly, that it doesn't simply stay on my roof because I want it.
+
+[1:19]  
+This donation being the ligo wave.
+
+
+----- December 8th, 2016 -----
+brian [11:30 AM] 
+donate.nycmesh.net  cert is down
+
+charlie [11:30 AM] 
+I would have no idea...
+
+brian [11:31 AM] 
+can you chat with eddy
+
+charlie [11:31 AM] 
+Isn't it nycmeshnet.net/donate?
+
+[11:31]  
+I'm in finals week
+
+[11:32]  
+Where is donate.nycmesh.net  pointing?
+
+brian [11:32 AM] 
+192.241.128.86
+
+charlie [11:32 AM] 
+Yep. Well. There is the problem.
+
+[11:33]  
+Digital ocean deleted that server when I had an old credit card stored and they were unable to charge
+
+[11:33]  
+I had turned off email notifications and everything was gone when I signed in
+
+[11:33]  
+So, I have no interest in working with them again...
+
+brian [11:33 AM] 
+can you talk to eddy about this
+
+[11:34]  
+he is on slack now @eddy
+
+charlie [11:35 AM] 
+I messaged him
+
+[11:35]  
+I'm drafting a letter to stealth about the subnet
+
+[11:36]  
+Anything else we want? That have dark fiber throughout manhattan
+
+[11:36]  
+Could maybe get transit to he
+
+[11:39]  
+Taken care of
+
+[11:40]  
+I'll give you the new ip
+
+[11:42]  
+Same ip as current cert
+
+[11:42]  
+Anyway, does donate. do anything that /donate doesn't?
+
+charlie [11:52 AM] 
+Taken care of. Donate. Points to /donate
+
+[11:52]  
+Gotta wait for propagation
+
+brian [12:00 PM] 
+192.241.128.86 did the payments and also some css
+
+charlie [12:00 PM] 
+Oliver has a backup
+
+[12:00]  
+I told him a few days ago when it happened
+
+[12:01]  
+It will all live on Eddy's safe server now
+
+[12:01]  
+Not my student trial of some bargain cloud service
+
+charlie [12:09 PM] 
+Are you going to type up notes from the call?
+
+[12:09]  
+it's been a shitty few weeks
+
+brian [12:09 PM] 
+ok
+
+charlie [12:10 PM] 
+you don't have to
+
+[12:10]  
+we can just chat tomorrow
+
+[12:10]  
+I have school shit until 12-1
+
+[12:10]  
+then, I want to swing by Sabey and turn on the ligo again (kyle unplugged it last time to test the cables and never replaced)
+
+[12:10]  
+and then we can meet
+
+[12:11]  
+with Eddy and whomever can't make it tomorrow night
+
+[12:11]  
+also, Eddy had no idea that meeting was happening
+
+[12:11]  
+maybe we should have a list of people who have contributed in the past and email them directly for these meetings?
+
+brian [12:12 PM] 
+what's the limit on the room? we're around 30 people now
+
+charlie [12:12 PM] 
+doesn't seem to be an issue
+
+[12:12]  
+I let Grace know
+
+[12:12]  
+I think it's just a large common space
+
+[12:12]  
+with a projector
+
+[12:13]  
+and 1/2 just won't show
+
+[12:13]  
+because those are internet commitments
+
+brian [12:54 PM] 
+call notes- https://docs.google.com/document/d/1LbJUcypyfSIto_yS49E-1fTxS2-a7BdIr5C2uL-06r8
+
+charlie [1:55 PM] 
+thanks
+
+brian [10:03 PM] 
+finished making my pres, when do you want to meet tomorrow?
+
+charlie [10:41 PM] 
+When is good for you?
+
+brian [10:42 PM] 
+2 hours before meetup?
+
+brian [10:56 PM] 
+is that good, do you want to meet at wework? or here?
+
+charlie [11:41 PM] 
+Your place
+
+[11:41]  
+2 hours is good
+
+brian [11:42 PM] 
+Ok
+
+charlie [11:42 PM] 
+I'm going to invite Lisa too. I asked her to speak briefly about organizing
+
+[11:42]  
+And workflow for that
+
+brian [11:43 PM] 
+Good
+
+charlie [11:43 PM] 
+Yeah! Shouldn't just be two white dudes talking
+
+brian [11:43 PM] 
+I was thinking about asking her
+
+[11:44]  
+My pres is general. I figured you would be doing more details about the grant.
+
+[11:45]  
+Does Lisa have some slides?
+
+charlie [11:46 PM] 
+Dunno
+
+
+----- December 9th, 2016 -----
+charlie [12:03 AM] 
+you didn't take clark off /map
+
+brian [12:04 AM] 
+can do it now, the email goes nycmeshmail
+
+[12:07]  
+what are we discussing about NCL
+
+[12:07]  
+?
+
+[12:08]  
+maybe we should have separate meetup for legally things, it is a general audience and lots of newbies tomorrow
+
+charlie [12:11 AM] 
+I'm not interested in doing any more on-boarding meetings
+
+[12:11]  
+in order to be outwardly focused, we need to do that
+
+[12:11]  
+I think this is the first step to total decentralization and transparency
+
+[12:11]  
+it will consistently be newbs until there is community buy-in
+
+[12:12]  
+the 'olds' didn't bother to show up
+
+[12:12]  
+maybe they will next time if we do something other than read the faq aloud
+
+[12:12]  
+and the separate meetup thing is built into the last 30 minutes
+
+[12:13]  
+that way, you can talk to stragglers about tech
+
+[12:13]  
+lisa can on-board more sales folks
+
+[12:13]  
+and I can get input out how people think the group should manage funds, manage access, sell access, etc
+
+brian [12:13 AM] 
+what exactly is being discussed about NCL?
+
+charlie [12:14 AM] 
+I think it would be nice to not impose it unilaterally
+
+[12:14]  
+if people like it as is, we can wiggle our fingers or whatever
+
+[12:14]  
+if it needs to be re-worded, we should do that
+
+[12:14]  
+a copy/paste from a group that doesn't have a network seems silly
+
+[12:14]  
+without actual consensus, I mean
+
+brian [1:06 AM] 
+the NCL is based on Guifi's one. Ramon was very insistent that we have one, but he thought their own one was too long. It was more- you must agree to extend the network and not harm it or excessively profit from other peoples work. He was really in favor of businesses using it as they were the ones that would pay for upkeep. He was mostly afraid of people in cities reselling bandwidth. He didn't trust city folks.
+
+charlie [1:06 AM] 
+haha
+
+[1:07]  
+oh!
+
+[1:07]  
+I thought it was from FnF
+
+[1:07]  
+but we should hammer on it in a group, no?
+
+brian [1:07 AM] 
+yes but they based it on Guifi's
+
+[1:08]  
+The intent of the document is the important thing
+
+[1:09]  
+I was juggling 3 English versions for a while. It ended up mostly FnF's. The main one is in Catalan.
+
+[1:12]  
+Eben thinks it is nothing by the way. It is not a legal document. Just a TOS.
+
+[1:14]  
+to be a legal document you have to guarantee a service for a fee or somesuch, the NCL doesn't guarantee anything.
+
+charlie [1:22 AM] 
+cool
+
+[1:23]  
+hmm
+
+[1:23]  
+maybe talk about structure
+
+[1:23]  
+I think there needs to be a section with community input
+
+[1:23]  
+something to 'vote' on
+
+[1:23]  
+that's simple
+
+brian [1:24 AM] 
+not sure what you mean about structure, but the intent of the document should be made clear first so you can see why each thing is there.
+
+charlie [1:25 AM] 
+sure
+
+[1:25]  
+I'm not tied to the NCL section
+
+[1:25]  
+I meant that there should be _something_  that people can form an opinion about
+
+brian [1:26 AM] 
+beyond hating time-warner
+
+charlie [1:26 AM] 
+right
+
+[1:26]  
+it's what holds a community together
+
+[1:26]  
+and is standard practice in organizing circles
+
+[1:26]  
+to have something consensed upon at every meeting
+
+[1:26]  
+consented to?
+
+[1:26]  
+dunno
+
+charlie [1:39 AM] 
+maybe the 'draft budget' in the mesh organizing folder?
+
+[1:39]  
+I dunno
+
+brian [1:43 AM] 
+I'm tired. Let's chat tomorrow
+
+charlie [1:02 PM] 
+what should be the group input topic?
+
+brian [1:06 PM] 
+..... not sure if this is it, but I think a big theme at the moment is our two types of users- "I hate twc" and "I need internet". Both can be brought together by doing.... (edited)
+
+charlie [1:06 PM] 
+yeah!
+
+[1:07]  
+just an open question
+
+[1:07]  
+I'd add a 3rd user (power user/developer/diy person)
+
+charlie [1:39 PM] 
+any chance you can make up a 1 page handout for your small group
+
+[1:39]  
+including supported hardware, the stack, how to get on the slack channel, and where to find more documentation?
+
+brian [1:51 PM] 
+maybe, not much time to do this well
+
+charlie [1:51 PM] 
+I think I have most of it
+
+[1:52]  
+mesh/learn/the stack
+
+[1:52]  
+in the mesh folder of gdrive
+
+
+----- December 11th -----
+charlie [12:13 PM] 
+can you make me a trello admin?
+
+brian [12:21 PM] 
+done
+
+charlie [12:28 PM] 
+thanks
+
+[12:28]  
+where's the admin panel?
+
+[12:28]  
+nvm (edited)
+
+[12:32]  
+what do we do with all the old/irrelevant stuff?
+
+brian [12:33 PM] 
+"done" or "archive" ?
+
+charlie [12:33 PM] 
+make a new archive card?
+
+brian [12:35 PM] 
+no "archive" is an option on each card
+
+charlie [12:37 PM] 
+oh!
+
+charlie [12:46 PM] 
+RB says she wants to be on the finance committee
+
+brian [3:03 PM] 
+Yes she told me. I say yes.
+
+brian [4:51 PM] 
+also Tatiana. I forwarded her email. I think she was at meetup, but I don't remember speaking to her.
+
+charlie [4:52 PM] 
+She was the woman concerned about privacy.
+
+[4:52]  
+I'm OK with whomever seeing the budget
+
+brian [4:55 PM] 
+so it would be like you, me, rb, tatiana, joseph and joly?
+
+[4:56]  
+i guess isoc-ny has one too, maybe it would be combined since we are their source of money
+
+charlie [5:30 PM] 
+Well, the idea was to be done with Isoc by this summer
+
+brian [5:31 PM] 
+who's idea??
+
+charlie [5:32 PM] 
+Umm. The contract
+
+[5:32]  
+Joseph isn't going to handle our payments forever
+
+[5:32]  
+Nor should he have to (edited)
+
+charlie [7:23 PM] 
+I mean, Joly is always welcome to stream and shit, but I'd rather be independent.
+
+brian [7:27 PM] 
+I think it is working for now. we get good connections, grants etc. and "a project of ISOC-NY" sounds better than "some tech guys"
+
+charlie [7:29 PM] 
+Until we have a year, a store, and a bucket of subscribers
+
+[7:29]  
+At the very least, we need to get our own bank account
+
+
+----- December 12th -----
+brian [1:27 PM] 
+Talking to Zach about finishing server setup, and he's agreed to start with simple Wisp type setup. Might go down to Sabey to install his router tonight. We plan to use both his ASN and Guifi's and Zach's /24
+
+[1:28]  
+It is driving me crazy to not have a donation page. I guess Oliver is chilling after finishing his course.
+
+charlie [2:54 PM] 
+Cool.
+
+[2:54]  
+Wish Seva hadn't made us waste a month going down the wrong path
+
+brian [2:57 PM] 
+I don't think it was a wrong path. It works, just packet.net  hasn't come through. Everyone is going to want a different setup.
+
+charlie [2:58 PM] 
+Oliver probably isn't finished with class for a week
+
+brian [2:58 PM] 
+Zach has this idea for a really complicated setup that will make sense eventually.
+
+charlie [2:58 PM] 
+Ugh
+
+[2:58]  
+That sounds rough
+
+[2:59]  
+I'm worried these folks won't be around to maintain it.
+
+brian [3:01 PM] 
+Yes we have to insist on documentation and training for things. I made that mistake with our firmware.
+
+charlie [3:01 PM] 
+Yeah. Have you touched those tools?
+
+[3:01]  
+Toys
+
+brian [3:02 PM] 
+No, just looked at them a lot.
+
+charlie [3:03 PM] 
+You can take the zbt apart with one screw on the back
+
+brian [3:04 PM] 
+You should post on the qmp dev list.
+
+charlie [3:04 PM] 
+I tried
+
+[3:04]  
+They haven't approved my join
+
+brian [3:08 PM] 
+Gmail? Maybe try with nycmesh
+
+charlie [3:08 PM] 
+From main account you mean?
+
+brian [3:15 PM] 
+No Charlie@ . Someone said recently that you get on lists faster from a business email address
+
+charlie [3:15 PM] 
+Hehe
+
+[3:20]  
+I thought meshmail might already be on the list is all
+
+brian [3:22 PM] 
+I'm not sure which address I used. Years ago
+
+charlie [3:24 PM] 
+Oh. So the diy provision in the FCC  regulations mean that we can add whatever antenna we like to the outside of those black/white boxes. They ship with 2dBi antennas. They make as high as 10. So, almost 8 times the power
+
+[3:24]  
+It's also trivial to add an antenna to the black one
+
+[3:25]  
+Takes <60s
+
+brian [3:28 PM] 
+do you have to punch a hole in it?
+
+charlie [3:28 PM] 
+to run the cable?
+
+[3:28]  
+sure
+
+[3:28]  
+but they make those in an external model
+
+[3:29]  
+https://www.gl-inet.com/forums/topic/gl-ar300m-vs-gl-ar300m-ext/
+
+[3:30]  
+Also, the guy who visited from Digital Ocean said he would like to put a node up at their office (6th and Delancey)
+
+brian [3:30 PM] 
+did he fill in join form?
+
+charlie [3:30 PM] 
+no...
+
+[3:31]  
+he wrote in on a piece of paper and I will follow up
+
+[3:31]  
+The join form isn't a catch-all
+
+[3:31]  
+I mean it is
+
+[3:31]  
+so, it's more like a sieve
+
+brian [3:37 PM] 
+I would rather just hand a tablet or laptop around with the join form
+
+charlie [3:38 PM] 
+Well, in my experience, we get more takers from paper
+
+[3:38]  
+and space for people to tell me their skills
+
+[3:38]  
+most people who showed up didn't have a direct interest in putting up a node
+
+charlie [3:45 PM] 
+that being said
+
+[3:45]  
+where should I enter this info?
+
+brian [3:47 PM] 
+ah the non-join info? hm I guess we start a spreadsheet for that. I can add the emails to the newsletter list (edited)
+
+charlie [3:47 PM] 
+That's a good idea
+
+[3:47]  
+I started an 'attendance sheet' in organizing
+
+[3:47]  
+and we can just add a new tab every month
+
+[3:48]  
+oh! can we put a survey on the meetup page about when is best for the January meeting?
+
+brian [3:48 PM] 
+it is tuesday so how about 2nd tuesday?
+
+charlie [3:48 PM] 
+it is tuesday?
+
+brian [3:49 PM] 
+oh we voted on that maybe after you left
+
+charlie [3:49 PM] 
+cool
+
+[3:49]  
+Yeah. I asked Grace to lead that
+
+[3:49]  
+Let's just ask the page via a doodle
+
+[3:49]  
+that's a hard month with long weekends and schools starting and such
+
+[3:52]  
+because I think that's MLK weekend
+
+[3:52]  
+wait
+
+[3:52]  
+then Tuesday is fine
+
+[3:54]  
+can you make the meet-up page? I'll send the link out in the Thank You email
+
+[3:54]  
+1/10/17?
+
+brian [4:03 PM] 
+I have to rush off, can do it later tonight. just found my laptop is out of warranty tomorrow haha
+
+charlie [4:05 PM] 
+haha
+
+[4:06]  
+I'm surprised it's still in warranty
+
+[4:06]  
+get that battery taken care of!
+
+[4:06]  
+but not too quickly
+
+brian [4:06 PM] 
+3 years for this bulging battery problem
+
+charlie [4:06 PM] 
+it's a bomb
+
+[4:06]  
+https://a248.e.akamai.net/secure.meetupstatic.com/photos/member/5/7/a/3/highres_246322435.jpeg  (322KB)
+
+brian [4:06 PM] 
+every keystroke is potential explosion
+
+charlie [4:06 PM] 
+that's the finance committee person
+
+[4:06]  
+via meetup
+
+brian [4:07 PM] 
+yes we are getting better gender balance at meetups
+
+charlie [4:07 PM] 
+not meeting in a bar clearly helps
+
+brian [5:24 PM] 
+Stuck in the genius bar wait. I don't think they realize the danger of this situation.
+
+charlie [5:28 PM] 
+Is it off?
+
+brian [5:29 PM] 
+No, I'm not actually worried. Just bored.
+
+charlie [5:30 PM] 
+Heh. Too bad the news is just despair
+
+
+----- December 13th -----
+brian [1:23 AM] 
+went well at Sabey. we now have two ASNs and a /24 just have to get de-cix to recognize them. I should meet both HE and packet.net  tomorrow so I'll l figure out transit soon.
+
+[1:26]  
+couldn't find either of the compasses in the toolbox. I'm still confused by your magnet anomaly as the compass was stable for me on the roof. There is another way to do angles just with protractor and the building alignment. (edited)
+
+charlie [1:30 AM] 
+Couldn't find compass and couldn't repeat findings?
+
+brian [1:33 AM] 
+if I had the compass then I could get the building alignment and you could use a protractor on the roof. Maybe we have the alignment in the drawings they gave us?
+
+charlie [1:37 AM] 
+Google earth does a fine job with that
+
+brian [1:38 AM] 
+does it? google map has a weird 3d thing that throws it all out.
+
+charlie [1:38 AM] 
+I think Seva took a compass with the binoculars
+
+[1:38]  
+And the other is right here
+
+charlie [9:16 AM] 
+Anyway, you didn't announce to peering.
+
+brian [10:00 AM] 
+Ah! Just to you oops
+
+charlie [10:01 AM] 
+Also, what did we have to give zach for his expertise?
+
+[10:01]  
+We're super not allowed to trade donations for shit. Careful
+
+brian [10:13 AM] 
+He's really into the project. He's doing it for fun. His real job is supercomputer setups mostly for genome projects. There's a big company that does that at Sabey he has worked for. He's pretty much a genius at this stuff. I guess genomics has so much data that they put their companies inside data centers. (edited)
+
+charlie [10:27 AM] 
+That's neat. Glad he's volunteering.
+
+charlie [1:47 PM] 
+What's the plan with the Chinatown kiosk?
+
+[1:47]  
+We have no ability to manufacture that
+
+
+----- December 14th -----
+charlie [7:59 PM] 
+Can you point chat.nycmesh.net  to `104.131.97.63` (edited)
+
+brian [8:00 PM] 
+"There isn't a GitHub Pages site here."
+
+[8:01]  
+what is this?
+
+charlie [8:07 PM] 
+Vector
+
+[8:07]  
+Now called riot
+
+[8:07]  
+A clone of chat.tomesh.net
+
+brian [8:10 PM] 
+jeebus- name.com  cert is expired. doesn't give me confidence. how can a domain host let their cert expire.... I'm going to wait until they fix it before logging in.
+
+charlie [11:36 PM] 
+got some rooms set up on that chat.nycmesh.net  thing
+
+[11:36]  
+from the tomesh channel
+
+[11:36]  
+waiting on integration with India and Asheville.
+
+
+----- December 15th -----
+brian [12:03 AM] 
+i'm trying to figure out about the compass and whether we should use a protractor instead. I don't know how there could be any interference for the compass, unless it was like right on top of the radio. I know when I used it, N wasn't where I was expecting as the building runs NE to SW. So maybe try the compass again? A protractor though would be easy, once we get the exact angle of the building. (edited)
+
+charlie [12:04 AM] 
+let's chat on chat.nycmesh.net
+
+brian [12:11 AM] 
+It says "Please note that Riot requires Chrome, Firefox or Safari " does that exclude Windows users on Explorer etc?
+
+charlie [12:12 AM] 
+let me check right now
+
+[12:13]  
+works fine
+
+[12:13]  
+encryption doesn't work
+
+brian [1:45 PM] 
+I want to email Josh Breitbart and ask about installing our AF24 on a NYCHA building now as a proof of concept. I hate to see these things rusting away. we need them up and be testing them. If Kyle is available Friday afternoon we should grab one.
+
+[1:48]  
+or we could try to pick up one AF24 in the morning and then take it to Sabey
+
+charlie [2:06 PM] 
+A NYCHA? Which? For whom? How? Mounted to what? Power from? Line of sight? Inside how? Support for 1 thousand new people? Finish rebranding and website? Finals?
+
+[2:07]  
+You can feel free to do whatever you want, but we're not finished with a single project. Please don't add more.
+
+[2:07]  
+I already said I have neither the time not the money to deal with the 24s
+
+brian [2:12 PM] 
+we don't have a single p2p working, this is our biggest asset and somehow our lowest priority..
+
+
+----- December 16th -----
+brian [10:14 PM] 
+Is there some other way to get the donation server up and running again? did you have a backup? Oliver doesn't reply to anything.
+
+charlie [10:26 PM] 
+Olive has backup on his github
+
+[10:26]  
+Somewhere.
+
+[10:27]  
+I don't want to pay for hosting
+
+brian [10:28 PM] 
+So if I get a server then you can restore the backup?
+
+charlie [10:30 PM] 
+No. Still in finals
+
+[10:32]  
+Which is why oliver has not responded too. Probably
+
+brian [10:47 PM] 
+It's weird, not one word even though he reads it. I guess I'll take a look at the backup.
+
+
+----- December 21st -----
+brian [2:12 PM] 
+they are about to give us 10,000 more
+
+
+----- December 22nd -----
+charlie [11:44 AM] 
+So, you want to ban a user you've not yet identified as a malicious user and you don't want the network to serve the commons. So, have fun with your ISP.
+
+[11:46]  
+The logging, the rate limiting, and the ability for commercial interests to shape the network are precisely what bring people to this project.
+
+[11:47]  
+Let's re-create those systems, keep all of our process behind a authorization wall, and not listen to people's concerns. That will work.
+
+[11:49]  
+Let's have volunteers commute an hour and a half each way (Kyle), not give them lunch, and make them pay for metro cards out of pocket.
+
+[11:49]  
+Let's ignore experts (cyzonian) and criticize them for personality quirks while they actually build a network upstate that will be bigger than ours is by March.
+
+[11:50]  
+Let's totally forget about the women who do free labor for us and not ask them to take on leadership roles
+
+
+----- December 23rd -----
+charlie [8:40 AM] 
+I posted a proposal in funding for the additional 10k
+
+brian [10:15 AM] 
+i'm going to pick up the other AF24 today. I'll probably leave the speaker stand behind as I don't know what to do with it.
+
+charlie [10:23 AM] 
+Seva will take it
+
+charlie [10:46 AM] 
+You should be the one to go to Sweden, obviously
+
+[10:46]  
+but I think getting serious means paying a lawyer and doing it right too
+
+brian [10:50 AM] 
+would be nice thanks, no one has ever paid me to fly any where.  SUNY paying for the bus was a first for me.
+
+[10:52]  
+I think NY non-profit filing can be done through brooklyn law or Eben for free or the $50/filing fee from memory.
+
+[10:55]  
+With paying Kyle, he's a volunteer on site and a consultant off-site or something. Obviously if we have a huge team of people then this would need formalizing. As a NYC Mesh member and volunteer he is covered by the COI I think.   I've worked as a consultant for 15 years in NY that is just how people get paid in the real world.
+
+charlie [10:56 AM] 
+the filing isn't the expensive part
+
+[10:56]  
+it's the announcement (edited)
+
+[10:56]  
+you have to publish your new entity in newspapers wherever you are registered
+
+[10:56]  
+that's a grand upstate (David's house, or whatever) (edited)
+
+charlie [12:09 PM] 
+we can toss Kyle some cash off the books if you want to take stipend and I get the other
+
+[12:09]  
+like with naomi
+
+
+----- December 27th -----
+brian [10:49 PM] 
+We can [pay] individual contractors to do installs. These are not employees. The buildings can pay them directly for the installs and it is nothing to do with us. (edited)
+
+charlie [10:50 PM] 
+Not true
+
+[10:51]  
+We cannot employ.
+
+brian [10:51 PM] 
+we can pay people!
+
+charlie [10:52 PM] 
+Sure we can.
+
+brian [10:52 PM] 
+we pay contractors to do shit that is how shit gets done. We can pay a plumber to do our fucking plumbing.
+
+charlie [10:53 PM] 
+I will schedule you a meeting with a lawyer
+
+[10:53]  
+So you can hear it from someone you might belueve
+
+[10:53]  
+This isn't about my love of bureaucracy and the state
+
+[10:53]  
+It's about our 1)responsibility to the community that builds out shit 2) to cover our ass
+
+[10:55]  
+If we determine time, place, and manner of the work, they are our employee no matter what IRS form you hand them
+
+[10:57]  
+And that is determined by a judge, after the fact, when your ass gets brought in to the worker's compensation trial and you are on the hook for 1) no having workers comp insurance and 2) misclassification of employees
+
+brian [11:14 PM] 
+so I have to pay workers comp to get a plumber to fix my pipes.
+
+[11:15]  
+ok
+
+charlie [11:15 PM] 
+You don't provide tools, place, or manner to a plumber
+
+[11:16]  
+But I'm don't arguing about it. I can email Jane coffin and tell her we aren't equipped to take this money if you don't take me seriously
+
+[11:17]  
+Because I'm not confident in our ability to use it responsibly and fairly
+
+
+----- January 6th -----
+charlie [10:41 AM] 
+What did you order to sabey?
+
+brian [10:42 AM] 
+The switch
+
+charlie [10:42 AM] 
+Cool
+
+[10:42]  
+A rack mountable one?
+
+[10:43]  
+Do we have rails?
+
+brian [12:35 PM] 
+Rack mount yes, rails no
+
+
+----- January 9th -----
+charlie [2:53 PM] 
+you gotta know that any time I come up in conversation and I'm not around that I still hear about it
+
+charlie [3:31 PM] 
+So, I had a call with Jane, and she 100% agreed that we need to be our own entity
+
+charlie [3:38 PM] 
+if you give me 30 minutes on the agenda, I can talk about the roadmap as our grant requires
+
+[3:39]  
+otherwise, do whatever and I'll leave the meetings [to you] (edited)
+
+charlie [3:49 PM] 
+either way, ISOC (in DC) holds the money until we become an entity (at my request as the grant writer and person with fiduciary responsibility)
+
+brian [3:50 PM] 
+you wrote to them and told them to hold up donating the money?
+
+charlie [3:51 PM] 
+no
+
+[3:51]  
+I wrote Joly and said we were having a disagreement
+
+[3:51]  
+he said to call Jane
+
+[3:52]  
+and Jane said she'd hold it until we sorted it out
+
+brian [3:52 PM] 
+and you didn't tell me until now?
+
+charlie [3:52 PM] 
+this happened Friday
+
+[3:52]  
+and I was trying to figure out how to tell you
+
+[3:52]  
+because I knew you'd be pissed no matter what
+
+[3:53]  
+but I'm sure as fuck not letting you take 30k without an accountability process and bylaws
+
+[3:54]  
+and I won't be here to oversee that it gets spent legally
+
+[3:54]  
+so that's what I could do
+
+brian [3:55 PM] 
+where will you be?
+
+charlie [3:55 PM] 
+Syria
+
+[3:56]  
+we've talked about this
+
+brian [3:56 PM] 
+when do you leave?
+
+charlie [3:56 PM] 
+march
+
+brian [3:56 PM] 
+for how long?
+
+charlie [3:56 PM] 
+a tour
+
+[3:56]  
+a year
+
+[3:56]  
+and I don't have a reason to come back to NYC in particular
+
+[3:57]  
+I'm not from here, my shit can't go to storage (in case of death)
+
+brian [3:57 PM] 
+when did you say you were going to syria for a year?
+
+charlie [3:57 PM] 
+at that bar in Chinatown
+
+[3:57]  
+I'm still going to be working on the things I committed to in the grant
+
+[3:57]  
+particularly spectrum analysis and mapping
+
+[3:58]  
+I'm behind schedule, but running a new sim of NYC right now with the other folks in London and India
+
+brian [3:58 PM] 
+did you block the 10K or all 30K?
+
+[4:00]  
+I guess I'll cancel tomorrows meetup, thanks for letting me know this stuff now!
+
+charlie [4:16 PM] 
+why would you cancel it?
+
+[4:16]  
+it's the perfect time to write some bylaws and discuss process
+
+[4:18]  
+and cancelling the meeting would definitely not get you the money
+
+brian [4:21 PM] 
+I've been working on a presentation for a week about fiscal sponsorship
+
+charlie [4:22 PM] 
+well, that's what you get for not listening to me the many, many times that I told you fiscal sponsorship is not a way forward
+
+brian [4:23 PM] 
+yes you alone decided this and wouldn't listen to anything
+
+charlie [4:23 PM] 
+well, me and Jane
+
+[4:23]  
+and that's all that really matters, isn't it?
+
+[4:24]  
+if you and Joly want to do a thing in secret and without the consent of the group, then you don't get my grant money
+
+[4:24]  
+because you didn't do shit to get it
+
+[4:24]  
+lemme know if you want me to run a session on bylaws
+
+charlie [4:35 PM] 
+I'd like the two smaller routers back. The Ligo 5Ghz is the property of NYC Mesh and I will leave it in the radio room
+
+[4:35]  
+with all of its componentns
+
+[4:35]  
+same with the zbt (nsm knock-offs)
+
+[4:35]  
+the smaller two I bought out of pocket and would like back
+
+[4:35]  
+I'll also return your nsms
+
+[4:35]  
+I believe you gave me 2
+
+
+----- Yesterday January 10th, 2017 -----
+charlie [3:54 PM] 
+what's the plan?
+
+[3:54]  
+I hear Lisa has something, and we could easily kill 30 mins with bylaws
+
+[3:54]  
+and 30 mins of questions
+
+brian [3:55 PM] 
+Me for 20, Lisa for ~12, Zach for ~6 and RB for ~10 all approx of course
+
+
+----- Today January 11th, 2017 -----
+charlie [2:17 AM] 
+you know I'm serious about the money and entity status, right?
+
+[2:17]  
+and that organizing should be done openly
+
+[2:17]  
+and that this meeting was a disaster because of your lack of open process
+
+[2:18]  
+https://www.meetup.com/nycmesh/events/236526844/
+
+brian [2:18 AM] 
+move this to #funding
