@@ -2,7 +2,8 @@
 layout: post
 title: "Frequently asked questions"
 ---
-[Is there a monthly fee?](#fee)  
+[Why are you building a community owned network?](#why)  
+[Is there a monthly fee?](#fee)   
 [Is this a replacement for my current internet connection?](#replace-isp)   
 [What can I do on the mesh that I can't do on the internet?](#mesh-services)   
 [Why should I join the mesh now?](#why-join)   
@@ -16,9 +17,13 @@ title: "Frequently asked questions"
 [I can see another node from my window. Can I put a router there?](#window)   
 [Why don't we mesh mobile phones instead of routers?](#mobile)   
 [Is the mesh secure?](#secure)   
-[Why aren't you doing this obvious thing I just thought of?](#why)   
+[Why aren't you doing this obvious thing I just thought of?](#obvious)   
+
+## <a name="why"></a>Why are you building a community owned network?
+
+This is our most common question, so we made it into a blog post- [12 Reasons for mesh](/blog/twelve-reasons-for-mesh/)
  
-## <a name="fee"></a>Is there a monthly fee?<a name="fee"></a>   
+## <a name="fee"></a>Is there a monthly fee? 
 
 Once you buy a router and install it you are part of NYC Mesh. There is no compulsory fee. Donations help us cover maintenance. By joining the mesh you are obliged to share and extend the mesh in the same way that it was shared with you.
 
@@ -102,7 +107,7 @@ If you use the internet while on the mesh, you should use standard precautions s
 
 By default, our mesh router is firewalled from your local network. It is not possible to reach beyond the mesh router to your LAN. Mesh tunneling over the internet is by tinc VPN and is secure. Network traffic within the mesh is not encrypted by default.
 
-## <a name="why"></a>Why aren't you doing this obvious thing I just thought of?
+## <a name="obvious"></a>Why aren't you doing this obvious thing I just thought of?
 
 We have a lot on our to-do list and everyone is a volunteer. Please [email us](mailto:contact@nycmesh.net) with suggestions, or better still volunteer to help us. We can send you an invite to our slack.com group where we do our planning. We need help with everything such as publicity, emailing, printing leaflets, writing FAQs, and installing routers on rooftops.
 
