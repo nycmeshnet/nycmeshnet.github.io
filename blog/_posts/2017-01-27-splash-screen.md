@@ -19,7 +19,8 @@ At the end of the file add a line with a list of your MAC addresses (replacing e
 ```list trustedmac 'aa:bb:cc:dd:ee:ff, 11:22:33:44:'```
 
 
-https://github.com/openwrt-routing/packages/tree/master/nodogsplash/
+The default config file lives here-
+[https://github.com/openwrt-routing/packages/tree/master/nodogsplash/](https://github.com/openwrt-routing/packages/blob/master/nodogsplash/files/nodogsplash.config)
 
 
 [Email me](mailto:brian@nycmesh.net) if you have any comments or suggestions.
