@@ -5,7 +5,7 @@ author: Brian
 ---
 Here is my list of priorities for the mesh in order of importance. I'll keep this updated.
 
-**1. Install Team**
+**1. Install Team**  
 **2. Tall structure installs**  
 **3. Get users for the Supernode**  
 **4. Public Access Points as gateways**  
