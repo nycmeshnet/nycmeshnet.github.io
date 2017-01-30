@@ -5,9 +5,9 @@ author: Brian
 ---
 Here is my list of priorities for the mesh in order of importance. I'll keep this updated.
 
-**1. Get users for the Supernode**  
+**1. Install Team**
 **2. Tall structure installs**  
-**3. Install Team**  
+**3. Get users for the Supernode**  
 **4. Public Access Points as gateways**  
 **5. Monitoring team**  
 **6. Cheap 2GHz and dualband routers**  
@@ -18,7 +18,21 @@ Here is my list of priorities for the mesh in order of importance. I'll keep thi
 **11. Update the map**
 
 ---
-**1. Get users for the Supernode**
+**1. Install Team**
+
+Organize a team of people for installs. Skills needed include safely climbing, running cable through conduits and window frames, ethernet crimping, aligning antennas, radio frequency survey.
+
+Document how to do installs for the team and also for DIY members.
+
+Figure out reimbursement for install.
+
+**2.Tall structure installs**
+
+Tall structures are the only way we can expand the wireless mesh. This is by far our biggest priority. There are a few different types in the city and we need to try them all- NYCHA buildings, skyscrapers, churches, schools, libraries, existing antenna masts and building coops. We need specific presentations and handouts for each of these types of structures. We are currently approaching libraries and [churches](../../leaflet/church.pdf). We need to build presentations for coop boards and others.  
+
+Once we have a tall structure in a neighborhood we can link to apartment building rooftops.
+
+**3. Get users for the Supernode**
 
 The supernode at 375 Pearl St. is our first install on a tall structure. Here is our remaining todo list:
 
@@ -33,18 +47,6 @@ other supernode tasks-
 Install VPN software  
 lay more ethernet or dc cable  
 Get tax-exemption status with suppliers  
-
-**2.Tall structure installs**
-
-Tall structures are the only way we can expand the wireless mesh. This is by far our biggest priority. There are a few different types in the city and we need to try them all- NYCHA buildings, skyscrapers, churches, schools, libraries, existing antenna masts and building coops. We need specific presentations and handouts for each of these types of structures. We are currently approaching libraries and [churches](../../leaflet/church.pdf). We need to build presentations for coop boards and others.  
-
-Once we have a tall structure in a neighborhood we can link to apartment building rooftops.
-
-**3. Install Team**
-
-Organize a team of people for installs. Skills needed include safely climbing, running cable through conduits and window frames, ethernet crimping, aligning antennas, radio frequency survey.
-
-Figure out reimbursement for install.
 
 **4. Public Access Points as gateways**
 
