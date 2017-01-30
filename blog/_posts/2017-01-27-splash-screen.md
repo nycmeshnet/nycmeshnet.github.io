@@ -16,7 +16,7 @@ To disable it for certain devices, first, you need to find the MAC address of yo
 
 At the end of the file add a line with a list of your MAC addresses (replacing examples)-
 
-```list trustedmac 'aa:bb:cc:dd:ee:ff, 11:22:33:44:'```
+```list trustedmac 'aa:bb:cc:dd:ee:ff, 11:22:33:44:55:66, '```
 
 
 The default config file lives here-
