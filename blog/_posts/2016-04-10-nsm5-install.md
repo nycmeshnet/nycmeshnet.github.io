@@ -100,6 +100,26 @@ You are sharing your existing internet with your neighbors. You plug the etherne
 
 If you need to install two NanoStations you can simply run a cable from the spare ethernet port to the other NSM5. If the POE is plugged into the secondary port (gateway setup) then the "main" will act as passthrough to the second NSM5.
 
+To turn on passthrough from main to secondary you need to do this [(source)](https://wiki.openwrt.org/toh/ubiquiti/nanostationm5)-  
+```
+# older nanostation XM (pre-2015)
+echo 8 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio8/direction
+echo 1 > /sys/class/gpio/gpio8/value
+# disable with echo 0 > /sys/class/gpio/gpio8/value
+```
+
+# nanostation XW (2015-)
+echo 2 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio2/direction
+echo 1 > /sys/class/gpio/gpio2/value
+# disable with echo 0 > /sys/class/gpio/gpio2/value
+```
+
+I've found this setting doesn't stick after reboot, so you need to add it to /etc/rc.local (local startup)-  
+[http://admin.qmp/cgi-bin/luci/admin/system/startup](http://admin.qmp/cgi-bin/luci/admin/system/startup)
+
+
 **LAN vs WAN confusion**
 
 On the NSM5 the **"main" port is LAN** and the **secondary is "WAN"**. This is the most confusing thing about the router and mixing this up is the cause of most problems. **Always connect WAN on one router to LAN on another!**
