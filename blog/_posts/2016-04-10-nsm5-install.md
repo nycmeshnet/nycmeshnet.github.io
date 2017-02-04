@@ -101,6 +101,7 @@ You are sharing your existing internet with your neighbors. You plug the etherne
 If you need to install two NanoStations you can simply run a cable from the spare ethernet port to the other NSM5. If the POE is plugged into the secondary port (gateway setup) then the "main" will act as passthrough to the second NSM5.
 
 To turn on passthrough from main to secondary you need to do this [(source)](https://wiki.openwrt.org/toh/ubiquiti/nanostationm5)-  
+
 ```
 # older nanostation XM (pre-2015)
 echo 8 > /sys/class/gpio/export
