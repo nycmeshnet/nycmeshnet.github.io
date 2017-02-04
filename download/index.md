@@ -84,6 +84,8 @@ Wait ten minutes or so. It now has a SSID name like "nycmesh 1a2b" and a random 
 
 * <a href="mailto:newnode@nycmesh.net">Email us</a> and we will check that everything is working.
 
+Now your router is flashed, read how to [install a NanoStation](../blog/nsm5-install/)
+
 **Upgrades**  
 Upgrades are for when your router is already running nycmesh/qMp or another version of OpenWrt.
 
@@ -105,6 +107,7 @@ A quick test to see if you are on the mesh is to go here-
 These URLS should resolve after an hour or so of being online-  
 [http://wiki.mesh/](http://wiki.mesh/)  
 [http://nyc.mesh/](http://nyc.mesh/)
+
 
 
  
