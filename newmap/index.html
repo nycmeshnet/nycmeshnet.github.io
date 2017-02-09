@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+  <title>Map / NYC Mesh</title>
+  <link rel="stylesheet" href="../css/main2.css"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/tachyons.min.css"/>
+</head>
+<body class="sans-serif bg-white">
+  <div id="map-div" class="h50">
+
+  </div>
+
+  <nav>
+    <a href="/" class="logo">
+    <img src="/assets/images/logo.png">
+    NYC Mesh
+    </a>
+    <div class="mainnav">
+      <a href="/map">Map</a>
+      <a href="/blog">Blog</a>
+      <a href="/faq">FAQ</a>
+      <a href="/join">Join</a>
+      <a href="/donate">Donate</a>
+    </div>
+
+    <div class="title-container">
+    </div>
+  </nav>
+  <div class="content bg-white">
+    <p><strong>Map of NYC Mesh nodes</strong></p>
+
+      <p>This map shows our node locations. The colored markers are currently active nodes. The larger markers are rooftops. The gray markers are node requests from the “Join” form. We are currently working to turn these into active nodes.</p>
+
+      <p>We have over 40 active nodes and we are adding about one or two per week.</p>
+
+      <p>Neighborhoods have different organizers. You can email them directly below. If you would like to volunteer for your neighborhood please <a href="mailto:nycmeshmail@gmail.com">email us</a>.</p>
+
+      <p><strong>Manhattan</strong></p>
+
+      <p>UWS -<a href="mailto:oliver@nycmesh.net">Oliver</a> <br>
+      Downtown (Tribeca/SoHo/Financial/West Village) -<a href="mailto:bob@nycmesh.net">Bob</a> <br>
+      Chinatown -<a href="mailto:arthur@nycmesh.net">Arthur</a>  <br>
+      East Village/LES -<a href="mailto:brian@nycmesh.net">Brian</a><br>
+      Lower East Side -<a href="mailto:james@nycmesh.net">James</a><br>
+      East Harlem -<a href="mailto:robj@nycmesh.net">Rob J</a></p>
+
+      <p><strong>Brooklyn</strong></p>
+
+      <p>Fort Greene/Clinton Hill -<a href="mailto:dylan@nycmesh.net">Dylan</a>  <br>
+      East Williamsburg/Bushwick -<a href="mailto:joel@nycmesh.net">Joel</a><br>
+      Bushwick -<a href="mailto:myf@nycmesh.net">Myf</a></p>
+
+      <p><strong>Queens</strong></p>
+
+      <p>Sunnyside -<a href="mailto:shawn@nycmesh.net">Shawn</a><br>
+      Jackson Heights -<a href="mailto:tom@nycmesh.net">Tom</a><br>
+      Woodside – <a href="mailto:calvin@nycmesh.net">Calvin</a></p>
+
+      <p><strong>Bronx</strong></p>
+
+      <p>South Bronx -<a href="mailto:rb@nycmesh.net">RB</a></p>
+
+
+  <footer class="footer">
+	<img src="../../assets/images/isoc-logo.png" align="right" style="width:180px;height:60px;">
+	This project was made possible in part through a donation from the Internet Society.<br><br>
+	<br><br>
+	<a href="/">Home</a>
+  <div class="mainnav">
+
+    <a href="/map">Map</a>
+    <a href="/blog">Blog</a>
+    <a href="/faq">FAQ</a>
+    <a href="/join">Join</a>
+    <a href="/donate">Donate</a>
+	<div></div>
+
+  </div>
+
+</footer>
+
+</div>
+
+  <script>
+      var map;
+
+      function initMap() {
+        var styles = [
+          {
+            featureType: "administrative.locality",
+            elementType: "labels",
+            stylers: [
+              { visibility: "off" }
+            ]
+          },
+          {
+            featureType: "road.highway",
+            elementType: "all",
+            stylers: [
+              // { lightness: 100 },
+              { visibility: "off" }
+            ]
+          },{
+            featureType: "road",
+            elementType: "labels",
+            stylers: [
+              { visibility: "on" }
+            ]
+          },{
+            featureType: "poi",
+            elementType: "labels",
+            stylers: [
+              { visibility: "off" }
+            ]
+          },{
+            featureType: "transit",
+            elementType: "labels",
+            stylers: [
+              { visibility: "off" }
+            ]
+          }
+        ];
+        var styledMap = new google.maps.StyledMapType(styles,
+          {name: "Styled Map"});
+
+        map = new google.maps.Map(document.getElementById('map-div'), {
+          center: {lat: 40.7281809, lng: -73.9595798},
+          zoom: 12,
+          disableDefaultUI: true,
+          zoomControl: true,
+          scrollwheel: false
+        });
+        map.mapTypes.set('map_style', styledMap);
+        map.setMapTypeId('map_style');
+
+        map.data.setStyle(function(feature) {
+          var status = feature.f.status;
+          var fillColor = (status == 'Installed') ? 'red' : 'gray';
+          var opacity = (status == 'Installed') ? .9 : .5;
+          var zIndex = (status == 'Installed') ? 100 : 1;
+          var scale = 8;
+          var strokeWeight = 1;
+          // supernode
+          if (feature.f.id == 227) {
+            scale = 10;
+            strokeWeight = 2;
+          }
+
+          return {
+            icon: {
+              path: google.maps.SymbolPath.CIRCLE,
+              fillColor: fillColor,
+              fillOpacity: opacity,
+              strokeOpacity: opacity,
+              scale: scale,
+              strokeColor: 'white',
+              strokeWeight: strokeWeight,
+              clickable: true,
+            },
+            title: 'Node #'+feature.f.id,
+            zIndex: zIndex
+          }
+        });
+
+        map.data.loadGeoJson('./nodes.json');
+
+        var infowindow = new google.maps.InfoWindow();
+
+
+        map.data.addListener('click', function(event) {
+          var content = "<div class='pv3 tl'>"
+          content += "<p class='f4 fw7 di pr2 tl'>Node "+event.feature.f.id+"</p>"
+
+          if (event.feature.f.status == 'Installed') {
+            content += "<p class='di green f5 fw4'>Active</p>"
+          }else {
+            content += "<p class='di gray f5 fw4'>Potential</p>"
+          }
+
+          content += "</div>"
+
+          var panoramas = event.feature.f.panoramas
+          if (panoramas) {
+            content += "<p class='pv0 mv0 near-black fw4 tl'>View from this location:</p>"
+            for (var i = 0; i < panoramas.length; i++) {
+              var image = "<a href='../panorama/"+panoramas[i]+"'>"
+              image += "<div class='bg-near-white h5 w6 cover pv0 mt1 mb3' style='background-image: url(\"../panorama/"+panoramas[i]+"\")'></div>"
+              image += "</a>"
+
+              content += image;
+            }
+          }
+           infowindow.setContent(content);
+           infowindow.setPosition(event.feature.getGeometry().get());
+           infowindow.setOptions({pixelOffset: new google.maps.Size(-1,0)});
+           infowindow.open(map);
+        });
+
+        map.addListener("click", function(event) {
+          infowindow.close();
+        })
+
+
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNClp7oJsw-eleEoR3-PQKV23tpeW-FpE&libraries=visualization&callback=initMap"
+    async defer></script>
+</body>
+</html>
