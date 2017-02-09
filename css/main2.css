@@ -12,6 +12,18 @@ audio:not([controls]) { display: none; height: 0; }
 
 [hidden], template { display: none; }
 
+.w6 {
+  width: 40rem;
+}
+
+.h50 {
+  height: 40rem;
+}
+
+#map-div {
+  /*margin-top: 20rem;*/
+}
+
 a { background: transparent; }
 
 a:active, a:hover { outline: 0; }
