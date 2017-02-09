@@ -22,6 +22,13 @@ At the end of the file add a line with a list of your MAC addresses (replacing e
 The default config file lives here-
 [https://github.com/openwrt-routing/packages/tree/master/nodogsplash/](https://github.com/openwrt-routing/packages/blob/master/nodogsplash/files/nodogsplash.config)
 
+To completely stop the splash-
+
+```
+rm /etc/hotplug.d/iface/95-nodog 
+/etc/init.d/nodogsplash stop
+/etc/init.d/nodogsplash disable
+```
 
 [Email me](mailto:brian@nycmesh.net) if you have any comments or suggestions.
 
