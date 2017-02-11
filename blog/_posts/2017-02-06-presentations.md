@@ -28,3 +28,12 @@ The slides-
 [Supernode](https://goo.gl/5XLB2c) -Zach
 
 [Protective Rituals for Post-humans](http://slides.com/arebe/protective-rituals) -RB
+
+
+**2015-12-18 Meetup at Redhook Wifi**
+
+[slides](https://prezi.com/y0hvz3fn5dwz/view/)
+
+**2015-10-24/25 Radical Networks**
+
+[video](https://livestream.com/internetsociety/radicalnetworks/videos/102833124) [slides](https://prezi.com/bh9c_yvoc-xw/view/)

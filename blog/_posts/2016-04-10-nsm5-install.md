@@ -30,7 +30,7 @@ The [Ubiquiti universal antenna mount](http://www.amazon.com/gp/product/B006J1WS
 **Window**
 
 Outside:  
-On the outside of the window it is best to use a Ubiquiti wall/window mount.
+On the outside of the window it is best to use a Ubiquiti wall/window mount. The suction cup is not recommended for long-term installs.
 
 ![window outside](/assets/images/nsm5/window-cup-outside.jpg)
 
@@ -43,7 +43,7 @@ Velcro is the easiest way to install a NanoStation if it will be facing the same
 
 ![window velcro](/assets/images/nsm5/window-velcro-on.jpg)
 
-A Ubiquiti suction cup mount can be used if you need to point the router at an angle.
+A Ubiquiti suction cup mount can be used if you need to point the router at an angle. The suction cup will fail eventually, so do not use this for long-term installs.
 
 ![window/wall install](/assets/images/nsm5/window-cup-inside.jpg)
 
