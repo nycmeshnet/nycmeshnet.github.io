@@ -1686,25 +1686,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 124,
-        "status": "",
-        "roof": true,
-        "panoramas": [
-          "124.jpg",
-          "124a.jpg"
-        ]
-      },
-      "geometry": {
-        "coordinates": [
-          -73.991118,
-          40.716938
-        ],
-        "type": "Point"
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 125,
         "status": "No Reply",
         "roof": true
@@ -2638,7 +2619,7 @@
       "type": "Feature",
       "properties": {
         "id": 187,
-        "status": "",
+        "status": "Unsubscribe",
         "roof": true
       },
       "geometry": {
@@ -3600,7 +3581,10 @@
       "type": "Feature",
       "properties": {
         "id": 255,
-        "status": ""
+        "status": "",
+        "panoramas": [
+          "255.jpg"
+        ]
       },
       "geometry": {
         "coordinates": [
@@ -6829,7 +6813,11 @@
       "properties": {
         "id": 470,
         "status": "",
-        "roof": true
+        "roof": true,
+        "panoramas": [
+          "470.jpg",
+          "470a.jpg"
+        ]
       },
       "geometry": {
         "coordinates": [
@@ -6858,7 +6846,10 @@
       "type": "Feature",
       "properties": {
         "id": 472,
-        "status": ""
+        "status": "",
+        "panoramas": [
+          "472.jpg"
+        ]
       },
       "geometry": {
         "coordinates": [
@@ -6917,7 +6908,8 @@
       "type": "Feature",
       "properties": {
         "id": 476,
-        "status": ""
+        "status": "",
+        "roof": true
       },
       "geometry": {
         "coordinates": [
@@ -6996,6 +6988,34 @@
         "coordinates": [
           -73.95384,
           40.808203
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 483,
+        "status": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.959423,
+          40.657541
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 484,
+        "status": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.905624,
+          40.757666
         ],
         "type": "Point"
       }
