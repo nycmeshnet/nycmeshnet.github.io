@@ -352,6 +352,23 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 27,
+        "status": "Installed",
+        "panoramas": [
+          "27.jpg"
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          -74.030932,
+          40.635091
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": 28,
         "status": "Installed"
       },
@@ -6924,7 +6941,10 @@
       "properties": {
         "id": 477,
         "status": "",
-        "roof": true
+        "roof": true,
+        "panoramas": [
+          "477.jpg"
+        ]
       },
       "geometry": {
         "coordinates": [
