@@ -30,7 +30,7 @@ This is usually a NanoStation M5 connected to a nearby established neighborhood 
 
 **3) Point to point**
 
-Email us directly for details on a point to point connection. This can be as fast as a gigabit, but require dedicated hardware.
+Email us directly for details on a point to point connection. This can be as fast as a gigabit, but requires dedicated hardware. We can also wire the entire building with ethernet to provide all residents with a connection.
 
 
 

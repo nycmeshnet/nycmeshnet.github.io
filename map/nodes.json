@@ -7039,6 +7039,50 @@
         ],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 485,
+        "status": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -74.00561,
+          40.710896
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 486,
+        "status": "",
+        "roof": true
+      },
+      "geometry": {
+        "coordinates": [
+          -73.940582,
+          40.80623
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 487,
+        "status": "",
+        "roof": true
+      },
+      "geometry": {
+        "coordinates": [
+          -73.940525,
+          40.7484
+        ],
+        "type": "Point"
+      }
     }
   ]
 }
