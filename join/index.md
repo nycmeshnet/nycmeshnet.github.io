@@ -2,7 +2,7 @@
 layout: newnode
 title: "Join the Mesh"
 ---
-Please read our [FAQ](../faq) and the Network Commons License [(NCL.pdf)](../ncl.pdf) before filling in the Join form.
+Please read our [FAQ](../faq) and the Network Commons License [(NCL.pdf)](../ncl.pdf) before filling in the Join form. Also read our [install info.](../blog/install-info/)
 
 **Why should I join the mesh now?**
 
