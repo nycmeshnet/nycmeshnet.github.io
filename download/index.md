@@ -102,11 +102,10 @@ Upgrades are for when your router is already running nycmesh/qMp or another vers
 
 **Am I on the mesh?**  
 A quick test to see if you are on the mesh is to go here-
-[http://10.30.75.189/](http://10.30.75.189/)
+[http://10.100.4.10/](http://10.100.4.10/)
 
-These URLS should resolve after an hour or so of being online-  
+This URL should resolve after an hour or so of being online-  
 [http://wiki.mesh/](http://wiki.mesh/)  
-[http://nyc.mesh/](http://nyc.mesh/)
 
 
 
