@@ -82,7 +82,7 @@ Wait ten minutes or so. It now has a SSID name like "nycmesh 1a2b" and a random 
 
 * Plug an ethernet cable from LAN on your current router to LAN on the power supply, and from POE to the **secondary** input on the NanoStation. 
 
-* <a href="mailto:newnode@nycmesh.net">Email us</a> and we will check that everything is working.
+* <a href="mailto:newnode@nycmesh.net">Email us</a> and we will check that everything is working and add you to the mesh. You must do this as we manually configure the tinc tunneling for each newly flashed router.
 
 Now your router is flashed, read how to [install a NanoStation](../blog/nsm5-install/)
 
@@ -101,6 +101,9 @@ Upgrades are for when your router is already running nycmesh/qMp or another vers
 [Our firmware](https://github.com/nycmeshnet) is based on [qMp](http://qmp.cat/), which is an [OpenWrt](https://openwrt.org/) package using [BMX6](http://bmx6.net/projects/bmx6) meshing protocol. Thanks to Roger at qMp for all of his help.
 
 **Am I on the mesh?**  
+
+After you successfully flash your router and you have <a href="mailto:newnode@nycmesh.net">emailed us</a>, and we have added your tinc tunneling key, you should be on the mesh. If you re-flash your router (not usually necessary) you will have to email us again so we can add your new tinc tunneling key. Emailing us also lets us know who's router was just flashed.
+
 A quick test to see if you are on the mesh is to go here-
 [http://10.100.4.10/](http://10.100.4.10/)
 
