@@ -17,6 +17,7 @@ title: "Frequently asked questions"
 [I can see another node from my window. Can I put a router there?](#window)   
 [Why don't we mesh mobile phones instead of routers?](#mobile)   
 [Is the mesh secure?](#secure)   
+[What is your user data policy](#data)
 [Why aren't you doing this obvious thing I just thought of?](#obvious)   
 
 ## <a name="why"></a>Why are you building a community owned network?
@@ -106,6 +107,10 @@ We provide a VPN service for our users for a small fee. This encrypts traffic ov
 If you use the internet while on the mesh, you should use standard precautions such as using https (lock icon) web sites for secure connections, or use a VPN service such as ours.
 
 By default, our mesh router is firewalled from your local network. It is not possible to reach beyond the mesh router to your LAN. Mesh tunneling over the internet is by tinc VPN and is secure. Network traffic within the mesh is not encrypted by default.
+
+## <a name="data"></a>What is your user data policy?
+
+We do not collect, store or share user data.
 
 ## <a name="obvious"></a>Why aren't you doing this obvious thing I just thought of?
 
