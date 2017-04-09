@@ -17,7 +17,7 @@ title: "Frequently asked questions"
 [I can see another node from my window. Can I put a router there?](#window)   
 [Why don't we mesh mobile phones instead of routers?](#mobile)   
 [Is the mesh secure?](#secure)   
-[What is your user data policy](#data)
+[What is your user data policy](#data)  
 [Why aren't you doing this obvious thing I just thought of?](#obvious)   
 
 ## <a name="why"></a>Why are you building a community owned network?
@@ -110,7 +110,13 @@ By default, our mesh router is firewalled from your local network. It is not pos
 
 ## <a name="data"></a>What is your user data policy?
 
-We do not collect, store or share user data.
+NYC Mesh does not collect, store, monitor, or log any user traffic or content that passes through our network. 
+
+NYC Mesh may periodically look at traffic headers for troubleshooting purposes as traffic passes through the NYC Mesh network, however, this data is never logged or stored. NYC Mesh may collect aggregate statistics on links to monitor traffic flow to ensure a successful network. 
+
+Beyond the scope of NYC Mesh, the NYC Mesh network is unencrypted, open, and depends on donated internet from individuals and other companies which is outside the control of NYC Mesh, therefore NYC Mesh unable to detect or prevent traffic monitored at those points. 
+
+NYC Mesh will comply with all federal laws in the countries it operates, however, as policy, no data is collected and therefore no data exists to provide requestors.
 
 ## <a name="obvious"></a>Why aren't you doing this obvious thing I just thought of?
 
