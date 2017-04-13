@@ -5,9 +5,9 @@ author: Brian
 ---
 Presentations-
 
-March 21, 2017 ISOC Meetup
+**Tales from the Trenches: Stories of NYC Community Networks**
 
-**Tales from the Trenches: Stories of NYC Community Networks
+March 21, 2017 ISOC Meetup
 
 [Livestream](https://livestream.com/internetsociety/trenches/images/152258146)
 
