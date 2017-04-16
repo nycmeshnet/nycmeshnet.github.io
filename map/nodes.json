@@ -6098,7 +6098,7 @@
       "type": "Feature",
       "properties": {
         "id": 423,
-        "status": "",
+        "status": "Installed",
         "roof": true,
         "panoramas": [
           "423.jpg"
@@ -7567,6 +7567,48 @@
         "coordinates": [
           -73.93847,
           40.676655
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 522,
+        "status": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.954818,
+          40.731358
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 523,
+        "status": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.963911,
+          40.80549
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 524,
+        "status": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.983496,
+          40.695032
         ],
         "type": "Point"
       }
