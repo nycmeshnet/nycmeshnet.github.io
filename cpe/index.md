@@ -18,21 +18,21 @@ Reset to factory
 
 Change the pass to our usual pass
 
-**Wireless settings**    
+[**Wireless settings**](./litebeam/wireless.png)    
  * Station PtMP  
- * SSID prism1 s1  (use scan on site to pick the strongest radio. **s1** faces North, **s2** and **s3** face north east)   
+ * SSID: prism1 s1  (use scan on site to pick the strongest radio. **s1** faces North, **s2** and **s3** face north east)   
  * Antenna 23 -23dbi  
 	
-**Network settings**   
+[**Network settings**](./litebeam/network.png)   
  * Static
  * IP 192.168.42.99  (temporary, this will be changed to 192.168.42.1xx)
 	
-**Services**   
- * [x]SNMP Agent
- * community: public	location: nycmesh
- * contact: nycmesh
+[**Services**](./litebeam/services.png)   
+ * [x]SNMP Agent  
+ * community: public	location: nycmesh  
+ * contact: nycmesh  
 	
-**System**  
- * Device name: nycmesh-lbe-99 (lbe is liteBeam, nbe is nanobeam, 99 default will be changed to actual number)
+[**System**](./litebeam/system.png)  
+ * Device name: nycmesh-lbe-99 (**lbe** is LiteBeam, **nbe** is NanoBeam, **99** default will be changed to actual number)
 
 Download example [LiteBeam config](./litebeam/WA-802AA8FE3E56.cfg) with this configuration
