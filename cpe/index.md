@@ -1,6 +1,5 @@
-
 ---
-layout: post
+layout: markdown
 title: "Supernode CPE"
 ---
 description: "Flashing supernode CPEs"
@@ -22,7 +21,7 @@ Change the pass to our usual pass
 
 **Wireless settings**    
  * Station PtMP  
- * SSID prism1 s1  (use scan on site to pick the strongest radio s1 faces North, s2 and s3 face north east)  
+ * SSID prism1 s1  (use scan on site to pick the strongest radio. s1 faces North, s2 and s3 face north east)   
  * Antenna 23 -23dbi  
 	
 **Network settings**   
