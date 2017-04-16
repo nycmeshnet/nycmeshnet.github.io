@@ -2,8 +2,7 @@
 layout: markdown
 title: "Supernode CPE"
 ---
-description: "Flashing supernode CPEs"
----
+# Flashing supernode CPEs
 
 ## Ubiquiti Prism clients-
 
@@ -21,7 +20,7 @@ Change the pass to our usual pass
 
 **Wireless settings**    
  * Station PtMP  
- * SSID prism1 s1  (use scan on site to pick the strongest radio. s1 faces North, s2 and s3 face north east)   
+ * SSID prism1 s1  (use scan on site to pick the strongest radio. **s1** faces North, **s2** and **s3** face north east)   
  * Antenna 23 -23dbi  
 	
 **Network settings**   
@@ -36,4 +35,4 @@ Change the pass to our usual pass
 **System**  
  * Device name: nycmesh-lbe-99 (lbe is liteBeam, nbe is nanobeam, 99 default will be changed to actual number)
 
-Download [LiteBeam config file](./litebeam/WA-802AA8FE3E56.cfg) with this configuration
+Download example [LiteBeam config](./litebeam/WA-802AA8FE3E56.cfg) with this configuration
