@@ -5,6 +5,12 @@ author: Brian
 ---
 Presentations-
 
+**How does it work?**
+
+video(https://youtu.be/D27BW2qGQrE)
+
+slides
+
 **Tales from the Trenches: Stories of NYC Community Networks**
 
 March 21, 2017 ISOC Meetup
