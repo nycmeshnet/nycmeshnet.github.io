@@ -26,7 +26,7 @@ Change the pass to our usual pass
 
 [**Wireless settings**](./litebeam/wireless.png)    
  * Station PtMP  
- * SSID: nycmesh prism1 s1  (use scan on site to pick the strongest radio. **s1** faces North, **s2** and **s3** face north east)   
+ * SSID: nycmesh prism1 s2  -see "Pairing" below for selecting s1, s2 or s3
  * Antenna 23 -23dbi  
 	
 [**Network settings**](./litebeam/network.png)   
@@ -39,21 +39,29 @@ Change the pass to our usual pass
  * contact: nycmesh  
 	
 [**System**](./litebeam/system.png)  
- * Device name: nycmesh-lbe-99 (**lbe** is LiteBeam, **nbe** is NanoBeam, **99** default will be changed to actual number)
+ * Device name: nycmesh-lbe-nn (**lbe** is LiteBeam, **nbe** is NanoBeam, **nn** is the install number)
 
 You can download this example [LiteBeamAC config](./litebeam/WA-802AA8FE3E56.cfg) with the above configuration
 
 **Pairing**
 
+In the ["Wireless" settings](./litebeam/wireless.png)) click "Select" and choose the strongest "nycmesh prism1" signal. The strongest signal has the lower number. -80db would be very weak, -50db would be very strong. 
+
+The Prism has 3 radios. You need to select the strongest. **s1** faces North, **s2** and **s3** face north east. East Village would probably be s1 and LES and Alphabet City would probably be "s2". "s3" is Williamsburg
+
 **Antenna Alignment**
+
+There is a visual level built into the antenna make sure the bubble is in the middle.
+
+There is a tools menu in the upper right of the interface. Click this and select Antenna alignment. First align the antenna by pointing it directly at the supernode. Now move it slightly up or down to get a stronger signal. Once you have the vertical alignment, do the same by moving the antenna horizontally.
 
 **Download test**
 
-To get internet from the CPE you need to set your laptop's network configuration to IPv4:using DHCP. If the device is paired with the supernode it will automatically get an IP address in our range- 199.x.x.x
+To get internet from the CPE you need to set your laptop's network configuration to IPv4:using DHCP ("automatic" setting on some machines). If the device is paired with the supernode it will automatically get an IP address in our range- 199.x.x.x
 
-A good speed is over 50Mps. If the speed is under 20Mbps explain to the member the limitations. (Netlflix standard is 5Mbps). Do not install if connection is less than 10Mbps
+A good speed is over 50Mps. If the speed is under 20Mbps explain to the member the limitations (Netflix standard is 5Mbps). Do not install if connection is less than 6Mbps
 
-You must have a gigabit adapter to get over 100Mbps. It is possible to get 200Mbps if you are close with good line of sight. If you don't have a gigabit adapter the maximum speed is going to be under 90Mbps.
+You must have a gigabit adapter to get over 100Mbps. It is possible to get 200Mbps if you are close with good line of sight. If you don't have a gigabit adapter the maximum speed is going to be under 100Mbps.
 
 
 
