@@ -4,7 +4,7 @@ title: "12 reasons"
 author: Brian
 ---
 
-Here's a list of our reasons for building a community-owned network:
+Here's a list of our reasons for building a community-owned mesh network:
 
 * Self configuring (simple!)
 * Emergency community networking (for next hurricane)
