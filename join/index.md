@@ -12,9 +12,11 @@ By joining the mesh now you help us grow and increase our reach across the city.
 
 **How to buy routers**-
 
+To connect to the supernode you will need a [LiteBeamAC](https://www.amazon.com/Ubiquiti-5GHz-LiteBeam-23DBI-LBE-5AC-23-US/dp/B01ANIQCE6/) for outdoors or a NanoBeamAC for indoors. Ask us before you buy. You have to have line-of-sight to our antenna and be within 2 miles North to North East. We use the Ubiquiti firmware on these devices
+
 We currently have two options for routers- an indoor router and a $90 outdoor router. You can buy the routers online and configure them yourself using our simple [download](../download) instructions. Otherwise, you can come to our [meetups](http://www.meetup.com/nycmesh/) where we often sell preconfigured routers that you can simply plug in.
 
-Here are the two router choices:
+Here are the two router choices for local mesh connections:
 
 1) [An indoor TP-Link 842ND router](http://www.amazon.com/dp/B006E04T9I/?tag=tl-wr842nd-nycmesh-20) (~$33)  **This is only available second-hand. We are looking for a replacement**
 
