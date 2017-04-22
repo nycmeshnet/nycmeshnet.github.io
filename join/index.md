@@ -4,6 +4,8 @@ title: "Join the Mesh"
 ---
 Please read our [FAQ](../faq) and the Network Commons License [(NCL.pdf)](../ncl.pdf) before filling in the Join form. Also read our [install info.](../blog/install-info/)
 
+If you can convince your neighbors to join also we will put you at the top of the install list. It is easier for us to do multiple installs in the one building.
+
 **Why should I join the mesh now?**
 
 By joining the mesh now you help us grow and increase our reach across the city. This is a community project and you will be helping to create a decentralized infrastructure, free from traditional business interests.
