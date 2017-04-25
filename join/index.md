@@ -4,7 +4,7 @@ title: "Join the Mesh"
 ---
 Please read our [FAQ](../faq) and the Network Commons License [(NCL.pdf)](../ncl.pdf) before filling in the Join form. Also read our [install info.](../blog/install-info/)
 
-If you can convince your neighbors to join also we will put you at the top of the install list. It is easier for us to do multiple installs in the one building.
+If you can convince your neighbors to also join, we will put you at the top of the install list. It is easier for us to do multiple installs in the one building.
 
 **Why should I join the mesh now?**
 
