@@ -21,7 +21,7 @@ March 21, 2017 ISOC Meetup
 
 February 7, 2017 Meetup
 
-[Supernode pics and how to help](https://goo.gl/cNp8E5) Brian, Lisa
+[Supernode pics and how to help](https://goo.gl/Zq5nDE) Brian, Lisa
 
 [Finance and Organization](http://slides.com/arebe/finance#/) RB, Tatiana
 
