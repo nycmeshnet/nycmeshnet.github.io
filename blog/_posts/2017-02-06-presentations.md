@@ -5,11 +5,11 @@ author: Brian
 ---
 Presentations-
 
-**How does it work?**
+**How it works**
 
-video(https://youtu.be/D27BW2qGQrE)
+April 11, 2017 Meetup
 
-slides
+[video](https://youtu.be/D27BW2qGQrE),  [slides](https://goo.gl/w06f7M)
 
 **Tales from the Trenches: Stories of NYC Community Networks**
 
