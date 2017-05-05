@@ -14,6 +14,8 @@ audio:not([controls]) { display: none; height: 0; }
 
 .w6 {
   width: 40rem;
+  /* added max-height so portrait photos don't cover screen bh */
+  max-height: 12rem;
 }
 
 .h50 {
