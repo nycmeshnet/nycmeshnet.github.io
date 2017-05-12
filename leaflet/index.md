@@ -3,7 +3,9 @@ layout: post
 title: "leaflet"
 ---
 
-[Leaflet pdf](leaflet-bw.pdf) -[(source file)](leaflet-rtfd.zip)
+[General leaflet pdf](leaflet-bw.pdf) -[(source file)](leaflet-rtfd.zip)
+
+[Leaflet for buildings with mesh access](building-leaflet.pdf) -[(source file)](building-leaflet.rtfd.zip)
 
 [Brochure mail-out](meshmail.pdf)
 
