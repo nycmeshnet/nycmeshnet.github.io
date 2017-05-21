@@ -168,7 +168,7 @@
 		    if (link.getProperty('status') != 'active') {
 		      strokeColor = 'gray';
 		      opacity = 0.5
-		    }
+		    }		
 		    return {
 		      zIndex: 999,
 		      strokeWeight: 2,
@@ -200,10 +200,10 @@
 		    content += "<h2 class='di pr2'>Node "+event.feature.f.id+"</h2>"
 
 		    if (event.feature.f.status == 'Installed') {
-		      content += "<h3 class='di green fw4'>Active</h3>"
+		      content += "<h3 class='di green fw4'>Active</h3><br>"+event.feature.f.notes
 		    }
 		    else {
-		      content += "<h3 class='di gray fw4'>Potential</h3>"
+		      content += "<h3 class='di gray fw4'>Potential</h3><br>"+event.feature.f.notes
 		    }
 
 		    content += "</div>"
