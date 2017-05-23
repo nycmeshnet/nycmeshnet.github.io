@@ -197,7 +197,7 @@
 		  function openInfoWindow(event) {
 		    // replace this with a fully custom overlay
 		    var content = "<div class='pv3'>"
-		    content += "<h2 class='di pr2'>Node "+event.feature.f.id+ " "+event.feature.f.otherNodes+"</h2>"
+		    content += "<h2 class='di pr2'>Node "+event.feature.f.id+""+event.feature.f.otherNodes+"</h2>"
 
 		    if (event.feature.f.status == 'Installed') {
 		      content += "<h3 class='di green fw4'>Active</h3><br>"+event.feature.f.notes
