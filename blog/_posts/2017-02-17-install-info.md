@@ -12,15 +12,11 @@ You need to be within about two miles of the Wall St. area. We can usually tell 
 
 ***Equipment needed***-
 
-LiteBeamAC available from [Amazon.com](https://www.amazon.com/Ubiquiti-5GHz-LiteBeam-23DBI-LBE-5AC-23-US/dp/B01ANIQCE6/) or [B&H](https://www.bhphotovideo.com/c/product/1195609-REG) for about $70
+We supply the LiteBeam, antenna mount (if needed), ethernet, ethernet switch (if needed) and indoor router for 
 
-Ethernet cable and antenna mast (supplied by install team) ~$20
+The equipment is $110, and the install is $50 (paid to an independent installer)
 
-Indoor router - ask us about this
-
-Please look after the install team. We do not pay them and they might appreciate a tip or some food etc.
-
-You may also optionally do a monthly [donation](../donate)
+The total is $160/per apartment due on the day of the install, or you can ask about a monthly subscription.
 
 **Other install types-**
 
