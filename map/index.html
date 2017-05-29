@@ -139,8 +139,13 @@
 		    disableDefaultUI: false,
 		    zoomControl: true,
 		    scrollwheel: false,
-		    streetViewControl: false
+		    streetViewControl: false,
+		    mapTypeControlOptions: {
+		              style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+		              position: google.maps.ControlPosition.RIGHT_TOP
+		          }
 		  }
+		  
 		
 		var map = new google.maps.Map(document.getElementById('map-div'), mapOptions);
         map.mapTypes.set('map_style', styledMap);
