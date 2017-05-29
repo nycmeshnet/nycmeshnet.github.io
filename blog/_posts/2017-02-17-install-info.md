@@ -12,11 +12,11 @@ You need to be within about two miles of the Wall St. area. We can usually tell 
 
 ***Equipment needed***-
 
-We supply the LiteBeam, antenna mount (if needed), ethernet, ethernet switch (if needed) and indoor router for 
+We supply the LiteBeam, antenna mount (if needed), ethernet, ethernet switch (if needed) and indoor router.
 
-The equipment is $110, and the install is $50 (paid to an independent installer)
+The total for the equipment is [$110](https://nycmesh.net/donate/), and the install is $50 (paid to an independent installer).
 
-The total is $160/per apartment due on the day of the install, or you can ask about a monthly subscription.
+$160 per apartment is due on the day of the install, or you can ask about a monthly subscription.
 
 **Other install types-**
 
