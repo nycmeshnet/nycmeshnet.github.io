@@ -237,8 +237,8 @@
 		     infowindow.setContent(content);
 		     infowindow.setPosition(event.feature.getGeometry().get());
 		     infowindow.setOptions({pixelOffset: new google.maps.Size(-1,-8)});
-		     infowindow.open(map);
-		     setTimeout(infowindow.close(map), 0) // needs a timeout delay to force the autoscroll !!
+		     //infowindow.open(map);
+		     //setTimeout(infowindow.close(map), 0) // needs a timeout delay to force the autoscroll !!
 		     setTimeout(infowindow.open(map), 1000) // needs a timeout delay to force the autoscroll !!
 		  }
 		}
