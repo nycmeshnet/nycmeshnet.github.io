@@ -25,6 +25,8 @@ Go to System:Configuration:Reset to factory defaults and click Reset
 
 Download latest version of [AirMaxAC](https://www.ubnt.com/download/airmax-ac) for the particular hardware
 
+Don't use 8.1.3 or 8.14 firmware. This has an ethernet bug and is unusable. If it's Gen2 (noted o) devices, downgrade to 8.1.2, if it's Gen1 devices, downgrade to 8.0.2 via the download page. (Go to the system tab, look at "DEVICE MODEL", if it doesn't say Gen2, it's a Gen1 unit.)
+
 System:Upload Firmware
 
 Reset to factory again

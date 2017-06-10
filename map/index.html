@@ -32,9 +32,9 @@
   <div class="content bg-white">
     <p><strong>Map of NYC Mesh nodes</strong></p>
 
-      <p>This map shows our node locations. The colored markers are currently active nodes. The larger markers are rooftops. The gray markers are node requests from the “Join” form. We are currently working to turn these into active nodes.</p>
+      <p>This map shows our node locations. The colored markers are currently active nodes. The gray markers are node requests from the “Join” form. We are currently working to turn these into active nodes. Click the darker markers to see panorama photos.</p>
 
-      <p>We have over 40 active nodes and we are adding about one or two per week.</p>
+      <p>We have around 50 active nodes and we are adding about one or two per week.</p>
 
       <p>Neighborhoods have different organizers. You can email them directly below. If you would like to volunteer for your neighborhood please <a href="mailto:nycmeshmail@gmail.com">email us</a>.</p>
 
@@ -96,13 +96,6 @@
               { visibility: "off" }
             ]
           },
-          { //bh, attempt to disable poi after you click on satellite view (doesn't do anything!)
-		        featureType: "poi",
-		        elementType: "labels",
-		        stylers: [
-		              { visibility: "off" }
-		        ]
-		  },
           {
             featureType: "road.highway",
             elementType: "all",
@@ -160,13 +153,61 @@
 		  linksLayer.loadGeoJson('./nodes/links.json');
 		  // beamsLayer.addGeoJson({"type":"Feature","geometry":{"coordinates":[-74.001122,40.711137],"type":"Point"}});
 
-		  activeNodesLayer.setStyle({
+		/* activeNodesLayer.setStyle({
 		    icon: {
 		      url: '../assets/images/active.svg',
 		      anchor: new google.maps.Point(10, 10),
 		    }
+		  }) 
+		*/
+		
+		//attempt at changing icon for each marker
+		/* 
+		  activeNodesLayer.setStyle(function(feature) {
+		    return {icon:feature.getProperty('icon'),
+		    anchor: new google.maps.Point(10, 10),
+		    }
+		  })
+         */
+
+        //changing icon opacity to show it has panoramas, possibly use different icon also
+         activeNodesLayer.setStyle(function (feature) {
+		    var url = '../assets/images/active.svg';
+		    var opacity = 0.5;
+		    if (feature.getProperty("panoramas")) {
+		      //url = '../assets/images/activepano.svg';
+		      opacity = 1
+		    }		
+		    return {
+			      scaledSize: new google.maps.Size(50, 50),
+			      title: feature.getProperty("id"),
+			      opacity: opacity,
+     			  icon: {
+			      url: url,
+			      anchor: new google.maps.Point(10, 10),
+			  }
+		    }
 		  })
 
+         potentialNodesLayer.setStyle(function (feature) {
+		    var url = '../assets/images/potential.svg';
+		    var opacity = 0.5;
+		    if (feature.getProperty("panoramas")) {
+		      //url = '../assets/images/potentialpano.svg';
+		      opacity = 1
+		    }		
+		    return {
+			      scaledSize: new google.maps.Size(50, 50),
+			      title: feature.getProperty("id"),
+			      opacity: opacity,
+     			  icon: {
+			      url: url,
+			      anchor: new google.maps.Point(10, 10),
+			  }
+		    }
+		  })
+		
+         /*
 		  potentialNodesLayer.setStyle({
 		    icon: {
 		      url: '../assets/images/potential.svg',
@@ -174,6 +215,7 @@
 		    },
 		    zIndex: -1
 		  })
+          */
 
 		  linksLayer.setStyle(function (link) {
 		    var strokeColor = 'red';

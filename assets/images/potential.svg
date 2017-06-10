@@ -1,9 +1,11 @@
-<?xml version="1.0"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
 
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="20" height="20">
-  <circle cx="10" cy="10" r="8" stroke="#eee"
-    stroke-width="2" fill="gray" opacity="0.5" />
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <circle id="svg_1" fill="gray" stroke-width="2" stroke="#eee" r="8" cy="10" cx="10"/>
+ </g>
 </svg>
