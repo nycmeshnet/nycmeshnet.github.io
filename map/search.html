@@ -10,6 +10,7 @@
 </head>
 <body class="sans-serif bg-white">
   <div id="map-div" class="h50">
+	
 
   </div>
 
@@ -29,6 +30,8 @@
     <div class="title-container">
     </div>
   </nav>
+<input type='text' name='searchbox' id='searchbox' placeholder='Search string here...'/><button id='submitSearch'>Search</button>
+
   <div class="content bg-white">
     <p><strong>Map of NYC Mesh nodes</strong></p>
 
@@ -248,6 +251,22 @@
 		  activeNodesLayer.setMap(map)
 		  potentialNodesLayer.setMap(map)
 		  beamsLayer.setMap(map)
+		
+		 // see http://jsfiddle.net/pz94kn95/1/
+		  $('#submitSearch').click(function() {
+            var $desc = $('#searchbox').val().toLowerCase().split(' ');
+            // Let's go through the list and figure out which ones fit.
+            // We're looking for all text matches.
+            $.each(map.markers, function() {
+                for (var i = 0; i < $desc.length; i++) {
+                    if (this.filter.descTokens.indexOf($desc[i]) < 0) {
+                        this.setMap(null);
+                        return;
+                    }
+                }
+                this.setMap(map);
+                return;
+            });
 
 		  function openInfoWindow(event) {
 		    // replace this with a fully custom overlay
@@ -283,6 +302,7 @@
 		     //setTimeout(infowindow.close(map), 0) // needs a timeout delay to force the autoscroll !!
 		     setTimeout(infowindow.open(map), 10000) // needs a timeout delay to force the autoscroll !!
 		  }
+		
 		}
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNClp7oJsw-eleEoR3-PQKV23tpeW-FpE&libraries=visualization&callback=initMap"
