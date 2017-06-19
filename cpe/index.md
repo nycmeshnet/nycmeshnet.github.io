@@ -25,7 +25,7 @@ Go to System:Configuration:Reset to factory defaults and click Reset
 
 Download latest version of [AirMaxAC](https://www.ubnt.com/download/airmax-ac) for the particular hardware
 
-Don't use 8.1.3 or 8.1.4 firmware. This has an ethernet bug and is unusable. If it's Gen2 (noted o) devices, downgrade to 8.1.2, if it's Gen1 devices, downgrade to 8.0.2 via the download page. (Go to the system tab, look at "DEVICE MODEL", if it doesn't say Gen2, it's a Gen1 unit.)
+Don't use 8.1.3 or 8.1.4 firmware. This has an ethernet bug and is unusable. If it's a Gen2 device, downgrade to 8.1.2, if it's Gen1 devices, downgrade to 8.0.2 via the download page. (Go to the system tab, look at "DEVICE MODEL", if it doesn't say Gen2, it's a Gen1 unit.)
 
 System:Upload Firmware
 
@@ -71,9 +71,9 @@ There is a "tools" menu in the upper right of the interface. Click this and sele
 
 To get internet from the CPE you need to set your laptop's network configuration to IPv4:using DHCP ("automatic" setting on some machines). If the device is paired with the supernode it will automatically get an IP address in our range- 199.x.x.x
 
-A good speed is over 50Mps. We have been getting 60 to 90Mbps so far. If the speed is under 20Mbps explain to the member the limitations (Netflix standard streaming is 5Mbps). It is not good to install if connection is less than 8Mbps as it won't reliably play video.
+A good speed is over 50Mps. We have been getting 60 to 120Mbps so far. If the speed is under 20Mbps explain to the member the limitations (Netflix standard streaming is 5Mbps). It is not good to install if connection is less than 10Mbps as it won't reliably play video.
 
-You must have a gigabit adapter to get over 100Mbps. It is possible to get 200Mbps if you are close with good line of sight. If you don't have a gigabit adapter the maximum speed is going to be under 100Mbps.
+You must have a gigabit adapter to get over 100Mbps. It is possible to get 200Mbps if you are close with good line of sight. If you don't have a gigabit adapter the maximum speed is going to be under 95Mbps.
 
 
 

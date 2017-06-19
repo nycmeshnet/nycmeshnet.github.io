@@ -5,6 +5,16 @@ author: Brian
 ---
 Presentations-
 
+**State of the Mesh, June 2017**
+
+[video](https://www.youtube.com/watch?v=b1VeiMKdApE)
+
+[State of the Mesh slides (Brian, Lisa)](https://goo.gl/Ff9aZB)
+
+[State of Supernode 1 slides (Zach)](https://goo.gl/RdNhRh)
+
+[Birth of Supernode 2 slides (Jesse)](https://goo.gl/BdMpJZ)
+
 **How it works**
 
 April 11, 2017 Meetup
