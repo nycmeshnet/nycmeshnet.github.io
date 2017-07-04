@@ -37,13 +37,13 @@ On the outside of the window it is best to use a Ubiquiti wall/window mount. The
 Inside:  
 It is often more convenient to install inside the window. You will lose about 2db of signal but that is usually ok.
 
-Velcro is the easiest way to install a NanoStation if it will be facing the same direction as the window.
+Velcro is the easiest way to install a NanoStation if it will be facing the same direction as the window. Use more velcro than in the picture (this install slipped down the window after six months!)
 
 ![velcro](/assets/images/nsm5/velcro.jpg)![velcro](/assets/images/nsm5/window-velcro-off.jpg)
 
 ![window velcro](/assets/images/nsm5/window-velcro-on.jpg)
 
-A Ubiquiti suction cup mount can be used if you need to point the router at an angle. The suction cup will fail eventually, so do not use this for long-term installs.
+A Ubiquiti suction cup mount can be used if you need to point the router at an angle. The suction cup will fail eventually (usually on very hot or very cold days), so do not use this for long-term installs. 
 
 ![window/wall install](/assets/images/nsm5/window-cup-inside.jpg)
 
