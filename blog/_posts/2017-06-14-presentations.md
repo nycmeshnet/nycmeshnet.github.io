@@ -5,6 +5,10 @@ author: Brian
 ---
 Presentations-
 
+**Networking 101 June 28, 2017**
+
+[Slides](https://goo.gl/i9Asx4)
+
 **State of the Mesh, June 2017**
 
 [video](https://www.youtube.com/watch?v=b1VeiMKdApE)
