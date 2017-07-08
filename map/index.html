@@ -194,6 +194,10 @@
          potentialNodesLayer.setStyle(function (feature) {
 		    var url = '../assets/images/potential.svg';
 		    var opacity = 0.5;
+			var notes = feature.getProperty("notes")
+		    if ((notes.indexOf("Supernode") !== -1) || (notes.indexOf("supernode") !== -1)) {
+			  url = '../assets/images/supernode-potential.svg';
+			}
 		    if (feature.getProperty("panoramas")) {
 		      //url = '../assets/images/potentialpano.svg';
 		      opacity = 1
