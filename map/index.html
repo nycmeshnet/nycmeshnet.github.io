@@ -172,8 +172,8 @@
          activeNodesLayer.setStyle(function (feature) {
 		    var url = '../assets/images/active.svg';
 		    var opacity = 0.5;
-		    var notes = feature.getProperty("notes")
-		    if (notes.indexOf("Supernode") !== -1) {
+		    var notes = feature.getProperty("notes").toLowerCase()
+		    if (notes.indexOf("supernode") !== -1) {
 			  url = '../assets/images/supernode.svg';
 			}
 		    if (feature.getProperty("panoramas")) {
@@ -194,8 +194,8 @@
          potentialNodesLayer.setStyle(function (feature) {
 		    var url = '../assets/images/potential.svg';
 		    var opacity = 0.5;
-			var notes = feature.getProperty("notes")
-		    if ((notes.indexOf("Supernode") !== -1) || (notes.indexOf("supernode") !== -1)) {
+			var notes = feature.getProperty("notes").toLowerCase()
+		    if (notes.indexOf("supernode") !== -1) {
 			  url = '../assets/images/supernode-potential.svg';
 			}
 		    if (feature.getProperty("panoramas")) {
