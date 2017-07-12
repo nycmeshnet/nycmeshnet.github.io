@@ -4,6 +4,9 @@ title: "Presentations"
 author: Brian
 ---
 Presentations-
+**Installs and outreach**
+
+[Slides](https://goo.gl/GgBxyv)
 
 **Networking 101 June 28, 2017**
 
