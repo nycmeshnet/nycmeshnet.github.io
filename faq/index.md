@@ -34,11 +34,9 @@ We also do installs for entire buildings and set up high-bandwidth point-to-poin
 
 ## <a name="replace-isp"></a>Is this a replacement for my current internet connection?
 
-We provide internet through peering at an internet exchange point. If you have line-of-sight to this "supernode" in downtown Manhattan you can have a fast, reliable connection with suitable hardware.
+We provide internet through peering at an internet exchange point. If you have line-of-sight to this "supernode" in downtown Manhattan you can have a fast, reliable connection with suitable hardware, and replace your ISP.
 
-Many members who cannot connect directly to our supernode are sharing their internet. If you have line-of-sight to another member or they are very close by you can ask if it is OK to share internet. We encourage people to share or make deals with their neighbors. 
-
-Currently, you can use the mesh as a backup internet connection. If you are within range of the mesh, your router will automatically use the fastest internet connection. This means you will have a backup internet connection if your own internet connection fails.
+Many members who cannot connect directly to our supernode are sharing their internet. If you have line-of-sight to another member or they are very close by you can ask if it is OK to share internet. We encourage people to share or make deals with their neighbors. If you are within range of the mesh, your router will automatically use the fastest internet connection.
    
 ## <a name="mesh-services"></a>What can I do on the mesh that I can't do on the internet?
 
