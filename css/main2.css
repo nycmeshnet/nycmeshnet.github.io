@@ -22,6 +22,12 @@ audio:not([controls]) { display: none; height: 0; }
   height: 40rem;
 }
 
+@media screen and (min-width:100em) {
+  .h60-l {
+    height: 60rem;
+  }
+}
+
 #map-div {
   /*margin-top: 20rem;*/
 }
