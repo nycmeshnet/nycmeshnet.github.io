@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../css/tachyons.min.css"/>
 </head>
 <body class="sans-serif bg-white">
-  <div id="map-div" class="h50">
+  <div id="map-div" class="h50 h60-l">
 
   </div>
 
@@ -138,8 +138,8 @@
 		              position: google.maps.ControlPosition.RIGHT_TOP
 		          }
 		  }
-		  
-		
+
+
 		var map = new google.maps.Map(document.getElementById('map-div'), mapOptions);
         map.mapTypes.set('map_style', styledMap);
         map.setMapTypeId('map_style');
@@ -147,10 +147,12 @@
         var activeNodesLayer = new google.maps.Data();
 		  var potentialNodesLayer = new google.maps.Data();
 		  var linksLayer = new google.maps.Data();
+		  var linkNYCLayer = new google.maps.Data();
 		  // var beamsLayer = new google.maps.Data();
 		  activeNodesLayer.loadGeoJson('./nodes/active.json');
 		  potentialNodesLayer.loadGeoJson('./nodes/potential.json');
 		  linksLayer.loadGeoJson('./nodes/links.json');
+		  linkNYCLayer.loadGeoJson('./nodes/linkNYC.json');
 		  // beamsLayer.addGeoJson({"type":"Feature","geometry":{"coordinates":[-74.001122,40.711137],"type":"Point"}});
 
 		/* activeNodesLayer.setStyle({
@@ -158,11 +160,11 @@
 		      url: '../assets/images/active.svg',
 		      anchor: new google.maps.Point(10, 10),
 		    }
-		  }) 
+		  })
 		*/
-		
+
 		//attempt at changing icon for each marker
-		/* 
+		/*
 		  activeNodesLayer.setStyle(function(feature) {
 		    return {icon:feature.getProperty('icon'),
 		    anchor: new google.maps.Point(10, 10),
@@ -181,7 +183,7 @@
 		    if (feature.getProperty("panoramas")) {
 		      //url = '../assets/images/activepano.svg';
 		      opacity = 1
-		    }		
+		    }
 		    return {
 			      scaledSize: new google.maps.Size(50, 50),
 			      title: feature.getProperty("id"),
@@ -203,7 +205,7 @@
 		    if (feature.getProperty("panoramas")) {
 		      //url = '../assets/images/potentialpano.svg';
 		      opacity = 1
-		    }		
+		    }
 		    return {
 			      scaledSize: new google.maps.Size(50, 50),
 			      title: feature.getProperty("id"),
@@ -214,7 +216,7 @@
 			  }
 		    }
 		  })
-		
+
          /*
 		  potentialNodesLayer.setStyle({
 		    icon: {
@@ -231,7 +233,7 @@
 		    if (link.getProperty('status') != 'active') {
 		      strokeColor = 'gray';
 		      opacity = 0.5
-		    }		
+		    }
 		    return {
 		      zIndex: 999,
 		      strokeWeight: 2,
@@ -239,6 +241,20 @@
 		      strokeOpacity: opacity
 		    }
 		  })
+
+      linkNYCLayer.setStyle(function (feature) {
+         var url = '../assets/images/linkNYC.svg';
+         var opacity = 0.5;
+         return {
+             scaledSize: new google.maps.Size(50, 50),
+             title: feature.getProperty("id"),
+             opacity: opacity,
+             icon: {
+               url: url,
+               anchor: new google.maps.Point(10, 10),
+             }
+         }
+       })
 
 		  // beamsLayer.setStyle({
 		  //   icon: {
@@ -255,7 +271,7 @@
 		  linksLayer.setMap(map)
 		  activeNodesLayer.setMap(map)
 		  potentialNodesLayer.setMap(map)
-		  beamsLayer.setMap(map)
+      linkNYCLayer.setMap(map)
 
 		  function openInfoWindow(event) {
 		    // replace this with a fully custom overlay
