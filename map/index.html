@@ -34,7 +34,7 @@
   <div class="content bg-white">
     <p><strong>Map of NYC Mesh nodes</strong></p>
 
-      <p>This map shows our node locations. The colored markers are currently active nodes. The gray markers are node requests from the “Join” form. We are currently working to turn these into active nodes. Click the opaque markers to see panorama photos.</p>
+      <p>This map shows our node locations. The colored markers are currently active nodes. The gray markers are node requests from the “Join” form. We are currently working to turn these into active nodes. Click the opaque markers to see panorama photos. The light-blue dots are public access points (LinkNYC kiosks) that can be used as gateways.</p>
 
       <p>We have around 50 active nodes and we are adding about one or two per week.</p>
 
@@ -144,15 +144,15 @@
         map.mapTypes.set('map_style', styledMap);
         map.setMapTypeId('map_style');
 
-        var activeNodesLayer = new google.maps.Data();
 		  var potentialNodesLayer = new google.maps.Data();
+          var activeNodesLayer = new google.maps.Data();
 		  var linksLayer = new google.maps.Data();
 		  var linkNYCLayer = new google.maps.Data();
 		  // var beamsLayer = new google.maps.Data();
 		  activeNodesLayer.loadGeoJson('./nodes/active.json');
+		  linkNYCLayer.loadGeoJson('./nodes/linkNYC.json');
 		  potentialNodesLayer.loadGeoJson('./nodes/potential.json');
 		  linksLayer.loadGeoJson('./nodes/links.json');
-		  linkNYCLayer.loadGeoJson('./nodes/linkNYC.json');
 		  // beamsLayer.addGeoJson({"type":"Feature","geometry":{"coordinates":[-74.001122,40.711137],"type":"Point"}});
 
 		/* activeNodesLayer.setStyle({
@@ -172,6 +172,22 @@
 		  })
          */
 
+
+      linkNYCLayer.setStyle(function (feature) {
+         var url = '../assets/images/linkNYC.svg';
+         var opacity = .60;
+         return {
+             scaledSize: new google.maps.Size(50, 50),
+             title: feature.getProperty("id"),
+             opacity: opacity,
+             zIndex: 0,
+             icon: {
+               url: url,
+               anchor: new google.maps.Point(10, 10),
+             }
+         }
+       })
+
         //changing icon opacity to show it has panoramas, also set supernode icon
          activeNodesLayer.setStyle(function (feature) {
 		    var url = '../assets/images/active.svg';
@@ -188,6 +204,7 @@
 			      scaledSize: new google.maps.Size(50, 50),
 			      title: feature.getProperty("id"),
 			      opacity: opacity,
+			      zIndex: 20,
      			  icon: {
 			      url: url,
 			      anchor: new google.maps.Point(10, 10),
@@ -210,6 +227,7 @@
 			      scaledSize: new google.maps.Size(50, 50),
 			      title: feature.getProperty("id"),
 			      opacity: opacity,
+			      zIndex: 10,
      			  icon: {
 			      url: url,
 			      anchor: new google.maps.Point(10, 10),
@@ -242,19 +260,6 @@
 		    }
 		  })
 
-      linkNYCLayer.setStyle(function (feature) {
-         var url = '../assets/images/linkNYC.svg';
-         var opacity = 0.5;
-         return {
-             scaledSize: new google.maps.Size(50, 50),
-             title: feature.getProperty("id"),
-             opacity: opacity,
-             icon: {
-               url: url,
-               anchor: new google.maps.Point(10, 10),
-             }
-         }
-       })
 
 		  // beamsLayer.setStyle({
 		  //   icon: {
@@ -268,10 +273,10 @@
 		  activeNodesLayer.addListener('click', openInfoWindow);
 		  potentialNodesLayer.addListener('click', openInfoWindow);
 
-		  linksLayer.setMap(map)
-		  activeNodesLayer.setMap(map)
+          activeNodesLayer.setMap(map)
 		  potentialNodesLayer.setMap(map)
-      linkNYCLayer.setMap(map)
+		  linkNYCLayer.setMap(map)
+		  linksLayer.setMap(map)
 
 		  function openInfoWindow(event) {
 		    // replace this with a fully custom overlay
