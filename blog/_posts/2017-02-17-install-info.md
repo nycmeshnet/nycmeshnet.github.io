@@ -12,17 +12,19 @@ You need to be within about two miles of the Wall St. area. We can usually tell 
 
 ***Equipment needed***-
 
-We supply the LiteBeam, antenna mount (if needed), ethernet, ethernet switch (if needed) and indoor router.
+We supply the LiteBeamAC, antenna mount (if needed), ethernet, ethernet switch (if needed) and indoor router.
 
 The total for the equipment is [$110](https://nycmesh.net/donate/), and the install is $50 (paid to an independent installer).
 
-$160 per apartment is due on the day of the install, or you can ask about a monthly subscription.
+$160 per apartment is due on the day of the install. We also suggest a monthly subscription of $20 to help us maintain our network.
 
 **Other install types-**
 
 **2) Kiosk client install**
 
-This is similar to supernode client but uses a NanoStation aimed at a Kiosk on the avenue below.
+This is similar to supernode client but uses a NanoStation aimed at a LinkNYC kiosk on the avenue below. Instead of a LiteBeamAC we would use a NanoStation NSM5.
+
+If you want to try this yourself read this [blog post](../public-access-points).
 
 **3) Building to building**
 
