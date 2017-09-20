@@ -248,10 +248,14 @@
 		  linksLayer.setStyle(function (link) {
 		    var strokeColor = 'red';
 		    var opacity = 1;
-		    if (link.getProperty('status') != 'active') {
+		    if (link.getProperty('status') == 'planned') {
 		      strokeColor = 'gray';
 		      opacity = 0.5
+		    } else if (link.getProperty('status') == 'dead') {
+			      strokeColor = 'gray';
+			      opacity = 0
 		    }
+		
 		    return {
 		      zIndex: 999,
 		      strokeWeight: 2,
