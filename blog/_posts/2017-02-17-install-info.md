@@ -18,11 +18,16 @@ The total for the equipment is [$110](https://nycmesh.net/donate/), and the inst
 
 $160 per apartment is due on the day of the install. We also suggest a monthly subscription of $20 to help us maintain our network.
 
-**Other install types-**
 
 **2) Kiosk client install**
 
-This is similar to supernode client but uses a NanoStation aimed at a LinkNYC kiosk on the avenue below. Instead of a LiteBeamAC we would use a NanoStation NSM5.
+This is similar to supernode client but uses a NanoStation aimed at a LinkNYC kiosk on the avenue below.
+
+We supply the NanoStation NSM5, antenna mount (if needed), ethernet, ethernet switch (if needed) and indoor router.
+
+The total for the equipment is [$110](https://nycmesh.net/donate/), and the install is $50 (paid to an independent installer).
+
+$160 per apartment is due on the day of the install. We also suggest a monthly subscription of $20 to help us maintain our network.
 
 If you want to try this yourself read this [blog post](../public-access-points).
 
