@@ -12,132 +12,41 @@ function matchesSearch(query, id) {
 }
 
 function initMap() {
-  var styles = [
-    {
-      featureType: "road",
-      elementType: "labels.text.fill",
-      stylers: [
-        {
-          color: "#AAAAAA"
-        }
-      ]
-    },
-    {
-      featureType: "poi",
-      elementType: "labels",
-      stylers: [{ visibility: "off" }]
-    },
-    {
-      elementType: "geometry",
-      stylers: [
-        {
-          color: "#f5f5f5"
-        }
-      ]
-    },
-    {
-      "featureType": "landscape",
-      "elementType": "labels",
-      "stylers": [
-        {
-          "visibility": "off"
-        }
-      ]
-    },
-    {
-      elementType: "labels.icon",
-      stylers: [
-        {
-          visibility: "off"
-        }
-      ]
-    },
-    {
-      elementType: "labels.text.stroke",
-      stylers: [
-        {
-          color: "#f5f5f5"
-        }
-      ]
-    },
-    {
-      featureType: "administrative",
-      stylers: [
-        {
-          visibility: "off"
-        }
-      ]
-    },
-    {
-      featureType: "poi",
-      stylers: [
-        {
-          visibility: "off"
-        }
-      ]
-    },
-    {
-      featureType: "road",
-      elementType: "geometry",
-      stylers: [
-        {
-          color: "#ffffff"
-        }
-      ]
-    },
-    {
-      featureType: "road",
-      elementType: "labels.icon",
-      stylers: [
-        {
-          visibility: "off"
-        }
-      ]
-    },
-    {
-      featureType: "road.highway",
-      stylers: [
-        {
-          visibility: "off"
-        }
-      ]
-    },
-    {
-      featureType: "road.highway",
-      elementType: "geometry",
-      stylers: [
-        {
-          color: "#dadada"
-        }
-      ]
-    },
-    {
-      featureType: "transit",
-      stylers: [
-        {
-          visibility: "off"
-        }
-      ]
-    },
-    {
-      featureType: "water",
-      elementType: "geometry",
-      stylers: [
-        {
-          color: "#d9d9d9"
-        }
-      ]
-    },
-    {
-      featureType: "water",
-      elementType: "labels.text.fill",
-      stylers: [
-        {
-          color: "#9e9e9e"
-        }
-      ]
-    }
-  ];
+  	 var styles = [
+          {
+            featureType: "administrative.locality",
+            elementType: "labels",
+            stylers: [
+              { visibility: "off" }
+            ]
+          },
+          {
+            featureType: "road.highway",
+            elementType: "all",
+            stylers: [
+              // { lightness: 100 },
+              { visibility: "off" }
+            ]
+          },{
+            featureType: "road",
+            elementType: "labels",
+            stylers: [
+              { visibility: "on" }
+            ]
+          },{
+            featureType: "poi",
+            elementType: "labels",
+            stylers: [
+              { visibility: "off" }
+            ]
+          },{
+            featureType: "transit",
+            elementType: "labels",
+            stylers: [
+              { visibility: "off" }
+            ]
+          }
+        ];
   var styledMap = new google.maps.StyledMapType(styles, { name: "Styled Map" });
 
   var mapOptions = {
@@ -273,8 +182,8 @@ function initMap() {
   });
 
   var infowindow = new google.maps.InfoWindow();
-  activeNodesLayer.addListener("click", showDetails);
-  potentialNodesLayer.addListener("click", showDetails);
+  activeNodesLayer.addListener("click", openInfoWindow); // or newer showDetails
+  potentialNodesLayer.addListener("click", openInfoWindow); //showDetails
 
   linksLayer.setMap(map);
   linkNYCLayer.setMap(map);
@@ -289,32 +198,46 @@ function filterToSearch() {
 function showImage(panorama) {
   var lightbox = document.getElementById('lightbox');
   var image = lightbox.children[0];
-  image.src = "./panorama/"+panorama
+  image.src = "../panorama/"+panorama // bh changed path up level
   image.classList.remove('dn');
   lightbox.classList.add('fixed');
   lightbox.classList.remove('dn');
 }
 
-function showDetails(event) {
-  var node = event.feature.f
-  currentNode = node
-  var infoWindow = document.getElementById('infoWindow')
-  var statusString = node.status || 'Potential'
-  infoWindow.innerHTML = '<div class="flex items-center justify-start">'+'<h2 class="mv0 near-black f5">Node #'+node.id+'</h2>'+'<p class="mv0 mh2 f6 fw5 dib br4 ph2 pv05 '+statusString+'">'+statusString+'</p>'+'</div>'
-  if (node.notes) {
-    infoWindow.innerHTML += '<p class="f6 fw5 gray">'+node.notes+'</p>'
-  }
-  if (node.roof) {
-    infoWindow.innerHTML += '<p class="f6 fw5 green">'+'✓ Roof Access'+'</p>'
-  }
-  if (node.panoramas) {
+ function openInfoWindow(event) {
+    // replace this with a fully custom overlay
+    var content = "<div class='pv3'>"
+    content += "<h2 class='di pr2'>Node "+event.feature.f.id+""+event.feature.f.otherNodes+"</h2>"
 
-    String(node.panoramas).split(',').forEach(function(panorama) {
-      infoWindow.innerHTML += '<img class="mt3" onclick="showImage(\''+panorama+'\')" src="./panorama/'+panorama+'"></img>'
-    })
-  }
-  infoWindow.classList.add('db');
-}
+    if (event.feature.f.status == 'Installed') {
+      content += "<h3 class='di green fw4'>Active</h3><br>"+event.feature.f.notes
+    }
+    else {
+      content += "<h3 class='di gray fw4'>Potential</h3><br>"+event.feature.f.notes
+    }
+
+    content += "</div>"
+
+    var panoramas = event.feature.f.panoramas
+    if (panoramas) {
+      content += "<h4 class='pb2 mv0 mb3 near-black fw4'>View from this node:</h3>"
+      for (var i = 0; i < panoramas.length; i++) {
+        var image = "<div class='w6'>"+
+        "<a href='"+'../panorama/'+panoramas[i]+"'>"
+        image += "<img class='w-100 h-100 contain' src='"+'../panorama/'+panoramas[i]+"'></img>"
+        image += "</a>"+
+        "</div";
+
+        content += image;
+      }
+    }
+     infowindow.setContent(content);
+     infowindow.setPosition(event.feature.getGeometry().get());
+     infowindow.setOptions({pixelOffset: new google.maps.Size(-1,-8)});
+     infowindow.open(map);
+     //setTimeout(infowindow.close(map), 0) // needs a timeout delay to force the autoscroll !!
+     setTimeout(infowindow.open(map), 10000) // needs a timeout delay to force the autoscroll !!
+ }
 
 function hideDetails() {
   var infoWindow = document.getElementById('infoWindow')

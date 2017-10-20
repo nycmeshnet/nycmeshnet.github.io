@@ -31,6 +31,15 @@
     <div class="title-container">
     </div>
   </nav>
+
+<input type="search" 
+ placeholder="Search node#..." 
+ onkeydown="if (event.keyCode == 13) { event.preventDefault(); event.stopPropagation(); initMap() }"
+ onkeyup="searchQuery = this.value"
+ onsearch="clearSearch()" // clicked the clear button which triggers onsearch
+ style="width: 200px"
+/>
+
   <div class="content bg-white">
     <p><strong>Map of NYC Mesh nodes</strong></p>
 
@@ -91,6 +100,26 @@
 
   <script>
       var map;
+	  var currentNode = {};
+	  var searchQuery = ""
+
+	function clearSearch(input) {
+       searchQuery = ""
+       initMap()
+    }
+
+    function inSearch(query, id) {
+	return new RegExp('\\b' + String(id) + '\\b').test(String(query))
+}
+
+	function matchesSearch(query, id) {
+	  if (String(id) === String(query))
+	    return true
+	  // var queryIsSupernode = String(query) === "supernode" || String(query) === "Supernode"
+	  // if (queryIsSupernode && String(id) == String(227))
+	  //   return true
+	  return false
+	}
 
       function initMap() {
         var styles = [
@@ -197,6 +226,7 @@
          activeNodesLayer.setStyle(function (feature) {
 		    var url = '../assets/images/active.svg';
 		    var opacity = 0.5;
+		    var visible = true;
 		    var notes = feature.getProperty("notes").toLowerCase()
 		    if (notes.indexOf("supernode") !== -1) {
 			  url = '../assets/images/supernode.svg';
@@ -205,11 +235,15 @@
 		      //url = '../assets/images/activepano.svg';
 		      opacity = 1
 		    }
+		    if (searchQuery.length > 0 && !inSearch(searchQuery, feature.getProperty('id'))) {
+		      visible = false;
+		    }
 		    return {
 			      scaledSize: new google.maps.Size(50, 50),
 			      title: feature.getProperty("id"),
 			      opacity: opacity,
 			      zIndex: 20,
+			      visible: visible,
      			  icon: {
 			      url: url,
 			      anchor: new google.maps.Point(10, 10),
@@ -220,6 +254,7 @@
          potentialNodesLayer.setStyle(function (feature) {
 		    var url = '../assets/images/potential.svg';
 		    var opacity = 0.5;
+		    var visible = true;
 			var notes = feature.getProperty("notes").toLowerCase()
 		    if (notes.indexOf("supernode") !== -1) {
 			  url = '../assets/images/supernode-potential.svg';
@@ -228,11 +263,15 @@
 		      //url = '../assets/images/potentialpano.svg';
 		      opacity = 1
 		    }
+		    if (searchQuery.length > 0 && !matchesSearch(searchQuery, feature.getProperty('id'))) {
+		      visible = false;
+		    }
 		    return {
 			      scaledSize: new google.maps.Size(50, 50),
 			      title: feature.getProperty("id"),
 			      opacity: opacity,
 			      zIndex: 10,
+			      visible: visible,
      			  icon: {
 			      url: url,
 			      anchor: new google.maps.Point(10, 10),
@@ -253,6 +292,7 @@
 		  linksLayer.setStyle(function (link) {
 		    var strokeColor = 'red';
 		    var opacity = 1;
+		    var visible = true;
 		    if (link.getProperty('status') == 'planned') {
 		      strokeColor = 'gray';
 		      opacity = 0.5
@@ -261,8 +301,16 @@
 			      opacity = 0
 		    }
 		
+		 //   if (searchQuery.length > 0) {
+		 //     var linkMatches = matchesSearch(searchQuery, link.getProperty("from")) || matchesSearch(searchQuery, link.getProperty("to"))
+		 //     if (!linkMatches)
+		 //       visible = false;
+		 //   }
+		
+		
 		    return {
 		      zIndex: 999,
+			  visible: visible,
 		      strokeWeight: 2,
 		      strokeColor: strokeColor,
 		      strokeOpacity: opacity
