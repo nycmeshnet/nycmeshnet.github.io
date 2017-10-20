@@ -108,9 +108,11 @@
        initMap()
     }
 
-    function inSearch(query, id) {
-	// query contains id
-	return new RegExp('\\b' + String(id) + '\\b').test(String(query))
+    function containsSearch(query, id, notes) {
+	if (new RegExp('\\b' + String(id) + '\\b').test(String(query))) {
+		return true
+	}
+	return new RegExp('\\b' + String(query) + '\\b', 'i').test(String(notes))
 }
     
     // old search
@@ -237,7 +239,7 @@
 		      //url = '../assets/images/activepano.svg';
 		      opacity = 1
 		    }
-		    if (searchQuery.length > 0 && !inSearch(searchQuery, feature.getProperty('id'))) {
+		    if (searchQuery.length > 0 && !containsSearch(searchQuery, feature.getProperty('id'), feature.getProperty('notes'))) {
 		      visible = false;
 		    }
 		    return {
@@ -265,7 +267,7 @@
 		      //url = '../assets/images/potentialpano.svg';
 		      opacity = 1
 		    }
-		    if (searchQuery.length > 0 && !inSearch(searchQuery, feature.getProperty('id'))) {
+		    if (searchQuery.length > 0 && !containsSearch(searchQuery, feature.getProperty('id'), feature.getProperty('notes'))) {
 		      visible = false;
 		    }
 		    return {
