@@ -33,7 +33,7 @@
   </nav>
 
 <input type="search" 
- placeholder="Search node#..." 
+ placeholder="Search nodes ..." 
  onkeydown="if (event.keyCode == 13) { event.preventDefault(); event.stopPropagation(); initMap() }"
  onkeyup="searchQuery = this.value"
  onsearch="clearSearch()" // clicked the clear button which triggers onsearch
@@ -109,9 +109,11 @@
     }
 
     function inSearch(query, id) {
+	// query contains id
 	return new RegExp('\\b' + String(id) + '\\b').test(String(query))
 }
-
+    
+    // old search
 	function matchesSearch(query, id) {
 	  if (String(id) === String(query))
 	    return true
