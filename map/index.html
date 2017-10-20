@@ -265,7 +265,7 @@
 		      //url = '../assets/images/potentialpano.svg';
 		      opacity = 1
 		    }
-		    if (searchQuery.length > 0 && !matchesSearch(searchQuery, feature.getProperty('id'))) {
+		    if (searchQuery.length > 0 && !inSearch(searchQuery, feature.getProperty('id'))) {
 		      visible = false;
 		    }
 		    return {
