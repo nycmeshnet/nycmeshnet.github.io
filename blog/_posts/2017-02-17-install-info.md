@@ -6,6 +6,8 @@ author: Brian
 
 We have a few different types of install. At the moment we are mostly doing installs in downtown Manhattan that connect directly to the supernode- a "supernode client install"
 
+Basically an antenna is mounted on the roof and an ethernet cable goes down a wall or conduit into your apartment. We usually put the cable through a window frame or at the side of an air-conditioner. A small power adapter in your apartment will give power the antenna over the ethernet cable.
+
 **1) Supernode client**
 
 You need to be within about two miles of the Wall St. area. We can usually tell by a panorama pic whether this install will work for you.
@@ -17,6 +19,8 @@ We supply the LiteBeamAC, antenna mount (if needed), ethernet, ethernet switch (
 The total for the equipment is [$110](https://nycmesh.net/donate/), and the install is $50 (paid to an independent installer).
 
 $160 per apartment is due on the day of the install. We also suggest a monthly subscription of $20 to help us maintain our network.
+
+It is possible to do this yourself. Ask us for help configuring the LiteBeamAC. If you are installing in a window we suggest the much smaller NanoBeamAC 16.
 
 
 **2) Kiosk client install**
@@ -33,7 +37,9 @@ If you want to try this yourself read this [blog post](../public-access-points).
 
 **3) Building to building**
 
-This is usually a NanoStation M5 connected to a nearby established neighborhood network
+This is similar to supernode client but uses NanoStation M5 connected to a nearby established neighborhood network. We supply the NanoStation NSM5, antenna mount (if needed), ethernet, ethernet switch (if needed) and indoor router.
+
+$160 per apartment is due on the day of the install. We also suggest a monthly subscription of $20 to help us maintain our network.
 
 **4) Point to point**
 
