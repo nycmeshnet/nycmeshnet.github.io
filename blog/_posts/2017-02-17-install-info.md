@@ -6,7 +6,7 @@ author: Brian
 
 We have a few different types of install. At the moment we are mostly doing installs in downtown Manhattan that connect directly to the supernode- a "supernode client install"
 
-Basically an antenna is mounted on the roof and an ethernet cable goes down a wall or conduit into your apartment. We usually put the cable through a window frame or at the side of an air-conditioner. A small power adapter in your apartment will give power the antenna over the ethernet cable.
+With all rooftop installs, an antenna is mounted on the roof and an ethernet cable goes down a wall or conduit and into your apartment. We usually put the cable through a window frame or at the side of an air-conditioner. A small power adapter in your apartment will give power the antenna over the ethernet cable. Another router is needed in the apartment for your wifi connection.
 
 **1) Supernode client**
 
