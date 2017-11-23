@@ -5,49 +5,25 @@ title: "Order, Download and Flash"
 Please read our [FAQ](../faq) if you haven't already.
 
 **Join the mesh**  
-First you need to enter a [new node request](../join). This will add your router to our list of node requests and put your location on our map. If you have multiple locations enter them separately.
+First you need to enter a [new node request](../join). This will add your router to our list of node requests and put your location on our map. If you have multiple locations enter them separately. If you are within range of a supernode and have line-of-sight you may be able to connect directly. Otherwise we will try to connect you to a nearby rooftop.
+
+To connect to the supernode, please [contact us](mailto:install@nycmesh.net) and we will advise. This usually uses a LiteBeamAC or NanoBeamAC. Configuration info is [here](/cpe).
+
+To setup a rooftop to rooftop connection you can use two NanoStation M5s. You can also just set up a public access point and aim it towards the street.
 
 **Order a router**    
-We currently support two different models of routers- 
 
-For outdoors and long distance-  
+* Ubiquiti NSM5 directional 5GHz (~$90 including tax)
 
-* Ubiquiti NSM5 directional 5GHz (~$95 including tax)
-
-For indoors-  
-
-* TP-Link TL-WR842ND 2.4GHz (~$33)
-
-The single band router can  mesh over-the-air with other TP-Links, and it can connect to the Ubiquiti via ethernet cable.
 
 Buy on Amazon:   
 [Ubiquiti NanoStation NSM5](http://www.amazon.com/dp/B0049AVWAO/?tag=nsm5-nycmesh-20)  
-[TP-Link router TL-WR842ND](http://www.amazon.com/dp/B006E04T9I/?tag=tl-wr842nd-nycmesh-20)
 
 Buy at B&H: (free delivery)   
 [Ubiquiti NanoStation NSM5](http://www.bhphotovideo.com/c/product/1049768-REG/)  
-[TP-Link router TL-WR842ND](http://www.bhphotovideo.com/c/product/855244-REG/)  
 
 
 **Download the firmware and flash your router**
-
-**TP-Link instructions**
-
-* Click to download the firmware to your computer-  
-  [TL-WR842N  download](http://nycmeshnet.github.io/download/WR842N.html)
-  (For upgrades see below)
-* Connect to the router via Wi-Fi. It has a name like "TP-LINK_ABC123"
-* Enter the "wireless password/pin" that is printed on the bottom of the router e.g. "12341234"
-* In your browser, go to 192.168.0.1
-* Enter name: admin, pwd: admin
-* Click System Tools>Firmware upgrade
-* Click "choose file" and select the image you downloaded and click "upgrade"
-
-Wait ten minutes or so and connect to the router via Wi-Fi. It now has a SSID name like "nycmesh 1a2b" and a random IP of the form 10.x.x.x
-
-* Plug an ethernet cable from LAN on your current router to the blue WAN on the TP-Link.
-
-* <a href="mailto:contact@nycmesh.net">Email us</a> and we will check that everything is working.
 
 **NanoStation NSM5 instructions**  
   (for old NSM5s or if you are upgrading see below)  
@@ -59,7 +35,7 @@ Wait ten minutes or so and connect to the router via Wi-Fi. It now has a SSID na
 * Plug from LAN on the adapter to your computer (You may need a USB ethernet adapter)
 * Turn off Wi-Fi on your computer
 * Open Network Prefs (or equivalent)
-* Connect by ethernet using DHCP with manual address e.g. 192.168.1.11
+* Connect by ethernet using a manual address e.g. 192.168.1.11 with mask 255.255.255.0
 * Go to [192.168.1.20](http://192.168.1.20) in your browser
 * You will get https warning "your connection is not private" or some such
 * Click "advanced" and "proceed to 192.168.1.20"
@@ -110,7 +86,25 @@ A quick test to see if you are on the mesh is to go here-
 This URL should resolve after an hour or so of being online-  
 [http://wiki.mesh/](http://wiki.mesh/)  
 
+Here are our old TP-Link instructions in case you find an old TL-WR842N on ebay-
 
+**TP-Link instructions**
+
+* Click to download the firmware to your computer-  
+  [TL-WR842N  download](http://nycmeshnet.github.io/download/WR842N.html)
+  (For upgrades see above)
+* Connect to the router via Wi-Fi. It has a name like "TP-LINK_ABC123"
+* Enter the "wireless password/pin" that is printed on the bottom of the router e.g. "12341234"
+* In your browser, go to 192.168.0.1
+* Enter name: admin, pwd: admin
+* Click System Tools>Firmware upgrade
+* Click "choose file" and select the image you downloaded and click "upgrade"
+
+Wait ten minutes or so and connect to the router via Wi-Fi. It now has a SSID name like "nycmesh 1a2b" and a random IP of the form 10.x.x.x
+
+* Plug an ethernet cable from LAN on your current router to the blue WAN on the TP-Link.
+
+* <a href="mailto:contact@nycmesh.net">Email us</a> and we will check that everything is working.
 
  
 
