@@ -3,9 +3,7 @@ layout: markdown
 title: "Supernode CPE"
 ---
 
-Member should buy their own cpe on Amazon etc. We can swap it with a preconfigured one on site to save time.
-
-If they buy a cpe off us they must pay on the day of the install.
+Members can buy their own cpe on Amazon etc. We can swap it with a preconfigured one on site to save time.
 
 # Configuring supernode CPEs
 
@@ -57,7 +55,7 @@ Click the "Settings" button (gear icon) on the left to give you Wireless | Netwo
 
 You can download this example [LiteBeamAC config](./litebeam/WA-F09FC242795C.cfg) with the above configuration
 
-**Pairing**
+**Pairing with Supernode1**
 
 In the ["Wireless" settings](./litebeam/wireless.png)) click "Select" and choose the strongest "nycmesh prism1" signal. The strongest signal has the lower number. -80db would be very weak, -50db would be very strong. 
 
