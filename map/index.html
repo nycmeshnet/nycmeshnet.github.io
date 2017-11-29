@@ -239,9 +239,13 @@
 		      //url = '../assets/images/activepano.svg';
 		      opacity = 1
 		    }
-		    if (searchQuery.length > 0 && !containsSearch(searchQuery, feature.getProperty('id'), feature.getProperty('notes'))) {
-		      visible = false;
-		    }
+		    if (searchQuery.length > 0) {
+		      if (!containsSearch(searchQuery, feature.getProperty('id'), feature.getProperty('otherNodes'), feature.getProperty('notes'))) {
+		      visible = false
+			    } else { 
+				  //make search result more visible
+				  opacity = 1
+		    }}
 		    return {
 			      scaledSize: new google.maps.Size(50, 50),
 			      title: feature.getProperty("id"),
@@ -267,9 +271,13 @@
 		      //url = '../assets/images/potentialpano.svg';
 		      opacity = 1
 		    }
-		    if (searchQuery.length > 0 && !containsSearch(searchQuery, feature.getProperty('id'), feature.getProperty('notes'))) {
-		      visible = false;
-		    }
+		    if (searchQuery.length > 0) {
+		      if (!containsSearch(searchQuery, feature.getProperty('id'), feature.getProperty('otherNodes'), feature.getProperty('notes'))) {
+		      visible = false
+			    } else { 
+				  //make search result more visible
+				  opacity = 1
+		    }}
 		    return {
 			      scaledSize: new google.maps.Size(50, 50),
 			      title: feature.getProperty("id"),
