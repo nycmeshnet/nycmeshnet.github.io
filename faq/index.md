@@ -27,7 +27,7 @@ This is our most common question, so we made it into a blog post- [12 Reasons fo
  
 ## <a name="business"></a>What is your business plan?
 
-Please don't ask this! We are not a business and we are not an ISP! We don't have "customers" or "users", we have members. Being a member of our network includes many benefits including replacing your current ISP with real, unmonitored internet access.
+Please don't ask this! We are not a business and we are not an ISP! We don't have "customers" or "users", we have members. Being a member of our network has many benefits including replacing your current ISP with real, unmonitored internet access.
 
 ## <a name="fee"></a>Is there a monthly fee?
 
@@ -35,7 +35,7 @@ Once you buy a router and install it you are part of NYC Mesh. There is no compu
 
 If you are benefitting from the network, or you would like to help us extend the network, please pay a small [monthly donation.](/donate) If you cannot afford this, we understand!
 
-We also do installs for entire buildings and set up high-bandwidth point-to-point connections with dedicated hardware. If your building would like this dedicated service please [email us](mailto:install@nycmesh.net) or call us on (646) 727-0866. Using this service you can replace your current ISP for very large buildings.
+We also do installs for entire buildings and set up high-bandwidth point-to-point connections with dedicated hardware. If your building would like this dedicated service please [email us](mailto:install@nycmesh.net) or call us on (646) 727-0866. Using this service can replace your current ISP for very large buildings.
 
 ## <a name="replace-isp"></a>Is this a replacement for my current internet connection?
 
