@@ -4,6 +4,7 @@ title: "Frequently asked questions"
 ---
 [Why are you building a community owned network?](#why)  
 [Is there a monthly fee?](#fee)   
+[What is your business plan?](#business)   
 [Is this a replacement for my current internet connection?](#replace-isp)   
 [What can I do on the mesh that I can't do on the internet?](#mesh-services)   
 [Why should I join the mesh now?](#why-join)   
@@ -24,13 +25,17 @@ title: "Frequently asked questions"
 
 This is our most common question, so we made it into a blog post- [12 Reasons for mesh](/blog/twelve-reasons-for-mesh/)
  
-## <a name="fee"></a>Is there a monthly fee? 
+## <a name="business"></a>What is your business plan?
+
+Please don't ask this! We are not a business and we are not an ISP. We don't have "customers" or "users", we have members. Being a member of our network includes many benefits including replacing your current ISP with real, unmonitored internet access.
+
+## <a name="fee"></a>Is there a monthly fee?
 
 Once you buy a router and install it you are part of NYC Mesh. There is no compulsory fee. Donations help us cover maintenance. By joining the mesh you are obliged to share and extend the mesh in the same way that it was shared with you.
 
-If you are benefitting from the network, or you would like to help us extend the network, you may be interested in a small [monthly donation.](/donate)
+If you are benefitting from the network, or you would like to help us extend the network, please pay a small [monthly donation.](/donate) If you cannot afford this, we understand!
 
-We also do installs for entire buildings and set up high-bandwidth point-to-point connections with dedicated hardware. If your building would like this dedicated service please [email us](mailto:install@nycmesh.net) or call us on (646) 727-0866. Using this service you can replace your current ISP for the whole building.
+We also do installs for entire buildings and set up high-bandwidth point-to-point connections with dedicated hardware. If your building would like this dedicated service please [email us](mailto:install@nycmesh.net) or call us on (646) 727-0866. Using this service you can replace your current ISP for very large buildings.
 
 ## <a name="replace-isp"></a>Is this a replacement for my current internet connection?
 
