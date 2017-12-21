@@ -45,7 +45,7 @@ Many members who cannot connect directly to our supernode are sharing their inte
    
 ## <a name="mesh-services"></a>What can I do on the mesh that I can't do on the internet?
 
-It is possible to connect directly to other people on the mesh without using the internet. If for some reason the internet is shut down, the mesh will still work. Internet shutdowns are becoming increasingly common in the world. 
+It is possible to connect directly to other people on the mesh without using the internet. If for some reason the internet is shut down by a fascist dictator, the mesh will still work. Internet shutdowns are becoming increasingly common in the world. 
 
 The mesh has small web servers that show local information and allow you to chat and post messages. So far we have servers in five locations- Harlem, Bay Ridge, 3rd St. and 7th St. in the East Village, and our main directory "wiki.mesh" in Williamsburg. We are in need of volunteers to help add content and maintain our servers.
 
@@ -53,15 +53,15 @@ The mesh has small web servers that show local information and allow you to chat
 
 By joining the mesh you help us grow and increase our reach across the city. This is a community project and you will be helping to create a decentralized infrastructure, free from traditional business interests.
 
-You can also help your neighborhood by providing access points for in local parks, cafes and bars. Local businesses are often keen to host a node once you explain the benefits to them.
+You can also help your neighborhood by providing access points for local parks, cafes and bars. Local businesses are often keen to host a node once you explain the benefits to them.
 
 ## <a name="coverage"></a>Is it possible for the mesh to cover the whole country?
 
 Yes, there is a mesh network called "Guifi" in Spain that covers a large part of the country. In order to do this, they have a backbone of many long distance WiFi connections and also community owned fiber.
 
-## <a name="isp"></a>Are you an internet Service Provider (ISP)?
+## <a name="isp"></a>Are you an Internet Service Provider (ISP)?
 
-No, we are not an ISP, we are a community that shares ownership of a network. Collectively we have our own internet connection at our "supernode". Also some of our members share their own internet connections.
+No, we are not an ISP, we are a community that shares ownership of a network. Collectively we have our own internet connection at our "supernode". Also some of our members share their own internet connections. 
 
 Our supernode peers with other networks at an internet exchange point and provides access to the internet without traditional ISPs. We are a non-profit project of the New York chapter of the Internet Society (ISOC-NY).
 
