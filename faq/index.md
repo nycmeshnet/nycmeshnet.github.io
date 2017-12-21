@@ -27,7 +27,7 @@ This is our most common question, so we made it into a blog post- [12 Reasons fo
  
 ## <a name="business"></a>What is your business plan?
 
-Please don't ask this! We are not a business and we are not an ISP. We don't have "customers" or "users", we have members. Being a member of our network includes many benefits including replacing your current ISP with real, unmonitored internet access.
+Please don't ask this! We are not a business and we are not an ISP! We don't have "customers" or "users", we have members. Being a member of our network includes many benefits including replacing your current ISP with real, unmonitored internet access.
 
 ## <a name="fee"></a>Is there a monthly fee?
 
@@ -75,7 +75,9 @@ We also have some members experimenting with and contributing to cjdns/hyperbori
 
 ## <a name="other-router"></a>Can I use my own different router?
 
-No, the router we currently support and recommend is the Ubiquiti NanoStation M5. Our [download page](../download) has our firmware for this router and links to buy. We sometimes have pre-configured routers at the [meetups](http://www.meetup.com/nycmesh), available at cost $90 for the NanoStation. We are working on supporting other routers. TP-Link have locked down some of their routers, and others are not supported well by OpenWrt, so we unfortunately are looking at other options at the moment.
+No, the router we currently support and recommend for building-to-building is the Ubiquiti NanoStation M5. For supernode connections you will need a LiteBeamAC or NanoBeamAC router. Our [download page](../download) has our firmware for the NanoStation and links to buy. We are working on supporting other routers. 
+
+TP-Link have locked down some of their routers, and others are not supported well by OpenWrt, so we unfortunately are looking at other options for indoor routers at the moment.
 
 ## <a name="no-view"></a>Can I install a router if I have no view or no rooftop access?
 
@@ -83,13 +85,13 @@ Yes you can. Because you may be out of range of other mesh nodes, your router wi
 
 ## <a name="install"></a>What is involved in a rooftop or window install?
 
-Rooftop installs are mostly done in pairs. Look at our [map](../map) to find line-of-sight to another node location less than two miles away. You can also talk to people in the neighborhood and convince them to also install a node. We also have a collection of rooftop panoramas where you can check for possible line-of-sight connections. 
+Rooftop installs are mostly to connect you to a supernode or a second hop from a supernode. Look at our [map](../map) to find line-of-sight to another node location less than two miles away. You can also talk to people in the neighborhood and convince them to also install a node. We also have a collection of rooftop panoramas where you can check for possible line-of-sight connections. 
 
 The other type of install is where a directional Ubiquiti router is aimed at a nearby public space (park, cafe, bar etc.) as a public Wi-Fi access point. We currently have five public spaces with this type of install. 
 
 We support one outdoor router, the Ubiquiti Nanostation NSM5 (~$90). We have links for this on the [download page](../download)
 
-We can help you with the rooftop installation. Typically one or two routers are attached to a pole on the roof and an ethernet cable is run to the apartment, and connected to the TP-Link mesh router and an internet gateway. The cable cost is $20. The ethernet cable also supplies the power to the router using "power over ethernet". If the roof (or balcony or window) is close to your apartment you might not need an additional mesh router.
+We can help you with the rooftop installation. Typically one or two routers are attached to a pole on the roof and an ethernet cable is run to the apartment, and connected to the TP-Link mesh router and an internet gateway. The install cost is usually $160 including labor and equipment. The ethernet cable also supplies the power to the router using "power over ethernet". If the roof (or balcony or window) is close to your apartment you might not need an additional mesh router.
 
 ## <a name="nsm5-indoor"></a>I want a NanoStation but I'm not ready for a rooftop install
 
@@ -105,9 +107,7 @@ There is "mesh" software for mobile phones such as Serval and FireChat. This is 
 
 ## <a name="secure"></a>Is the mesh secure?
 
-We provide a VPN service for our users for a small fee. This encrypts traffic over the mesh and the internet. Please [email us](mailto:vpn@nycmesh.net) about this service.
-
-If you use the internet while on the mesh, you should use standard precautions such as using https (lock icon) web sites for secure connections, or use a VPN service such as ours.
+If you use the internet while on the mesh, you should use standard precautions such as using https (lock icon) web sites for secure connections, or use a VPN service.
 
 By default, our mesh router is firewalled from your local network. It is not possible to reach beyond the mesh router to your LAN. Mesh tunneling over the internet is by tinc VPN and is secure. Network traffic within the mesh is not encrypted by default.
 
