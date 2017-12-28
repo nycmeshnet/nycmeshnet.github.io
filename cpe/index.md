@@ -5,7 +5,10 @@ title: "Supernode CPE"
 
 Members can buy their own cpe on Amazon etc. We can swap it with a preconfigured one on site to save time.
 
-# Configuring supernode CPEs
+
+# Configuring supernode1 CPEs (line of sight to 375 Pearl St. Manhattan)
+
+[For connecting to supernode 2 see here](../cpe2)
 
 ## Ubiquiti Prism clients-
 
@@ -23,15 +26,11 @@ Go to System:Configuration:Reset to factory defaults and click Reset
 
 Download latest version of [AirMaxAC](https://www.ubnt.com/download/airmax-ac) for the particular hardware
 
-
-Don't use 8.1.3 or 8.1.4 firmware. This has an ethernet bug and is unusable. If it's Gen2 device downgrade to 8.1.2, if it's Gen1 device downgrade to 8.0.2 via the download page. (Go to the system tab, look at "DEVICE MODEL", if it doesn't say Gen2, it's a Gen1 unit.)
-
-
 System:Upload Firmware
 
 Reset to factory again
 
-Change the pass to our usual pass
+Change the pass
 
 Click the "Settings" button (gear icon) on the left to give you Wireless | Network | Services | System
 
@@ -65,7 +64,7 @@ The Prism has 3 radios. You need to select the strongest. **s1** faces North, **
 
 There is a visual level built into the antenna make sure the bubble is in the middle.
 
-There is a "tools" menu in the upper right of the interface. Click this and select Antenna alignment. First align the antenna by pointing it directly at the supernode. Now move it slightly up or down to get a stronger signal. Once you have the vertical alignment, do the same by moving the antenna horizontally.
+There is a "tools" menu in the upper right of the interface. Click this and select Antenna alignment. First align the antenna by pointing it directly at the supernode. Now move it slightly up or down to get a stronger signal. Once you have the vertical alignment, do the same by moving the antenna horizontally. The sound option is very helpful for this.
 
 **Download test**
 
