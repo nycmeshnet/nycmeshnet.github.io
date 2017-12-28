@@ -3,8 +3,6 @@ layout: markdown
 title: "Supernode CPE"
 ---
 
-Members can buy their own cpe on Amazon etc. We can swap it with a preconfigured one on site to save time.
-
 #eastwburg_bushwick
 
 # Configuring supernode2 CPEs (line of sight to 40.713991, -73.929049 )
