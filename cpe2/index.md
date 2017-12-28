@@ -9,7 +9,7 @@ title: "Supernode CPE"
 
 [For connecting to supernode 1 see here](../cpe)
 
-## Ubiquiti Prism clients-
+## Ubiquiti sector clients-
 
 [Laptop Network preferences](./litebeam/netprefs.png)  
 
