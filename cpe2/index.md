@@ -3,7 +3,7 @@ layout: markdown
 title: "Supernode CPE"
 ---
 
-#eastwburg_bushwick
+# #eastwburg_bushwick, English Kills
 
 # Configuring supernode2 CPEs (line of sight to 40.713991, -73.929049 )
 
@@ -35,7 +35,7 @@ Click the "Settings" button (gear icon) on the left to give you Wireless | Netwo
 
 [**Wireless settings**](./litebeam/wireless.png)    
  * Station PtMP  
- * SSID: nycmesh-english-kills-east OR nycmesh-english-kills-west  see pairing below
+ * SSID: nycmesh-english-kills-east OR nycmesh-english-kills-west,  see pairing below
  * Antenna 23 -23dbi  
 	
 [**Network settings**](./litebeam/network.png)   
