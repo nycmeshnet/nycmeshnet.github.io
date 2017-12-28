@@ -5,8 +5,9 @@ title: "Supernode CPE"
 
 Members can buy their own cpe on Amazon etc. We can swap it with a preconfigured one on site to save time.
 
+#eastwburg_bushwick
 
-# Configuring supernode2 CPEs (line of sight to 40.713991, -73.929049)
+# Configuring supernode2 CPEs (line of sight to 40.713991, -73.929049 )
 
 [For connecting to supernode 1 see here](../cpe)
 
@@ -50,9 +51,8 @@ Click the "Settings" button (gear icon) on the left to give you Wireless | Netwo
 [**System**](./litebeam/system.png)  
  * Device name: nycmesh-lbe-nn (**lbe** is LiteBeam, **nbe** is NanoBeam, **nn** is replaced with the install number)
 
-You can download this example [LiteBeamAC config](./litebeam/WA-F09FC242795C.cfg) with the above configuration
 
-**Pairing with Supernode1**
+**Pairing with Supernode2**
 
 In the ["Wireless" settings](./litebeam/wireless.png)) click "Select" and choose the strongest "nycmesh-english-kills" signal. The strongest signal has the lower number. -80db would be very weak, -50db would be very strong. 
 
