@@ -2,7 +2,7 @@
 layout: post
 title: "Frequently asked questions"
 ---
-[Why are you building a community owned network?](#why)  
+[Why are you building a community-owned network?](#why)  
 [Is there a monthly fee?](#fee)   
 [What is your business plan?](#business)   
 [Is this a replacement for my current internet connection?](#replace-isp)   
@@ -21,13 +21,13 @@ title: "Frequently asked questions"
 [What is your user data policy](#data)  
 [Why aren't you doing this obvious thing I just thought of?](#obvious)   
 
-## <a name="why"></a>Why are you building a community owned network?
+## <a name="why"></a>Why are you building a community-owned network?
 
 This is our most common question, so we made it into a blog post- [12 Reasons for mesh](/blog/twelve-reasons-for-mesh/)
  
 ## <a name="business"></a>What is your business plan?
 
-Please don't ask this! We are not a business and we are not an ISP! We don't have "customers" or "users", we have members. Being a member of our network has many benefits including replacing your current ISP with real, unmonitored internet access.
+We are not a business and we are not an ISP! We don't have "customers" or "users", we have members. Being a member of our network has many benefits including replacing your current ISP with real, unmonitored internet access. Businesses are free to join or connect to the mesh as long as they obey the [network commons license](../ncl.pdf).
 
 ## <a name="fee"></a>Is there a monthly fee?
 
@@ -39,7 +39,7 @@ We also do installs for entire buildings and set up high-bandwidth point-to-poin
 
 ## <a name="replace-isp"></a>Is this a replacement for my current internet connection?
 
-We provide internet through peering at an internet exchange point. If you have line-of-sight to this "supernode" in downtown Manhattan you can have a fast, reliable connection with suitable hardware, and replace your ISP.
+We are connected to the internet through peering at an internet exchange point. If you have line-of-sight to supernode1 in downtown Manhattan, or supernode2 in Brooklyn you can have a fast, reliable connection with suitable hardware, and replace your ISP.
 
 Many members who cannot connect directly to our supernode are sharing their internet. If you have line-of-sight to another member or they are very close by you can ask if it is OK to share internet. We encourage people to share or make deals with their neighbors. If you are within range of the mesh, your router will automatically use the fastest internet connection.
    
