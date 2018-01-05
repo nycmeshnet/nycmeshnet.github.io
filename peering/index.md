@@ -13,14 +13,15 @@ Our peering policy...
 
 Our network peers directly with the following networks-
 
+<pre>
 AS6939:		Hurricane Electric  
 AS54825:	Packet Host  
-AS9002:		RETN LimitedUkraine  
-AS33891:	Core-Backbone GmbHGermany  
-AS53988:	Digi Desert LLCUnited States  
+AS9002:		RETN Limited Ukraine  
+AS33891:	Core-Backbone GmbH Germany  
+AS53988:	Digi Desert LLC United States  
 AS40191:	ZEROFAILCanada  
 AS61438:	ip-it consult GmbH  
-
+</pre>
 
 
 
