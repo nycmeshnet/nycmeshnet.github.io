@@ -1,0 +1,12 @@
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <circle id="svg_1" opacity="0.8" fill="#ff0000" stroke-width="2" stroke="#ffff00" r="8" cy="10" cx="10"/>
+  <text stroke="#ffff00" transform="matrix(2.111125702222374,0,0,1.099777927703023,-8.38034307468955,-1.9260116719063693) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="8" id="svg_4" y="13.681801" x="6.083355" stroke-width="0" fill="#000000">S</text>
+ </g>
+</svg>

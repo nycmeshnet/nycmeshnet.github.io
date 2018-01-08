@@ -233,6 +233,9 @@
 		    if (notes.indexOf("supernode") !== -1) {
 			  url = '../assets/images/supernode.svg';
 			}
+		    if (notes.indexOf("hub") !== -1) {
+			  url = '../assets/images/hub.svg';
+			}
 		    if (feature.getProperty("panoramas")) {
 		      //url = '../assets/images/activepano.svg';
 		      opacity = 1
@@ -265,6 +268,9 @@
 			var searchText = feature.getProperty('otherNodes') + " " + feature.getProperty('notes') + " " + feature.getProperty('id')
 		    if (notes.indexOf("supernode") !== -1) {
 			  url = '../assets/images/supernode-potential.svg';
+			}
+		    if (notes.indexOf("hub") !== -1) {
+			  url = '../assets/images/hub-potential.svg';
 			}
 		    if (feature.getProperty("panoramas")) {
 		      //url = '../assets/images/potentialpano.svg';
