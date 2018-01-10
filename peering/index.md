@@ -7,7 +7,7 @@ Our ASN is AS395853 and we connect to the DE-CIX internet exchange. Please [cont
 
 **Peering Policy**
 
-Our peering policy...
+NYC Mesh has an open peering policy
 
 **Peering List**
 
