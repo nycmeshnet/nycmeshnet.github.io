@@ -1,14 +1,38 @@
 ---
 layout: post
-title: "Help!"
-author: Brian
+title: "Volunteer"
 ---
 
-[We now have a dedicated page for volunteer help](/help)
+Volunteer positions-
+
+***
+**Grant application researcher and writer**
+
+Find possible grants and funds, and work on applying for them
+
+***
+
+**Install coordinator**
+
+Inventory control, coordinating install teams, identifying viable installs, streamlining installs, working with contractors.
+
+***
+
+**Install team leader**
+
+Person experienced with drilling concrete and window frames to lead rooftop installs. Laptop configuring of routers and Ethernet crimping skills are good too. Volunteers can also come along to installs to learn these skills.
+
+***
+[Email us](mailto:v@nycmesh.net) to apply
+
+Thanks!
+
+***
+
 
 **Ways you can help us:**
 
-First [email us](mailto:slack@nycmesh.net?Subject=Join%20Slack&Body=Please%20add%20me%20to%20your Slack%20group,%20thanks!) and get on our Slack group. Then pick something from the list below-
+First [sign up for our Slack group](https://slack.nycmesh.net). Then pick something from the list below-
 
 **Installers**
 
@@ -45,13 +69,4 @@ Our very successful grant writer is leaving the country. We need someone to look
 **Donate Money**
 
 [Donations](https://nycmesh.net/donate/) are tax deductible and go towards expanding our network!
-
- 
-
-
-
-
-[Email me](mailto:brian@nycmesh.net) if you have any suggestions.
-
-
 
