@@ -20,7 +20,7 @@ Inventory control, coordinating install teams, identifying viable installs, stre
 
 **Install team leader**
 
-Person experienced with drilling concrete and window frames to lead rooftop installs. Laptop configuring of routers and Ethernet crimping skills are good too. Volunteers can also come along to installs to learn these skills.
+Person experienced with drilling concrete and window frames, to lead rooftop installs. Laptop configuring of routers and Ethernet crimping skills are good too. Volunteers can also come along to installs to learn these skills.
 
 ***
 [Email us](mailto:v@nycmesh.net) to apply
