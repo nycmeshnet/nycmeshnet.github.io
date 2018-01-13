@@ -10,6 +10,8 @@ title: "Frequently asked questions"
 [Why should I join the mesh now?](#why-join)   
 [Can the mesh cover the whole country?](#coverage)   
 [Are you an internet Service Provider (ISP)?](#isp)   
+[What is a node?](#node)  
+[What is the difference between a router and an antenna?](#router)  
 [What software/firmware do you use?](#firmware)   
 [Can I use my own different router?](#other-router)   
 [Can I install a router if I have no view or rooftop access?](#no-view)   
@@ -64,6 +66,16 @@ Yes, there is a mesh network called "Guifi" in Spain that covers a large part of
 No, we are not an ISP, we are a community that shares ownership of a network. Collectively we have our own internet connection at our "supernode". Also some of our members share their own internet connections. 
 
 Our supernode peers with other networks at an internet exchange point and provides access to the internet without traditional ISPs. We are a non-profit project of the New York chapter of the Internet Society (ISOC-NY).
+
+## <a name="node"></a>What is a node?
+
+A node is a location with one or more routers or antennas, i.e. it is usually a dot on our map. Some dots have multiple apartments with installs in the same building so that would be one node per apartment. A supernode will have multiple radios, routers, antennas and maybe a server too.
+
+## <a name="router"></a>What is the difference between a router and an antenna?
+
+Most of the devices we use, such as a LiteBeam or NanoStation are self-contained so they have an antenna, radio and ethernet router all in one. "Wireless router with antenna" is too long so we usually call the whole thing a router, just like your home wifi "router". Sector antennas usually have a separate radio plugged into the back of them so we call those antennas (although some sectors are self-contained). 
+
+Ubiquiti call their self-contained AirFiber a "radio", and others call an AirFiber a router or an antenna, so yes everyone is confused about what term to use.
 
 ## <a name="firmware"></a>What software/firmware do you use?
 
