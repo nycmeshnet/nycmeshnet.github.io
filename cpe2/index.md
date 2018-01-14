@@ -52,8 +52,7 @@ Click the "Settings" button (gear icon) on the left to give you Wireless | Netwo
 
 **Pairing with Supernode2**
 
-In the ["Wireless" settings](./litebeam/wireless.png)) click "Select" and choose the strongest "nycmesh-english-kills" signal. The strongest signal has the lower number. -80db would be very weak, -50db would be very strong. 
-
+In the ["Wireless" settings](./litebeam/wireless.png) click "Select" and choose the strongest "nycmesh-english-kills" signal. The strongest signal has the lower number. -80db would be very weak, -50db would be very strong. 
 
 **Antenna Alignment**
 

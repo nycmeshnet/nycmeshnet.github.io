@@ -56,7 +56,7 @@ You can download this example [LiteBeamAC config](./litebeam/WA-F09FC242795C.cfg
 
 **Pairing with Supernode1**
 
-In the ["Wireless" settings](./litebeam/wireless.png)) click "Select" and choose the strongest "nycmesh prism1" signal. The strongest signal has the lower number. -80db would be very weak, -50db would be very strong. 
+In the ["Wireless" settings](./litebeam/wireless.png) click "Select" and choose the strongest "nycmesh prism1" signal. The strongest signal has the lower number. -80db would be very weak, -50db would be very strong. 
 
 The Prism has 3 radios. You need to select the strongest. **s1** faces North, **s2** and **s3** face north east. East Village would probably be s1 and LES and Alphabet City would probably be "s2". "s3" is towards Williamsburg. Chinatown could be any of the radios.
 
