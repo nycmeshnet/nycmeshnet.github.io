@@ -21,9 +21,9 @@ title: "Outreach Collateral"
 
 **Letter Templates**
 
-[Sample introductory letter for businesses/community organizations pdf](SiteSurveyLetter-Community-Template.pdf) -[(source file)](https://docs.google.com/document/d/1_BNWaigV6LNK3PMdgQ8bhw6EDUueLUpRGxrPGZjyl2o/edit?usp=sharing)
+[Sample introductory letter for businesses/community organizations](https://docs.google.com/document/d/1_BNWaigV6LNK3PMdgQ8bhw6EDUueLUpRGxrPGZjyl2o/edit?usp=sharing)
 
-[Proposal to building management/landlord] -[(source file)](https://docs.google.com/document/d/1hmB5p-Zebi5frNimiwAoC7E-nAoWJGc49R2tNQW010Q/edit?usp=sharing)
+[Proposal to building management/landlord](TEMPLATE - Landlord Letter.docx)
 
 
 **Our logo**
