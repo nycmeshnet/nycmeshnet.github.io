@@ -9,13 +9,13 @@ title: "Outreach Collateral"
 
 [General one-page flyer pdf](leaflet-bw.pdf) -[(source file)](leaflet-rtfd.zip)
 
-[Canva flyer source](https://www.canva.com/design/DACYK6N7KDg/B-S2_jlWRSAA5lwRH376Eg/edit)
+[Brochure: Join NYC Mesh](NYC Mesh Brochure_01.jpg)
 
-[Canva flyer 2 source](https://www.canva.com/design/DACa3qsxrgw/4POR0AkHXhoBTjAb5PWfWA/edit)
+[Brochure 2: Join NYC Mesh](NYC Mesh Brochure_02.jpg)
 
-[Old building leaflet](building-leaflet.pdf) -[(source file)](building-leaflet.rtfd.zip)
+[One-Page flyer - old](building-leaflet.pdf) -[(source file)](building-leaflet.rtfd.zip)
 
-[Brochure mail-out](meshmail.pdf)
+[Tri-fold brochure](meshmail.pdf)
 
 [Church handout](church.pdf) -[(source file)](https://docs.google.com/document/d/1duBRyzncVxuODrXyH7ooDki2LEmwcyuOtkZJjcC3loo/edit?usp=sharing)
 
