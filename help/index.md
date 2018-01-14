@@ -12,7 +12,7 @@ It ain't cheap and we need $$ to expand.
 ***
 
 **Install Team [#installs](https://nycmesh.slack.com/messages/installs)**
-The involves climbing on roofs, drilling holes, running ethernet cable, crimping cable, antenna alignment, antenna channel selection. 
+This involves climbing on roofs, drilling holes, running ethernet cable, crimping cable, antenna alignment, antenna channel selection. 
 
 Install coordinator: Inventory control, coordinating install teams, identifying viable installs, streamlining installs, working with contractors.
 
@@ -29,16 +29,22 @@ Do you know Icinga or Nagios? Know how to write bash scripts? Help us by monitor
 
 **Neighborhood Organizers and Internet Gateways [#neighborhoods](https://nycmesh.slack.com/messages/neighborhoods)**
 For sharing all neighborhood specific information.  
-Internet gateway: Did you set up a node on your rooftop? Share it here to connect with your neighbors! Chances are - there is someone across the street looking to pair up.  
-Organizers: Distribute leaflets and help organize events in your neighborhood. Get your local community centers involved.
+
+Internet gateway: Did you set up a node on your rooftop? Share it here to connect with your neighbors! Chances are high that someone across the street is looking to pair up.  
+
+Organizers: Distribute leaflets and help organize events in your neighborhood. Get your local community centers involved. Educate your neighbors and local businesses about the network.
 
 ***
 
 **Hackers [#hardware](https://nycmesh.slack.com/messages/hardware) and [#software](https://nycmesh.slack.com/messages/software)**
 Get our firmware running on more devices. We need support for cheap 2.4GHz and dual band routers. Clone our [nycmeshfeed](https://github.com/nycmeshnet/nycmeshfeed) on our [github](https://github.com/nycmeshnet).
 
-**Donate Space**
-We need a space to store cable and antennas and prepare installs.
+***
+
+**Donate Space [#hq](https://nycmesh.slack.com/messages/hq)**
+We need a space to store equipment (cables and antennas), prepare installs, and host a monthly MeetUp.
+
+***
 
 **Donate Money**
 [Donations](https://nycmesh.net/donate/) are tax deductible and go towards expanding our network!
