@@ -11,7 +11,7 @@ It ain't cheap and we need $$ to expand.
 
 ***
 
-**Install Team [#installs](https://nycmesh.slack.com/messages/installs)**
+**Install Team**
 This involves climbing on roofs, drilling holes, running ethernet cable, crimping cable, antenna alignment, antenna channel selection. 
 
 Install coordinator: Inventory control, coordinating install teams, identifying viable installs, streamlining installs, working with contractors.
@@ -19,6 +19,8 @@ Install coordinator: Inventory control, coordinating install teams, identifying 
 Install team leader: Person experienced with drilling concrete and window frames, to lead rooftop installs. Laptop configuring of routers and Ethernet crimping skills are good too. Volunteers can also come along to installs to learn these skills.
 
 Install planner: We have hundreds of node applications. See if you can join the rooftops together on our [map](https://nycmesh.net/map/) and plan an install. This takes lots of emailing and phone calls.
+
+Email [contact@nycmesh.net](contact@nycmesh.net)
 
 ***
 
