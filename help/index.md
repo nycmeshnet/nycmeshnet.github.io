@@ -43,6 +43,11 @@ Get our firmware running on more devices. We need support for cheap 2.4GHz and d
 
 ***
 
+**Marketing [#outreach](https://nycmesh.slack.com/messages/outreach)** 
+Leaflets, press... Help us get the word out to our non-technical friends and neighbors. 
+
+***
+
 **Donate Space [#hq](https://nycmesh.slack.com/messages/hq)**
 We need a space to store equipment (cables and antennas), prepare installs, and host a monthly MeetUp.
 
