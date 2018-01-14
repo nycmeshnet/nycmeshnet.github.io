@@ -38,7 +38,7 @@ Organizers: Distribute leaflets and help organize events in your neighborhood. G
 
 ***
 
-**Hackers [#hardware](https://nycmesh.slack.com/messages/hardware) and [#software](https://nycmesh.slack.com/messages/software)**
+**Hackers [#hardware](https://nycmesh.slack.com/messages/hardware) and [#software](https://nycmesh.slack.com/messages/software-firmware)**
 Get our firmware running on more devices. We need support for cheap 2.4GHz and dual band routers. Clone our [nycmeshfeed](https://github.com/nycmeshnet/nycmeshfeed) on our [github](https://github.com/nycmeshnet).
 
 ***
