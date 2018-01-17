@@ -109,7 +109,8 @@
        initMap()
     }
 
-   function wordSearch(query, searchText, nodeNum, active) {
+   function wordSearch(query, searchText, nodeNum, active, pano) {
+	query = query.trim()	
 	if (query.includes("active")){
 		if (!active){
 			return false
@@ -122,6 +123,15 @@
 				return false
 		}else{
 			if (query == "potential"){return true}
+		}
+	}
+	if (query.includes("pano")){
+		if (!pano){
+			return false
+		}else{
+			if (query == "pano"){return true}
+			if (query == "panorama"){return true}
+			searchText = searchText+" "+"pano"+" "+"panorama"
 		}
 	}
 	var words = query.trim().toLowerCase().split(/[ ,]+/)
@@ -251,9 +261,10 @@
 
         //changing icon opacity to show it has panoramas, also set supernode icon
          activeNodesLayer.setStyle(function (feature) {
-		    var url = '../assets/images/active.svg';
-		    var opacity = 0.5;
-		    var visible = true;
+		    var url = '../assets/images/active.svg'
+		    var opacity = 0.5
+		    var visible = true
+		    var pano = false
 		    var notes = feature.getProperty("notes").toLowerCase()
 		    var nodeNum = feature.getProperty('id')
 		    var searchText = feature.getProperty('otherNodes') + " " + feature.getProperty('notes') + " " + nodeNum
@@ -264,11 +275,12 @@
 			  url = '../assets/images/hub.svg';
 			}
 		    if (feature.getProperty("panoramas")) {
-		      //url = '../assets/images/activepano.svg';
+		      //url = '../assets/images/activepano.svg'
+		      pano = true
 		      opacity = 1
 		    }
 		    if (searchQuery.length > 0) {
-		      if (!wordSearch(searchQuery, searchText, nodeNum, true)) {
+		      if (!wordSearch(searchQuery, searchText, nodeNum, true, pano)) {
 		      visible = false
 			    } else { 
 				  //make search result more visible
@@ -289,8 +301,9 @@
 
          potentialNodesLayer.setStyle(function (feature) {
 		    var url = '../assets/images/potential.svg';
-		    var opacity = 0.5;
-		    var visible = true;
+		    var opacity = 0.5
+		    var visible = true
+		    var pano = false
 			var notes = feature.getProperty("notes").toLowerCase()
 		    var nodeNum = feature.getProperty('id')
 		    var searchText = feature.getProperty('otherNodes') + " " + feature.getProperty('notes') + " " + nodeNum
@@ -301,11 +314,12 @@
 			  url = '../assets/images/hub-potential.svg';
 			}
 		    if (feature.getProperty("panoramas")) {
-		      //url = '../assets/images/potentialpano.svg';
+		      //url = '../assets/images/potentialpano.svg'
+		      pano = true
 		      opacity = 1
 		    }
 		    if (searchQuery.length > 0) {
-		      if (!wordSearch(searchQuery, searchText, nodeNum, false)) {
+		      if (!wordSearch(searchQuery, searchText, nodeNum, false, pano)) {
 		      visible = false
 			    } else { 
 				  //make search result more visible

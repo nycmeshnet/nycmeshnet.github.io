@@ -5,7 +5,7 @@ title: "Map Help"
 
 The simple way to use search is to just enter the node number you are looking for, and all the other nodes will be hidden.
 
-There's also few key words in the search- active, potential, supernode and hub. You can use these in combination- "active hub" etc. There's also ">" and "<" for searching for node numbers. To search for more recent nodes you could search "> 1000" or search for old potential nodes- "< 500 potential". Search also searches details about the node that are visible in the infobox.
+There's also few key words in the search- active, potential, supernode, hub and panorama ("pano" for short). You can use these in combination- "active hub" etc. There's also ">" and "<" for searching for node numbers. To search for more recent nodes you could search "> 1000" or search for old potential nodes- "< 500 potential". Search also searches details about the node that are visible in the infobox.
 
 
 **Example searches-**
@@ -32,6 +32,18 @@ Show only potential nodes-
 
 ```
 potential
+```
+
+Nodes with panorama photos
+
+```
+panorama
+```
+
+Potential nodes with panoramas-
+
+```
+potential pano
 ```
 
 Active supernodes
