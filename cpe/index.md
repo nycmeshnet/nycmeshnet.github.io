@@ -1,5 +1,5 @@
 ---
-layout: markdown
+layout: post
 title: "Supernode CPE"
 ---
 
