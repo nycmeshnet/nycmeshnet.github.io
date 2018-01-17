@@ -6,6 +6,16 @@ author: Brian
 Presentations-
 
 ***
+**State of the Mesh, 2018**
+
+[video](https://youtu.be/ykOqIh5Mt4Y)
+
+[Brian's slides "State of the Mesh"](https://goo.gl/cSQWbe)  
+[Lisa's slides- "Outreach"](https://goo.gl/uGD2yp)  
+[Zach's slides- "Master Plan"](https://goo.gl/tX412L)  
+[Jesse's slides- "Supernode2"](https://goo.gl/X8P6sE)  
+
+***
 **Installs and outreach, July 11 2017**
 
 [Slides](https://goo.gl/GgBxyv)
