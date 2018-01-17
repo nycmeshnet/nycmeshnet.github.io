@@ -39,7 +39,7 @@
  onsearch="clearSearch()" // clicked the clear button which triggers onsearch
  style="width: 200px"
 />
-
+<a href=help>help</a>
   <div class="content bg-white">
     <p><strong>Map of NYC Mesh nodes</strong></p>
 
@@ -109,8 +109,34 @@
        initMap()
     }
 
-   function wordSearch(query, searchText) {
+   function wordSearch(query, searchText, nodeNum, active) {
+	if (query.includes("active")){
+		if (!active){
+			return false
+		}else{
+			if (query == "active"){return true}
+		}
+	}
+	if (query.includes("potential")){
+			if (active){
+				return false
+		}else{
+			if (query == "potential"){return true}
+		}
+	}
 	var words = query.trim().toLowerCase().split(/[ ,]+/)
+	if (words[0] == ">") {
+		if (nodeNum > words[1]){
+			return true
+		}
+		return false
+	}
+	if (words[0] == "<") {
+		if (nodeNum < words[1]){
+			return true
+		}
+		return false
+	}
 	var theText = searchText.toLowerCase()
 	var i = 0
 	while (i < words.length) {
@@ -229,7 +255,8 @@
 		    var opacity = 0.5;
 		    var visible = true;
 		    var notes = feature.getProperty("notes").toLowerCase()
-		    var searchText = feature.getProperty('otherNodes') + " " + feature.getProperty('notes') + " " + feature.getProperty('id')
+		    var nodeNum = feature.getProperty('id')
+		    var searchText = feature.getProperty('otherNodes') + " " + feature.getProperty('notes') + " " + nodeNum
 		    if (notes.indexOf("supernode") !== -1) {
 			  url = '../assets/images/supernode.svg';
 			}
@@ -241,7 +268,7 @@
 		      opacity = 1
 		    }
 		    if (searchQuery.length > 0) {
-		      if (!wordSearch(searchQuery, searchText)) {
+		      if (!wordSearch(searchQuery, searchText, nodeNum, true)) {
 		      visible = false
 			    } else { 
 				  //make search result more visible
@@ -265,7 +292,8 @@
 		    var opacity = 0.5;
 		    var visible = true;
 			var notes = feature.getProperty("notes").toLowerCase()
-			var searchText = feature.getProperty('otherNodes') + " " + feature.getProperty('notes') + " " + feature.getProperty('id')
+		    var nodeNum = feature.getProperty('id')
+		    var searchText = feature.getProperty('otherNodes') + " " + feature.getProperty('notes') + " " + nodeNum
 		    if (notes.indexOf("supernode") !== -1) {
 			  url = '../assets/images/supernode-potential.svg';
 			}
@@ -277,7 +305,7 @@
 		      opacity = 1
 		    }
 		    if (searchQuery.length > 0) {
-		      if (!wordSearch(searchQuery, searchText)) {
+		      if (!wordSearch(searchQuery, searchText, nodeNum, false)) {
 		      visible = false
 			    } else { 
 				  //make search result more visible

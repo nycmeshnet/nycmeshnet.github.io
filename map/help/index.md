@@ -1,0 +1,70 @@
+---
+layout: post
+title: "Map Help"
+---
+
+Example searches-
+
+The simple way to use search is to just enter the node number you are looking for and all the other nodes will be hidden.
+
+There's also few key words in the search- active, potential, supernode and hub. You can use these in combination- "active hub" etc. There's also ">" and "<" for searching for node numbers. To search for more recent nodes you could search "> 1000" or search for old potential nodes- "< 500 potential". Search also searches details about the node that are visible in the infobox.
+
+Search for single node
+
+```
+227
+```
+
+Search for multiple node numbers
+
+```
+34 456 200
+```
+
+Show only active nodes-
+
+```
+active
+```
+
+Show only potential nodes-
+
+```
+potential
+```
+
+Active supernodes
+
+```
+supernode active
+```
+
+Node numbers > 1000
+
+```
+> 1000
+```
+
+Node numbers < 1000 and also active
+
+```
+< 1000 active
+```
+
+Brian's node
+
+```
+brian
+```
+
+Potential hub nodes
+
+```
+potential hub
+```
+
+
+
+
+
+ 
