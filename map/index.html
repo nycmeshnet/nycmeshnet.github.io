@@ -125,6 +125,14 @@
 			if (query == "potential"){return true}
 		}
 	}
+	if (query.includes("nopano")){
+		if (pano){
+			return false
+		}else{
+			if (query == "nopano"){return true}
+			searchText = searchText+" "+"nopano"
+		}
+	}else{
 	if (query.includes("pano")){
 		if (!pano){
 			return false
@@ -133,7 +141,8 @@
 			if (query == "panorama"){return true}
 			searchText = searchText+" "+"pano"+" "+"panorama"
 		}
-	}
+	}}
+	
 	var words = query.trim().toLowerCase().split(/[ ,]+/)
 	if (words[0] == ">") {
 		if (nodeNum > words[1]){
