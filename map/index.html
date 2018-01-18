@@ -110,7 +110,12 @@
     }
 
    function wordSearch(query, searchText, nodeNum, active, pano) {
-	query = query.trim()	
+	query = query.trim()
+	if (query.includes("roof")){
+		if (!searchText.includes("roof")){
+			return false
+		}
+	}
 	if (query.includes("active")){
 		if (!active){
 			return false
