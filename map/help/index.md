@@ -58,10 +58,10 @@ Node numbers > 1000
 > 1000
 ```
 
-Node numbers < 1000 and also active
+Active node, number < 1000, rooftop with panorama photo
 
 ```
-< 1000 active
+< 1000 active roof pano
 ```
 
 Brian's node
