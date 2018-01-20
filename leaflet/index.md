@@ -23,7 +23,7 @@ title: "Outreach Collateral"
 
 [Sample introductory letter for businesses/community organizations](https://docs.google.com/document/d/1_BNWaigV6LNK3PMdgQ8bhw6EDUueLUpRGxrPGZjyl2o/edit?usp=sharing)
 
-[Proposal to building management/landlord](TEMPLATE - Landlord Letter.docx)
+[Proposal to building management/landlord](https://docs.google.com/document/d/1hmB5p-Zebi5frNimiwAoC7E-nAoWJGc49R2tNQW010Q/edit?usp=sharing)
 
 
 **Our logo**
