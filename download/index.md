@@ -28,6 +28,9 @@ Buy at B&H: (free delivery)
 **Download the firmware and flash your router**
 
 **NanoStation NSM5 instructions**  
+
+If you want to connect to a public access point, such as a Link NYC kiosk, there is no need to flash the router. Just follow [these instructions](../blog/public-access-points/).
+
   (for old NSM5s or if you are upgrading see below)  
    
   FOLLOW ALL THE STEPS OR YOU MAY PERMANENTLY BRICK THE ROUTER!  
