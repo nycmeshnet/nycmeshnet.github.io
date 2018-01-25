@@ -149,18 +149,16 @@
 	}}
 	
 	var words = query.trim().toLowerCase().split(/[ ,]+/)
-	if (words[0] == ">") {
-		if (nodeNum > words[1]){
-			return true
-		}
-		return false
+	
+	switch(words[0]) {
+	    case ">":
+	        return (nodeNum > words[1])
+	        break;
+	    case "<":
+	        return (nodeNum < words[1])
+	        break;
 	}
-	if (words[0] == "<") {
-		if (nodeNum < words[1]){
-			return true
-		}
-		return false
-	}
+
 	var theText = searchText.toLowerCase()
 	var i = 0
 	while (i < words.length) {
@@ -208,11 +206,12 @@
             ]
           }
         ];
+        var centerLoc = {lat: 40.7281809, lng: -73.9595798}
         var styledMap = new google.maps.StyledMapType(styles,
           {name: "Styled Map"});
 
 		  var mapOptions = {
-		    center: {lat: 40.7281809, lng: -73.9595798},
+		    center: centerLoc,
 		    zoom: 13,
 		    disableDefaultUI: false,
 		    zoomControl: true,
@@ -281,6 +280,7 @@
 		    var pano = false
 		    var notes = feature.getProperty("notes").toLowerCase()
 		    var nodeNum = feature.getProperty('id')
+		    //var loc = feature.getProperty('geometry').coordinates
 		    var searchText = feature.getProperty('otherNodes') + " " + feature.getProperty('notes') + " " + nodeNum
 		    if (notes.indexOf("supernode") !== -1) {
 			  url = '../assets/images/supernode.svg';

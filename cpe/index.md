@@ -6,7 +6,8 @@ title: "Supernode CPE"
 Members can buy their own cpe on Amazon etc. We can swap it with a preconfigured one on site to save time.
 
 
-# Configuring supernode1 CPEs (line of sight to 375 Pearl St. Manhattan)
+# Configuring supernode1 CPEs  
+Line of sight to 375 Pearl St. Manhattan
 
 [For connecting to supernode 2 see here](../cpe2)
 
@@ -32,7 +33,8 @@ Reset to factory again
 
 Change the pass
 
-Click the "Settings" button (gear icon) on the left to give you Wireless | Network | Services | System
+Click the "Settings" button (gear icon) on the left to give you-  
+Wireless \| Network \| Services \| System
 
 [**Wireless settings**](./litebeam/wireless.png)    
  * Station PtMP  
@@ -42,7 +44,8 @@ Click the "Settings" button (gear icon) on the left to give you Wireless | Netwo
 	
 [**Network settings**](./litebeam/network.png)   
  * Static
- * IP 192.168.1.20  (leave as default, this will be changed later to 192.168.42.1xx)
+ * IP 192.168.1.20  
+(leave as default, this will be changed later to 192.168.42.1xx)
 	
 [**Services**](./litebeam/services.png)   
  * [x]SNMP Agent  
