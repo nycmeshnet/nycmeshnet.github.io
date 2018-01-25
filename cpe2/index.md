@@ -35,7 +35,8 @@ Click the "Settings" button (gear icon) on the left to give you Wireless | Netwo
 
 [**Wireless settings**](./litebeam/wireless.png)    
  * Station PtMP  
- * SSID: nycmesh-english-kills-east OR nycmesh-english-kills-west,  see pairing below
+ * SSID: nycmesh-english-kills-east OR nycmesh-english-kills-west,  see pairing below  
+ * WPA2 PSK: nycmeshnet
  * Antenna 23 -23dbi  
 	
 [**Network settings**](./litebeam/network.png)   
