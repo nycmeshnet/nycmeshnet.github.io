@@ -32,9 +32,10 @@ We aim to create an open, resilient, neutral network that serves both for daily 
   <p>Everybody is welcome!</p>
   {% include actionables/meetup.html %}
 <h3>Chat</h3>
-<p>Chat with the community on <a href=https://slack.nycmesh.net/ target="_blank">Slack</a>
+<p>Chat with the community on Slack</p>
+	<a href="https://slack.nycmesh.net" class="btn">Join Slack</a>
    <!-- <script async defer src="https://slack.nycmesh.net/slackin.js"></script> -->
-</p>
+
 <h3>Newsletter</h3>
   <p>Our progress via email</p>
   {% include actionables/newsletter.html %}
