@@ -10,7 +10,7 @@ Our network consists of Wi-Fi router "nodes", "supernodes" and fiber spread thro
 
 NYC Mesh is a neutral network that does not block or discriminate content. NYC Mesh does not collect, store, monitor, or log any user traffic or content that passes through our network.
 
-We can connect whole buildings by wireless for speeds between 80 Mbps up to 1 Gbps, or by fiber at 20 Gbps (20,000 Mbps). The buildings we are currently planning include co-ops, a school and housing association buildings. Fiber involves an install fee and a monthly rental. For a quote, [email us](mailto:fiber@nycmesh.net).
+We can connect whole buildings by wireless for speeds between 80 Mbps up to 1 Gbps, or by fiber at 20 Gbps (20,000 Mbps). The buildings we are currently planning include co-ops, a school and housing association buildings. Fiber involves an install fee and a monthly rental. For a quote, [email us](mailto:install@nycmesh.net).
 
 If you're a network operator, please consider peering with our open network to provide bandwidth! (<a href="/peering">Our peering policy</a>)
 
