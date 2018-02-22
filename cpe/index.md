@@ -1,11 +1,15 @@
 ---
-layout: markdown
+layout: post
 title: "Supernode CPE"
 ---
 
 Members can buy their own cpe on Amazon etc. We can swap it with a preconfigured one on site to save time.
 
-# Configuring supernode CPEs
+
+# Configuring supernode1 CPEs  
+Line of sight to 375 Pearl St. Manhattan
+
+[For connecting to supernode 2 see here](../cpe2)
 
 ## Ubiquiti Prism clients-
 
@@ -23,17 +27,14 @@ Go to System:Configuration:Reset to factory defaults and click Reset
 
 Download latest version of [AirMaxAC](https://www.ubnt.com/download/airmax-ac) for the particular hardware
 
-
-Don't use 8.1.3 or 8.1.4 firmware. This has an ethernet bug and is unusable. If it's Gen2 device downgrade to 8.1.2, if it's Gen1 device downgrade to 8.0.2 via the download page. (Go to the system tab, look at "DEVICE MODEL", if it doesn't say Gen2, it's a Gen1 unit.)
-
-
 System:Upload Firmware
 
 Reset to factory again
 
-Change the pass to our usual pass
+Change the pass
 
-Click the "Settings" button (gear icon) on the left to give you Wireless | Network | Services | System
+Click the "Settings" button (gear icon) on the left to give you-  
+Wireless \| Network \| Services \| System
 
 [**Wireless settings**](./litebeam/wireless.png)    
  * Station PtMP  
@@ -43,7 +44,8 @@ Click the "Settings" button (gear icon) on the left to give you Wireless | Netwo
 	
 [**Network settings**](./litebeam/network.png)   
  * Static
- * IP 192.168.1.20  (leave as default, this will be changed later to 192.168.42.1xx)
+ * IP 192.168.1.20  
+(leave as default, this will be changed later to 192.168.42.1xx)
 	
 [**Services**](./litebeam/services.png)   
  * [x]SNMP Agent  
@@ -57,15 +59,22 @@ You can download this example [LiteBeamAC config](./litebeam/WA-F09FC242795C.cfg
 
 **Pairing with Supernode1**
 
-In the ["Wireless" settings](./litebeam/wireless.png)) click "Select" and choose the strongest "nycmesh prism1" signal. The strongest signal has the lower number. -80db would be very weak, -50db would be very strong. 
+In the ["Wireless" settings](./litebeam/wireless.png) click "Select" and choose the strongest "nycmesh prism" signal. The strongest signal has the lower number. -80db would be very weak, -50db would be very strong. 
 
-The Prism has 3 radios. You need to select the strongest. **s1** faces North, **s2** and **s3** face north east. East Village would probably be s1 and LES and Alphabet City would probably be "s2". "s3" is towards Williamsburg. Chinatown could be any of the radios.
+Gen1 LiteBeams can only see s1 and s2 sectors, unless they are unlocked (giving them gen2 specs) 
+Gen2 can see s2, s3 and prism2
+
+Ask us for the unlock codes for Gen1
+
+Prism1 has 3 radios. You need to select the strongest. **s1** faces North, **s2** and **s3** face north east. East Village would probably be s1 and LES and Alphabet City would probably be "s2". "s3" is towards Williamsburg. Chinatown could be any of the radios.
+
+Prism2 has one radio facing North. It is very strong in Chinatown
 
 **Antenna Alignment**
 
 There is a visual level built into the antenna make sure the bubble is in the middle.
 
-There is a "tools" menu in the upper right of the interface. Click this and select Antenna alignment. First align the antenna by pointing it directly at the supernode. Now move it slightly up or down to get a stronger signal. Once you have the vertical alignment, do the same by moving the antenna horizontally.
+There is a "tools" menu in the upper right of the interface. Click this and select Antenna alignment. First align the antenna by pointing it directly at the supernode. Now move it slightly up or down to get a stronger signal. Once you have the vertical alignment, do the same by moving the antenna horizontally. The sound option is very helpful for this.
 
 **Download test**
 

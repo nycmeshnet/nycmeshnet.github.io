@@ -39,18 +39,19 @@
  onsearch="clearSearch()" // clicked the clear button which triggers onsearch
  style="width: 200px"
 />
-
+<a href=help>help</a>
   <div class="content bg-white">
     <p><strong>Map of NYC Mesh nodes</strong></p>
 
-      <p>This map shows our node locations. The colored markers are currently active nodes. The gray markers are node requests from the “Join” form. We are currently working to turn these into active nodes. Click the opaque markers to see panorama photos. The light-blue dots are public access points (LinkNYC kiosks) that can be used as gateways. We have around 50 active nodes and we are adding about one per week.</p>
+      <p>This map shows our node locations. The colored markers are currently active nodes. The gray markers are node requests from the “Join” form. We are currently working to turn these into active nodes. Click the opaque markers to see panorama photos. The light-blue dots are public access points (LinkNYC kiosks) that can be used as gateways. We have over 100 active nodes and we are adding about three per week.</p>
 	
+	  <p>The red lines are over-the-air connections. Gray lines are speculative connections.
 
-       <p>Most of our active nodes are in downtown Manhattan from Chinatown to the East Village. If you live in this area we can probably connect you.</p>
+       <p>Most of our active nodes are in downtown Manhattan from Chinatown to the East Village. If you live in this area we can probably connect you. Supernode2 in Brooklyn is now online in the English Kills area. This supernode is starting to connect people in East Williamsburg and Bushwick.
 	
 	   <p>We are very interested in finding people from other parts of the city that are willing to build and maintain networks for their neighborhood! We will give you lots of help in this. If you would like to volunteer for your neighborhood please <a href="mailto:nycmeshmail@gmail.com">email us</a>.</p>
 
-      <p>Supernode2 in Brooklyn is back online!</p>
+      <p>
 
       
 
@@ -108,22 +109,66 @@
        initMap()
     }
 
-    function containsSearch(query, id, notes) {
-	if (new RegExp('\\b' + String(id) + '\\b').test(String(query))) {
-		return true
+   function wordSearch(query, searchText, nodeNum, active, pano) {
+	query = query.trim()
+	if (query.includes("roof")){
+		if (!searchText.includes("roof")){
+			return false
+		}
 	}
-	return new RegExp('\\b' + String(query) + '\\b', 'i').test(String(notes))
+	if (query.includes("active")){
+		if (!active){
+			return false
+		}else{
+			if (query == "active"){return true}
+		}
+	}
+	if (query.includes("potential")){
+			if (active){
+				return false
+		}else{
+			if (query == "potential"){return true}
+		}
+	}
+	if (query.includes("nopano")){
+		if (pano){
+			return false
+		}else{
+			if (query == "nopano"){return true}
+			searchText = searchText+" "+"nopano"
+		}
+	}else{
+	if (query.includes("pano")){
+		if (!pano){
+			return false
+		}else{
+			if (query == "pano"){return true}
+			if (query == "panorama"){return true}
+			searchText = searchText+" "+"pano"+" "+"panorama"
+		}
+	}}
+	
+	var words = query.trim().toLowerCase().split(/[ ,]+/)
+	
+	switch(words[0]) {
+	    case ">":
+	        return (nodeNum > words[1])
+	        break;
+	    case "<":
+	        return (nodeNum < words[1])
+	        break;
+	}
+
+	var theText = searchText.toLowerCase()
+	var i = 0
+	while (i < words.length) {
+	    if (new RegExp('\\b' + words[i] + '\\b').test(String(theText))) {
+			return true
+		}
+	    i++
+	}
 }
     
-    // old search
-	function matchesSearch(query, id) {
-	  if (String(id) === String(query))
-	    return true
-	  // var queryIsSupernode = String(query) === "supernode" || String(query) === "Supernode"
-	  // if (queryIsSupernode && String(id) == String(227))
-	  //   return true
-	  return false
-	}
 
       function initMap() {
         var styles = [
@@ -161,11 +206,12 @@
             ]
           }
         ];
+        var centerLoc = {lat: 40.7281809, lng: -73.9595798}
         var styledMap = new google.maps.StyledMapType(styles,
           {name: "Styled Map"});
 
 		  var mapOptions = {
-		    center: {lat: 40.7281809, lng: -73.9595798},
+		    center: centerLoc,
 		    zoom: 13,
 		    disableDefaultUI: false,
 		    zoomControl: true,
@@ -228,19 +274,27 @@
 
         //changing icon opacity to show it has panoramas, also set supernode icon
          activeNodesLayer.setStyle(function (feature) {
-		    var url = '../assets/images/active.svg';
-		    var opacity = 0.5;
-		    var visible = true;
+		    var url = '../assets/images/active.svg'
+		    var opacity = 0.5
+		    var visible = true
+		    var pano = false
 		    var notes = feature.getProperty("notes").toLowerCase()
+		    var nodeNum = feature.getProperty('id')
+		    //var loc = feature.getProperty('geometry').coordinates
+		    var searchText = feature.getProperty('otherNodes') + " " + feature.getProperty('notes') + " " + nodeNum
 		    if (notes.indexOf("supernode") !== -1) {
 			  url = '../assets/images/supernode.svg';
 			}
+		    if (notes.indexOf("hub") !== -1) {
+			  url = '../assets/images/hub.svg';
+			}
 		    if (feature.getProperty("panoramas")) {
-		      //url = '../assets/images/activepano.svg';
+		      //url = '../assets/images/activepano.svg'
+		      pano = true
 		      opacity = 1
 		    }
 		    if (searchQuery.length > 0) {
-		      if (!containsSearch(searchQuery, feature.getProperty('id'), feature.getProperty('otherNodes'), feature.getProperty('notes'))) {
+		      if (!wordSearch(searchQuery, searchText, nodeNum, true, pano)) {
 		      visible = false
 			    } else { 
 				  //make search result more visible
@@ -261,18 +315,25 @@
 
          potentialNodesLayer.setStyle(function (feature) {
 		    var url = '../assets/images/potential.svg';
-		    var opacity = 0.5;
-		    var visible = true;
+		    var opacity = 0.5
+		    var visible = true
+		    var pano = false
 			var notes = feature.getProperty("notes").toLowerCase()
+		    var nodeNum = feature.getProperty('id')
+		    var searchText = feature.getProperty('otherNodes') + " " + feature.getProperty('notes') + " " + nodeNum
 		    if (notes.indexOf("supernode") !== -1) {
 			  url = '../assets/images/supernode-potential.svg';
 			}
+		    if (notes.indexOf("hub") !== -1) {
+			  url = '../assets/images/hub-potential.svg';
+			}
 		    if (feature.getProperty("panoramas")) {
-		      //url = '../assets/images/potentialpano.svg';
+		      //url = '../assets/images/potentialpano.svg'
+		      pano = true
 		      opacity = 1
 		    }
 		    if (searchQuery.length > 0) {
-		      if (!containsSearch(searchQuery, feature.getProperty('id'), feature.getProperty('otherNodes'), feature.getProperty('notes'))) {
+		      if (!wordSearch(searchQuery, searchText, nodeNum, false, pano)) {
 		      visible = false
 			    } else { 
 				  //make search result more visible

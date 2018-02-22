@@ -27,7 +27,8 @@
 [href^="https://twitter.com/intent/tweet?"],
 [href^="https://twitter.com/share?"],
 .container > .infoBoxList > .shareInfoBox
-{display:none !important;}</style></head>
+{display:none !important;}
+.w2 { width: 50px }</style></head>
 
 <body class="blog bg-near-white ">
   <div id="donatemap">
@@ -56,7 +57,8 @@
 
     </div>
 
-    <h1>Install Payment</h1> Thank you for installing a mesh node!
+    <h1>Install Payment</h1> 
+    Thank you for installing a mesh node!
     <p class="sig">
     <!-- <img src="http://nycmeshnet.github.io/images/" alt=" photo">  -->
 
@@ -68,90 +70,52 @@
 </nav>
 
 <!-- Stripe Donation -->
-<div id="donation-amounts" class="dt w-100 f3 center bg-near-black white serif">
-  <p class="f5 tc pt4 i">
-    - Choose a monthly amount -
-  </p>
-  <div class="mw6 mt2 mb3 tc f2 center">
-    <div class="dt center">
-      <div class="w1">
+<div id="donation-amounts" class="dt w-100 mw8 f3 center pv4 ph3 f4">
+  <p class="bb pb4 tl">The NYC Mesh install costs $50 to be paid to the installer and $110 to be paid here for parts and equipment.</p>
+  <div class="flex flex-row justify-between">
+    <p class="pv4 nowrap">Fee for install parts and equipment</p>
+    <div class="w-100 h2 bw1 bb bt-0 bl-0 br-0 b--dotted"></div>
+    <p class="pv4">$</p><input id="custom" onfocus="setAmount('custom')" type"number" maxlength="7" name="donation-amount" value="110" class="bn ph0 w2 overflow-visible" >
+  </div>
+  <div class="tl">
+    <form>
+      <p>Please also subscribe me to a monthly donation (starting next month)</p>
+      <div>
+        <div>
+          <input class="w1" type="radio" id="contactChoice1"
+           name="contact" value="email" checked="checked" onclick="setSubscription('twenty-monthly')">
+          <label class="fw4" for="contactChoice1">$20</label>
+        </div>
+
+        <div>
+          <input class="w1" type="radio" id="contactChoice2"
+           name="contact" value="phone" onclick="setSubscription('fifty-monthly')">
+          <label class="fw4" for="contactChoice2">$50</label>
+        </div>
+
+        <div>
+          <input class="w1" type="radio" id="contactChoice3"
+           name="contact" value="mail" onclick="setSubscription('hundred-monthly')">
+          <label class="fw4" for="contactChoice3">$100 (business)</label>
+        </div>
+
+        <div>
+          <input class="w1" type="radio" id="contactChoice3"
+           name="contact" value="mail" onclick="setSubscription(undefined)">
+          <label class="fw4" for="contactChoice3">I do not wish to donate</label>
+        </div>
       </div>
-      <div id="twenty-monthly" onclick="setAmount('twenty-monthly')" class="button dtc mh2 w4 br2 bg-dark-gray">
-        <p class="pv0 mv3">$20</p>
-      </div>
-      <div class="w1">
-      </div>
-      <div id="fifty-monthly" onclick="setAmount('fifty-monthly')" class="button dtc mh2 w4 br2 bg-dark-gray">
-        <p class="pv0 mv3">$50</p>
-      </div>
-      <div class="w1">
-      </div>
-      <div id="hundred-monthly" onclick="setAmount('hundred-monthly')" class="button dtc mh2 w4 br2 bg-dark-gray">
-        <p class="pv0 mv3">$100</p>
-      </div>
-      <div class="w1">
-      </div>
-    </div>
+    </form>
   </div>
 
-  <p class="f5 tc pt4 i">
-    - Or make a one time donation -
-  </p>
-  <div class="mw6 mt2 mb3 tc f2 center">
-    <input id="custom" onfocus="setAmount('custom')" type"number" maxlength="7" name="donation-amount" placeholder="$" class="tc bg-dark-gray white w4 h3 ph3 br2 bw0" style="width: 140px;">
-
-    <div  class="pt4 mt4 mw5 f4 center">
-      <input id="payButton" type="submit" value="Pay with card" class="input-reset bw0 w-100 fw5 br3 pa3 sans-serif white">
-      </input>
-    </div>
+  <div class="flex flex-row justify-end w-100 mb5">
+  <div  class="pt4 mt4 mw5 w-100 f4 self-end">
+    <input id="payButton" type="submit" value="Pay with card" class="input-reset bw0 w-100 fw5 br3 pa3 sans-serif white">
+    </input>
   </div>
-
-  <!-- Donation Details -->
-  <div class="gray tc serif pb3 pt2 ph4 mw6 center">
-    <p class="f6 lh-copy i">
-      All donations will go towards our expenses, and are tax deductible through our 501(c)(3) fiscal sponsor, <a class="no-underline light-silver" href="https://isoc-ny.org">ISOC-NY</a>.
-    </p>
-  </div>	
 </div>
 
-<!-- Letter -->
-<div class="bg-near-white black-80 tc serif mw6 ph4 pb3 center">
-	Checks should be made out to <b>"Internet Society New York"</b><br>memo:"NYC Mesh", and mailed to:<br><br>ISOC-NY (NYC Mesh)<br>PO Box 1599<br>Madison Square Station<br> New York, NY 10159
-  <p class="f3 mt4 pt3 lh-title">
-    NYC Mesh has big plans!
-  </p>
-  <p class="f5 lh-copy">
-    We've installed one rooftop sector antenna at a large data center. This has line of sight to downtown Manhattan and parts of Brooklyn. We plan to install more antennas to increase our range.
-  </p>
-  <p class="f5 lh-copy">
-    The "supernode" allows us to provide a gigabit of bandwidth to our existing network. This is a critical step in building a high capacity backbone to support further expansion.
-  </p>
-  <p class="f5 lh-copy">
-    But hardware, roof-rights and rack space cost money.<br>
-    All told, we will need around $12,000 per year to maintain the supernode.<br>
-  </p>
-  <p class="f5 lh-copy">
-    Please consider making a donation.
-  </p>
-  <p class="f5 lh-copy">
-    Thanks,<br>
-    The Team<br>
-    NYC Mesh<br>
-  </p>
-    <a href="mailto:payment@nycmesh.net">Please email us</a> for donation questions or changes to your subscription.<br>
-<hr>
-<p class="f3 mt4 pt3 lh-title">
-Donor List:<br></p>
-<b>Organizations</b><br>
-<a href="http://www.internetsociety.org/">ISOC</a> "Beyond the Net" 2016<br>
-<a href="https://de-cix.net/">DE-CIX</a> "Premium network interconnection services"<br>
-<a href="https://www.packet.net/">Packet Host Inc.</a> "Cloud delivered on bare metal"<br>
-<a href="http://www.microoffice.com/">MicroOffice</a> "Office space for entrepreneurs"<br>
-<br>
-<b>Individuals</b><br>
-Oliver Baer
 
-</div>
   <footer class="footer">
 	<a href="/">Home</a>
   <div class="mainnav">
@@ -183,7 +147,9 @@ Oliver Baer
 
 <!-- handle form input -->
   <script>
-    var donationAmount, donationType, customAmount;
+    var donationAmount = 11000
+    var subscriptionPlan = 'twenty-monthly'
+    var donationType, customAmount;
     var customDonation = document.getElementById('custom');
     customDonation.onkeypress = function(e) {
       // not a number
@@ -205,21 +171,17 @@ Oliver Baer
       donationAmount = customAmount;
     })
 
+    function setSubscription(plan) {
+      subscriptionPlan = plan;
+    }
+
     function setAmount(amount) {
       // deselect selected
       var selected = document.getElementById(donationAmount) || document.getElementById('custom');
-      if (selected) {
-        if (selected.id == 'custom')
-          selected.className = 'tc bg-dark-gray white w4 h3 ph3 br2 bw0'
-        else
-          selected.className = 'button dtc mh2 w4 br2 bg-dark-gray'
-      }
 
       // highlight choice and set amount
       var button = document.getElementById(amount);
       if (amount == 'custom') {
-        console.log(button)
-        button.className = 'tc bg-dark-gray white w4 h3 ph3 br2 bw0 selected'
         donationAmount = customAmount;
       }
       else {
@@ -235,11 +197,12 @@ Oliver Baer
 
     function token(token) {
       var request = new XMLHttpRequest();
-      request.open('POST', 'https://donate.nycmesh.net/charge', true);
+      request.open('POST', 'https://donate2.nycmesh.net/charge', true);
       request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
       request.send(JSON.stringify({
         stripeToken: token,
-        donationAmount: donationAmount
+        donationAmount: donationAmount,
+        subscriptionPlan: subscriptionPlan
       }));
 			setTimeout(function() { window.location = '/donate/thanks' }, 1000);
     }
@@ -266,27 +229,6 @@ Oliver Baer
           amount: donationAmount
         });
       }
-
-      else if (donationAmount == 'twenty-monthly')
-        handler.open({
-          name: 'NYC Mesh',
-          description: 'Monthly Donation',
-          amount: 2000
-        });
-
-      else if (donationAmount == 'fifty-monthly')
-        handler.open({
-          name: 'NYC Mesh',
-          description: 'Monthly Donation',
-          amount: 5000
-        });
-
-      else if (donationAmount == 'hundred-monthly')
-        handler.open({
-          name: 'NYC Mesh',
-          description: 'Monthly Donation',
-          amount: 10000
-        });
 
       else {
         alert('Please enter a valid donation amount.')

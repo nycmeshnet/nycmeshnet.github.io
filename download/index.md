@@ -9,11 +9,13 @@ First you need to enter a [new node request](../join). This will add your router
 
 To connect to the supernode, please [contact us](mailto:install@nycmesh.net) and we will advise. This usually uses a LiteBeamAC or NanoBeamAC. Configuration info is [here](/cpe).
 
-To setup a rooftop to rooftop connection you can use two NanoStation M5s. You can also just set up a public access point and aim it towards the street.
+To setup a rooftop to rooftop connection you can use two NanoStation M5s. You can also just set up a public access point and aim it towards the street. It is best to figure out exactly what kind of connection you are making before proceeding. Chat with us first to make sure.
 
 **Order a router**    
 
-* Ubiquiti NSM5 directional 5GHz (~$90 including tax)
+* Ubiquiti NSM5 directional 5GHz (~$90 including tax)  
+
+**For Supernode connections you need a different router (usually LiteBeamAC)**
 
 
 Buy on Amazon:   
@@ -26,6 +28,9 @@ Buy at B&H: (free delivery)
 **Download the firmware and flash your router**
 
 **NanoStation NSM5 instructions**  
+
+If you want to connect to a public access point, such as a Link NYC kiosk, there is no need to flash the router. Just follow [these instructions](../blog/public-access-points/).
+
   (for old NSM5s or if you are upgrading see below)  
    
   FOLLOW ALL THE STEPS OR YOU MAY PERMANENTLY BRICK THE ROUTER!  
@@ -59,6 +64,8 @@ Wait ten minutes or so. It now has a SSID name like "nycmesh 1a2b" and a random 
 * Plug an ethernet cable from LAN on your current router to LAN on the power supply, and from POE to the **secondary** input on the NanoStation. 
 
 * <a href="mailto:newnode@nycmesh.net">Email us</a> and we will check that everything is working and add you to the mesh. You must do this as we manually configure the tinc tunneling for each newly flashed router.
+
+**You must also install a watchdog script to keep the network stable**. [Here are the instructions](/blog/watchdog). <a href="mailto:newnode@nycmesh.net">Email us</a> if you are not comfortable doing this. This script will be included in the next version of our firmware.
 
 Now your router is flashed, read how to [install a NanoStation](../blog/nsm5-install/)
 

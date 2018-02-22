@@ -2153,7 +2153,7 @@ a:hover { color: #990000; }
 @media only screen and (max-height: 480px) { #map { height: 480px; } }
 @media only screen and (max-height: 320px) { #map { height: 320px; } }
 
-#donatemap { width: 100%; height: 200px; overflow: hidden; text-align: center; }
+#donatemap { width: 1500px; height: 180px; overflow: hidden; text-align: center; }
 @media only screen and (max-height: 480px) { #map { height: 480px; } }
 @media only screen and (max-height: 320px) { #map { height: 320px; } }
 

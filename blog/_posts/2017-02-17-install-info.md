@@ -8,6 +8,8 @@ We have a few different types of install. At the moment we are mostly doing inst
 
 With all rooftop installs, an antenna is mounted on the roof and an ethernet cable goes down a wall or conduit and into your apartment. We usually put the cable through a window frame or at the side of an air-conditioner. A small power adapter in your apartment will give power the antenna over the ethernet cable. Another router is needed in the apartment for your wifi connection.
 
+DIY installs are possible, or you can pay us $110 to cover hardware (basically cost) and $50 labor for an installer. Email us if you would prefer a monthly plan rather than upfront payment.
+
 **1) Supernode client**
 
 You need to be within about two miles of the Wall St. area. We can usually tell by a panorama pic whether this install will work for you.
@@ -40,6 +42,8 @@ If you want to try this yourself read this [blog post](../public-access-points).
 This is similar to supernode client but uses NanoStation M5 connected to a nearby established neighborhood network. We supply the NanoStation NSM5, antenna mount (if needed), ethernet, ethernet switch (if needed) and indoor router.
 
 $160 per apartment is due on the day of the install. We also suggest a monthly subscription of $20 to help us maintain our network.
+
+For DIY NanoStation installs [download our firmware](/download) and read our [install instructions](../nsm5-install).
 
 **4) Point to point**
 

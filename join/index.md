@@ -2,7 +2,9 @@
 layout: newnode
 title: "Join the Mesh"
 ---
-Please read our [FAQ](../faq) and the Network Commons License [(NCL.pdf)](../ncl.pdf) before filling in the Join form. Also read our [install info.](../blog/install-info/)
+**We usually reply to your Join request within 24 hours. If you did not receive a reply, check your spam folder, or [email us.](mailto:install@nycmesh.net)**
+
+**Please read our [FAQ](../faq) and the Network Commons License [(NCL.pdf)](../ncl.pdf) before filling in the Join form. Also read our [install info.](../blog/install-info/)**
 
 If you can convince your neighbors to also join, we will put you at the top of the install list. It is easier for us to do multiple installs in the one building.
 
@@ -10,11 +12,17 @@ If you can convince your neighbors to also join, we will put you at the top of t
 
 By joining the mesh now you help us grow and increase our reach across the city. This is a community project and you will be helping to create a decentralized infrastructure, free from traditional business interests.
 
-**How to buy routers**-
+**Routers**-
 
-To connect to the supernode you will need a [LiteBeamAC](https://www.amazon.com/Ubiquiti-5GHz-LiteBeam-23DBI-LBE-5AC-23-US/dp/B01ANIQCE6/) for outdoors or a NanoBeamAC for indoors. Ask us before you buy. You have to have line-of-sight to our antenna and be within 2 miles North to North East. We use the Ubiquiti firmware on these devices
+To connect to the supernode you will need a [LiteBeamAC](https://www.amazon.com/Ubiquiti-5GHz-LiteBeam-23DBI-LBE-5AC-23-US/dp/B01ANIQCE6/) for outdoors or a NanoBeamAC for indoors. Ask us before you buy.  We use the Ubiquiti firmware on these devices.
 
-We currently have two options for routers- an indoor router and a $90 outdoor router. You can buy the routers online and configure them yourself using our simple [download](../download) instructions. Otherwise, you can come to our [meetups](http://www.meetup.com/nycmesh/) where we often sell preconfigured routers that you can simply plug in.
+You have to have line-of-sight to one of our supernodes to for this type of connection-
+ 
+**Here is the [coverage map for downtown Manhattan supernode1](../panorama/227b.png)**
+
+**Here is the [coverage map for Brooklyn supernode2](../panorama/570a.jpg).**
+
+We currently have two options for non-supernode routers- an indoor router and a $90 outdoor router. You can buy the routers online and configure them yourself using our simple [download](../download) instructions. Otherwise, you can come to our [meetups](http://www.meetup.com/nycmesh/) where we often sell preconfigured routers that you can simply plug in.
 
 Here are the two router choices for local mesh connections:
 

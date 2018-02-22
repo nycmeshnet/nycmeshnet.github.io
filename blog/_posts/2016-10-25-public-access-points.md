@@ -30,7 +30,7 @@ To connect to different SSIDs go to the "Wireless" tab and "Select..." You can u
 
 Here is a video that shows how to configure AirOS for client mode yourself- [client mode using AirOS](https://www.youtube.com/watch?v=zWxAHA5PkdE)
 
-With all these gateways we get lots of questions about security. We recommend VPN services for end-to-end encryption. We will be offering that service starting in November.
+With all these gateways we get lots of questions about security. As always, https (used by most web sites) is a secure way to transmit information across wifi. We recommend using VPN services for end-to-end encryption for total security.
 
 
 
