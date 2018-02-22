@@ -58,5 +58,6 @@ We aim to create an open, resilient, neutral network that serves both for daily 
 <a href="http://twitter.com/nycmesh" target="_blank" class="btn">Follow @NYCmesh</a>
 <h3>Contact</h3>
 <a href="mailto:contact@nycmesh.net" target="_blank" class="btn">Email</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfoLYGhTJEEevdr1ViJo0YZeyoDs0vkFumB6yO1lxdqEy6h1w/viewform?usp=sf_link" target="_blank" class="btn">Support Request</a>
 </li>
 </ul>
