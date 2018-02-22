@@ -35,6 +35,9 @@ If you want to connect to a public access point, such as a Link NYC kiosk, there
    
   FOLLOW ALL THE STEPS OR YOU MAY PERMANENTLY BRICK THE ROUTER!  
 
+Firstly you need to get your NSM5 back to AirOS 5.5.
+
+* If your new NSM5 is running 6.x you need to first downgrade to [v6.0.6 beta](https://www.ubnt.com/downloads/XN-fw-internal/v6.0.6/XW.v6.0.6-beta.30875.170526.0023.bin) before downgrading again to 5.5
 * For a new NSM5, download this file to your computer- [AirOS5.5 download](http://dl.ubnt.com/firmwares/XW-fw/v5.5.10/XW.v5.5.10-u2.28005.150723.1358.bin) **You MUST downgrade from AirOS 5.6 to 5.5**
 * Plug an ethernet cable from POE on the power adapter to "main" on the NSM5 (we will switch to "secondary" later)
 * Plug from LAN on the adapter to your computer (You may need a USB ethernet adapter)
@@ -51,7 +54,7 @@ If you want to connect to a public access point, such as a Link NYC kiosk, there
 * Click "Upload"
 * There are two loading screens here, and if you don't go through both, you will irreparably break the router.
 * Wait until it reboots
-* Make sure you are now running 5.5.10 and NOT 5.6.x. Seriously. Read this. Double check. Triple check. If not, you'll break the router.
+* Make sure you are now running 5.5.10 and NOT 5.6.x or 6.x. Double check. Triple check. If not, you'll permanently break the router.
 * Download our firmware- [NSM5 XW download](http://nycmeshnet.github.io/download/NSM5-XW.html) 
 * Go to [192.168.1.20](http://192.168.1.20), login and select "System" again
 * Click "Upload Firmware: Choose File"
@@ -59,7 +62,7 @@ If you want to connect to a public access point, such as a Link NYC kiosk, there
 * Click "Upload"
 * You will get a "third-party" warning. Ignore this and click "Update"
 	
-Wait ten minutes or so. It now has a SSID name like "nycmesh 1a2b" and a random IP of the form 10.x.x.x
+Wait ten minutes or so. It now has a SSID name like "-NYC Mesh- 1a2b" and a random IP of the form 10.x.x.x
 
 * Plug an ethernet cable from LAN on your current router to LAN on the power supply, and from POE to the **secondary** input on the NanoStation. 
 
