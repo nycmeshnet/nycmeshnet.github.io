@@ -3,7 +3,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width initial-scale=1">
-	<title>Install Payment / NYC Mesh</title>
+	<title>Donate / NYC Mesh</title>
 	<meta name="description" content="a better network">
 	<link href="/mesh.ico" rel="shortcut icon" type="image/x-icon">
   <link rel="stylesheet" href="/css/tachyons.min.css"/>
@@ -27,8 +27,7 @@
 [href^="https://twitter.com/intent/tweet?"],
 [href^="https://twitter.com/share?"],
 .container > .infoBoxList > .shareInfoBox
-{display:none !important;}
-.w2 { width: 50px }</style></head>
+{display:none !important;}</style></head>
 
 <body class="blog bg-near-white ">
   <div id="donatemap">
@@ -57,8 +56,7 @@
 
     </div>
 
-    <h1>Install Payment</h1> 
-    Thank you for installing a mesh node!
+    <h1>Donate</h1> We need just <span style="color:#FF0000; font-size:34px">47</span> more small monthly subscriptions to fund our supernode!
     <p class="sig">
     <!-- <img src="http://nycmeshnet.github.io/images/" alt=" photo">  -->
 
@@ -70,51 +68,44 @@
 </nav>
 
 <!-- Stripe Donation -->
-<div id="donation-amounts" class="dt w-100 mw8 f3 center pv4 ph3 f4">
-  <p class="bb pb4 tl">The NYC Mesh install costs $50 to be paid to the installer and $110 to be paid here for parts and equipment.</p>
-  <div class="flex flex-row justify-between">
-    <p class="pv4 nowrap">Fee for install parts and equipment</p>
-    <div class="w-100 h2 bw1 bb bt-0 bl-0 br-0 b--dotted"></div>
-    <p class="pv4">$</p><input id="custom" onfocus="setAmount('custom')" type"number" maxlength="7" name="donation-amount" value="110" class="bn ph0 w2 overflow-visible" >
-  </div>
-  <div class="tl">
-    <form>
-      <p>Please also subscribe me to a monthly donation (starting next month)</p>
-      <div>
-        <div>
-          <input class="w1" type="radio" id="contactChoice1"
-           name="contact" value="email" checked="checked" onclick="setSubscription('twenty-monthly')">
-          <label class="fw4" for="contactChoice1">$20</label>
-        </div>
 
-        <div>
-          <input class="w1" type="radio" id="contactChoice2"
-           name="contact" value="phone" onclick="setSubscription('fifty-monthly')">
-          <label class="fw4" for="contactChoice2">$50</label>
-        </div>
 
-        <div>
-          <input class="w1" type="radio" id="contactChoice3"
-           name="contact" value="mail" onclick="setSubscription('hundred-monthly')">
-          <label class="fw4" for="contactChoice3">$100 (business)</label>
-        </div>
-
-        <div>
-          <input class="w1" type="radio" id="contactChoice3"
-           name="contact" value="mail" onclick="setSubscription(undefined)">
-          <label class="fw4" for="contactChoice3">I do not wish to donate</label>
-        </div>
-      </div>
-    </form>
-  </div>
-
-  <div class="flex flex-row justify-end w-100 mb5">
-  <div  class="pt4 mt4 mw5 w-100 f4 self-end">
-    <input id="payButton" type="submit" value="Pay with card" class="input-reset bw0 w-100 fw5 br3 pa3 sans-serif white">
-    </input>
+  <!-- Donation Details -->
+  <div class="gray tc serif pb3 pt2 ph4 mw6 center">
+    <p class="f6 lh-copy i">
+      All donations will go towards our expenses, and are tax deductible through our 501(c)(3) fiscal sponsor, <a class="no-underline light-silver" href="https://isoc-ny.org">ISOC-NY</a>.
+    </p>
   </div>
 </div>
 
+
+<!-- Letter -->
+<div class="bg-near-white black-80 tc serif mw6 ph4 pb3 center">
+  <p class="f3 mt4 pt3 lh-title">
+	Call us at (646) 727-0866 to make your donation by credit card!<br><br>
+	Checks should be made out to:<br><b>"Internet Society New York"</b><br>memo:"NYC Mesh", and mailed to:<br><br>ISOC-NY (NYC Mesh)<br>PO Box 1599<br>Madison Square Station<br> New York, NY 10159<br><br>
+    NYC Mesh has big plans for 2016!
+  </p>
+  <p class="f5 lh-copy">
+    We're installing a rooftop supernode at 375 Pearl Street, which houses New York's largest data center and has unique lines of sight to a third of the city.
+  </p>
+  <p class="f5 lh-copy">
+    The supernode will allow us to provide a gigabit of bandwidth to much of our existing network. This is a critical step in building a high capacity backbone to support further expansion.
+  </p>
+  <p class="f5 lh-copy">
+    But hardware, bandwidth and rack space cost money.<br>
+    All told, we will need around $10,000 to make this a reality.<br>
+  </p>
+  <p class="f5 lh-copy">
+    Please consider making a donation.
+  </p>
+  <p class="f5 lh-copy">
+    Thanks,<br>
+    The Team<br>
+    NYC Mesh<br>
+  </p>
+    <a href="mailto:payment@nycmesh.net">Please email us</a> for donation questions or changes to your subscription.
+</div>
 
   <footer class="footer">
 	<a href="/">Home</a>
@@ -147,9 +138,7 @@
 
 <!-- handle form input -->
   <script>
-    var donationAmount = 11000
-    var subscriptionPlan = 'twenty-monthly'
-    var donationType, customAmount;
+    var donationAmount, donationType, customAmount;
     var customDonation = document.getElementById('custom');
     customDonation.onkeypress = function(e) {
       // not a number
@@ -171,17 +160,21 @@
       donationAmount = customAmount;
     })
 
-    function setSubscription(plan) {
-      subscriptionPlan = plan;
-    }
-
     function setAmount(amount) {
       // deselect selected
       var selected = document.getElementById(donationAmount) || document.getElementById('custom');
+      if (selected) {
+        if (selected.id == 'custom')
+          selected.className = 'tc bg-dark-gray white w4 h3 ph3 br2 bw0'
+        else
+          selected.className = 'button dtc mh2 w4 br2 bg-dark-gray'
+      }
 
       // highlight choice and set amount
       var button = document.getElementById(amount);
       if (amount == 'custom') {
+        console.log(button)
+        button.className = 'tc bg-dark-gray white w4 h3 ph3 br2 bw0 selected'
         donationAmount = customAmount;
       }
       else {
@@ -197,12 +190,11 @@
 
     function token(token) {
       var request = new XMLHttpRequest();
-      request.open('POST', 'https://donate2.nycmesh.net/charge', true);
+      request.open('POST', 'https://donate.nycmesh.net/charge', true);
       request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
       request.send(JSON.stringify({
         stripeToken: token,
-        donationAmount: donationAmount,
-        subscriptionPlan: subscriptionPlan
+        donationAmount: donationAmount
       }));
 			setTimeout(function() { window.location = '/donate/thanks' }, 1000);
     }
@@ -229,6 +221,27 @@
           amount: donationAmount
         });
       }
+
+      else if (donationAmount == 'twenty-monthly')
+        handler.open({
+          name: 'NYC Mesh',
+          description: 'Monthly Donation',
+          amount: 2000
+        });
+
+      else if (donationAmount == 'fifty-monthly')
+        handler.open({
+          name: 'NYC Mesh',
+          description: 'Monthly Donation',
+          amount: 5000
+        });
+
+      else if (donationAmount == 'hundred-monthly')
+        handler.open({
+          name: 'NYC Mesh',
+          description: 'Monthly Donation',
+          amount: 10000
+        });
 
       else {
         alert('Please enter a valid donation amount.')
