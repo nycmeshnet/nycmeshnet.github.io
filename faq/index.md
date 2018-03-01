@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Frequently asked questions"
 ---
 [Why are you building a community-owned network?](#why)  

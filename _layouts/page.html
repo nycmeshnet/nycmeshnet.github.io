@@ -2,8 +2,16 @@
 <html>
 {% include head.html %}
 <body>
-  {% include header.html %}
+  {% include header-small.html %}
   <div class="content">
+	
+	<!--move the title up from default 30%-->
+	<style>
+		.title {
+		    margin-top: 10%;
+		}
+	</style>
+	
   {{ content }}
   {% include footer.html %}
 </div>

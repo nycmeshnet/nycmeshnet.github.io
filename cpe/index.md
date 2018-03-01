@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: page
 title: "Supernode CPE"
 ---
 
 Members can buy their own cpe on Amazon etc. We can swap it with a preconfigured one on site to save time.
 
 
-# Configuring supernode1 CPEs  
+## Configuring supernode1 CPEs  
 Line of sight to 375 Pearl St. Manhattan
 
 [For connecting to supernode 2 see here](../cpe2)
@@ -44,8 +44,10 @@ Wireless \| Network \| Services \| System
 	
 [**Network settings**](./litebeam/network.png)   
  * Static
- * IP 192.168.1.20  
-(leave as default, this will be changed later to 192.168.42.1xx)
+ * IP 192.168.42.x   
+Ask us to assign this to you!  
+
+DEFAULT IP CANNOT BE USED! Ask us to assign you one *before* you connect!
 	
 [**Services**](./litebeam/services.png)   
  * [x]SNMP Agent  

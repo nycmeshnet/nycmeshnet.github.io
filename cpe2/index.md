@@ -1,11 +1,12 @@
 ---
-layout: markdown
+layout: page
 title: "Supernode CPE"
 ---
 
-# #eastwburg_bushwick, English Kills
+ #eastwburg_bushwick, English Kills
 
-# Configuring supernode2 CPEs (line of sight to 40.713991, -73.929049 )
+# Configuring supernode2 CPEs   
+(line of sight to 40.713991, -73.929049 )
 
 [For connecting to supernode 1 see here](../cpe)
 
