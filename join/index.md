@@ -2,7 +2,7 @@
 layout: newnode
 title: "Join the Mesh"
 ---
-**We usually reply to your Join request within 24 hours. If you did not receive a reply, check your spam folder, or [email us.](mailto:install@nycmesh.net)**
+**We auto-reply to your Join request within 5 minutes. If you do not see the reply, check your spam folder and mark it "not spam". You can also [email us.](mailto:install@nycmesh.net)**
 
 **Please read our [FAQ](../faq) and the Network Commons License [(NCL.pdf)](../ncl.pdf) before filling in the Join form. Also read our [install info.](../blog/install-info/)**
 
