@@ -5,7 +5,7 @@ title: "Volunteer and Help!"
 
 Growth and maintaining the network couldn't be possible without the network of volunteers dedicating countless hours. You can help us scale too. Check out the brief descriptions below and [email us](mailto:help@nycmesh.net) about the particular position. You can also join the appropriate [Slack channels](https://slack.nycmesh.net). Our teams are super autonomous and 100% self motivated. If you have an idea, contribute and be ready to make it happen.
 
-Please apply for the following positions by [emailing us]:(mailto:help@nycmesh.net)
+**Please apply for the following positions by [emailing us](mailto:help@nycmesh.net):**
 
 ***
 
@@ -28,8 +28,6 @@ This involves climbing on roofs, drilling holes, running ethernet cable, crimpin
 **Install team leader**: Person experienced with drilling concrete and window frames, to lead rooftop installs. Laptop configuring of routers and Ethernet crimping skills are good too. Volunteers can also come along to installs to learn these skills.
 
 **Install planner**: We have hundreds of node applications. See if you can join the rooftops together on our [map](https://nycmesh.net/map/) and plan an install. This takes lots of emailing and phone calls.
-
-Email [help@nycmesh.net](help@nycmesh.net)
 
 ***
 
@@ -65,3 +63,6 @@ We need a space to store equipment (cables and antennas), prepare installs, and 
 **Donate Money**
 [Donations](https://nycmesh.net/donate/) are tax deductible and go towards expanding our network!
 
+***
+
+**Email us about any of the above positions- [help@nycmesh.net](help@nycmesh.net)**
