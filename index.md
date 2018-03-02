@@ -26,7 +26,7 @@ We aim to create an open, resilient, neutral network that serves both for daily 
     {% include actionables/newnode.html %}
   <h3>Install</h3>
    We can install for you, or try DIY
-   <a href="blog/install-info/" class="btn">Install info</a>
+   <a href="/install" class="btn">Install info</a>
   </li><li>
   <h3>Meetups</h3>
   <p>Everybody is welcome!</p>

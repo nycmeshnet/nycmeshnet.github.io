@@ -1,29 +1,27 @@
 ---
-layout: post
+layout: page
 title: "Install info"
-author: Brian
 ---
-<meta http-equiv="refresh" content="0; url=/install" />
 
-We have a few different types of install. At the moment we are mostly doing installs in downtown Manhattan that connect directly to the supernode- a "supernode client install"
+We have a few different types of install. At the moment we are mostly doing installs in downtown Manhattan that connect directly to the supernode1, or in the Bushwick area near supernode2. This is a "supernode client install".
 
-With all rooftop installs, an antenna is mounted on the roof and an ethernet cable goes down a wall or conduit and into your apartment. We usually put the cable through a window frame or at the side of an air-conditioner. A small power adapter in your apartment will give power the antenna over the ethernet cable. Another router is needed in the apartment for your wifi connection.
+With all rooftop installs, an antenna is mounted on the roof and outdoor ethernet cable goes down a wall or conduit and into your apartment. We usually put the cable through a window frame or at the side of an air-conditioner. A small power adapter in your apartment will give power the antenna over the ethernet cable. Another router is needed in the apartment for your wifi connection.
 
 DIY installs are possible, or you can pay us $110 to cover hardware (basically cost) and $50 labor for an installer. Email us if you would prefer a monthly plan rather than upfront payment.
 
 **1) Supernode client**
 
-You need to be within about two miles of the Wall St. area. We can usually tell by a panorama pic whether this install will work for you.
+You need to be within about two miles of a supernode, and [inside this downtown area](/panorama/227.png) or this [Brooklyn area](/panorama/570a.jpg) We can usually tell by a panorama pic whether this install will work for you.
 
 ***Equipment needed***-
 
-We supply the LiteBeamAC, antenna mount (if needed), ethernet, ethernet switch (if needed) and indoor router.
+We supply the LiteBeamAC, antenna mount (if needed), outdoor ethernet cable, ethernet switch (if needed) and indoor router.
 
 The total for the equipment is [$110](https://nycmesh.net/donate/), and the install is $50 (paid to an independent installer).
 
 $160 per apartment is due on the day of the install. We also suggest a monthly subscription of $20 to help us maintain our network.
 
-It is possible to do this yourself. Ask us for help configuring the LiteBeamAC. If you are installing in a window we suggest the much smaller NanoBeamAC 16.
+It is possible to do this yourself. Ask us for help configuring the LiteBeamAC. If you are installing in a window we suggest the much smaller NanoBeamAC 16. If you DIY please consider also connecting your neighbors. This is the whole point of the mesh.
 
 
 **2) Kiosk client install**
