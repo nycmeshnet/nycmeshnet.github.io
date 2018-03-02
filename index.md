@@ -24,9 +24,9 @@ We aim to create an open, resilient, neutral network that serves both for daily 
     <h3>Join</h3>
     <p>Help our network grow! You will need to buy a router, or we can supply and install one for you. A monthly donation is recommended.</p>
     {% include actionables/newnode.html %}
-  <h3>DIY</h3>
-   Order a router and download our firmware.
-   <a href="download" class="btn">Order & Download</a>
+  <h3>Install</h3>
+   We can install for you, or try DIY
+   <a href="blog/install-info/" class="btn">Install info</a>
   </li><li>
   <h3>Meetups</h3>
   <p>Everybody is welcome!</p>
