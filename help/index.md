@@ -9,9 +9,9 @@ Growth and maintaining the network couldn't be possible without the network of v
 
 ***
 
-**Project management**
+**Install coordinator**
 
-We have a lot of larger projects that require long-term planning, organizing and emailing
+We have hundreds of node applications. See if you can join the rooftops together on our [map](https://nycmesh.net/map/), identify viable installs and plan an install. This takes lots of emailing and phone calls. Also involves inventory control, coordinating install teams, streamlining installs and working with contractors.
 
 ***
 **Grants, Corporate Sponsorships [#Funding](https://nycmesh.slack.com/messages/funding)**
@@ -20,14 +20,10 @@ We need help seeking out grants and writing proposals
 
 ***
 
-**Install Team**
-This involves climbing on roofs, drilling holes, running ethernet cable, crimping cable, antenna alignment, antenna channel selection. 
-
-**Install coordinator**: Inventory control, coordinating install teams, identifying viable installs, streamlining installs, working with contractors.
+**Install **: 
 
 **Install team leader**: Person experienced with drilling concrete and window frames, to lead rooftop installs. Laptop configuring of routers and Ethernet crimping skills are good too. Volunteers can also come along to installs to learn these skills.
 
-**Install planner**: We have hundreds of node applications. See if you can join the rooftops together on our [map](https://nycmesh.net/map/) and plan an install. This takes lots of emailing and phone calls.
 
 ***
 
