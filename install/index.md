@@ -11,13 +11,13 @@ DIY installs are possible, or you can pay us $110 to cover hardware (basically c
 
 **1) Supernode client**
 
-You need to be within about two miles of a supernode, and [inside this downtown area](/panorama/227.png) or this [Brooklyn area](/panorama/570a.jpg) We can usually tell by a panorama pic whether this install will work for you.
+You need to be within about two miles of a supernode, and [inside this downtown area](/panorama/227.png) or this [Brooklyn area](/panorama/570a.jpg). We can usually tell by a panorama pic whether this install will work for you.
 
 ***Equipment needed***-
 
 We supply the LiteBeamAC, antenna mount (if needed), outdoor ethernet cable, ethernet switch (if needed) and indoor router.
 
-The total for the equipment is [$110](https://nycmesh.net/donate/), and the install is $50 (paid to an independent installer).
+The total for the equipment is [$110](https://nycmesh.net/pay/), and the install is $50 (paid to an independent installer).
 
 $160 per apartment is due on the day of the install. We also suggest a monthly subscription of $20 to help us maintain our network.
 
@@ -30,11 +30,11 @@ This is similar to supernode client but uses a NanoStation aimed at a LinkNYC ki
 
 We supply the NanoStation NSM5, antenna mount (if needed), ethernet, ethernet switch (if needed) and indoor router.
 
-The total for the equipment is [$110](https://nycmesh.net/donate/), and the install is $50 (paid to an independent installer).
+The total for the equipment is [$110](https://nycmesh.net/pay/), and the install is $50 (paid to an independent installer).
 
 $160 per apartment is due on the day of the install. We also suggest a monthly subscription of $20 to help us maintain our network.
 
-If you want to try this yourself read this [blog post](../public-access-points).
+If you want to try this yourself read this [blog post](/blog/public-access-points).
 
 **3) Building to building**
 
@@ -42,7 +42,7 @@ This is similar to supernode client but uses NanoStation M5 connected to a nearb
 
 $160 per apartment is due on the day of the install. We also suggest a monthly subscription of $20 to help us maintain our network.
 
-For DIY NanoStation installs [download our firmware](/download) and read our [install instructions](../nsm5-install).
+For DIY NanoStation installs [download our firmware](/download) and read our [install instructions](/blog/nsm5-install).
 
 **4) Point to point**
 
