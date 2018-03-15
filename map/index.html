@@ -38,7 +38,7 @@
 
 <input type="search" 
  placeholder="Search nodes ..." 
- onkeydown="if (event.keyCode == 13) { event.preventDefault(); event.stopPropagation(); initMap() }"
+ onkeydown="if (event.keyCode == 13) { searchQuery = this.value; event.preventDefault(); event.stopPropagation(); initSearch() }"
  onkeyup="searchQuery = this.value"
  onsearch="clearSearch()" // clicked the clear button which triggers onsearch
  style="width: 200px"
@@ -106,16 +106,36 @@
 
   <script>
       var map;
-	  var currentNode = {};
+	  var currentNode = {}
 	  var searchQuery = ""
+	  resetActiveLayer()
 
 	function clearSearch(input) {
        searchQuery = ""
+       resetActiveLayer()
        initMap()
     }
 
+	function resetActiveLayer() {
+		activeLayer = ["link", "active", "potential", "kiosk"]
+	}
+
+    function initSearch() {
+		resetActiveLayer()
+	//hide layers start with "-"
+	for (var i = (activeLayer.length -1); i > -1 ; i--) {
+		var aLayer = activeLayer[i]
+			if (searchQuery.includes("-"+aLayer)){
+				activeLayer.splice(i, 1)
+				searchQuery = searchQuery.replace("-"+aLayer, '')
+			}
+		}
+		initMap()
+		searchQuery = searchQuery.trim()
+	}
+	
    function wordSearch(query, searchText, nodeNum, active, pano) {
-	query = query.trim()
+
 	if (query.includes("roof")){
 		if (!searchText.includes("roof")){
 			return false
@@ -127,7 +147,7 @@
 		}else{
 			if (query == "active"){return true}
 		}
-	}
+	}			
 	if (query.includes("potential")){
 			if (active){
 				return false
@@ -175,7 +195,7 @@
 }
     
 
-      function initMap() {
+    function initMap() {
         var styles = [
           {
             featureType: "administrative.locality",
@@ -408,11 +428,19 @@
 		  activeNodesLayer.addListener('click', openInfoWindow);
 		  potentialNodesLayer.addListener('click', openInfoWindow);
 
-          activeNodesLayer.setMap(map)
-		  potentialNodesLayer.setMap(map)
-		  linkNYCLayer.setMap(map)
-		  linksLayer.setMap(map)
-
+			if (activeLayer.includes('active')){
+				activeNodesLayer.setMap(map)
+			}
+			if (activeLayer.includes('potential')){
+				potentialNodesLayer.setMap(map)
+			}
+			if (activeLayer.includes('kiosk')){
+		  		linkNYCLayer.setMap(map)
+			}			
+			if (activeLayer.includes('link')){
+		  		linksLayer.setMap(map)
+			}
+			
 		  function openInfoWindow(event) {
 		    // replace this with a fully custom overlay
 		    var content = "<div class='pv3'>"
