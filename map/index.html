@@ -104,35 +104,45 @@
 
 </div>
 
-  <script>
-      var map;
-	  var currentNode = {}
-	  var searchQuery = ""
-	  var query = ""
-	  resetActiveLayer()
+<script>
+	var map;
+	var currentNode = {}
+	var searchQuery = ""
+	var query = ""
+	
+	resetVisibleLayer()
+	resetCenter()
 
 	function clearSearch(input) {
-       searchQuery = ""
-       resetActiveLayer()
-       initMap()
+		searchQuery = ""
+		resetVisibleLayer()
+		resetCenter()
+		initMap()
     }
 
-	function resetActiveLayer() {
-		activeLayer = ["potential", "active", "link", "kiosk"]
+	function resetVisibleLayer() {
+		visibleLayer = ["potential", "active", "link", "kiosk"]
+	}
+	
+	function resetCenter() {
+        centerLoc = {lat: 40.7281809, lng: -73.9595798}
 	}
 
     function initSearch() {
-		resetActiveLayer()
+		resetVisibleLayer()
+		resetCenter()
 		query = searchQuery.trim()
-	//hide layers start with "-"
-	for (var i = (activeLayer.length -1); i > -1 ; i--) {
-		var aLayer = activeLayer[i]
+	//hide layers that start with "-"
+	for (var i = (visibleLayer.length -1); i > -1 ; i--) {
+		var aLayer = visibleLayer[i]
 			if (searchQuery.includes("-"+aLayer)){
-				activeLayer.splice(i, 1)
+				visibleLayer.splice(i, 1)
 				query = query.replace("-"+aLayer, '')
 			}
 		}
-		query = query.trim()
+		query = query.trim()		
+		//query is integer, so single node search, will center on this-
+		singleNodeSearch = (query >>> 0 === parseFloat(query))
 		initMap()
 	}
 	
@@ -186,6 +196,11 @@
 	        break;
 	}
 
+	if (query === parseInt(query, 10)){
+		//integer, therefore single node search
+		centerLoc = {lat: 40.0, lng: -73.0}
+	}
+	
 	var theText = searchText.toLowerCase()
 	var i = 0
 	while (i < words.length) {
@@ -233,7 +248,6 @@
             ]
           }
         ];
-        var centerLoc = {lat: 40.7281809, lng: -73.9595798}
         var styledMap = new google.maps.StyledMapType(styles,
           {name: "Styled Map"});
 
@@ -255,18 +269,18 @@
         map.mapTypes.set('map_style', styledMap);
         map.setMapTypeId('map_style');
 
-		  var potentialNodesLayer = new google.maps.Data();
-          var activeNodesLayer = new google.maps.Data();
-		  var linksLayer = new google.maps.Data();
-		  var linkNYCLayer = new google.maps.Data();
+		  var potentialLayer = new google.maps.Data();
+          var activeLayer = new google.maps.Data();
+		  var linkLayer = new google.maps.Data();
+		  var kioskLayer = new google.maps.Data();
 		  // var beamsLayer = new google.maps.Data();
-		  activeNodesLayer.loadGeoJson('./nodes/active.json');
-		  linkNYCLayer.loadGeoJson('./nodes/linkNYC.json');
-		  potentialNodesLayer.loadGeoJson('./nodes/potential.json');
-		  linksLayer.loadGeoJson('./nodes/links.json');
+		  activeLayer.loadGeoJson('./nodes/active.json');
+		  kioskLayer.loadGeoJson('./nodes/linkNYC.json');
+		  potentialLayer.loadGeoJson('./nodes/potential.json');
+		  linkLayer.loadGeoJson('./nodes/links.json');
 		  // beamsLayer.addGeoJson({"type":"Feature","geometry":{"coordinates":[-74.001122,40.711137],"type":"Point"}});
 
-		/* activeNodesLayer.setStyle({
+		/* activeLayer.setStyle({
 		    icon: {
 		      url: '../assets/images/active.svg',
 		      anchor: new google.maps.Point(10, 10),
@@ -276,7 +290,7 @@
 
 		//attempt at changing icon for each marker
 		/*
-		  activeNodesLayer.setStyle(function(feature) {
+		  activeLayer.setStyle(function(feature) {
 		    return {icon:feature.getProperty('icon'),
 		    anchor: new google.maps.Point(10, 10),
 		    }
@@ -284,7 +298,7 @@
          */
 
 
-      linkNYCLayer.setStyle(function (feature) {
+      kioskLayer.setStyle(function (feature) {
          var url = '../assets/images/linkNYC.svg';
          var opacity = .80;
          return {
@@ -300,7 +314,7 @@
        })
 
         //changing icon opacity to show it has panoramas, also set supernode icon
-         activeNodesLayer.setStyle(function (feature) {
+         activeLayer.setStyle(function (feature) {
 		    var url = '../assets/images/active.svg'
 		    var opacity = 0.5
 		    var visible = true
@@ -324,6 +338,9 @@
 		      if (!wordSearch(query, searchText, nodeNum, true, pano)) {
 		      visible = false
 			    } else { 
+				  if (singleNodeSearch){
+						loc = feature.getProperty('geometry').coordinates
+					}
 				  //make search result more visible
 				  opacity = 1
 		    }}
@@ -340,7 +357,7 @@
 		    }
 		  })
 
-         potentialNodesLayer.setStyle(function (feature) {
+         potentialLayer.setStyle(function (feature) {
 		    var url = '../assets/images/potential.svg';
 		    var opacity = 0.5
 		    var visible = true
@@ -380,7 +397,7 @@
 		  })
 
          /*
-		  potentialNodesLayer.setStyle({
+		  potentialLayer.setStyle({
 		    icon: {
 		      url: '../assets/images/potential.svg',
 		      anchor: new google.maps.Point(10, 10),
@@ -389,7 +406,7 @@
 		  })
           */
 
-		  linksLayer.setStyle(function (link) {
+		  linkLayer.setStyle(function (link) {
 		    var strokeColor = 'red';
 		    var opacity = 1;
 		    var visible = true;
@@ -427,20 +444,12 @@
 		  // })
 
 		  var infowindow = new google.maps.InfoWindow();
-		  activeNodesLayer.addListener('click', openInfoWindow);
-		  potentialNodesLayer.addListener('click', openInfoWindow);
-
-			if (activeLayer.includes('active')){
-				activeNodesLayer.setMap(map)
-			}
-			if (activeLayer.includes('potential')){
-				potentialNodesLayer.setMap(map)
-			}
-			if (activeLayer.includes('kiosk')){
-		  		linkNYCLayer.setMap(map)
-			}			
-			if (activeLayer.includes('link')){
-		  		linksLayer.setMap(map)
+		  activeLayer.addListener('click', openInfoWindow);
+		  potentialLayer.addListener('click', openInfoWindow);
+		
+			// set each layer visible on map
+			for (var i = 0; i < visibleLayer.length ; i++) {
+				eval(visibleLayer[i] + 'Layer').setMap(map)
 			}
 			
 		  function openInfoWindow(event) {
