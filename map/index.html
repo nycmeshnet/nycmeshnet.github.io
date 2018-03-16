@@ -107,28 +107,27 @@
 <script>
 	var map;
 	var currentNode = {}
-	var searchQuery = ""
-	var query = ""
-	
-	resetVisibleLayer()
-	resetCenter()
+	clearSearch()
 
-	function clearSearch(input) {
+function clearSearch() {
+		query = ""
 		searchQuery = ""
+		otherNodes = ""
+		singleNodeSearch = false
 		resetVisibleLayer()
 		resetCenter()
 		initMap()
     }
 
-	function resetVisibleLayer() {
+function resetVisibleLayer() {
 		visibleLayer = ["potential", "active", "link", "kiosk"]
-	}
+}
 	
-	function resetCenter() {
+function resetCenter() {
         centerLoc = {lat: 40.7281809, lng: -73.9595798}
-	}
+}
 
-    function initSearch() {
+function initSearch() {
 		resetVisibleLayer()
 		resetCenter()
 		query = searchQuery.trim()
@@ -144,9 +143,18 @@
 		//query is integer, so single node search, will center on this-
 		singleNodeSearch = (query >>> 0 === parseFloat(query))
 		initMap()
-	}
+}
 	
-   function wordSearch(query, searchText, nodeNum, active, pano) {
+function wordSearch(query, searchText, nodeNum, active, pano, otherNodes) {
+	if (singleNodeSearch) {
+		if (nodeNum == query){
+			otherNodes = otherNodes+","
+			return true
+		}
+		// some brittle parsing on the otherNodes grouped with this nodeNum, to see if they are the query
+		testNum = " "+query+","
+		return (otherNodes.indexOf(testNum) !== -1)
+	}
 
 	if (query.includes("roof")){
 		if (!searchText.includes("roof")){
@@ -196,10 +204,10 @@
 	        break;
 	}
 
-	if (query === parseInt(query, 10)){
+	//if (query === parseInt(query, 10)){
 		//integer, therefore single node search
-		centerLoc = {lat: 40.0, lng: -73.0}
-	}
+	//	centerLoc = {lat: 40.0, lng: -73.0}
+	//}
 	
 	var theText = searchText.toLowerCase()
 	var i = 0
@@ -212,7 +220,7 @@
 }
     
 
-    function initMap() {
+function initMap() {
         var styles = [
           {
             featureType: "administrative.locality",
@@ -278,6 +286,7 @@
 		  kioskLayer.loadGeoJson('./nodes/linkNYC.json');
 		  potentialLayer.loadGeoJson('./nodes/potential.json');
 		  linkLayer.loadGeoJson('./nodes/links.json');
+		
 		  // beamsLayer.addGeoJson({"type":"Feature","geometry":{"coordinates":[-74.001122,40.711137],"type":"Point"}});
 
 		/* activeLayer.setStyle({
@@ -322,7 +331,8 @@
 		    var notes = feature.getProperty("notes").toLowerCase()
 		    var nodeNum = feature.getProperty('id')
 		    //var loc = feature.getProperty('geometry').coordinates
-		    var searchText = feature.getProperty('otherNodes') + " " + feature.getProperty('notes') + " " + nodeNum
+		    var otherNodes = feature.getProperty('otherNodes')
+		    var searchText = otherNodes + " " + feature.getProperty('notes') + " " + nodeNum
 		    if (notes.indexOf("supernode") !== -1) {
 			  url = '../assets/images/supernode.svg';
 			}
@@ -335,11 +345,12 @@
 		      opacity = 1
 		    }
 		    if (query.length > 0) {
-		      if (!wordSearch(query, searchText, nodeNum, true, pano)) {
+		      if (!wordSearch(query, searchText, nodeNum, true, pano, otherNodes)) {
 		      visible = false
 			    } else { 
-				  if (singleNodeSearch){
-						loc = feature.getProperty('geometry').coordinates
+					if (singleNodeSearch){
+						centerLoc = feature.getGeometry().get()
+						map.panTo(feature.getGeometry().get())
 					}
 				  //make search result more visible
 				  opacity = 1
@@ -364,7 +375,8 @@
 		    var pano = false
 			var notes = feature.getProperty("notes").toLowerCase()
 		    var nodeNum = feature.getProperty('id')
-		    var searchText = feature.getProperty('otherNodes') + " " + feature.getProperty('notes') + " " + nodeNum
+		    var otherNodes = feature.getProperty('otherNodes')
+			var searchText = otherNodes + " " + feature.getProperty('notes') + " " + nodeNum
 		    if (notes.indexOf("supernode") !== -1) {
 			  url = '../assets/images/supernode-potential.svg';
 			}
@@ -377,9 +389,13 @@
 		      opacity = 1
 		    }
 		    if (query.length > 0) {
-		      if (!wordSearch(query, searchText, nodeNum, false, pano)) {
+		      if (!wordSearch(query, searchText, nodeNum, false, pano, otherNodes)) {
 		      visible = false
 			    } else { 
+					if (singleNodeSearch){
+						centerLoc = feature.getGeometry().get()
+						map.panTo(feature.getGeometry().get())
+					}
 				  //make search result more visible
 				  opacity = 1
 		    }}
@@ -423,8 +439,7 @@
 		 //     if (!linkMatches)
 		 //       visible = false;
 		 //   }
-		
-		
+					
 		    return {
 		      zIndex: 999,
 			  visible: visible,
@@ -452,7 +467,7 @@
 				eval(visibleLayer[i] + 'Layer').setMap(map)
 			}
 			
-		  function openInfoWindow(event) {
+	function openInfoWindow(event) {
 		    // replace this with a fully custom overlay
 		    var content = "<div class='pv3'>"
 		    content += "<h2 class='di pr2'>Node "+event.feature.f.id+""+event.feature.f.otherNodes+"</h2>"
@@ -486,9 +501,9 @@
 		     //setTimeout(infowindow.close(map), 0) // needs a timeout delay to force the autoscroll !!
 		     setTimeout(infowindow.open(map), 10000) // needs a timeout delay to force the autoscroll !!
 		  }
-		}
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNClp7oJsw-eleEoR3-PQKV23tpeW-FpE&libraries=visualization&callback=initMap"
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNClp7oJsw-eleEoR3-PQKV23tpeW-FpE&libraries=visualization&callback=initMap"
     async defer></script>
 </body>
 </html>
