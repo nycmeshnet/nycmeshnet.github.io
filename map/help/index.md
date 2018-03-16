@@ -22,13 +22,13 @@ Search for multiple node numbers
 34 456 200
 ```
 
-Show only active nodes-
+Show only active nodes
 
 ```
 active
 ```
 
-Show only potential nodes-
+Show only potential nodes
 
 ```
 potential
@@ -40,7 +40,7 @@ Nodes with panorama photos
 panorama
 ```
 
-Potential nodes with panoramas-
+Potential nodes with panoramas
 
 ```
 potential pano

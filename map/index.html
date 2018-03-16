@@ -38,7 +38,7 @@
 
 <input type="search" 
  placeholder="Search nodes ..." 
- onkeydown="if (event.keyCode == 13) { searchQuery = this.value; event.preventDefault(); event.stopPropagation(); initSearch() }"
+ onkeydown="if (event.keyCode == 13) { event.preventDefault(); event.stopPropagation(); initSearch() }"
  onkeyup="searchQuery = this.value"
  onsearch="clearSearch()" // clicked the clear button which triggers onsearch
  style="width: 200px"
@@ -108,6 +108,7 @@
       var map;
 	  var currentNode = {}
 	  var searchQuery = ""
+	  var query = ""
 	  resetActiveLayer()
 
 	function clearSearch(input) {
@@ -117,21 +118,22 @@
     }
 
 	function resetActiveLayer() {
-		activeLayer = ["link", "active", "potential", "kiosk"]
+		activeLayer = ["potential", "active", "link", "kiosk"]
 	}
 
     function initSearch() {
 		resetActiveLayer()
+		query = searchQuery.trim()
 	//hide layers start with "-"
 	for (var i = (activeLayer.length -1); i > -1 ; i--) {
 		var aLayer = activeLayer[i]
 			if (searchQuery.includes("-"+aLayer)){
 				activeLayer.splice(i, 1)
-				searchQuery = searchQuery.replace("-"+aLayer, '')
+				query = query.replace("-"+aLayer, '')
 			}
 		}
+		query = query.trim()
 		initMap()
-		searchQuery = searchQuery.trim()
 	}
 	
    function wordSearch(query, searchText, nodeNum, active, pano) {
@@ -318,8 +320,8 @@
 		      pano = true
 		      opacity = 1
 		    }
-		    if (searchQuery.length > 0) {
-		      if (!wordSearch(searchQuery, searchText, nodeNum, true, pano)) {
+		    if (query.length > 0) {
+		      if (!wordSearch(query, searchText, nodeNum, true, pano)) {
 		      visible = false
 			    } else { 
 				  //make search result more visible
@@ -357,8 +359,8 @@
 		      pano = true
 		      opacity = 1
 		    }
-		    if (searchQuery.length > 0) {
-		      if (!wordSearch(searchQuery, searchText, nodeNum, false, pano)) {
+		    if (query.length > 0) {
+		      if (!wordSearch(query, searchText, nodeNum, false, pano)) {
 		      visible = false
 			    } else { 
 				  //make search result more visible
