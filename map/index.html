@@ -147,8 +147,8 @@ function initSearch() {
 	
 function wordSearch(query, searchText, nodeNum, active, pano, otherNodes) {
 	if (singleNodeSearch) {
+		otherNodes = otherNodes+","
 		if (nodeNum == query){
-			otherNodes = otherNodes+","
 			return true
 		}
 		// some brittle parsing on the otherNodes grouped with this nodeNum, to see if they are the query
