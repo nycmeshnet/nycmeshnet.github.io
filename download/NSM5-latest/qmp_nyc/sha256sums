@@ -1,0 +1,9 @@
+0f93e5fc27691c2cef93e0f7db30062ce5fa187ad2b9a04337c4472b3fdda4f2 *lede-17.01.4-qmp-nyc-ar71xx-generic-device-ubnt-nano-m-xw.manifest
+add0587d4345ca280992a363bb9c36ec0f2bd020d38e4e1a7c05a8b009016f10 *lede-17.01.4-qmp-nyc-ar71xx-generic-root.squashfs
+c692832f0101c8fbba9dd681ecdfa83ee2363fcecd6c3aca4f76a49e4ef00c2d *lede-17.01.4-qmp-nyc-ar71xx-generic-uImage-lzma.bin
+060ec8e907d92e59914b338c97fc0ead2468760753cc5c4cb1152678bba6d1d4 *lede-17.01.4-qmp-nyc-ar71xx-generic-ubnt-nano-m-xw-squashfs-factory.bin
+d4aa61f446c6cac9732c314a353b6d51c1a08239cba801b936c0a3de24a9ab37 *lede-17.01.4-qmp-nyc-ar71xx-generic-ubnt-nano-m-xw-squashfs-sysupgrade.bin
+fec136c991f7abd2ecad14d5634c427bdef70a9ef9632a483e9f151406b5cc10 *lede-17.01.4-qmp-nyc-ar71xx-generic-vmlinux-lzma.elf
+7142abe58b9e2767d4f952ae3bb9fdc7f90eca74e68f37f2d3406b166d175c19 *lede-17.01.4-qmp-nyc-ar71xx-generic-vmlinux.bin
+06faa802d92489b7ab1236925e3248dc74d6e027845ad2a199ab2d95b0b78703 *lede-17.01.4-qmp-nyc-ar71xx-generic-vmlinux.elf
+f832c07c41f33e0c2cd0a07b88f062a04ae59d63105fae9283904f1c57e28fd3 *lede-17.01.4-qmp-nyc-ar71xx-generic-vmlinux.lzma

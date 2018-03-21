@@ -116,7 +116,9 @@ function clearSearch() {
 		singleNodeSearch = false
 		resetVisibleLayer()
 		resetCenter()
-		initMap()
+		//preserve zoom and center by not calling initMap
+		//initMap()
+		addLayers() 
     }
 
 function resetVisibleLayer() {
@@ -293,15 +295,27 @@ function clearLayers() {
 }
 
 function addLayers() {
-		  potentialLayer = new google.maps.Data();
-		  linkLayer = new google.maps.Data();
-		  kioskLayer = new google.maps.Data();
-          activeLayer = new google.maps.Data();
-		  // var beamsLayer = new google.maps.Data();
-		  activeLayer.loadGeoJson('./nodes/active.json');
-		  kioskLayer.loadGeoJson('./nodes/linkNYC.json');
-		  potentialLayer.loadGeoJson('./nodes/potential.json');
-		  linkLayer.loadGeoJson('./nodes/links.json');
+	// need to standardize names (linkNYC->kiosk) and put in repeat loop for all layers
+	if (visibleLayer.indexOf("potentialLayer")){
+		potentialLayer = new google.maps.Data()
+		potentialLayer.loadGeoJson('./nodes/potential.json')
+	}
+	if (visibleLayer.indexOf("linkLayer")){	
+		linkLayer = new google.maps.Data()
+		linkLayer.loadGeoJson('./nodes/links.json')
+	}
+	if (visibleLayer.indexOf("kioskLayer")){
+		kioskLayer = new google.maps.Data()
+		kioskLayer.loadGeoJson('./nodes/linkNYC.json')
+	}
+	if (visibleLayer.indexOf("activeLayer")){
+		activeLayer = new google.maps.Data()
+		activeLayer.loadGeoJson('./nodes/active.json')
+	}
+		
+		//for (var i = 0; i < visibleLayer.length ; i++) {
+		//	eval(visibleLayer[i] + 'Layer').setMap(map)
+		//}
 		
 		  // beamsLayer.addGeoJson({"type":"Feature","geometry":{"coordinates":[-74.001122,40.711137],"type":"Point"}});
 
@@ -437,7 +451,7 @@ function addLayers() {
 		    zIndex: -1
 		  })
           */
-
+		if (visibleLayer.indexOf("linkLayer")){	
 		  linkLayer.setStyle(function (link) {
 		    var strokeColor = 'red';
 		    var opacity = 1;
@@ -464,7 +478,7 @@ function addLayers() {
 		      strokeOpacity: opacity
 		    }
 		  })
-
+		}
 
 		  // beamsLayer.setStyle({
 		  //   icon: {
