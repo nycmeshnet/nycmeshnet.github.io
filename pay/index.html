@@ -147,15 +147,17 @@
 
 <!-- handle form input -->
   <script>
+    var defaultDonation = 110
+    var defaultSubscription = 'twenty-monthly'
+
+    // Get donation and sub from url
     var url_string = window.location.href
     var url = new URL(url_string);
-    var amount = url.searchParams.get("a");
-
-
-    var donationAmount = amount * 100 || 11000
+    var URLamount = url.searchParams.get("a");
+    var donationAmount = URLamount * 100 || defaultDonation * 100
     
-    var subscriptionPlan = plan || 'twenty-monthly'
-    var plan = url.searchParams.get("sub");
+    var subscriptionPlan = defaultSubscription
+    var plan = url.searchParams.get("s");
     if (plan == 20) {
       let planId = 'twenty-monthly'
       document.getElementById(planId).checked = "checked"
