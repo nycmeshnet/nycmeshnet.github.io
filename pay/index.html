@@ -82,27 +82,27 @@
       <p>Please also subscribe me to a monthly donation (starting next month)</p>
       <div>
         <div>
-          <input class="w1" type="radio" id="contactChoice1"
+          <input class="w1" type="radio" id="twenty-monthly"
            name="contact" value="email" checked="checked" onclick="setSubscription('twenty-monthly')">
-          <label class="fw4" for="contactChoice1">$20</label>
+          <label class="fw4" for="twenty-monthly">$20</label>
         </div>
 
         <div>
-          <input class="w1" type="radio" id="contactChoice2"
+          <input class="w1" type="radio" id="fifty-monthly"
            name="contact" value="phone" onclick="setSubscription('fifty-monthly')">
-          <label class="fw4" for="contactChoice2">$50</label>
+          <label class="fw4" for="fifty-monthly">$50</label>
         </div>
 
         <div>
-          <input class="w1" type="radio" id="contactChoice3"
+          <input class="w1" type="radio" id="hundred-monthly"
            name="contact" value="mail" onclick="setSubscription('hundred-monthly')">
-          <label class="fw4" for="contactChoice3">$100 (business)</label>
+          <label class="fw4" for="hundred-monthly">$100 (business)</label>
         </div>
 
         <div>
-          <input class="w1" type="radio" id="contactChoice3"
+          <input class="w1" type="radio" id="no-monthly"
            name="contact" value="mail" onclick="setSubscription(undefined)">
-          <label class="fw4" for="contactChoice3">I do not wish to donate</label>
+          <label class="fw4" for="no-monthly">I do not wish to donate</label>
         </div>
       </div>
     </form>
@@ -147,10 +147,40 @@
 
 <!-- handle form input -->
   <script>
-    var donationAmount = 11000
-    var subscriptionPlan = 'twenty-monthly'
+    var url_string = window.location.href
+    var url = new URL(url_string);
+    var amount = url.searchParams.get("a");
+
+
+    var donationAmount = amount * 100 || 11000
+    
+    var subscriptionPlan = plan || 'twenty-monthly'
+    var plan = url.searchParams.get("sub");
+    if (plan == 20) {
+      let planId = 'twenty-monthly'
+      document.getElementById(planId).checked = "checked"
+      setSubscription(planId)
+    }
+    if (plan == 50) {
+      let planId = 'fifty-monthly'
+      document.getElementById(planId).checked = "checked"
+      setSubscription(planId)
+    }
+    if (plan == 100) {
+      let planId = 'hundred-monthly'
+      document.getElementById(planId).checked = "checked"
+      setSubscription(planId)
+    }
+    if (plan == 'none' || plan == 0) {
+      let planId = 'no-monthly'
+      document.getElementById(planId).checked = "checked"
+      setSubscription(undefined)
+    }
+
     var donationType, customAmount;
     var customDonation = document.getElementById('custom');
+    customDonation.value = donationAmount / 100
+
     customDonation.onkeypress = function(e) {
       // not a number
       if (e.which < 48 || e.which > 57)
@@ -165,7 +195,6 @@
 
     customDonation.addEventListener('focus', function(e) {
       var tmpStr = e.target.value;
-      console.log(tmpStr)
       e.target.value = '';
       e.target.value = tmpStr;
       donationAmount = customAmount;
