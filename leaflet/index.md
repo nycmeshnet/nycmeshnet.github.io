@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Outreach Collateral"
+title: "Leaflets and outreach Material"
 ---
 
 **Flyers/Brochures**
