@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Leaflets and outreach Material"
+title: "Leaflets and outreach material"
 ---
 
 **Flyers/Brochures**
