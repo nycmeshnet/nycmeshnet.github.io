@@ -9,7 +9,7 @@
   <input type="text" name="entry.1046234029" value="" id="entry_1046234029" dir="auto" aria-label="Phone"  placeholder="Phone number">
 
   <!--<input type="text" name="entry.214227195" id="entry_214227195" aria-label="Location" aria-required="true" required="" placeholder="Street address- must include ZIP code!">-->
-  <input id="entry_214227195" name="entry.214227195" placeholder="Enter your address please"
+  <input id="entry_214227195" name="entry.214227195" placeholder="Enter your address"
             type="text" aria-label="Location" aria-required="true" required=""></input>
     <script>
       // This example displays an address form, using the autocomplete feature
@@ -26,7 +26,7 @@
         // location types.
         entry_214227195 = new google.maps.places.Autocomplete(
             /** @type {!HTMLInputElement} */(document.getElementById('entry_214227195')),
-            {types: ['street_address']});
+            {types: ['geocode', 'postal_code']});
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNClp7oJsw-eleEoR3-PQKV23tpeW-FpE&libraries=places&callback=initAutocomplete"
