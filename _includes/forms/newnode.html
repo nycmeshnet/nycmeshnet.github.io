@@ -30,7 +30,7 @@
         entry_214227195_2 = new google.maps.places.Autocomplete(
             /** @type {!HTMLInputElement} */(document.getElementById('entry_214227195')),
             {types: ['postal_code']}); 
-        entry_214227195 = entry_214227195_1 + entry_214227195_2; 
+        entry_214227195 = entry_214227195_1.concat(entry_214227195_2); 
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNClp7oJsw-eleEoR3-PQKV23tpeW-FpE&libraries=places&callback=initAutocomplete"
