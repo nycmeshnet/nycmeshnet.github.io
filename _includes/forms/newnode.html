@@ -24,13 +24,9 @@
       function initAutocomplete() {
         // Create the autocomplete object, restricting the search to geographical
         // location types.
-        entry_214227195_1 = new google.maps.places.Autocomplete(
+        entry_214227195 = new google.maps.places.Autocomplete(
             /** @type {!HTMLInputElement} */(document.getElementById('entry_214227195')),
-            {types: ['geocode']});
-        entry_214227195_2 = new google.maps.places.Autocomplete(
-            /** @type {!HTMLInputElement} */(document.getElementById('entry_214227195')),
-            {types: ['postal_code']}); 
-        entry_214227195 = entry_214227195_1.concat(entry_214227195_2); 
+            {types: ['postal_code']});
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNClp7oJsw-eleEoR3-PQKV23tpeW-FpE&libraries=places&callback=initAutocomplete"
