@@ -8,7 +8,30 @@
   <input type="text" name="entry.119277156" value="" id="entry_119277156" dir="auto" aria-label="Email" aria-required="true" required="" placeholder="Email (required)">
   <input type="text" name="entry.1046234029" value="" id="entry_1046234029" dir="auto" aria-label="Phone"  placeholder="Phone number">
 
-  <input type="text" name="entry.214227195" id="entry_214227195" aria-label="Location" aria-required="true" required="" placeholder="Street address- must include ZIP code!">    
+  <!--<input type="text" name="entry.214227195" id="entry_214227195" aria-label="Location" aria-required="true" required="" placeholder="Street address- must include ZIP code!">-->
+  <input id="entry_214227195" name="entry.214227195" placeholder="Enter your address"
+            type="text" aria-label="Location" aria-required="true" required=""></input>
+    <script>
+      // This example displays an address form, using the autocomplete feature
+      // of the Google Places API to help users fill in the information.
+ 
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+ 
+      var placeSearch, entry_214227195;
+ 
+      function initAutocomplete() {
+        // Create the autocomplete object, restricting the search to geographical
+        // location types.
+        entry_214227195 = new google.maps.places.Autocomplete(
+            /** @type {!HTMLInputElement} */(document.getElementById('entry_214227195')),
+            {types: ['geocode']});
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNClp7oJsw-eleEoR3-PQKV23tpeW-FpE&libraries=places&callback=initAutocomplete"
+       async defer></script>
+         
     <label>
     <input type="checkbox" required="" name="entry.1263551439" value="I have Rooftop access" id="group_1263551439_1" role="checkbox">
     I agree to the Network Commons <a href="../ncl.pdf">License</a>
