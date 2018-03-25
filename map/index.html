@@ -130,9 +130,8 @@ function resetCenter() {
 }
 
 function initSearch() {
-		//move node down to make room for info window
-		verticalSearchTweak = 0.019
-		
+		//move node down 150px to make room for info window
+		verticalSearchTweak = -200
 		resetVisibleLayer()
 		resetCenter()
 		query = searchQuery.trim()
@@ -380,7 +379,8 @@ function addLayers() {
 			    } else { 
 					if (singleNodeSearch){
 					    centerLoc = feature.getGeometry().get()
-						map.panTo({lat: (centerLoc.lat() +verticalSearchTweak), lng: (centerLoc.lng())})
+						map.panTo({lat: (centerLoc.lat()), lng: (centerLoc.lng())})
+						map.panBy(0, verticalSearchTweak)
 					}
 				  //make search result more visible
 				  opacity = 1
@@ -424,7 +424,8 @@ function addLayers() {
 			    } else { 
 					if (singleNodeSearch){
 						centerLoc = feature.getGeometry().get()
-						map.panTo({lat: (centerLoc.lat() +verticalSearchTweak), lng: (centerLoc.lng())})
+						map.panTo({lat: (centerLoc.lat()), lng: (centerLoc.lng())})
+						map.panBy(0, verticalSearchTweak)
 					}
 				  //make search result more visible
 				  opacity = 1
