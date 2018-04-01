@@ -41,10 +41,12 @@ We aim to create an open, resilient, neutral network that serves both for daily 
   {% include actionables/newsletter.html %}
 </li><li>
 <h3>Donate</h3>
-<p>{{ site.title }} is a labor of love and all members are unpaid volunteers, but we're always in need of new hardware to extend the network.</p>
-<p>If you can afford to help, please do!</p>
+<p>{{ site.title }} is a labor of love and all members are volunteers. Your donations help extend our network!</p>
 {% include actionables/donate.html %}
 <a href="/help/" class="btn">Help!</a>
+<h3>Docs</h3>
+Our technical docs</p>
+<a href="https://docs.nycmesh.net" target="_blank" class="btn">Documentation</a>
 </li><li>
 <h3>Read our blog</h3>
 <ul class="list">
