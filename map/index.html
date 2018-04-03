@@ -42,8 +42,39 @@
  onkeyup="searchQuery = this.value"
  onsearch="clearSearch()" // clicked the clear button which triggers onsearch
  style="width: 200px"
-/>
-<a href=help>help</a>
+/> 
+<a href=help>help</a><br>
+
+<style>
+	.item {white-space: nowrap;display:inline  }
+	.checkboxes label{
+       margin: 0px 0px 0px 3px;
+	}
+	.checkboxes {
+	      text-align:left;
+	}
+	.checkboxes input{
+	      margin: 0px 0px 0px 0px;
+	}
+	.checkboxes label{
+	       margin: 0px 0px 0px 3px;
+	}
+
+<div class="item">
+	<label>pre<input type="checkbox" id="myCheck"  onclick="showLayer()">Active</label>
+</div>	
+<div class="item">
+	Potential <input type="checkbox" id="myCheck"  onclick="myFunction()">
+</div>	
+<div class="item">
+	Kiosks <input type="checkbox" id="myCheck"  onclick="myFunction()">
+</div>
+<div class="item">
+	Links <input type="checkbox" id="myCheck"  onclick="myFunction()">
+</div>
+</style>
+
+
 
   <div class="content bg-white">
     <p><strong>Map of NYC Mesh nodes</strong></p>
@@ -379,8 +410,8 @@ function addLayers() {
 		      visible = false
 			    } else { 
 					if (singleNodeSearch){
-						if (map.getZoom() == defaultZoom){
-							// zoom not changed by user so zoom into node
+						if (map.getZoom() >= defaultZoom){
+							// zoom in a bit
 							map.setZoom(14)
 						}
 					    centerLoc = feature.getGeometry().get()

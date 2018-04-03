@@ -5,7 +5,8 @@ title: "Leaflets and outreach material"
 
 **Flyers/Brochures**
 
-[Building postcard - color version](flyer.jpg), [black & white version](flyer-bw.jpg)
+[Building postcard - color version](flyer.jpg), [black & white version](flyer-bw.jpg),  
+[Chinese language](flyer-chinese.jpg)
 
 [General one-page flyer pdf](leaflet-bw.pdf) -[(source file)](leaflet-rtfd.zip)
 
