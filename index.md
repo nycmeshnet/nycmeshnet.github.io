@@ -41,7 +41,7 @@ We aim to create an open, resilient, neutral network that serves both for daily 
   {% include actionables/newsletter.html %}
 </li><li>
 <h3>Donate</h3>
-<p>{{ site.title }} Help extend our network!</p>
+<p>Help extend our network!</p>
 {% include actionables/donate.html %}
 <a href="/help/" class="btn">Help!</a>
 <h3>Docs</h3>
