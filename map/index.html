@@ -16,6 +16,11 @@
 
   <nav>
 
+   <div class="noselect">
+		<style>
+			.noselect { user-select: none; }
+		</style>
+		
     <a href="/" class="logo">
     <img src="/assets/images/logo.png">
     NYC Mesh
@@ -26,16 +31,33 @@
       <a href="/faq">FAQ</a>
       <a href="/join">Join</a>
       <a href="/donate">Donate</a>
-    </div>
+  
 	
 	<br>
-	<object width="280" height="20" z-index: -1 type="text/plain" style="float:right" data="nodes/stats.txt" border="0" >
+	<object width="280" height="20" z-index: -1 type="text/plain" style="float:right" data="nodes/stats.txt" border="0" contenteditable="false">
 	</object>
-
+	
+	</div>
+	</div>
+	
     <div class="title-container">
     </div>
+	<br>
+	<br>
+	<div class="checkb" style="position:absolute;  user-select: none; z-index:5000;">
+		<style>
+			.checkb {white-space: nowrap; display:inline; z-index: -1; user-select: none; }
+			.checkb label{
+				margin: 0px 0px 0px 0px; font-weight: bold; font-size: 14px; text-align:left; width:20px;
+			}
+		</style>
+		<label><input type="checkbox" align="left" id="active" onclick="toggleLayer('active')">Active</label><br>
+		<label><input type="checkbox" id="potential"  onclick="toggleLayer('potential')">Potential</label><br>
+		<label><input type="checkbox" id="link"  onclick="toggleLayer('link')">Link</label><br>
+		<label><input type="checkbox" id="kiosk"  onclick="toggleLayer('kiosk')">Kiosk</label>
+	</div>
   </nav>
-
+	
 <input type="search" 
  placeholder="Search nodes ..." 
  onkeydown="if (event.keyCode == 13) { event.preventDefault(); event.stopPropagation(); initSearch() }"
@@ -44,22 +66,6 @@
  style="width: 200px"
 /> 
 <a href=help>help</a><br>
-
-<style>
-	.item {white-space: nowrap;display:inline  }
-	.checkboxes label{
-       margin: 0px 0px 0px 3px;
-	}
-	.checkboxes {
-	      text-align:left;
-	}
-	.checkboxes input{
-	      margin: 0px 0px 0px 0px;
-	}
-	.checkboxes label{
-	       margin: 0px 0px 0px 3px;
-	}
-</style>
 
   <div class="content bg-white">
     <p><strong>Map of NYC Mesh nodes</strong></p>
@@ -123,23 +129,47 @@
 <script>
 	var map;
 	var defaultZoom = 11
-	var currentNode = {}
-	clearSearch()
+	initSearchVars()
+	resetCenter()
+	
+function initSearchVars() {
+	query = ""
+	searchQuery = ""
+	otherNodes = ""
+	singleNodeSearch = false	
+	resetVisibleLayer()
+}
 
 function clearSearch() {
-		query = ""
-		searchQuery = ""
-		otherNodes = ""
-		singleNodeSearch = false
-		resetVisibleLayer()
-		resetCenter()
-		//preserve zoom and center by not calling initMap
-		//initMap()
-		addLayers() 
-    }
+	initSearchVars()
+//	initMap()
+	addLayers() 
+}
 
 function resetVisibleLayer() {
-		visibleLayer = ["potential", "active", "link", "kiosk"]
+	visibleLayer = ["potential", "active", "link", "kiosk"]
+	for (var i = 0; i < visibleLayer.length ; i++) {
+		var layerName = visibleLayer[i]
+		if (document.getElementById(layerName)){
+			document.getElementById(layerName).checked = true
+		}
+	}
+}
+
+
+function toggleLayer(layerName){
+	var layerIndex = visibleLayer.indexOf(layerName)
+	if (layerIndex == -1){
+		visibleLayer.push(layerName)
+		document.getElementById(layerName).checked = true
+		eval(layerName + 'Layer').setMap(map)
+	} else { 
+		visibleLayer.splice(layerIndex, 1)
+		document.getElementById(layerName).checked = false
+		eval(layerName + 'Layer').setMap(null)
+	}
+//	clearLayers()
+//	addLayers()
 }
 	
 function resetCenter() {
@@ -158,6 +188,7 @@ function initSearch() {
 			if (searchQuery.includes("-"+aLayer)){
 				visibleLayer.splice(i, 1)
 				query = query.replace("-"+aLayer, '')
+				document.getElementById(aLayer).checked = false
 			}
 		}
 		query = query.trim()		
@@ -242,8 +273,6 @@ function wordSearch(query, searchText, nodeNum, active, pano, otherNodes) {
 	}
 }
 
-    
-
 function initMap() {
         var styles = [
           {
@@ -310,48 +339,24 @@ function clearLayers() {
 	kioskLayer.setMap(null)
 }
 
-function addLayers() {
+function initLayers() {
 	// need to standardize names (linkNYC->kiosk) and put in repeat loop for all layers
-	if (visibleLayer.indexOf("potentialLayer")){
 		potentialLayer = new google.maps.Data()
 		potentialLayer.loadGeoJson('./nodes/potential.json')
-	}
-	if (visibleLayer.indexOf("linkLayer")){	
+
 		linkLayer = new google.maps.Data()
 		linkLayer.loadGeoJson('./nodes/links.json')
-	}
-	if (visibleLayer.indexOf("kioskLayer")){
+
 		kioskLayer = new google.maps.Data()
 		kioskLayer.loadGeoJson('./nodes/linkNYC.json')
-	}
-	if (visibleLayer.indexOf("activeLayer")){
+
 		activeLayer = new google.maps.Data()
 		activeLayer.loadGeoJson('./nodes/active.json')
-	}
 		
-		//for (var i = 0; i < visibleLayer.length ; i++) {
-		//	eval(visibleLayer[i] + 'Layer').setMap(map)
-		//}
-		
-		  // beamsLayer.addGeoJson({"type":"Feature","geometry":{"coordinates":[-74.001122,40.711137],"type":"Point"}});
+		initMap()
+}
 
-		/* activeLayer.setStyle({
-		    icon: {
-		      url: '../assets/images/active.svg',
-		      anchor: new google.maps.Point(10, 10),
-		    }
-		  })
-		*/
-
-		//attempt at changing icon for each marker
-		/*
-		  activeLayer.setStyle(function(feature) {
-		    return {icon:feature.getProperty('icon'),
-		    anchor: new google.maps.Point(10, 10),
-		    }
-		  })
-         */
-
+function addLayers() {
 
       kioskLayer.setStyle(function (feature) {
          var url = '../assets/images/linkNYC.svg';
@@ -391,9 +396,9 @@ function addLayers() {
 		      opacity = 1
 		    }
 		    if (query.length > 0) {
-		      if (!wordSearch(query, searchText, nodeNum, true, pano, otherNodes)) {
-		      visible = false
-			    } else { 
+				if (!wordSearch(query, searchText, nodeNum, true, pano, otherNodes)) {
+					visible = false
+				} else { 
 					if (singleNodeSearch){
 						if (map.getZoom() >= defaultZoom){
 							// zoom in a bit
@@ -463,6 +468,7 @@ function addLayers() {
 			  }
 		    }
 		  })
+//		}
 
          /*
 		  potentialLayer.setStyle({
@@ -473,7 +479,7 @@ function addLayers() {
 		    zIndex: -1
 		  })
           */
-		if (visibleLayer.indexOf("linkLayer")){	
+		if (visibleLayer.indexOf("link")){	
 		  linkLayer.setStyle(function (link) {
 		    var strokeColor = 'red';
 		    var opacity = 1;
@@ -512,8 +518,9 @@ function addLayers() {
 
 		  var infowindow = new google.maps.InfoWindow();
 		  activeLayer.addListener('click', openInfoWindow);
-		  potentialLayer.addListener('click', openInfoWindow);
-		
+			if (typeof potentialLayer != 'undefined'){
+		  		potentialLayer.addListener('click', openInfoWindow);
+	    	}
 			// set each layer visible on map
 			for (var i = 0; i < visibleLayer.length ; i++) {
 				eval(visibleLayer[i] + 'Layer').setMap(map)
@@ -555,7 +562,8 @@ function addLayers() {
 		  }
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNClp7oJsw-eleEoR3-PQKV23tpeW-FpE&libraries=visualization&callback=initMap"
-    async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNClp7oJsw-eleEoR3-PQKV23tpeW-FpE&libraries=visualization&callback=initLayers"
+    async defer>
+</script>
 </body>
 </html>
