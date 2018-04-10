@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../css/main2.css"/>
   <link rel="stylesheet" href="../css/style.css"/>
   <link rel="stylesheet" href="../css/tachyons.min.css"/>
+  <script type="text/javascript" src="./nodes/stats.js"></script>
 </head>
 <body class="sans-serif bg-white">
   <div id="map-div" class="h50 h60-l">
@@ -34,8 +35,6 @@
   
 	
 	<br>
-	<object width="280" height="20" z-index: -1 type="text/plain" style="float:right" data="nodes/stats.txt" border="0" contenteditable="false">
-	</object>
 	
 	</div>
 	</div>
@@ -51,8 +50,8 @@
 				margin: 0px 0px 0px 0px; font-weight: bold; font-size: 14px; text-align:left; width:20px;
 			}
 		</style>
-		<label><input type="checkbox" align="left" id="active" onclick="toggleLayer('active')">Active</label><br>
-		<label><input type="checkbox" id="potential"  onclick="toggleLayer('potential')">Potential</label><br>
+		<label id="activeLabel"><input type="checkbox" align="left" id="active" onclick="toggleLayer('active')">Active</label><br>
+		<label id="potentialLabel"><input type="checkbox" id="potential"  onclick="toggleLayer('potential')">Potential</label><br>
 		<label><input type="checkbox" id="link"  onclick="toggleLayer('link')">Link</label><br>
 		<label><input type="checkbox" id="kiosk"  onclick="toggleLayer('kiosk')">Kiosk</label>
 	</div>
@@ -125,12 +124,37 @@
 </footer>
 
 </div>
-
 <script>
+    var activeNodes //declared here but value read from ./nodes/stats.js
+    var potentialNodes //value from ./nodes/stats.js
+	var oldHTML = document.getElementById('activeLabel').innerHTML
+	var newHTML = "<span>" + oldHTML + "</span>"+" ("+activeNodes+")"
+	document.getElementById('activeLabel').innerHTML = newHTML
+	
+	var oldHTML = document.getElementById('potentialLabel').innerHTML
+	var newHTML = "<span>" + oldHTML + "</span>"+" ("+potentialNodes+")"
+	document.getElementById('potentialLabel').innerHTML = newHTML
+	
 	var map;
 	var defaultZoom = 11
 	initSearchVars()
+	var mapUrl = new URL(window.location.href)
+	var urlLayer = mapUrl.searchParams.get("show")
+	setUrlLayers() //only do this once here
 	resetCenter()
+
+function setUrlLayers() {
+	var allLayer = allLayers()
+	for (var i = 0; i < allLayer.length ; i++) {
+		var layerName = allLayer[i]
+		if (urlLayer == layerName) {
+			visibleLayer = [layerName]
+			setLayerCheckmarks()
+			return true
+		}
+	}	
+	return false
+}
 	
 function initSearchVars() {
 	query = ""
@@ -147,15 +171,29 @@ function clearSearch() {
 }
 
 function resetVisibleLayer() {
-	visibleLayer = ["potential", "active", "link", "kiosk"]
-	for (var i = 0; i < visibleLayer.length ; i++) {
-		var layerName = visibleLayer[i]
-		if (document.getElementById(layerName)){
-			document.getElementById(layerName).checked = true
-		}
-	}
+	visibleLayer = allLayers()
+	setLayerCheckmarks()
 }
 
+function allLayers() {
+	return ["potential", "active", "link", "kiosk"]
+}
+
+function setLayerCheckmarks() {
+	var allLayer = allLayers()
+	for (var i = 0; i < allLayer.length ; i++) {
+		var layerName = allLayer[i]
+		if (document.getElementById(layerName)){
+			var layerIndex = visibleLayer.indexOf(layerName)
+			if (layerIndex == -1){
+				document.getElementById(layerName).checked = false
+			} else {
+				document.getElementById(layerName).checked = true
+			}
+		}
+	}
+	//document.getElementById('activeNum').innerHTML = '(150)'
+ }
 
 function toggleLayer(layerName){
 	var layerIndex = visibleLayer.indexOf(layerName)
