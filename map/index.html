@@ -69,7 +69,7 @@
   <div class="content bg-white">
     <p><strong>Map of NYC Mesh nodes</strong></p>
 
-      <p>This map shows our node locations. The colored markers are currently active nodes. The gray markers are node requests from the “Join” form. We are currently working to turn these into active nodes. Click the opaque markers to see panorama photos. The light-blue dots are public access points (LinkNYC kiosks) that can be used as gateways. We have over 150 active nodes and we are adding about four per week.</p>
+      <p>This map shows our node locations. The colored markers are the <span id="activeNum"></span> currently active nodes. The <span id="potentialNum"></span> gray markers are node requests from the “Join” form. We are currently working to turn these into active nodes. Click the opaque markers to see panorama photos. The light-blue dots are public access points (LinkNYC kiosks) that can be used as gateways. We are adding about four nodes per week.</p>
 	
 	  <p>The red lines are over-the-air connections. Gray lines are speculative connections.
 
@@ -130,10 +130,13 @@
 	var oldHTML = document.getElementById('activeLabel').innerHTML
 	var newHTML = "<span>" + oldHTML + "</span>"+" ("+activeNodes+")"
 	document.getElementById('activeLabel').innerHTML = newHTML
+	//regex just adds commas to numbers above 999
+	document.getElementById('activeNum').innerHTML = activeNodes.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") 
 	
 	var oldHTML = document.getElementById('potentialLabel').innerHTML
 	var newHTML = "<span>" + oldHTML + "</span>"+" ("+potentialNodes+")"
 	document.getElementById('potentialLabel').innerHTML = newHTML
+	document.getElementById('potentialNum').innerHTML = potentialNodes.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") 
 	
 	var map;
 	var defaultZoom = 11
