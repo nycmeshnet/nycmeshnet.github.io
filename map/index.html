@@ -69,11 +69,11 @@
   <div class="content bg-white">
     <p><strong>Map of NYC Mesh nodes</strong></p>
 
-      <p>This map shows our node locations. The colored markers are the <span id="activeNum"></span> currently active nodes. The <span id="potentialNum"></span> gray markers are node requests from the “Join” form. We are currently working to turn these into active nodes. Click the opaque markers to see panorama photos. The light-blue dots are public access points (LinkNYC kiosks) that can be used as gateways. We are adding about four nodes per week.</p>
+      <p>This map shows our node locations. The colored markers are the <span id="activeNum"></span> currently active nodes. The <span id="potentialNum"></span> gray markers are node requests from the “Join” form. We are working to turn these into active nodes by <a href="/blog/priorities/">increasing our rate of installs.</a></p>
 	
-	  <p>The red lines are over-the-air connections. Gray lines are speculative connections.
+	<p>Click the opaque markers to see panorama photos. The light-blue dots are public access points (LinkNYC kiosks) that can be used as gateways. The red lines are over-the-air connections. Gray lines are speculative connections.</p>
 
-       <p>Most of our active nodes are in downtown Manhattan from Chinatown to the East Village. If you live in this area we can probably connect you. Supernode2 in Brooklyn is now online in the English Kills area. This supernode is connecting people in East Williamsburg and Bushwick.
+       <p>Most of our active nodes are in downtown Manhattan from Chinatown to the East Village. If you live in this area we can probably connect you. Supernode2 in Brooklyn is now online in the English Kills area. This supernode is connecting people in East Williamsburg and Bushwick.</p>
 	
 	   <p>We are very interested in finding people from other parts of the city that are willing to build and maintain networks for their neighborhood! We will give you lots of help in this. If you would like to volunteer for your neighborhood please <a href="mailto:volunteer@nycmesh.net">email us</a>.</p>
 
@@ -127,6 +127,7 @@
 <script>
     var activeNodes //declared here but value read from ./nodes/stats.js
     var potentialNodes //value from ./nodes/stats.js
+
 	var oldHTML = document.getElementById('activeLabel').innerHTML
 	var newHTML = "<span>" + oldHTML + "</span>"+" ("+activeNodes+")"
 	document.getElementById('activeLabel').innerHTML = newHTML
@@ -138,7 +139,7 @@
 	document.getElementById('potentialLabel').innerHTML = newHTML
 	document.getElementById('potentialNum').innerHTML = potentialNodes.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") 
 	
-	var map;
+	var map
 	var defaultZoom = 11
 	initSearchVars()
 	var mapUrl = new URL(window.location.href)
@@ -366,9 +367,9 @@ function initMap() {
 		  }
 
 
-		map = new google.maps.Map(document.getElementById('map-div'), mapOptions);
-        map.mapTypes.set('map_style', styledMap);
-        map.setMapTypeId('map_style');
+		map = new google.maps.Map(document.getElementById('map-div'), mapOptions)
+        map.mapTypes.set('map_style', styledMap)
+        map.setMapTypeId('map_style')
 		// let map load first before adding layers-
 		setTimeout(addLayers, 25)
 	}
@@ -602,6 +603,7 @@ function addLayers() {
 		     setTimeout(infowindow.open(map), 10000) // needs a timeout delay to force the autoscroll !!
 		  }
 }
+
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNClp7oJsw-eleEoR3-PQKV23tpeW-FpE&libraries=visualization&callback=initLayers"
     async defer>
