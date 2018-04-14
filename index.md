@@ -18,7 +18,7 @@ If you're a network operator, please consider peering with our open network to p
 
 We aim to create an open, resilient, neutral network that serves both for daily internet use, and for emergency use during power outages or internet disruption, running software that helps our community.
 
-<div class="center media">
+<div class="center" style="margin-top: 32px">
 <iframe  src="https://player.vimeo.com/video/262654150" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 
