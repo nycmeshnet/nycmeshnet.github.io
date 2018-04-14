@@ -18,6 +18,9 @@ If you're a network operator, please consider peering with our open network to p
 
 We aim to create an open, resilient, neutral network that serves both for daily internet use, and for emergency use during power outages or internet disruption, running software that helps our community.
 
+<iframe src="https://player.vimeo.com/video/262654150" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/262654150">NYCMESH</a> from <a href="https://vimeo.com/ckelly">ckelly</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+
 <h2 class="center">Get involved</h2>
 <ul class="actionables">
   <li>
