@@ -18,7 +18,7 @@ If you're a network operator, please consider peering with our open network to p
 
 We aim to create an open, resilient, neutral network that serves both for daily internet use, and for emergency use during power outages or internet disruption, running software that helps our community.
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=TD4XdGMDbas
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=glW_S9bKAHk
 " target="_blank"><img src="/assets/images/connect_thumb02.jpg" 
 alt="How to connect to NYC Mesh" width="550" height="312" /></a>
 
