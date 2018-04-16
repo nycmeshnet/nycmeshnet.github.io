@@ -358,13 +358,14 @@ function initMap() {
 		  var mapOptions = {
 		    center: centerLoc,
 		    zoom: defaultZoom,
-		    disableDefaultUI: false,
+		    disableDefaultUI: true,
+			mapTypeControl: true,
 		    zoomControl: true,
 		    scrollwheel: false,
 		    streetViewControl: false,
 		    mapTypeControlOptions: {
 		              style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-		              position: google.maps.ControlPosition.RIGHT_TOP
+		              position: google.maps.ControlPosition.LEFT_BOTTOM
 		          }
 		  }
 
@@ -560,7 +561,7 @@ function addLayers() {
 		  //   zIndex: -1
 		  // })
 
-		infowindow = new google.maps.InfoWindow({ maxWidth: 320 })
+		infowindow = new google.maps.InfoWindow({ maxWidth: 300 })
 		activeLayer.addListener('click', openInfoWindow)
 		google.maps.event.addListener(infowindow,'closeclick',function(){setToolDisplay("block")})
 		google.maps.event.addListener(map, 'click', function() {
