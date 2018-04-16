@@ -17,7 +17,7 @@
 
   <nav>
 
-   <div class="noselect">
+   <div id="titlenav" class="noselect">
 		<style>
 			.noselect { user-select: none; }
 		</style>
@@ -560,9 +560,17 @@ function addLayers() {
 		  //   zIndex: -1
 		  // })
 
-		  infowindow = new google.maps.InfoWindow({ maxWidth: 320 });
-		  activeLayer.addListener('click', openInfoWindow);
-			if (typeof potentialLayer != 'undefined'){
+		infowindow = new google.maps.InfoWindow({ maxWidth: 320 })
+		activeLayer.addListener('click', openInfoWindow)
+		google.maps.event.addListener(infowindow,'closeclick',function(){setToolDisplay("block")})
+		google.maps.event.addListener(map, 'click', function() {
+		    if(infowindow){
+				infowindow.close()
+				setToolDisplay("block")
+		    }
+		})
+		
+		if (typeof potentialLayer != 'undefined'){
 		  		potentialLayer.addListener('click', openInfoWindow);
 	    	}
 			// set each layer visible on map
@@ -570,7 +578,8 @@ function addLayers() {
 				eval(visibleLayer[i] + 'Layer').setMap(map)
 			}
 			
-	function openInfoWindow(event) {
+			
+function openInfoWindow(event) {
 		    // replace this with a fully custom overlay
 		    var content = "<div class='pv3'>"
 		    content += "<h2 class='di pr2'>Node "+event.feature.f.id+""+event.feature.f.otherNodes+"</h2>"
@@ -597,27 +606,32 @@ function addLayers() {
 		        content += image;
 		      }
 		    }
-		     infowindow.setContent(content);
-		     infowindow.setPosition(event.feature.getGeometry().get());
-		     infowindow.setOptions({pixelOffset: new google.maps.Size(-1,-8)});
-		     infowindow.open(map);
+			setToolDisplay("none")
+			infowindow.setContent(content)
+			infowindow.setPosition(event.feature.getGeometry().get())
+			infowindow.setOptions({pixelOffset: new google.maps.Size(-1,-8)})
+			//infowindow.open(map)
+			infowindow.setZIndex(99999)
 		     //setTimeout(infowindow.close(map), 0) // needs a timeout delay to force the autoscroll !!
 		     setTimeout(infowindow.open(map), 10000) // needs a timeout delay to force the autoscroll !!
 		  }
 		//close the infowindow if map clicked
-		google.maps.event.addListener(map, 'click', function() {
-		    if(infowindow){
-		       infowindow.close()
-		    }
-		})
-		function toggleTool() {
-		    var x = document.getElementById("maptool");
-		    if (x.style.display === "none") {
-		        x.style.display = "block";
-		    } else {
-		        x.style.display = "none";
-		    }
+		
+function setToolDisplay(displayVal){
+	var mt = document.getElementById("maptool")
+	var tn = document.getElementById("titlenav")
+	mt.style.display = displayVal
+	tn.style.display = displayVal
+}
+
+function toggleTool() {
+	var x = document.getElementById("maptool")
+		if (x.style.display === "none") {
+			x.style.display = "block"
+		} else {
+			x.style.display = "none"
 		}
+	}
 }
 
 </script>
