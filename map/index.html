@@ -66,7 +66,7 @@
 	</div>
   </nav>
 	
-<a href=help>search help</a><br>
+<a href=help>search help 2</a><br>
 
   <div class="content bg-white">
     <p><strong>Map of NYC Mesh nodes</strong></p>
@@ -561,7 +561,8 @@ function addLayers() {
 		  //   zIndex: -1
 		  // })
 
-		infowindow = new google.maps.InfoWindow({ maxWidth: 300 })
+
+		infowindow = new google.maps.InfoWindow({ maxWidth: window.innerWidth -80 })
 		activeLayer.addListener('click', openInfoWindow)
 		google.maps.event.addListener(infowindow,'closeclick',function(){setToolDisplay("block")})
 		google.maps.event.addListener(map, 'click', function() {
@@ -611,7 +612,7 @@ function openInfoWindow(event) {
 			infowindow.setContent(content)
 			infowindow.setPosition(event.feature.getGeometry().get())
 			infowindow.setOptions({pixelOffset: new google.maps.Size(-1,-8)})
-			//infowindow.open(map)
+			infowindow.open(map)
 			infowindow.setZIndex(99999)
 		     //setTimeout(infowindow.close(map), 0) // needs a timeout delay to force the autoscroll !!
 		     setTimeout(infowindow.open(map), 10000) // needs a timeout delay to force the autoscroll !!
