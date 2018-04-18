@@ -66,7 +66,7 @@
 	</div>
   </nav>
 	
-<a href=help>search help 2</a><br>
+<a href=help>search help</a><br>
 
   <div class="content bg-white">
     <p><strong>Map of NYC Mesh nodes</strong></p>
@@ -148,6 +148,8 @@
 	var urlLayer = mapUrl.searchParams.get("show")
 	setUrlLayers() //only do this once here
 	resetCenter()
+	
+	var potCount = 0
 
 function setUrlLayers() {
 	var allLayer = allLayers()
@@ -542,7 +544,8 @@ function addLayers() {
 		 //     if (!linkMatches)
 		 //       visible = false;
 		 //   }
-					
+			
+		    potCount++
 		    return {
 		      zIndex: 999,
 			  visible: visible,
