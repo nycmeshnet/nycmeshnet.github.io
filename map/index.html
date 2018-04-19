@@ -618,7 +618,7 @@ function openInfoWindow(event) {
 			infowindow.open(map)
 			infowindow.setZIndex(99999)
 		     //setTimeout(infowindow.close(map), 0) // needs a timeout delay to force the autoscroll !!
-		     setTimeout(infowindow.open(map), 10000) // needs a timeout delay to force the autoscroll !!
+		     setTimeout(function(){infowindow.open(map)}, 2000) // needs a timeout delay to force the autoscroll !!
 		  }
 		//close the infowindow if map clicked
 		

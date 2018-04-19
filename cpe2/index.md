@@ -32,11 +32,13 @@ Reset to factory again
 
 Change the pass
 
-Click the "Settings" button (gear icon) on the left to give you Wireless | Network | Services | System
+Click the "Settings" button (gear icon) on the left to give you-  
+ Wireless | Network | Services | System
 
 [**Wireless settings**](./litebeam/wireless.png)    
  * Station PtMP  
- * SSID: nycmesh-english-kills-east OR nycmesh-english-kills-west,  see pairing below  
+ * SSID: nycmesh-english-kills-east OR  
+&nbsp;&nbsp;&nbsp;&nbsp;nycmesh-english-kills-west,  see pairing below  
  * WPA2 PSK: nycmeshnet
  * Antenna 23 -23dbi  
 	
