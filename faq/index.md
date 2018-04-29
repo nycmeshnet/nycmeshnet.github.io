@@ -65,7 +65,7 @@ Yes, there is a mesh network called "Guifi" in Spain that covers a large part of
 
 No, we are not an ISP, we are a community that shares ownership of a network. Collectively we have our own internet connection at our "supernode". Also some of our members share their own internet connections. 
 
-Our supernode peers with other networks at an internet exchange point and provides access to the internet without traditional ISPs. We are a non-profit project of the New York chapter of the Internet Society (ISOC-NY).
+Our network peers with other networks at an internet exchange point and provides access to the internet without traditional ISPs. We are a non-profit project of the New York chapter of the Internet Society (ISOC-NY).
 
 ## <a name="node"></a>What is a node?
 
@@ -87,7 +87,7 @@ We also have some members experimenting with and contributing to cjdns/hyperbori
 
 ## <a name="other-router"></a>Can I use my own different router?
 
-No, the router we currently support and recommend for building-to-building is the Ubiquiti NanoStation M5. For supernode connections you will need a LiteBeamAC or NanoBeamAC router. Our [download page](../download) has our firmware for the NanoStation and links to buy. We are working on supporting other routers. 
+No, the router we currently support and recommend for building-to-building is the Ubiquiti NanoStation M5. We might be updating that soon. For supernode connections you will need a LiteBeamAC or NanoBeamAC router. Our [download page](../download) has our firmware for the NanoStation and links to buy. We are working on supporting other routers. 
 
 TP-Link have locked down some of their routers, and others are not supported well by OpenWrt, so we unfortunately are looking at other options for indoor routers at the moment.
 
