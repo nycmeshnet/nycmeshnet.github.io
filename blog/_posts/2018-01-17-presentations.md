@@ -6,7 +6,7 @@ author: Brian
 Presentations-
 
 ***
-**State of the Mesh, 2018**
+**State of the Mesh, January 11, 2018**
 
 [video](https://youtu.be/ykOqIh5Mt4Y)
 
@@ -14,6 +14,14 @@ Presentations-
 [Lisa's slides- "Outreach"](https://goo.gl/uGD2yp)  
 [Zach's slides- "Master Plan"](https://goo.gl/tX412L)  
 [Jesse's slides- "Supernode2"](https://goo.gl/X8P6sE)  
+
+***
+**Tactical Tech, Nov 2nd, 2017**
+
+[Master Plan](https://livestream.com/accounts/686369/tacticaltech/videos/165333145)
+
+[Brian's slides](https://goo.gl/9RREhJ)
+
 
 ***
 **Installs and outreach, July 11 2017**
