@@ -492,10 +492,14 @@ function addLayers() {
 		      opacity = 1
 		    }
 		    if (query.length > 0) {
-		      if (!wordSearch(query, searchText, nodeNum, false, pano, otherNodes)) {
-		      visible = false
+				if (!wordSearch(query, searchText, nodeNum, false, pano, otherNodes)) {
+					visible = false
 			    } else { 
 					if (singleNodeSearch){
+						if (map.getZoom() >= defaultZoom){
+							// zoom in a bit
+							map.setZoom(14)
+						}
 						centerLoc = feature.getGeometry().get()
 						map.panTo({lat: (centerLoc.lat()), lng: (centerLoc.lng())})
 						map.panBy(0, verticalSearchTweak)
