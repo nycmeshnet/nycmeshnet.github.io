@@ -22,6 +22,7 @@ title: "Frequently asked questions"
 [Is the mesh secure?](#secure)   
 [What is your user data policy](#data)  
 [Why aren't you doing this obvious thing I just thought of?](#obvious)   
+[Blockchain](#blockchain)  
 
 ## <a name="why"></a>Why are you building a community-owned network?
 
@@ -132,6 +133,10 @@ NYC Mesh may periodically look at traffic headers for troubleshooting purposes a
 Beyond the scope of NYC Mesh, the NYC Mesh network is unencrypted, open, and depends on donated internet from individuals and other companies which is outside the control of NYC Mesh, therefore NYC Mesh is unable to detect or prevent traffic monitored at those points. 
 
 NYC Mesh will comply with all federal laws in the countries it operates, however, as policy, no data is collected and therefore no data exists to provide requestors.
+
+## <a name="blockchain"></a>Blockchain?
+
+We are not interested in your blockchain idea. Please read [Meshcoin](/blog/meshcoin). 
 
 ## <a name="obvious"></a>Why aren't you doing this obvious thing I just thought of?
 
