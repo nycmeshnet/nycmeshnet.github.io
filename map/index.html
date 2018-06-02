@@ -169,6 +169,7 @@ function initSearchVars() {
 	searchQuery = ""
 	otherNodes = ""
 	singleNodeSearch = false	
+	tbe = false //no status: To Be Examined
 	resetVisibleLayer()
 }
 
@@ -240,6 +241,16 @@ function initSearch() {
 		query = query.trim()		
 		//query is integer, so single node search, will center on this-
 		singleNodeSearch = (query >>> 0 === parseFloat(query))
+		if (query.includes("tbe")) {
+			tbe = true
+			query = query.replace("tbe", "")
+			query = query.trim()
+		}
+		if (query.charAt(0) == "<"){
+			if (query.charAt(1) != " "){
+				query = query.replace("<", "< ")
+			}
+		}
 		//initMap()
 		clearLayers()
 		addLayers()
@@ -261,6 +272,7 @@ function wordSearch(query, searchText, nodeNum, active, pano, otherNodes) {
 			return false
 		}
 	}
+	
 	if (query.includes("active")){
 		if (!active){
 			return false
@@ -507,6 +519,11 @@ function addLayers() {
 				  //make search result more visible
 				  opacity = 1
 		    }}
+			if (tbe){
+				if (feature.getProperty("status")){
+					visible = false
+				}
+			}
 		    return {
 			      scaledSize: new google.maps.Size(50, 50),
 			      title: feature.getProperty("id"),
