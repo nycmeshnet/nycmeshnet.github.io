@@ -26,9 +26,9 @@ It is possible to do this yourself. Ask us for help configuring the LiteBeamAC. 
 
 **2) Kiosk client install**
 
-This is similar to supernode client but uses a NanoStation aimed at a LinkNYC kiosk on the avenue below.
+This is similar to supernode client but uses a router aimed at a LinkNYC kiosk on the avenue below.
 
-We supply the NanoStation NSM5, antenna mount (if needed), ethernet, ethernet switch (if needed) and indoor router.
+We supply the SXTsq, antenna mount (if needed), ethernet, ethernet switch (if needed) and indoor router.
 
 The total for the equipment is [$110](https://nycmesh.net/pay/), and the install is $50 (paid to an independent installer).
 
