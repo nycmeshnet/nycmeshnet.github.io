@@ -7,7 +7,11 @@ We have a few different types of install. At the moment we are mostly doing inst
 
 With all rooftop installs, an antenna is mounted on the roof and outdoor ethernet cable goes down a wall or conduit and into your apartment. We usually put the cable through a window frame or at the side of an air-conditioner. A small power adapter in your apartment will give power the antenna over the ethernet cable. Another router is needed in the apartment for your wifi connection.
 
-DIY installs are possible, or you can pay us $110 to cover hardware (basically cost) and $50 labor for an installer. Email us if you would prefer a monthly plan rather than upfront payment.
+You can pay us $110 to cover hardware (basically cost) and $50 labor paid to the installer. It is *much* easier, faster and often cheaper for you if we do the install. We have the right hardware and you don't get charged if we are unable to connect you. Email us if you would prefer a monthly plan rather than upfront payment for the install.
+
+**For DIY installs- please connect your neighbors too!**  
+**If you DIY you are obliged by our [NCL license](/ncl.pdf) to extend the network**   
+We can help you with configuring the ethernet switches etc
 
 **1) Supernode client**
 
@@ -21,7 +25,7 @@ The total for the equipment is [$110](https://nycmesh.net/pay/), and the install
 
 $160 per apartment is due on the day of the install. We also suggest a monthly subscription of $20 to help us maintain our network.
 
-It is possible to do this yourself. Ask us for help configuring the LiteBeamAC. If you are installing in a window we suggest the much smaller NanoBeamAC 16. If you DIY please consider also connecting your neighbors. This is the whole point of the mesh.
+It is possible to do this yourself. Ask us for help configuring the LiteBeamAC. If you are installing in a window we suggest the smaller NanoBeamAC. If you DIY please consider also connecting your neighbors. This is the whole point of the mesh.
 
 
 **2) Kiosk client install**
