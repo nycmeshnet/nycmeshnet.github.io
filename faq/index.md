@@ -20,9 +20,9 @@ title: "Frequently asked questions"
 [I can see another node from my window. Can I put a router there?](#window)   
 [Why don't we mesh mobile phones instead of routers?](#mobile)   
 [Is the mesh secure?](#secure)   
-[What is your user data policy](#data)  
+[What is your user data policy?](#data)  
+[Blockchain?](#blockchain)  
 [Why aren't you doing this obvious thing I just thought of?](#obvious)   
-[Blockchain](#blockchain)  
 
 ## <a name="why"></a>Why are you building a community-owned network?
 
