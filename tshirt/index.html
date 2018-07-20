@@ -57,7 +57,7 @@
 
     </div>
 
-    <h1>T-Shirt Payment</h1> 
+    <h1>T-Shirt Payment- $10</h1> 
     Thank you!
     <p class="sig">
     <!-- <img src="http://nycmeshnet.github.io/images/" alt=" photo">  -->
@@ -71,11 +71,8 @@
 
 <!-- Stripe Donation -->
 <div id="donation-amounts" class="dt w-100 mw8 f3 center pv4 ph3 f4">
-  <p class="bb pb4 tl">This t-shirt payment will go towards expanding NYC Mesh!</p>
-  <div class="flex flex-row justify-between">
-    <div class="w-100 h2 bw1 bb bt-0 bl-0 br-0 b--dotted"></div>
-    <p class="pv4">$</p><input id="custom" onfocus="setAmount('custom')" type"number" maxlength="7" name="donation-amount" value="10" class="bn ph0 w4 overflow-visible" >
-  </div>
+  <p class="bb pb4 tl">This $10 t-shirt payment will go towards expanding NYC Mesh!</p>
+  
   <div class="tl">
     <form>
       <p>Please also subscribe me to a monthly donation (starting next month)</p>
@@ -102,7 +99,7 @@
         <div>
           <input class="w1" type="radio" id="hundred-monthly"
            name="contact" value="mail" onclick="setSubscription('hundred-monthly')">
-          <label class="fw4" for="hundred-monthly">$100 (business)</label>
+          <label class="fw4" for="hundred-monthly">$100</label>
         </div>
       </div>
     </form>
@@ -152,7 +149,7 @@
     var amount = url.searchParams.get("a");
 
 
-    var donationAmount = amount * 100 || 11000
+    var donationAmount = amount * 100 || 1000
     
     var subscriptionPlan = plan || 'twenty-monthly'
     var plan = url.searchParams.get("sub");
