@@ -151,7 +151,7 @@
 
     var donationAmount = amount * 100 || 1000
     
-    var subscriptionPlan = plan || 'twenty-monthly'
+    var subscriptionPlan
     var plan = url.searchParams.get("sub");
     if (plan == 20) {
       let planId = 'twenty-monthly'
