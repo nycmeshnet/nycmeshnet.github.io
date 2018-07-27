@@ -261,6 +261,10 @@ function initSearch() {
 			if (query.charAt(1) != " "){
 				query = query.replace("<", "< ")
 			}
+		} else if (query.charAt(0) == ">"){
+			if (query.charAt(1) != " "){
+				query = query.replace(">", "> ")
+			}
 		}
 		//initMap()
 		clearLayers()
