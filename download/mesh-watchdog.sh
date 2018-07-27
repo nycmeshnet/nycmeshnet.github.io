@@ -1,5 +1,16 @@
 #!/bin/sh
-# mesh-watchdog v1.1.1, NYC Mesh, Brian Hall
+# mesh-watchdog v1.2.0, NYC Mesh, Brian Hall
+
+#Remove the lock directory
+cleanup()
+{
+    if rmdir $LOCKDIR; then
+        echo "Finished"
+    else
+        echo "Failed to remove lock directory '$LOCKDIR'"
+        exit 1
+    fi
+}
 
 restartWifi()
 {
@@ -19,6 +30,19 @@ restartNetwork()
   killall dnsmasq
   /etc/init.d/dnsmasq start
 }
+
+LOCKDIR="/tmp/mesh-watchdog-lock"
+if mkdir $LOCKDIR; then            
+    #Ensure that if we "grabbed a lock", we release it
+    #Works for SIGTERM and SIGINT(Ctrl-C)
+    echo "made lockdir"
+    trap "cleanup" EXIT     
+else                       
+    echo "Could not create lock directory '$LOCKDIR'"
+    exit 1                         
+fi                
+
+echo 'start watchdog'
 
 #gets date-time from log and exit if recently run. date-time is first two words of last line 
 exitIfRecentRestart()
@@ -104,6 +128,7 @@ while [ "$count" -le 4 ]
       echo "wan:ok	ping-count:$count"
       exit 0
    fi
+ sleep 60
  let count++
 done
 echo "$DATE network restart" | tee -a $LOG
