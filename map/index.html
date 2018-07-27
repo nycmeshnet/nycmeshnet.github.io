@@ -57,6 +57,7 @@
 		 onkeyup="searchQuery = this.value"
 		 onsearch="clearSearch()" // clicked the clear button which triggers onsearch
 		 style="background: white; width: 120px; opacity: 0.8"
+		 id="search"
 		/><br>
 		
 		<label id="activeLabel"><input type="checkbox" align="left" id="active" onclick="toggleLayer('active')">Active</label><br>
@@ -127,6 +128,13 @@
 
 </div>
 <script>
+	initSearchVars()
+	
+	//url input for search
+	var url_string = window.location.href
+	var url = new URL(url_string);
+	var searchQuery = url.searchParams.get("s")
+	
     var activeNodes //declared here but value read from ./nodes/stats.js
     var potentialNodes //value from ./nodes/stats.js
 
@@ -143,13 +151,16 @@
 	
 	var map
 	var defaultZoom = 11
-	initSearchVars()
 	var mapUrl = new URL(window.location.href)
 	var urlLayer = mapUrl.searchParams.get("show")
 	setUrlLayers() //only do this once here
 	resetCenter()
 	
 	var potCount = 0
+	if (searchQuery){
+		document.getElementById("search").value = searchQuery
+		initSearch()
+	}
 
 function setUrlLayers() {
 	var allLayer = allLayers()
