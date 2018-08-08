@@ -1,2 +1,2 @@
-var activeNodes = 200
-var potentialNodes = 1800
+var activeNodes = 202
+var potentialNodes = 1807
