@@ -6,9 +6,14 @@ author: Brian
 Presentations-
 
 ***
+**Mozilla WINS, August 14, 2018**  
+[Video](https://www.youtube.com/watch?v=FOWrappjLsY&t=1h26m8s)  
+[Zach's slides](https://goo.gl/njnjpg)  
+
+***
 **State of the Mesh, January 11, 2018**
 
-[video](https://youtu.be/ykOqIh5Mt4Y)
+[Video](https://youtu.be/ykOqIh5Mt4Y)
 
 [Brian's slides "State of the Mesh"](https://goo.gl/cSQWbe)  
 [Lisa's slides- "Outreach"](https://goo.gl/uGD2yp)  
