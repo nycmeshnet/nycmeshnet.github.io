@@ -136,7 +136,7 @@ NYC Mesh will comply with all federal laws in the countries it operates, however
 
 ## <a name="blockchain"></a>Blockchain?
 
-We are not interested in your blockchain idea. Please read [Meshcoin](/blog/meshcoin). 
+[Meshcoin](/blog/meshcoin). 
 
 ## <a name="obvious"></a>Why aren't you doing this obvious thing I just thought of?
 
