@@ -37,38 +37,32 @@
 </style></head>
 
 <body class="blog bg-white">
-  <div class=" pv0 cover overflow-x-hidden" style="height: 200px; background-image: url('/assets/images/banner.jpg');"></div>
-</div>
-<nav>
-  <a href="/" class="logo">
-    <img src="/assets/images/logo.png">
-    NYC Mesh
-  </a>
-  <div class="mainnav">
-  
-    <a href="/join">join</a>
-    <a href="/donate">donate</a>
-    <a href="/map">map</a>
-    <a href="/blog">blog</a>
-    <a href="/faq">faq</a>
-    <a href="http://docs.nycmesh.net">docs</a>
-	<div></div>
+  <div
+    class="pv0 cover"
+    style="height: 200px; background-image: url('/assets/images/banner.jpg');">
+    <nav>
+      <a href="/" class="logo">
+        <img src="/assets/images/logo.png" />
+        NYC Mesh
+      </a>
+      <div class="mainnav">
+        <a href="/join">join</a>
+        <a href="/donate">donate</a>
+        <a href="/map">map</a>
+        <a href="/blog">blog</a>
+        <a href="/faq">faq</a>
+        <a href="http://docs.nycmesh.net">docs</a>
+    	</div>
+       <div class="donatetitle">
 
+          <div class="tags">
+
+          </div>
+
+          <h1>Donate</h1>
+      </div>
+    </nav>
   </div>
-
-  <div class="title-container">
-    <div class="donatetitle">
-
-    <div class="tags">
-
-    </div>
-
-    <h1>Donate</h1> 
-
-</div>
-
-  </div>
-</nav>
 
 <!-- Stripe Donation -->
 <div id="donation-amounts" style="max-width: 632px" class="ph3 dt w-100 f3 center bg-white black serif">
@@ -81,15 +75,15 @@
     </div>
     <div class="flex flex flex-column items-start mv3">
       <span class="gold">$60</span>
-      <span class="f6 gray mv1">pledged of $1,000 goal</span>
+      <span class="f6 gray mv1">pledged of $1,000 monthly maintenance costs</span>
     </div>
   </div>
 
 
   
-  <div class="mt2 mb3 tc f3 sans-serif fw5 center flex flex-row-l flex-column justify-between items-center-l">
+  <div class="mt2 mb3 tc f3 sans-serif fw5 center flex flex-row-l flex-column justify-between items-center">
     <div class="flex flex-column mv3">
-      <span class="f5 tl">
+      <span class="f5 tl-l tc fw6">
         Choose a monthly amount:
       </span>
       <div class="flex items-center justify-center-l mt3">
@@ -109,36 +103,37 @@
       </div>
     </div>
 
-    <div class="flex flex-column items-end-l items-start mv3">
-      <span class="f5 tr">
+    <div class="flex flex-column items-end-l items-start-l items-center mv3">
+      <span class="f5 tr-l tc fw6">
         Or make a one time donation:
       </span>
       <div class="flex items-center justify-center mt3">
-        <input id="custom" onfocus="setAmount('custom')" style="min-width: 128px; height: 56px" maxlength="7" name="donation-amount" placeholder="$" class="fw3 pa0 ma0 f3 w3 db ba b--moon-gray pa3 br0 pointer">
+        <input id="custom" onfocus="setAmount('custom')" style="min-width: 128px; height: 56px" maxlength="7" autocomplete="off" name="donation-amount" placeholder="$" class="fw3 pa0 ma0 f3 w3 db ba b--moon-gray pa3 br0 pointer">
         
       </div>
     </div>
   </div>
 
-
+  <div>
 
     <div  class="pt1 mv4 mw5 f4 center sans-serif">
-      <input id="payButton" type="submit" value="Pay with card" class="input-reset bw0 w-100 fw5 br3 pa3 white bg-blue">
+      <input id="payButton" type="submit" value="Donate with card" class="input-reset bw0 w-100 fw5 br3 pa3 white bg-blue ph4 mr5">
       </input>
     </div>
 
-  
+    <!-- Donation Details -->
+    <div class="gray tr serif pb3 pt2 mw6 center">
+      <p class="f6 lh-copy i tc center measure">
+        All donations will go towards our expenses, and are tax deductible through our 501(c)(3) fiscal sponsor, <a class="no-underline light-silver" href="https://isoc-ny.org">ISOC-NY</a>.
+      </p>
+    </div>
 
-  <!-- Donation Details -->
-  <div class="gray tc serif pb3 pt2 ph4 mw6 center">
-    <p class="f6 lh-copy i">
-      All donations will go towards our expenses, and are tax deductible through our 501(c)(3) fiscal sponsor, <a class="no-underline light-silver" href="https://isoc-ny.org">ISOC-NY</a>.
-    </p>
   </div>	
 </div>
 
+<div class="bg-near-white dark-gray pv5">
 <!-- Letter -->
-<div class="bg-white black-80 tc serif mw6 ph4 pb3 center mt5">
+<div class="tc serif mw6 ph4 pb3 center">
 	Checks should be made out to <b>"Internet Society New York"</b><br>memo:"NYC Mesh", and mailed to:<br><br>ISOC-NY (NYC Mesh)<br>PO Box 1599<br>Madison Square Station<br> New York, NY 10159<br><br>
 
 Paypal donations can be sent to: treasurer@isoc-ny.org<br>
@@ -158,6 +153,7 @@ Donor List:<br></p>
 <b>Individuals</b><br>
 Oliver Baer
 
+</div>
 </div>
   <footer class="footer">
 	<a href="/">Home</a>
