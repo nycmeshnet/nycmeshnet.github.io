@@ -28,11 +28,33 @@
 .container > .infoBoxList > .shareInfoBox
 {display:none !important;}</style>
 <style>
+  body {
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale
+  }
   .bg-blue {
     background-color: #007aff;
   }
+  .bg-blue-50 {
+    background-color: rgba(0,122,255,0.0625);
+  }
   .b--blue {
     border-color: #007aff;
+  }
+  .hover-b--blue:hover {
+    border-color: #007aff;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  input[type=number] {
+    -moz-appearance:textfield;
+  }
+  ::-webkit-input-placeholder {
+    padding-top: 3px;
   }
 </style></head>
 
@@ -71,11 +93,12 @@
   <div  class="mh3 center pt4 sans-serif">
     <h2 class="f4 fw6 tl">Help us fund Supernodes 3 and 4!</h2>
     <div class="h1 bg-light-gray w-100 br3">
-      <div style="width: 6%" class="h1 bg-gold br3"></div>
+      <!-- You can also do style="width: calc(100% * 80 / 2650)" but 10% of users won't render correctly -->
+      <div style="width: 3%" class="h1 bg-gold br3"></div>
     </div>
     <div class="flex flex flex-column items-start mv3">
-      <span class="gold">$60</span>
-      <span class="f6 gray mv1">pledged of $1,000 monthly maintenance costs</span>
+      <span class="gold">$80</span>
+      <span class="f6 gray mv1">pledged of $2,650 monthly maintenance costs</span>
     </div>
   </div>
 
@@ -87,18 +110,18 @@
         Choose a monthly amount:
       </span>
       <div class="flex items-center justify-center-l mt3">
-        <div id="twenty-monthly" onclick="setAmount('twenty-monthly')" class="button  pa0 br0 ba b--moon-gray ph3 pv3 pointer hover-bg-near-white">
-          <span class="ma0 fw3">$20</span>
+        <div id="twenty-monthly" onclick="setAmount('twenty-monthly')" class="button  pa0 br0 ba b--moon-gray ph3 pv3 pointer hover-b--blue">
+          <span class="ma0 fw4 sans-serif">$20</span>
         </div>
         <div class="w1">
         </div>
-        <div id="fifty-monthly" onclick="setAmount('fifty-monthly')" class="button  pa0 br0 ba b--moon-gray ph3 pv3 pointer hover-bg-near-white">
-          <span class="ma0 fw3">$50</span>
+        <div id="fifty-monthly" onclick="setAmount('fifty-monthly')" class="button  pa0 br0 ba b--moon-gray ph3 pv3 pointer hover-b--blue">
+          <span class="ma0 fw4 sans-serif">$50</span>
         </div>
         <div class="w1">
         </div>
-        <div id="hundred-monthly" onclick="setAmount('hundred-monthly')" class="button  pa0 br0 ba b--moon-gray ph3 pv3 pointer hover-bg-near-white">
-          <span class="ma0 fw3">$100</span>
+        <div id="hundred-monthly" onclick="setAmount('hundred-monthly')" class="button  pa0 br0 ba b--moon-gray ph3 pv3 pointer hover-b--blue">
+          <span class="ma0 fw4 sans-serif">$100</span>
         </div>
       </div>
     </div>
@@ -108,8 +131,7 @@
         Or make a one time donation:
       </span>
       <div class="flex items-center justify-center mt3">
-        <input id="custom" onfocus="setAmount('custom')" style="min-width: 128px; height: 56px" maxlength="7" autocomplete="off" name="donation-amount" placeholder="$" class="fw3 pa0 ma0 f3 w3 db ba b--moon-gray pa3 br0 pointer">
-        
+        <input id="custom" type="number"  min="0" onfocus="setAmount('custom')" style="min-width: 128px; height: 56px" maxlength="7" autocomplete="off" name="donation-amount" placeholder="$" class="fw3 pa0 ma0 f3 w3 db ba b--moon-gray pa3 br0 pointer">
       </div>
     </div>
   </div>
@@ -189,8 +211,10 @@ Oliver Baer
     var donationAmount, donationType, customAmount;
     var customDonation = document.getElementById('custom');
     customDonation.onkeypress = function(e) {
-      // not a number
-      if (e.which < 48 || e.which > 57)
+      console.log(e.which)
+      const notNumber = e.which < 48 || e.which > 57
+      const notDelete = e.which !== 8
+      if (notNumber && notDelete)
         e.preventDefault()
     }
 
@@ -215,17 +239,17 @@ Oliver Baer
         if (selected.id == 'custom')
           selected.className = "fw3 pa0 ma0 f3 w3 db ba b--moon-gray pa3 br0 pointer"
         else
-          selected.className = "button  pa0 br0 ba b--moon-gray ph3 pv3 pointer hover-bg-near-white"
+          selected.className = "button  pa0 br0 ba b--moon-gray ph3 pv3 pointer hover-b--blue"
       }
 
       // highlight choice and set amount
       var button = document.getElementById(amount);
       if (amount == 'custom') {
-        button.className = "fw3 pa0 ma0 f3 w3 db ba b--blue pa3 br0 pointer"
+        button.className = "fw3 pa0 ma0 f3 w3 db ba b--blue bg-blue-50 pa3 br0 pointer"
         donationAmount = customAmount;
       }
       else {
-        button.className = "button pa0 br0 ba b--blue ph3 pv3 pointer";
+        button.className = "button pa0 br0 ba b--blue bg-blue-50 ph3 pv3 pointer";
         donationAmount = amount;
       }
     }
