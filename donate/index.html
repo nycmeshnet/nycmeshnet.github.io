@@ -97,7 +97,7 @@
       <div style="width: 3.9%" class="h1 bg-gold br3"></div>
     </div>
     <div class="flex flex flex-column items-start mv3">
-      <span class="gold">$105</span>
+      <span class="gold fw4">$105</span>
       <span class="f6 gray mv1">pledged of $2,650 monthly maintenance costs</span>
     </div>
   </div>
@@ -131,7 +131,7 @@
         Or make a one time donation:
       </span>
       <div class="flex items-center justify-center mt3">
-        <input id="custom" type="number"  min="0" onfocus="setAmount('custom')" style="min-width: 128px; height: 56px" maxlength="7" autocomplete="off" name="donation-amount" placeholder="$" class="fw3 pa0 ma0 f3 w3 db ba b--moon-gray pa3 br0 pointer">
+        <input id="custom" type="number"  min="0" onfocus="setAmount('custom')" style="min-width: 128px; height: 56px" maxlength="7" autocomplete="off" name="donation-amount" placeholder="$" class="fw4 pa0 ma0 f3 w3 db ba b--moon-gray pa3 br0 pointer">
       </div>
     </div>
   </div>
@@ -211,7 +211,6 @@ Oliver Baer
     var donationAmount, donationType, customAmount;
     var customDonation = document.getElementById('custom');
     customDonation.onkeypress = function(e) {
-      console.log(e.which)
       const notNumber = e.which < 48 || e.which > 57
       const notDelete = e.which !== 8
       if (notNumber && notDelete)
@@ -226,7 +225,6 @@ Oliver Baer
 
     customDonation.addEventListener('focus', function(e) {
       var tmpStr = e.target.value;
-      console.log(tmpStr)
       e.target.value = '';
       e.target.value = tmpStr;
       donationAmount = customAmount;
@@ -237,7 +235,7 @@ Oliver Baer
       var selected = document.getElementById(donationAmount) || document.getElementById('custom');
       if (selected) {
         if (selected.id == 'custom')
-          selected.className = "fw3 pa0 ma0 f3 w3 db ba b--moon-gray pa3 br0 pointer"
+          selected.className = "fw4 pa0 ma0 f3 w3 db ba b--moon-gray pa3 br0 pointer"
         else
           selected.className = "button  pa0 br0 ba b--moon-gray ph3 pv3 pointer hover-b--blue"
       }
@@ -245,7 +243,7 @@ Oliver Baer
       // highlight choice and set amount
       var button = document.getElementById(amount);
       if (amount == 'custom') {
-        button.className = "fw3 pa0 ma0 f3 w3 db ba b--blue bg-blue-50 pa3 br0 pointer"
+        button.className = "fw4 pa0 ma0 f3 w3 db ba b--blue bg-blue-50 pa3 br0 pointer"
         donationAmount = customAmount;
       }
       else {
