@@ -1,2 +1,2 @@
-var activeNodes = 216
-var potentialNodes = 2015
+var activeNodes = 217
+var potentialNodes = 2016
