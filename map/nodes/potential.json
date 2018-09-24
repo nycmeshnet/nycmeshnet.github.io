@@ -29588,9 +29588,6 @@
         "status": "",
         "notes": " -roof",
         "roof": "roof",
-        "panoramas": [
-          "2090.jpg"
-        ],
         "otherNodes": ""
       },
       "geometry": {
@@ -31214,6 +31211,9 @@
         "status": "",
         "notes": " -roof",
         "roof": "roof",
+        "panoramas": [
+          "2203.jpg"
+        ],
         "otherNodes": ""
       },
       "geometry": {
@@ -33729,6 +33729,9 @@
         "status": "",
         "notes": " -roof",
         "roof": "roof",
+        "panoramas": [
+          "2386.jpg"
+        ],
         "otherNodes": ""
       },
       "geometry": {
@@ -33987,6 +33990,9 @@
         "status": "",
         "notes": " -roof",
         "roof": "roof",
+        "panoramas": [
+          "2406.jpg"
+        ],
         "otherNodes": ""
       },
       "geometry": {
