@@ -1,2 +1,2 @@
 var activeNodes = 224
-var potentialNodes = 2060
+var potentialNodes = 2057
