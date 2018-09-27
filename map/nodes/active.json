@@ -2900,6 +2900,23 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 1677,
+        "status": "Installed",
+        "notes": " -roof",
+        "roof": "roof",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.938248,
+          40.796303
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": 1710,
         "status": "Installed",
         "notes": " -roof",
@@ -3499,6 +3516,9 @@
         "status": "Installed",
         "notes": " -roof",
         "roof": "roof",
+        "panoramas": [
+          "2090.jpg"
+        ],
         "otherNodes": ""
       },
       "geometry": {
