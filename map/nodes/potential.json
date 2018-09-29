@@ -23006,6 +23006,9 @@
         "status": "",
         "notes": "",
         "roof": "",
+        "panoramas": [
+          "1642.jpg"
+        ],
         "otherNodes": ""
       },
       "geometry": {
@@ -34340,6 +34343,9 @@
         "status": "",
         "notes": " -roof",
         "roof": "roof",
+        "panoramas": [
+          "2434.jpg"
+        ],
         "otherNodes": ""
       },
       "geometry": {
@@ -34380,6 +34386,57 @@
         "coordinates": [
           -73.953633,
           40.717352
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2438,
+        "status": "",
+        "notes": " -roof",
+        "roof": "roof",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.980822,
+          40.730179
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2439,
+        "status": "",
+        "notes": "",
+        "roof": "",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.919377,
+          40.773994
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2440,
+        "status": "",
+        "notes": " -roof",
+        "roof": "roof",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.992892,
+          40.73934
         ],
         "type": "Point"
       }

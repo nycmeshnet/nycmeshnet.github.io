@@ -3229,8 +3229,8 @@
       "properties": {
         "id": 1939,
         "status": "Installed",
-        "notes": " -roof",
-        "roof": "roof",
+        "notes": "LiteBeam in window",
+        "roof": "",
         "panoramas": [
           "1939.jpg",
           "1939a.jpg"
