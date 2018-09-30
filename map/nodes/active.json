@@ -3227,6 +3227,27 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 1939,
+        "status": "Installed",
+        "notes": " -roof",
+        "roof": "roof",
+        "panoramas": [
+          "1939.jpg",
+          "1939a.jpg"
+        ],
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.981221,
+          40.714654
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": 1958,
         "status": "Installed",
         "notes": "kiosk -roof",

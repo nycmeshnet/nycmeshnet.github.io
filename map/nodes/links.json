@@ -5415,6 +5415,25 @@
       "properties": {
         "status": "planned"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.981221,
+            40.714654
+          ],
+          [
+            -74.001122,
+            40.711137
+          ]
+        ]
+      },
+      "properties": {
+        "status": "active"
+      }
     }
   ]
 }
