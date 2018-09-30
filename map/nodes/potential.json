@@ -34064,23 +34064,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 2415,
-        "status": "",
-        "notes": " -roof",
-        "roof": "roof",
-        "otherNodes": ""
-      },
-      "geometry": {
-        "coordinates": [
-          -73.998508,
-          40.715007
-        ],
-        "type": "Point"
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 2416,
         "status": "",
         "notes": " -roof",
@@ -34437,6 +34420,57 @@
         "coordinates": [
           -73.992892,
           40.73934
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2441,
+        "status": "",
+        "notes": "",
+        "roof": "",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.990418,
+          40.716559
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2442,
+        "status": "",
+        "notes": " -roof",
+        "roof": "roof",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.966267,
+          40.675387
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2444,
+        "status": "",
+        "notes": "",
+        "roof": "",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.964591,
+          40.718549
         ],
         "type": "Point"
       }

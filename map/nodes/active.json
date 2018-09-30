@@ -3797,6 +3797,23 @@
         ],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2415,
+        "status": "Installed",
+        "notes": " -roof",
+        "roof": "roof",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.998508,
+          40.715007
+        ],
+        "type": "Point"
+      }
     }
   ]
 }
