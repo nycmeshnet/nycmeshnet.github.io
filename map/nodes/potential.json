@@ -34474,6 +34474,23 @@
         ],
         "type": "Point"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2445,
+        "status": "",
+        "notes": " -roof",
+        "roof": "roof",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -74.029404,
+          40.638766
+        ],
+        "type": "Point"
+      }
     }
   ]
 }
