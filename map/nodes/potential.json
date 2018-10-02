@@ -33679,27 +33679,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 2387,
-        "status": "",
-        "notes": " -roof",
-        "roof": "roof",
-        "panoramas": [
-          "2387.jpg",
-          "2387a.jpg"
-        ],
-        "otherNodes": ""
-      },
-      "geometry": {
-        "coordinates": [
-          -73.911259,
-          40.695572
-        ],
-        "type": "Point"
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 2388,
         "status": "",
         "notes": " -roof",
@@ -34488,6 +34467,74 @@
         "coordinates": [
           -74.029404,
           40.638766
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2446,
+        "status": "",
+        "notes": " -roof",
+        "roof": "roof",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.325053,
+          40.885441
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2447,
+        "status": "",
+        "notes": " -roof",
+        "roof": "roof",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.958343,
+          40.668596
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2448,
+        "status": "",
+        "notes": " -roof",
+        "roof": "roof",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.929345,
+          40.68814
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2449,
+        "status": "",
+        "notes": " -roof",
+        "roof": "roof",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.98368,
+          40.783505
         ],
         "type": "Point"
       }

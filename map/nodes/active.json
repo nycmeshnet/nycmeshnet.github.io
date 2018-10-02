@@ -2816,23 +2816,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 1636,
-        "status": "Installed",
-        "notes": " -roof",
-        "roof": "roof",
-        "otherNodes": ""
-      },
-      "geometry": {
-        "coordinates": [
-          -73.919954,
-          40.693118
-        ],
-        "type": "Point"
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 1659,
         "status": "Installed",
         "notes": " -roof",
@@ -3794,6 +3777,27 @@
         "coordinates": [
           -73.996091,
           40.718511
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2387,
+        "status": "Installed",
+        "notes": " -roof",
+        "roof": "roof",
+        "panoramas": [
+          "2387.jpg",
+          "2387a.jpg"
+        ],
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.911259,
+          40.695572
         ],
         "type": "Point"
       }

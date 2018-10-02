@@ -2895,44 +2895,6 @@
         "type": "LineString",
         "coordinates": [
           [
-            -73.919954,
-            40.693118
-          ],
-          [
-            -73.929049,
-            40.713991
-          ]
-        ]
-      },
-      "properties": {
-        "status": "dead"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -73.919954,
-            40.693118
-          ],
-          [
-            -73.917272,
-            40.685823
-          ]
-        ]
-      },
-      "properties": {
-        "status": "active"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
             -73.990005,
             40.730633
           ],
@@ -5147,7 +5109,7 @@
         ]
       },
       "properties": {
-        "status": "planned"
+        "status": "active"
       }
     },
     {
