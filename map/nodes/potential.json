@@ -34439,6 +34439,9 @@
         "status": "",
         "notes": " -roof",
         "roof": "roof",
+        "panoramas": [
+          "2442.jpg"
+        ],
         "otherNodes": ""
       },
       "geometry": {
@@ -34510,7 +34513,7 @@
         "status": "",
         "notes": " -roof",
         "roof": "roof",
-        "otherNodes": ", 2450"
+        "otherNodes": ""
       },
       "geometry": {
         "coordinates": [

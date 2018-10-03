@@ -5453,6 +5453,25 @@
       "properties": {
         "status": "planned"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -73.966267,
+            40.675387
+          ],
+          [
+            -73.960789,
+            40.670686
+          ]
+        ]
+      },
+      "properties": {
+        "status": "planned"
+      }
     }
   ]
 }
