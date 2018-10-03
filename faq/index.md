@@ -47,7 +47,6 @@ title: "Frequently asked questions"
 [Blockchain?](#blockchain)  
 [Why aren't you doing this obvious thing I just thought of?](#obvious)  
 
-
 # About NYC Mesh
 
 ## <a name="why"></a>Why is NYC Mesh building a community-owned network?
@@ -101,7 +100,7 @@ NYC Mesh will comply with all laws in the jurisdictions where it operates; howev
 We are a non-profit project of the New York chapter of the [Internet Society](https://www.internetsociety.org/) (ISOC-NY). Most of the equipment that makes up the Mesh is owned by the individual members. Some common infrastructure is owned or rented by the project under ISOC-NY, or by individual members who are donating it. Intellectual property is limited and is under open licenses such as GNU and Creative Commons. 
 
 ## <a name="businessplan"></a>What is your business plan?
-We are not a business and we are not a commercial Internet Service Provider! We aim to grow our community in a sustainable and inclusive way for the benefit of all of our members. We don’t see members as customers, consumers or users, but as contributors to our community. Being a member of our network has many benefits, including replacing your current ISP with fast, neutral, affordable, and unmonitored Internet access. Businesses are free to join or connect to the mesh as long as they obey the [network commons license](../ncl.pdf).
+We are not a business and we are not a commercial Internet Service Provider! We aim to grow our community in a sustainable and inclusive way for the benefit of all of our members. We don’t see members as customers, consumers or users, but as contributors to our community. Being a member of our network has many benefits, including replacing your current ISP with fast, neutral, affordable, and unmonitored Internet access. Businesses are free to join or connect to the mesh as long as they obey the [network commons license](../ncl.html).
 
 ## <a name="meshonly"></a>What can I do on the mesh that I can’t do on the internet?
 
