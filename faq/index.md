@@ -3,49 +3,49 @@ layout: page
 title: "Frequently asked questions"
 ---
 
-**About NYC Mesh**
-[Why is NYC Mesh building a community-owned network?](#why)
-[How does it work?](#how)
-[Is this a replacement for my current Internet connection?](#replace)
-[Is the mesh secure?](#security)
-[What is your user data policy?](#userdata)
-[Who owns NYC Mesh?](#ownership)
-[What is your business plan?](#businessplan)
-[What can I do on the mesh that I can’t do on the internet?](#meshonly)
+**About NYC Mesh**  
+[Why is NYC Mesh building a community-owned network?](#why)  
+[How does it work?](#how)  
+[Is this a replacement for my current Internet connection?](#replace)  
+[Is the mesh secure?](#security)  
+[What is your user data policy?](#userdata)  
+[Who owns NYC Mesh?](#ownership)  
+[What is your business plan?](#businessplan)  
+[What can I do on the mesh that I can’t do on the internet?](#meshonly)  
 
-**Joining the Community**
-[How do I sign up?](#signup)
-[How much does it cost to join?](#cost)
-[I heard that NYC Mesh is free Internet. Is that true?](#free)
-[What are my obligations as an NYC Mesh community member?](#obligations)
-[How can I volunteer? What if I don’t know anything about networking?](#volunteer)
+**Joining the Community**  
+[How do I sign up?](#signup)  
+[How much does it cost to join?](#cost)  
+[I heard that NYC Mesh is free Internet. Is that true?](#free)  
+[What are my obligations as an NYC Mesh community member?](#obligations)  
+[How can I volunteer? What if I don’t know anything about networking?](#volunteer)  
 [I have neighbors who would also like to join NYC Mesh. Can we get connected together?](#neighbors)      
-[Do I need to provide identification to join NYC Mesh?](#id)
-[What is Slack and how do I use it?](#slack)
+[Do I need to provide identification to join NYC Mesh?](#id)  
+[What is Slack and how do I use it?](#slack)  
 
-**Getting connected to the mesh**
-[How can I tell if I’m in the coverage zone for NYC Mesh?](#covered)     
-[My neighbor has a rooftop router and is connected to NYC Mesh. Can I also use it to connect?](#alsouse)
-[What is the wait time for an installation? How do you decide who to connect first?](#waittime)
-[What is involved in a typical installation?](#typicalinstall)
-[How should I prepare before the install team arrives?](#prepare)      
-[What happens if the install team can’t connect me to the mesh?](#nogo)
-[What if I can’t get roof access?](#noroof)
-[Can I install a router if I have no view or no rooftop access?](#noview)
-[Can I install the hardware and connect to NYC Mesh on my own?](#bymylonesome)
-[Can I use any router to connect?](#anyrouter)
+**Getting connected to the mesh**  
+[How can I tell if I’m in the coverage zone for NYC Mesh?](#covered)  
+[My neighbor has a rooftop router and is connected to NYC Mesh. Can I also use it to connect?](#alsouse)  
+[What is the wait time for an installation? How do you decide who to connect first?](#waittime)  
+[What is involved in a typical installation?](#typicalinstall)  
+[How should I prepare before the install team arrives?](#prepare)  
+[What happens if the install team can’t connect me to the mesh?](#nogo)  
+[What if I can’t get roof access?](#noroof)  
+[Can I install a router if I have no view or no rooftop access?](#noview)  
+[Can I install the hardware and connect to NYC Mesh on my own?](#bymylonesome)  
+[Can I use any router to connect?](#anyrouter)  
 
-**Hardware, software and networking**
-[What is a router? What is an antenna? What is a radio? Are they different things?](#defrouter)
-[What is a Node? What is a Supernode? What is a Hub Node?](#defnode)
-[What software/firmware do you use?](#software)
+**Hardware, software and networking**  
+[What is a router? What is an antenna? What is a radio? Are they different things?](#defrouter)  
+[What is a Node? What is a Supernode? What is a Hub Node?](#defnode)  
+[What software/firmware do you use?](#software)  
 
-**Everything Else**
-[What exactly is the Internet anyway?](#definternet)
-[Why don’t we mesh mobile phones instead of routers?](#phones)
-[How far can the mesh extend? Could it cover the whole country?](#far)
-[Blockchain?](#blockchain)
-[Why aren't you doing this obvious thing I just thought of?](#obvious)
+**Everything Else**  
+[What exactly is the Internet anyway?](#definternet)  
+[Why don’t we mesh mobile phones instead of routers?](#phones)  
+[How far can the mesh extend? Could it cover the whole country?](#far)  
+[Blockchain?](#blockchain)  
+[Why aren't you doing this obvious thing I just thought of?](#obvious)  
 
 
 # About NYC Mesh
