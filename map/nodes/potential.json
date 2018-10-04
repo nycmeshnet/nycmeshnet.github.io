@@ -30360,23 +30360,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 2144,
-        "status": "",
-        "notes": " -roof",
-        "roof": "roof",
-        "otherNodes": ", 2162, 2182, 2194, 2328"
-      },
-      "geometry": {
-        "coordinates": [
-          -73.87002,
-          40.863604
-        ],
-        "type": "Point"
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 2145,
         "status": "",
         "notes": " -roof",
@@ -30618,6 +30601,23 @@
         "coordinates": [
           -73.863178,
           40.856564
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2162,
+        "status": "",
+        "notes": "",
+        "roof": "",
+        "otherNodes": ", 2182, 2194, 2328"
+      },
+      "geometry": {
+        "coordinates": [
+          -73.87002,
+          40.863604
         ],
         "type": "Point"
       }
@@ -34553,6 +34553,57 @@
         "coordinates": [
           -73.98368,
           40.783505
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2452,
+        "status": "",
+        "notes": "",
+        "roof": "",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.926819,
+          40.833683
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2453,
+        "status": "",
+        "notes": "",
+        "roof": "",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.99572,
+          40.721637
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2454,
+        "status": "",
+        "notes": " -roof",
+        "roof": "roof",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.962192,
+          40.649094
         ],
         "type": "Point"
       }

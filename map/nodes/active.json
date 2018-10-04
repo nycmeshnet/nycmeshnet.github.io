@@ -3607,6 +3607,23 @@
     {
       "type": "Feature",
       "properties": {
+        "id": 2144,
+        "status": "Installed",
+        "notes": " -roof",
+        "roof": "roof",
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.87002,
+          40.863604
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": 2148,
         "status": "Installed",
         "notes": " -roof",
