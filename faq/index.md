@@ -78,7 +78,7 @@ NYC Mesh provides an independent, fast, and reliable connection to the Internet.
 
 Service disruptions are possible for both commercial ISPs and NYC Mesh. Extreme weather such as heavy rain, blizzards and hail, for example, can decrease connection speeds as they affect the router’s wireless signal. Our community actively monitors the health of the network, and, unlike commercial ISPs, responds quickly to service requests.
 
-## <a name=""></a>Is the mesh secure?
+## <a name="secure"></a>Is the mesh secure?
 
 By default, our mesh router is firewalled from your local network. It is not possible to reach beyond the mesh router to your local access network (LAN). 
 
