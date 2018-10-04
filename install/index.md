@@ -10,7 +10,7 @@ With all rooftop installs, an antenna is mounted on the roof and outdoor etherne
 You can pay us $110 to cover hardware (basically cost) and $50 labor paid to the installer. It is *much* easier, faster and often cheaper for you if we do the install. We have the right hardware and you don't get charged if we are unable to connect you. Email us if you would prefer a monthly plan rather than upfront payment for the install.
 
 **For DIY installs- please connect your neighbors too!**  
-**If you DIY you are obliged by our [NCL license](/ncl.pdf) to extend the network**   
+**If you DIY you are obliged by our [NCL license](/ncl.html) to extend the network**   
 We can help you with configuring the ethernet switches etc
 
 **1) Supernode client**
