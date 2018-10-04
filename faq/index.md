@@ -4,49 +4,50 @@ title: "Frequently asked questions"
 ---
 
 **About NYC Mesh**  
-[Why is NYC Mesh building a community-owned network?](#why)  
-[How does it work?](#how)  
-[Is this a replacement for my current Internet connection?](#replace)  
-[Is the mesh secure?](#security)  
-[What is your user data policy?](#userdata)  
-[Who owns NYC Mesh?](#ownership)  
-[What is your business plan?](#businessplan)  
-[What can I do on the mesh that I can’t do on the internet?](#meshonly)  
+* [Why is NYC Mesh building a community-owned network?](#why)  
+* [How does it work?](#how)  
+* [Is this a replacement for my current Internet connection?](#replace)  
+* [Is the mesh secure?](#security)  
+* [What is your user data policy?](#userdata)  
+* [Who owns NYC Mesh?](#ownership)  
+* [What is your business plan?](#businessplan)  
+* [What can I do on the mesh that I can’t do on the internet?](#meshonly)  
 
 **Joining the Community**  
-[How do I sign up?](#signup)  
-[How much does it cost to join?](#cost)  
-[I heard that NYC Mesh is free Internet. Is that true?](#free)  
-[What are my obligations as an NYC Mesh community member?](#obligations)  
-[How can I volunteer? What if I don’t know anything about networking?](#volunteer)  
-[I have neighbors who would also like to join NYC Mesh. Can we get connected together?](#neighbors)      
-[Do I need to provide identification to join NYC Mesh?](#id)  
-[What is Slack and how do I use it?](#slack)  
+* [How do I sign up?](#signup)  
+* [How much does it cost to join?](#cost)  
+* [I heard that NYC Mesh is free Internet. Is that true?](#free)  
+* [What are my obligations as an NYC Mesh community member?](#obligations)  
+* [How can I volunteer? What if I don’t know anything about networking?](#volunteer)  
+* [I have neighbors who would also like to join NYC Mesh. Can we get connected together?](#neighbors)      
+* [Do I need to provide identification to join NYC Mesh?](#id)  
+* [What is Slack and how do I use it?](#slack)  
 
 **Getting connected to the mesh**  
-[How can I tell if I’m in the coverage zone for NYC Mesh?](#covered)  
-[My neighbor has a rooftop router and is connected to NYC Mesh. Can I also use it to connect?](#alsouse)  
-[What is the wait time for an installation? How do you decide who to connect first?](#waittime)  
-[What is involved in a typical installation?](#typicalinstall)  
-[How should I prepare before the install team arrives?](#prepare)  
-[What happens if the install team can’t connect me to the mesh?](#nogo)  
-[What if I can’t get roof access?](#noroof)  
-[Can I install a router if I have no view or no rooftop access?](#noview)  
-[Can I install the hardware and connect to NYC Mesh on my own?](#bymylonesome)  
-[Can I use any router to connect?](#anyrouter)  
+* [How can I tell if I’m in the coverage zone for NYC Mesh?](#covered)  
+* [My neighbor has a rooftop router and is connected to NYC Mesh. Can I also use it to connect?](#alsouse)  
+* [What is the wait time for an installation? How do you decide who to connect first?](#waittime)  
+* [What is involved in a typical installation?](#typicalinstall)  
+* [How should I prepare before the install team arrives?](#prepare)  
+* [What happens if the install team can’t connect me to the mesh?](#nogo)  
+* [What if I can’t get roof access?](#noroof)  
+* [Can I install a router if I have no view or no rooftop access?](#noview)  
+* [Can I install the hardware and connect to NYC Mesh on my own?](#bymylonesome)  
+* [Can I use any router to connect?](#anyrouter)  
 
 **Hardware, software and networking**  
-[What is a router? What is an antenna? What is a radio? Are they different things?](#defrouter)  
-[What is a Node? What is a Supernode? What is a Hub Node?](#defnode)  
-[What software/firmware do you use?](#software)  
+* [What is a router? What is an antenna? What is a radio? Are they different things?](#defrouter)  
+* [What is a Node? What is a Supernode? What is a Hub Node?](#defnode)  
+* [What software/firmware do you use?](#software)  
 
 **Everything Else**  
-[What exactly is the Internet anyway?](#definternet)  
-[Why don’t we mesh mobile phones instead of routers?](#phones)  
-[How far can the mesh extend? Could it cover the whole country?](#far)  
-[Blockchain?](#blockchain)  
-[Why aren't you doing this obvious thing I just thought of?](#obvious)  
+* [What exactly is the Internet anyway?](#definternet)  
+* [Why don’t we mesh mobile phones instead of routers?](#phones)  
+* [How far can the mesh extend? Could it cover the whole country?](#far)  
+* [Blockchain?](#blockchain)  
+* [Why aren't you doing this obvious thing I just thought of?](#obvious)  
 
+----
 
 # About NYC Mesh
 
@@ -109,6 +110,8 @@ Other than the benefit of not paying the cable cartel for overpriced Internet ac
 
 The mesh also has its own web servers that show local information and allow you to chat and post messages. So far we have servers in five locations: Harlem, Bay Ridge, 3rd St. and 7th St. in the East Village, and our main directory “wiki.mesh” in Williamsburg. We are in need of [volunteers](../help) to help add content and maintain our servers.
 
+----
+
 # Joining the Community
 
 ## <a name="signup"></a>How do I sign up?
@@ -144,6 +147,8 @@ NYC Mesh asks for only basic contact information to be able to carry out the ins
 ## <a name="slack"></a>What is Slack and how do I use it?
 
 Slack is the main communication and collaboration platform we use at NYC Mesh. It consists of public channels, which anyone can post messages to, and invitation-only channels, which serve specific community groups and volunteer teams. Go to the [NYC Mesh Slack page](https://slack.nycmesh.net/) to sign up for an account and join the conversation!
+
+----
 
 # Getting connected to the mesh
 
@@ -254,6 +259,8 @@ We are using an OpenWrt package made by qMp. This uses the BMX6 mesh protocol. W
 Our point-to-point connections use factory firmware such as AirOS. The supernodes are  running Linux with Quagga and BGP. For network monitoring we use Nagios and Icinga2.
 
 We also have some members experimenting with and contributing to cjdns/hyperboria software. Let us know if you are interested in this by reaching out on [slack](https://slack.nycmesh.net/).
+
+----
 
 # Everything Else
 
