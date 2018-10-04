@@ -166,7 +166,7 @@ Some additional things you can do to determine if you are in a coverage zone:
 
 ## <a name="alsouse"></a>My neighbor has a rooftop router and is connected to NYC Mesh. Can I also use it to connect?
 
-We encourage neighbors to share their Internet access. Ask your neighbor for permission to connect via their router and reach out to us on [slack](https://slack.nycmesh.net/). We can probably install a switch at the rooftop router and run an ethernet cable to your apartment. We will adjust the standard installation fee depending on the hardware required, and we ask that you also pay a $20 monthly donation if you can.
+We encourage neighbors to share their Internet access. Ask your neighbor for permission to connect via their router and reach out to us on [slack](https://slack.nycmesh.net/). We can probably install a switch at the rooftop router and run an ethernet cable to your apartment. We have a standard $160 install fee, and we ask for a $20 monthly donation if you can afford it.
 
 ## <a name="waittime"></a>What is the wait time for an installation? How do you decide who to connect first?
 
@@ -205,11 +205,11 @@ If we are not able to connect you, we will not charge you the $110 parts and equ
 
 If we think a connection may be possible by installing a mast, mounting equipment to a neighbor’s roof or another method, we will discuss those options with you on site.
 
-## <a name="noroof"></a>What if I can’t get roof access?
+## <a name="noroof"></a>What if I can't get roof access?
 
-You may be able to connect from your window using a directional Nanostation NSM5 router. It is a 5GHz router, and all modern phones and most laptops can connect to it. In most cases it will work from behind glass if you are unable to place it outside the window. 
+You may be able to connect from your window if you have a good view, or you are very near another access point.
 
-Once you fill out the [join form](../join), we can help you determine the viability of a window install. If you would like to install an NSM5 router on your own, see this [blog post](https://nycmesh.net/blog/nsm5-install/).  
+Once you fill out the [join form](../join), we can help you determine the viability of a window install. If you would like to install an NSM5 router on your own, see this [blog post](/blog/nsm5-install/). If you would like to connect to LinkNYC kiosk [see here](https://docs.nycmesh.net/installs/linknyc/)
 
 ## <a name="noview"></a>Can I install a router if I have no view or no rooftop access?
 
