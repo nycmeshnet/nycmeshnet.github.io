@@ -2858,31 +2858,6 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 1663,
-        "status": "Installed",
-        "notes": "kiosk -roof",
-        "roof": "roof",
-        "panoramas": [
-          "1663.jpg",
-          "1663a.jpg",
-          "1663b.jpg",
-          "1663c.jpg",
-          "1663d.jpg",
-          "1663e.jpg"
-        ],
-        "otherNodes": ""
-      },
-      "geometry": {
-        "coordinates": [
-          -73.958766,
-          40.651547
-        ],
-        "type": "Point"
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": 1677,
         "status": "Installed",
         "notes": " -roof",
@@ -3680,6 +3655,26 @@
         "coordinates": [
           -73.929139,
           40.69968
+        ],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 2192,
+        "status": "Installed",
+        "notes": " -roof",
+        "roof": "roof",
+        "panoramas": [
+          "2192.jpg"
+        ],
+        "otherNodes": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -73.911981,
+          40.70649
         ],
         "type": "Point"
       }
