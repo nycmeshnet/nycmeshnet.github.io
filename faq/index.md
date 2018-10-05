@@ -236,6 +236,8 @@ If you need assistance with your self-installs, reach out to us on the #support 
 
 To connect to NYC Mesh you must use routers supported by NYC Mesh, which are listed [here](../download).
 
+----
+
 # Hardware, software and networking
 
 ## <a name="defrouter"></a>What is a router? What is an antenna? What is a radio? Are they different things?
